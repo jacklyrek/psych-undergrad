@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notmatch '\\\\.obsidian' } | ForEach-Object { $_.FullName.Replace\\(\\(Get-Location\\).Path + '\\\\',''\\) } | Sort-Object)",
+      "WebSearch",
+      "WebFetch(domain:www.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:onlinelibrary.wiley.com)",
+      "WebFetch(domain:courses.worldcampus.psu.edu)",
+      "WebFetch(domain:societyforpsychotherapy.org)",
+      "WebFetch(domain:counseling.education)",
+      "PowerShell(python apps/build_items.py)",
+      "Bash(python apps/build_items.py)",
+      "Bash(python -c ' *)",
+      "WebFetch(domain:tpcjournal.nbcc.org)",
+      "WebFetch(domain:www.thebowencenter.org)",
+      "WebFetch(domain:openstax.org)",
+      "WebFetch(domain:socialsci.libretexts.org)",
+      "WebFetch(domain:is.muni.cz)",
+      "Bash(python apps/scheduler.py)"
+    ]
+  }
+}
