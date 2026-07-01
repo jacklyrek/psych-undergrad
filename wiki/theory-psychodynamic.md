@@ -16,8 +16,7 @@ they replay in the therapy relationship. [S1]
 
 This is the oldest of the modern talking therapies and the root the others grew out of (often by
 reacting against it). Freud's full **psychoanalysis** — the couch, multiple sessions a week, years of
-work — has waned; the contemporary **psychodynamic** version is "less intensive" but keeps the core
-ideas. [S1][S5]
+work — has waned; the contemporary **psychodynamic** version is "less intensive" but keeps the core ideas. [S1][S5]
 
 ## The core ideas
 
@@ -26,9 +25,7 @@ reservoir of often repressed or forgotten material that continues to influence b
 emotions, even if people are unaware of its influence."* [S1] Symptoms are meaningful — they're the
 visible end of a hidden conflict.
 
-**Defense mechanisms.** Unconscious strategies the mind uses to manage anxiety and keep threatening
-material out of awareness. [S1][S2] Anna Freud systematized them and noted they can be **adaptive or
-maladaptive**; part of the work is making them visible. [S1] Common ones:
+**Defense mechanisms.** Unconscious strategies the mind uses to manage anxiety and keep threatening material out of awareness. [S1][S2] Anna Freud systematized them and noted they can be **adaptive or maladaptive**; part of the work is making them visible. [S1] Common ones:
 
 - **Repression** — pushing a threatening thought out of awareness.
 - **Denial** — refusing to accept an external reality.

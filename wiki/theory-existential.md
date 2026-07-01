@@ -16,8 +16,7 @@ responsibility**, and actively **choosing meaning** rather than waiting to recei
 
 Existential therapy is less a set of techniques than a **stance on the human condition**. It overlaps
 with the humanistic family ([[theory-person-centered]]) — both prize choice, self-determination, and
-the capacity for growth — but where person-centered therapy is optimistic about a growth tendency,
-existential therapy starts from the hard, anxiety-producing facts of being human. [S7]
+the capacity for growth — but where person-centered therapy is optimistic about a growth tendency, existential therapy starts from the hard, anxiety-producing facts of being human. [S7]
 
 ## The core ideas
 
@@ -51,17 +50,14 @@ the human condition (not only pathology) and on the courage to choose. [S7]
 
 ## How change happens
 Through honest **encounter** — the therapist is a *fellow traveler*, not a fixer or interpreter —
-helping the client stop evading the givens and instead choose, commit, and take responsibility for a
-life of their own authorship. [S6][S7] Logotherapy contributes a couple of concrete techniques:
+helping the client stop evading the givens and instead choose, commit, and take responsibility for a life of their own authorship. [S6][S7] Logotherapy contributes a couple of concrete techniques:
 **paradoxical intention** (deliberately try to produce the feared symptom, gaining distance from it)
 and **dereflection** (redirect attention away from anxious self-monitoring). [S7]
 
 ## What's contested (don't over-learn it)
 - **Framework, not measured fact.** The four givens are a clinically influential *organizing lens*,
   not an experimentally validated taxonomy — use them to listen, not as proof. [S6]
-- **Directiveness debate.** Critics (including May) worried logotherapy could become **authoritarian** —
-  the therapist prescribing meaning; Frankl countered that it teaches the client to be responsible,
-  not what to value. [S7]
+- **Directiveness debate.** Critics (including May) worried logotherapy could become **authoritarian** — the therapist prescribing meaning; Frankl countered that it teaches the client to be responsible, not what to value. [S7]
 - **Hard to manualize / measure**, which makes outcome research thinner than for CBT. [S7]
 
 ## Connects to

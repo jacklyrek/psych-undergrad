@@ -75,6 +75,33 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
 - Deferred (noted in coverage.md): separate person-* pages (figures covered inline); theory-cbt links
   forward to pending unit09-modalities — fix that target when Unit 9 is built.
 
+## [2026-06-28] create-module | aux-psychological-first-aid (PFA & Acute Grief) | 15 sources, 4 readings, 23 items
+- **New schema feature (per user):** off-syllabus topics now built as **elective modules** in the
+  `aux-` namespace, documented in a new "Ad-hoc / elective modules" section of CLAUDE.md. Reuses all
+  unit machinery (citations, Bloom-spanning, clusters, build/scheduler) but lives outside the 12-unit
+  spine and cross-links into it. Decisions confirmed with user: aux- prefix (not unit13/high-numbers/
+  subfolder), broad PFA framing (child-death grief as the anchor case), codify the convention now.
+- Frontmatter convention for electives: `track: elective`, `module: <slug>`, `spine: false`,
+  `related_units: [N]`. Item id prefix `ax-<slug>-`. Bookkeeping under a separate "Elective / ad-hoc
+  modules" heading in index.md + coverage.md (kept out of the numbered-unit build table).
+- **Build change:** `apps/build_items.py` glob widened `unit*.md` → `*.md` (minus README.md) so
+  `aux-*.md` item files compile automatically. Verified clean.
+- Research (heavy/clinical topic — kept precise): triangulated WHO PFA Guide for Field Workers [S1],
+  NCTSN/NCPTSD Field Operations Guide [S2], VA National Center for PTSD [S3]; Cochrane debriefing
+  review [S4] + NICE [S5] (debriefing ineffective/possibly harmful — the key negative); grief models
+  PMC5033290 [S6], Stroebe & Schut dual process [S7], Worden tasks [S8], Kübler-Ross critical
+  appraisal PMC8675126 [S9]; PGD validation Prigerson/World Psychiatry [S10], predictors PMC9131400
+  [S11] (child loss = top risk), DSM-5-TR thresholds [S12]; practical support Ring Theory [S13],
+  Nationwide Children's [S14], Children's Hospital Colorado [S15].
+- Readings: aux-psychological-first-aid (hub), concept-pfa-core-actions, concept-grief-models,
+  concept-supporting-the-bereaved. All cited [S#], interlinked, forward-linked to pending Unit 8.
+- Tensions flagged: stages-of-grief retired as a clinical map; PFA evidence-INFORMED not -proven;
+  normal acute grief must not be pathologized vs. the real PGD time/impairment threshold.
+- Items: 23 across 3 clusters; Bloom spread R=5/U=4/Ap=5/An=5/E=4. Includes 1 compare + a PGD-risk
+  differential mcq + several stance/restraint drills ("don't probe," "don't fix," "say the name").
+- Bookkeeping: index.md + coverage.md (new elective sections + handoff holes) updated; items.json
+  rebuilt. Handoff hole logged: rewire forward-links to real wikilinks when Unit 8 is built.
+
 ## [2026-06-27] scheduler-upgrade | apps/scheduler.py | Leitner → SM-2
 - Replaced the box-based Leitner engine with SM-2 (per-item easiness factor + adaptive interval),
   per learning-science-for-self-study.md "Option B". Public scheduler interface unchanged

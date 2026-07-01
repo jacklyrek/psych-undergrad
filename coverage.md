@@ -22,6 +22,14 @@ What's built vs. pending, and where the readings and practice have holes. Update
 
 ☐ pending · ◐ partial · ☑ complete
 
+## Elective / ad-hoc modules (off-spine)
+
+Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rules apply.
+
+| Module | Borders | Readings | Items | Bloom spread | Clusters w/ compare items |
+|---|---|---|---|---|---|
+| PFA & Acute Grief Support (`aux-psychological-first-aid`) | Unit 8 | ☑ (4) | ☑ (23) | all 5 levels | `grief-models` ✓ (1 compare + risk mcq) |
+
 ## Coverage rules the lint pass enforces
 - Every major concept has at least one **Apply** or **Analyze** item, not only "define"-level.
 - Every confusable `cluster` (see course-map) has at least one **compare** item.
@@ -45,3 +53,11 @@ What's built vs. pending, and where the readings and practice have holes. Update
   each theory page. Split out if a later unit needs to link a person directly.
 - **Unit 2 → Unit 9 handoff:** `theory-cbt` links forward to a pending `unit09-modalities` page
   (CBT/MI as practical toolkit). Fix that wikilink target when Unit 9 is built.
+- **Elective `aux-psychological-first-aid` → Unit 8 handoff:** all three concept pages link forward
+  to the *pending* Unit 8 (crisis/risk/trauma-informed care) by name, not by wikilink (no
+  `unit08-*` page exists yet). When Unit 8 is built, wire these into real wikilinks and reconcile the
+  PGD / vicarious-trauma overlap so the module and Unit 8 don't duplicate or contradict.
+- **Elective cluster design:** `pfa-frameworks` and `bereavement-support` have analyze/evaluate items
+  but no dedicated `compare`-type item; the explicit compare lives in `grief-models`
+  (Kübler-Ross vs. dual process). Add compares to the other two on a later `lint`/`generate` pass if
+  desired (e.g. WHO Look/Listen/Link vs. NCTSN 8 Core Actions).

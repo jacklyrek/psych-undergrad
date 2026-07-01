@@ -21,10 +21,7 @@ page situates it as a school. [S3]
 
 ## The core ideas
 
-**The actualizing tendency.** Humanistic psychology assumes people are *"inherently motivated toward
-achieving positive psychological functioning"* — a built-in push toward growth, given the right
-conditions. [S3] Maslow's hierarchy and Rogers' work share this optimistic premise: humans are
-fundamentally trustworthy and growth-seeking.
+**The actualizing tendency.** Humanistic psychology assumes people are *"inherently motivated toward achieving positive psychological functioning"* — a built-in push toward growth, given the right conditions. [S3] Maslow's hierarchy and Rogers' work share this optimistic premise: humans are fundamentally trustworthy and growth-seeking.
 
 **The client as expert.** The most distinctive commitment. *The client is the expert on their own
 life and leads the direction of therapy; the counselor is **non-directive*** — they do **not** give

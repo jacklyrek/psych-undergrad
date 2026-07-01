@@ -14,23 +14,16 @@ dysfunctional patterns, roles, and boundaries in the family (or other system) ge
 the symptom. **Better by:** changing those patterns — the structure, the boundaries, the level of
 emotional reactivity — rather than "fixing" the person who carries the symptom. [S10]
 
-This is the school where your **systems-thinking** background transfers most directly: stop debugging
-the component, look at the architecture. The unit of analysis shifts from the person to the **family
-as an emotional unit.** [S10]
+This is the school where your **systems-thinking** background transfers most directly: stop debugging the component, look at the architecture. The unit of analysis shifts from the person to the **family as an emotional unit.** [S10]
 
 ## The core shift: the identified patient
-The family typically arrives pointing at one member — the "problem child," the symptomatic spouse —
-the **identified patient (IP).** Systems theory reframes the IP as the **symptom-bearer of tension in
-the whole system**, not the location of the pathology. The depressed teenager may be expressing a
-strained marriage; treating only the teen misses the system that produces the symptom. [S10][S17]
+The family typically arrives pointing at one member — the "problem child," the symptomatic spouse — the **identified patient (IP).** Systems theory reframes the IP as the **symptom-bearer of tension in the whole system**, not the location of the pathology. The depressed teenager may be expressing a strained marriage; treating only the teen misses the system that produces the symptom. [S10][S17]
 
 ## Two major models (a confusable pair)
 
 **Murray Bowen — Bowen Family Systems Theory** (multigenerational, emotion-focused):
 - **Differentiation of self** — the cornerstone: the capacity to **maintain a clear sense of self and
-  make values-based decisions while managing emotional reactivity, yet staying emotionally connected
-  to others.** Low differentiation = fused, reactive; high = able to hold steady under family
-  pressure. [S11]
+  make values-based decisions while managing emotional reactivity, yet staying emotionally connected to others.** Low differentiation = fused, reactive; high = able to hold steady under family pressure. [S11]
 - **Triangulation** — when tension between two people recruits a **third** to stabilize the dyad
   (e.g., a couple's conflict routed through a child). [S10]
 - **Multigenerational transmission process** — people tend to partner at **similar differentiation
@@ -50,8 +43,7 @@ strained marriage; treating only the teen misses the system that produces the sy
 
 ## How change happens
 By altering the **pattern**, not persuading the individual: increasing differentiation and
-de-triangling (Bowen), or restructuring boundaries and subsystems (Minuchin). Improve the system and
-the symptom in the identified patient typically eases. [S10][S11]
+de-triangling (Bowen), or restructuring boundaries and subsystems (Minuchin). Improve the system and the symptom in the identified patient typically eases. [S10][S11]
 
 ## What's contested (don't over-learn it)
 - **Differentiation is hard to measure**, and its status as the central construct — plus its

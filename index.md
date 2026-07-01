@@ -52,3 +52,25 @@ interleaving cluster (topic tags per school), all 5 Bloom levels; heavy on **com
 - **Unit 10 — Group Counseling** — _pending_
 - **Unit 11 — Neuroscience & Biological Bases** — _pending_
 - **Unit 12 — Research Methods & Program Evaluation** — _pending_
+
+## Elective / ad-hoc modules
+
+Off-syllabus topics built on request, in the `aux-` namespace (see *Ad-hoc / elective modules* in
+[CLAUDE.md](CLAUDE.md)). They reuse the unit machinery but sit outside the 12-unit spine and
+cross-link into it.
+
+### PFA & Acute Grief Support  ☑ readings + items  · borders Unit 8
+_Readings:_
+- [aux-psychological-first-aid](wiki/aux-psychological-first-aid.md) — hub: acute crisis support as a
+  distinct skill, the "don't probe" rule, the stance, and the map. Anchor case: death of a child.
+- [concept-pfa-core-actions](wiki/concept-pfa-core-actions.md) — WHO **Look/Listen/Link** + NCTSN's
+  **eight Core Actions**, and **why PFA is not debriefing** (Cochrane/NICE).
+- [concept-grief-models](wiki/concept-grief-models.md) — Kübler-Ross stages + their retirement;
+  Worden's tasks; Stroebe & Schut **dual process model**; normal grief vs. **prolonged grief disorder**.
+- [concept-supporting-the-bereaved](wiki/concept-supporting-the-bereaved.md) — the child-death case:
+  presence over fixing, say the name, **Ring Theory** ("comfort in, dump out"), when to refer, helper load.
+
+_Items:_ [aux-psychological-first-aid](items/aux-psychological-first-aid.md) — 23 items across 3 clusters
+(`pfa-frameworks`, `grief-models`, `bereavement-support`), all 5 Bloom levels; heavy on
+application/stance + a compare item and risk-discrimination mcq. _Sources:_
+[aux PFA sources](research/aux-psychological-first-aid-sources.md).
