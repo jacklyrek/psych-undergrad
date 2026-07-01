@@ -26,10 +26,27 @@ BLOOM = {"remember", "understand", "apply", "analyze", "evaluate"}
 
 FENCE = re.compile(r"```json\s*(.*?)```", re.DOTALL)
 CLOZE_BLANK = re.compile(r"\{\{.*?\}\}")
+UNIT_FILE = re.compile(r"^unit0*(\d+)\b")
+AUX_FILE = re.compile(r"^aux-(.+)$")
+
+
+def unit_of(src: Path) -> str:
+    """Derive an item's unit label from its source filename — the directory convention is
+    the source of truth: items/unitNN-<slug>.md -> "NN", items/aux-<slug>.md -> "aux-<slug>".
+    This lets the apps filter by unit without an extra per-item field."""
+    stem = src.stem
+    m = UNIT_FILE.match(stem)
+    if m:
+        return m.group(1)
+    m = AUX_FILE.match(stem)
+    if m:
+        return f"aux-{m.group(1)}"
+    return stem
 
 
 def extract_blocks(md_text: str, src: Path) -> list[dict]:
     items: list[dict] = []
+    unit = unit_of(src)
     for i, block in enumerate(FENCE.findall(md_text)):
         try:
             data = json.loads(block)
@@ -37,6 +54,9 @@ def extract_blocks(md_text: str, src: Path) -> list[dict]:
             sys.exit(f"ERROR: {src.name} json block #{i + 1}: invalid JSON — {e}")
         if not isinstance(data, list):
             sys.exit(f"ERROR: {src.name} json block #{i + 1}: expected a JSON array")
+        for it in data:
+            # Stamp unit from the filename unless the item already declares one (explicit wins).
+            it.setdefault("unit", unit)
         items.extend(data)
     return items
 
@@ -59,8 +79,16 @@ def validate(items: list[dict]) -> list[str]:
         sp = it.get("source_page")
         if sp and not (ROOT / sp).exists():
             problems.append(f"{iid}: source_page not found -> {sp}")
-        if it.get("type") == "mcq" and not it.get("options"):
-            problems.append(f"{iid}: type 'mcq' requires an 'options' array")
+        if it.get("type") == "mcq":
+            if not it.get("options"):
+                problems.append(f"{iid}: type 'mcq' requires an 'options' array")
+            # The exact correct option must be identified and present verbatim in options,
+            # otherwise the app can't auto-grade the radio selection (answer carries extra
+            # explanation text that won't match any option).
+            if not it.get("correct"):
+                problems.append(f"{iid}: type 'mcq' requires a 'correct' field (exact option string)")
+            elif it.get("options") and it["correct"] not in it["options"]:
+                problems.append(f"{iid}: 'correct' is not one of 'options'")
         # cloze well-formedness: a cloze must have a {{...}} blank so the app can hide it;
         # any other type with a {{...}} is a mis-tagged cloze (the answer would show in the prompt).
         has_blank = bool(CLOZE_BLANK.search(it.get("prompt") or ""))
@@ -74,9 +102,11 @@ def validate(items: list[dict]) -> list[str]:
 
 
 def main() -> None:
-    sources = sorted(p for p in ITEMS_DIR.glob("unit*.md"))
+    # Compile both syllabus units (unit*.md) and off-spine elective modules (aux*.md).
+    # Skip README.md and anything under build/. See the "Ad-hoc / elective modules" section of CLAUDE.md.
+    sources = sorted(p for p in ITEMS_DIR.glob("*.md") if p.name != "README.md")
     if not sources:
-        sys.exit("No item source files found (items/unit*.md).")
+        sys.exit("No item source files found (items/unit*.md or items/aux*.md).")
 
     all_items: list[dict] = []
     per_file: dict[str, int] = {}

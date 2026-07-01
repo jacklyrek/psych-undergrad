@@ -37,8 +37,15 @@ def display_prompt(item: dict) -> str:
 # ---------- data ----------
 
 @st.cache_data
-def _load_items():
+def _load_items(_mtime: float):
+    # _mtime is part of the cache key: rebuilding items.json bumps its mtime, which invalidates
+    # the cache so the app picks up new items/fields (e.g. unit) without a manual restart.
     return sch.load_items()
+
+
+def _items_mtime() -> float:
+    p = sch.ITEMS_JSON
+    return p.stat().st_mtime if p.exists() else 0.0
 
 
 def read_reading(rel_path: str) -> str | None:
@@ -54,7 +61,7 @@ def new_session(items, filters, length, cram):
     pool = sch.due_items(items, state, shuffle=True) if not cram else _shuffled(items)
     # apply filters
     def keep(it):
-        if filters["clusters"] and it.get("cluster") not in filters["clusters"]:
+        if filters["units"] and it.get("unit") not in filters["units"]:
             return False
         if filters["blooms"] and it.get("bloom_level") not in filters["blooms"]:
             return False
@@ -84,16 +91,21 @@ def current_item(items):
 
 # ---------- sidebar: session setup ----------
 
-items = _load_items()
-all_clusters = sorted({it.get("cluster") for it in items if it.get("cluster")})
+items = _load_items(_items_mtime())
+all_units = sorted({it.get("unit") for it in items if it.get("unit")})
 all_blooms = ["remember", "understand", "apply", "analyze", "evaluate"]
 all_types = sorted({it["type"] for it in items})
+
+
+def unit_label(u: str) -> str:
+    """Friendly label for a unit value: numeric units -> 'Unit N', elective modules kept as-is."""
+    return f"Unit {u}" if u.isdigit() else u
 
 state_now = sch.ensure_state(items, sch.load_state())
 due_now = sch.due_items(items, state_now, shuffle=False)
 
 DEFAULT_LENGTH = min(15, max(5, len(items)))
-NO_FILTERS = {"clusters": [], "blooms": [], "types": []}
+NO_FILTERS = {"units": [], "blooms": [], "types": []}
 
 with st.sidebar:
     st.header("⚙️ Customize session")
@@ -114,12 +126,12 @@ with st.sidebar:
 
     with st.expander("🎯 Focus on specific material (optional)"):
         st.caption("Leave empty to draw from everything.")
-        f_clusters = st.multiselect("Confusable clusters", all_clusters, default=[],
-                                    help="Interleave similar concepts — e.g. easily-confused theorists or disorders.")
+        f_units = st.multiselect("Units", all_units, default=[], format_func=unit_label,
+                                 help="Focus on one or more syllabus units (or an elective module).")
         f_blooms = st.multiselect("Bloom levels", all_blooms, default=[],
                                   help="remember → understand → apply → analyze → evaluate. Apply/analyze is where exams concentrate.")
         f_types = st.multiselect("Item types", all_types, default=[])
-    filters = {"clusters": f_clusters, "blooms": f_blooms, "types": f_types}
+    filters = {"units": f_units, "blooms": f_blooms, "types": f_types}
 
     st.divider()
     if st.button("Start with these settings", type="primary", use_container_width=True):
@@ -143,7 +155,7 @@ if "queue" not in st.session_state:
         new_session(items, NO_FILTERS, DEFAULT_LENGTH, quick_cram)
         st.rerun()
     st.caption("One click, sensible defaults — spaced mode, a balanced mix, no filters. "
-               "To set length, mode, or focus on a cluster, open **Customize session** in the sidebar.")
+               "To set length, mode, or focus on a unit, open **Customize session** in the sidebar.")
     st.stop()
 
 queue = st.session_state.queue
@@ -192,7 +204,7 @@ if st.session_state.idx >= len(queue):
 item = current_item(items)
 st.progress(st.session_state.idx / len(queue),
             text=f"Item {st.session_state.idx + 1} of {len(queue)}")
-st.caption(f"`{item['type']}` · {item['bloom_level']} · cluster: {item.get('cluster', '—')}")
+st.caption(f"`{item['type']}` · {item['bloom_level']} · {unit_label(item.get('unit', '—'))}")
 
 st.markdown(f"### {display_prompt(item)}")
 
@@ -233,7 +245,14 @@ elif st.session_state.stage == "reveal":
         st.warning(pending["response"] or "_(blank)_")
     with a2:
         st.markdown("**Model answer**")
-        st.info(item["answer"])
+        if item["type"] == "mcq":
+            # Show the graded-against option so it lines up with the auto-grade banner;
+            # the prose in `answer` is the explanation, surfaced below.
+            st.info(item.get("correct") or item["answer"])
+            if item.get("answer") and item["answer"] != item.get("correct"):
+                st.caption(item["answer"])
+        else:
+            st.info(item["answer"])
 
     # feedback one click from the explanation
     with st.expander(f"📖 Source reading — {item['source_page']}"):
@@ -242,13 +261,18 @@ elif st.session_state.stage == "reveal":
 
     st.divider()
     st.write("**Grade your recall** (self-grade for open items; you can override the auto-grade):")
+    # For auto-gradeable types (mcq/cloze) highlight the button matching the auto result so
+    # recording the verdict is one click; the other buttons remain available as an override.
+    auto_outcome = {True: "correct", False: "missed"}.get(auto)
     g1, g2, g3 = st.columns(3)
     chosen = None
-    if g1.button("❌ Missed", use_container_width=True):
+    if g1.button("❌ Missed", use_container_width=True,
+                 type="primary" if auto_outcome == "missed" else "secondary"):
         chosen = "missed"
     if g2.button("🟡 Shaky", use_container_width=True):
         chosen = "shaky"
-    if g3.button("✅ Got it", use_container_width=True):
+    if g3.button("✅ Got it", use_container_width=True,
+                 type="primary" if auto_outcome == "correct" else "secondary"):
         chosen = "correct"
 
     if chosen:

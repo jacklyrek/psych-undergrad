@@ -84,6 +84,45 @@ Sibling commands: `generate items X` (step 5 only), `query "…"`, `lint`.
 
 ---
 
+## Ad-hoc / elective modules (`create module "<topic>"`)
+
+The 12-unit syllabus is the **locked spine**. Topics the human asks for that are *not* in the
+syllabus (e.g. "trauma response care for someone whose child just died") are built as **elective
+modules** in a separate `aux-` namespace, so they reuse all the machinery without corrupting the
+spine's numbering or coverage map.
+
+**Command:** `create module "<topic>"` (synonyms: `create elective`, `do module`). It runs the same
+pipeline as `create chapter` — research → cite → readings → items → bookkeep → rebuild — with these
+differences:
+
+- **Namespace, not a number.** Files use an `aux-<slug>` prefix instead of `unitNN`:
+  `wiki/aux-<slug>.md` (+ its `concept-*` pages), `items/aux-<slug>.md`,
+  `research/aux-<slug>-sources.md`. Item ids use an `ax-<slug>-…` prefix.
+- **Frontmatter flags** instead of `unit:` — mark the off-spine status and link to the spine:
+  ```yaml
+  track: elective
+  module: <slug>          # e.g. psychological-first-aid
+  spine: false
+  related_units: [8]      # spine unit(s) this module borders/hands off to
+  ```
+  (`concept-*` pages a module introduces carry the same flags + a `cluster:` as usual.)
+- **Cross-link into the spine, don't merge into it.** Every module wikilinks forward to the
+  syllabus unit(s) it borders (this is what `related_units` records) so it's integrated, not orphaned
+  — but it never renumbers or pretends to be a unit.
+- **Separate bookkeeping section.** In `index.md` and `coverage.md`, electives live under a
+  dedicated **"Elective / ad-hoc modules"** heading, *outside* the numbered-unit build table — so the
+  syllabus stays "12 units, N built," not "13 units." `log.md` uses the prefix
+  `## [date] create-module | <slug> | <counts>`.
+- **Same rigor.** Triangulated citations, Bloom-spanned items, confusable clusters, stance probes —
+  all the unit rules apply unchanged. An uncited elective is still a bug.
+- **Build:** `apps/build_items.py` compiles every `items/*.md` (except `README.md`), so `aux-*.md`
+  item files are picked up automatically alongside `unit*.md`.
+
+First module built under this convention: **`aux-psychological-first-aid`** (PFA & acute grief
+support; borders Unit 8). Use it as the template.
+
+---
+
 ## Research rules (the part that earns trust)
 
 - **Triangulate.** Corroborate substantive claims across multiple independent sources. Never build a
@@ -150,7 +189,10 @@ Obsidian. The compiler (`apps/build_items.py`) extracts every ```json block and 
 Field vocab: `type` ∈ cloze | recall | mcq | vignette | compare | explain ·
 `bloom_level` ∈ remember | understand | apply | analyze | evaluate. For `cloze`, write the blank as
 `{{...}}` in `prompt` and put the deleted text in `answer`. For `mcq`, add an `"options": [...]`
-array. Scheduler state (`ease`, `interval`, `repetitions`, `due_date`) is **owned by the app**, not
+array **and** a `"correct"` field holding the exact, verbatim option string — the app grades the
+selected option against `correct`, leaving `answer` free to carry extra explanation that wouldn't
+match any option. The build fails if an `mcq` lacks `correct` or `correct` isn't one of `options`.
+Scheduler state (`ease`, `interval`, `repetitions`, `due_date`) is **owned by the app**, not
 authored here.
 
 ---

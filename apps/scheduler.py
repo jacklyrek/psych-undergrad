@@ -170,7 +170,11 @@ def autograde(item: dict, response: str) -> bool | None:
     if item["type"] == "cloze":
         return normalize(response) == normalize(item["answer"])
     if item["type"] == "mcq":
-        return normalize(response) == normalize(item["answer"])
+        # MCQ grades against the exact correct option. `answer` may carry an explanation
+        # on top of the option text, so it can't be compared to the chosen option directly;
+        # fall back to it only for legacy items that predate the `correct` field.
+        target = item.get("correct") or item["answer"]
+        return normalize(response) == normalize(target)
     return None
 
 

@@ -16,7 +16,11 @@
       "WebFetch(domain:openstax.org)",
       "WebFetch(domain:socialsci.libretexts.org)",
       "WebFetch(domain:is.muni.cz)",
-      "Bash(python apps/scheduler.py)"
+      "Bash(python apps/scheduler.py)",
+      "WebFetch(domain:www.ptsd.va.gov)",
+      "WebFetch(domain:www.nctsn.org)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('items/build/items.json'\\)\\); ks=set\\(\\); [ks.update\\(it.keys\\(\\)\\) for it in \\(d if isinstance\\(d,list\\) else d.get\\('items',d\\)\\)]; print\\(ks\\); print\\([ \\(it.get\\('id'\\), it.get\\('unit'\\), it.get\\('cluster'\\)\\) for it in \\(d if isinstance\\(d,list\\) else d.get\\('items',d\\)\\)][:5]\\)\")"
     ]
   }
 }
