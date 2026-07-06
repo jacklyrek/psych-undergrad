@@ -30,8 +30,7 @@ help. [S15] This is PFA's "Listen" without any pull toward "process" — accompa
 Bereaved parents overwhelmingly want their child **acknowledged** — soon after the death and for
 years after. **Use the child's name.** Speak about the child. Many people avoid the topic for fear of
 "reminding" the parent, but the parent has not forgotten; the silence reads as the child being
-erased. Mentioning the child, sharing a memory of them, is among the most consoling things you can
-do. [S14]
+erased. Mentioning the child, sharing a memory of them, is among the most consoling things you can do. [S14]
 
 ## What helps — concretely
 - **Do a specific useful thing** rather than "let me know if you need anything." A grieving parent
@@ -39,12 +38,10 @@ do. [S14]
   load of laundry, drive them to an appointment. [S15]
 - **Follow the parent's lead** on whether and how much to talk; let them set the pace and topic. [S14]
 - **Check in for the long haul** — and especially on the hard dates: the **birthday**, the
-  **anniversary of the death**, holidays. Support evaporates after the funeral exactly when the
-  acute shock wears off and the absence sets in. Being the person still there at six months matters
+  **anniversary of the death**, holidays. Support evaporates after the funeral exactly when the acute shock wears off and the absence sets in. Being the person still there at six months matters
   enormously. [S14][S15]
 - **Tolerate the oscillation.** Per the dual process model, the parent will swing between devastation
-  and functional, even ordinary moments. Don't read a calm or practical hour as "doing great" or as
-  coldness — both modes are normal grief ([[concept-grief-models]]). [S6]
+  and functional, even ordinary moments. Don't read a calm or practical hour as "doing great" or as coldness — both modes are normal grief ([[concept-grief-models]]). [S6]
 
 ## What harms — phrases to retire
 Each of these is common, well-meant, and wounding to a bereaved parent: [S14]
@@ -84,19 +81,15 @@ you see signs beyond ordinary bereavement — and especially:
   it solo.
 - **Inability to function** in basic ways that **persists and isn't oscillating** — no movement
   toward restoration-oriented coping at all over time.
-- **Symptoms consistent with Prolonged Grief Disorder** past the time threshold (12 months adult / 6
-  months child), given the elevated PGD risk after a child's death. [S11][S12]
+- **Symptoms consistent with Prolonged Grief Disorder** past the time threshold (12 months adult / 6 months child), given the elevated PGD risk after a child's death. [S11][S12]
 - Substance use escalating to cope; psychosis; self-neglect endangering health.
 
-Referral is not abandonment — "I want to keep showing up *and* connect you with someone who does this
-all day" is the model. This is PFA's **Linkage** action ([[concept-pfa-core-actions]]).
+Referral is not abandonment — "I want to keep showing up *and* connect you with someone who does this all day" is the model. This is PFA's **Linkage** action ([[concept-pfa-core-actions]]).
 
 ## Look after yourself, too
 Sitting with a parent whose child died has a cost. Helpers absorb some of it (vicarious/secondary
 stress — a named clinical phenomenon Unit 8 covers). Use your **own** support (your outer ring per
-Ring Theory), don't make the bereaved person carry your reaction, and treat your self-care as part of
-being able to keep showing up — not a luxury. A depleted helper disappears, and disappearing is the
-thing grieving parents say hurt most.
+Ring Theory), don't make the bereaved person carry your reaction, and treat your self-care as part of being able to keep showing up — not a luxury. A depleted helper disappears, and disappearing is the thing grieving parents say hurt most.
 
 ## Connects to
 - [[concept-pfa-core-actions]] — Listen (accompany, don't probe) and Linkage (referral) in action.

@@ -20,7 +20,19 @@
       "WebFetch(domain:www.ptsd.va.gov)",
       "WebFetch(domain:www.nctsn.org)",
       "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
-      "Bash(python -c \"import json; d=json.load\\(open\\('items/build/items.json'\\)\\); ks=set\\(\\); [ks.update\\(it.keys\\(\\)\\) for it in \\(d if isinstance\\(d,list\\) else d.get\\('items',d\\)\\)]; print\\(ks\\); print\\([ \\(it.get\\('id'\\), it.get\\('unit'\\), it.get\\('cluster'\\)\\) for it in \\(d if isinstance\\(d,list\\) else d.get\\('items',d\\)\\)][:5]\\)\")"
+      "Bash(python -c \"import json; d=json.load\\(open\\('items/build/items.json'\\)\\); ks=set\\(\\); [ks.update\\(it.keys\\(\\)\\) for it in \\(d if isinstance\\(d,list\\) else d.get\\('items',d\\)\\)]; print\\(ks\\); print\\([ \\(it.get\\('id'\\), it.get\\('unit'\\), it.get\\('cluster'\\)\\) for it in \\(d if isinstance\\(d,list\\) else d.get\\('items',d\\)\\)][:5]\\)\")",
+      "WebFetch(domain:www.childwelfare.gov)",
+      "WebFetch(domain:www.counseling.org)",
+      "WebFetch(domain:www.apaservices.org)",
+      "WebFetch(domain:open.lib.umn.edu)",
+      "PowerShell(pip install pypdf --quiet --disable-pip-version-check)",
+      "PowerShell(python -c \"import pypdf; print\\(pypdf.__version__\\)\")",
+      "Bash(python -)",
+      "WebFetch(domain:melanietervalon.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:open.maricopa.edu)",
+      "WebFetch(domain:scholarworks.gvsu.edu)",
+      "WebFetch(domain:www.societyforpsychotherapy.org)"
     ]
   }
 }

@@ -31,23 +31,23 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 - **CACREP:** Counseling & Helping Relationships.
 - **Pages:** [`unit02-theories`](wiki/unit02-theories.md), [`theory-psychodynamic`](wiki/theory-psychodynamic.md), [`theory-person-centered`](wiki/theory-person-centered.md), [`theory-existential`](wiki/theory-existential.md), [`theory-cbt`](wiki/theory-cbt.md), [`theory-family-systems`](wiki/theory-family-systems.md), [`theory-postmodern`](wiki/theory-postmodern.md). **Built 2026-06-27** (in-depth): 7 readings, 36 items, 17 sources.
 
-### Unit 3 — Ethics, Law & Professional Identity  ☐
+### Unit 3 — Ethics, Law & Professional Identity  ☑
 - **Objectives:** know the ACA Code structure and common situations; understand confidentiality and its limits cold; distinguish legal vs. ethical duty.
 - **Core concepts:** informed consent; confidentiality + exceptions (danger to self/others, abuse of minor/vulnerable adult); duty to warn/protect (Tarasoff); mandated reporting; dual/multiple relationships & boundaries; scope of practice/competence; counseling vs. clinical psych vs. social work vs. psychiatry (who prescribes).
 - **Anchor:** current **ACA Code of Ethics** (free PDF) + Remley & Herlihy.
 - **Depends on:** → Unit 1.
-- **Clusters:** `confidentiality-exceptions`; `the-helping-professions` (counselor vs. psychologist vs. LCSW vs. psychiatrist); `duty-concepts` (legal duty vs. ethical duty; warn vs. protect).
+- **Clusters:** `confidentiality-exceptions`; `the-helping-professions` (counselor vs. psychologist vs. LCSW vs. psychiatrist); `duty-concepts` (legal duty vs. ethical duty; warn vs. protect; scope vs. competence); `ethics-principles` (fidelity vs. veracity etc. — added at build); `boundary-concepts` (crossing vs. violation — added at build).
 - **CACREP:** Professional Counseling Orientation & Ethical Practice.
-- **Pages:** `unit03-ethics-law`, `concept-informed-consent`, `concept-confidentiality-limits`, `concept-duty-to-warn`, `study-tarasoff`, `concept-mandated-reporting`, `concept-dual-relationships`, `concept-scope-of-practice`, `concept-helping-professions-compared`.
+- **Pages:** [`unit03-ethics-law`](wiki/unit03-ethics-law.md), [`concept-informed-consent`](wiki/concept-informed-consent.md), [`concept-confidentiality-limits`](wiki/concept-confidentiality-limits.md), [`concept-duty-to-warn`](wiki/concept-duty-to-warn.md), [`study-tarasoff`](wiki/study-tarasoff.md), [`concept-mandated-reporting`](wiki/concept-mandated-reporting.md), [`concept-dual-relationships`](wiki/concept-dual-relationships.md), [`concept-scope-of-practice`](wiki/concept-scope-of-practice.md), [`concept-helping-professions-compared`](wiki/concept-helping-professions-compared.md). **Built 2026-07-06** (in-depth): 9 readings, 51 items, 12 sources.
 
-### Unit 4 — Multicultural & Social-Justice Competence  ☐
+### Unit 4 — Multicultural & Social-Justice Competence  ☑
 - **Objectives:** understand "culture" broadly (incl. the counselor's own); develop awareness of own assumptions/blind spots.
 - **Core concepts:** tripartite model (awareness of self / knowledge of others / skills); privilege, power, the helping relationship; worldview, acculturation, help-seeking norms; the MSJCC competencies.
 - **Anchor:** Sue, Sue, Neville & Smith, *Counseling the Culturally Diverse*.
 - **Depends on:** → Unit 1, Unit 3.
-- **Clusters:** `mc-competence-dimensions` (awareness vs. knowledge vs. skills).
+- **Clusters:** `mc-competence-dimensions` (awareness vs. knowledge vs. skills vs. action); `mc-frameworks` (tripartite vs. MSJCC vs. cultural humility — added at build); `acculturation-strategies` (Berry's 2×2 — added at build); `microaggression-types` (microassault vs. microinsult vs. microinvalidation — added at build); `broaching-styles` (Day-Vines continuum — added at build).
 - **CACREP:** Social & Cultural Diversity.
-- **Pages:** `unit04-multicultural`, `theory-tripartite-model`, `concept-cultural-humility`, `concept-msjcc`, `concept-acculturation`, `concept-privilege-power`.
+- **Pages:** [`unit04-multicultural`](wiki/unit04-multicultural.md), [`theory-tripartite-model`](wiki/theory-tripartite-model.md), [`concept-cultural-humility`](wiki/concept-cultural-humility.md), [`concept-msjcc`](wiki/concept-msjcc.md), [`concept-acculturation`](wiki/concept-acculturation.md), [`concept-privilege-power`](wiki/concept-privilege-power.md), [`concept-microaggressions`](wiki/concept-microaggressions.md) (added at build). **Built 2026-07-06** (in-depth): 7 readings, 48 items, 16 sources.
 
 ---
 

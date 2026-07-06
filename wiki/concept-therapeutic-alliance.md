@@ -3,7 +3,7 @@ title: "The Therapeutic Alliance (Bordin's Bond/Goal/Task Model)"
 type: concept
 tags: [alliance, bordin, bond, goal, task, working-alliance]
 unit: 1
-source_units: [1, 7]
+source_units: [1, 3, 7]
 cluster: alliance-components
 ---
 
@@ -48,6 +48,9 @@ directly onto these three parts.
 - [[concept-core-conditions]] — UPR/empathy/congruence are how you build the **bond.**
 - [[concept-microskills-hierarchy]] — the moment-to-moment behaviors that grow the alliance.
 - [[theory-common-factors]] — the alliance is the best-measured of the common factors.
+- [[concept-informed-consent]] (Unit 3) — consent done well is an early alliance intervention:
+  Bordin's **goal** and **task** agreement is basically structured consent, and honest
+  confidentiality limits ([[concept-confidentiality-limits]]) build rather than threaten the bond.
 - Forward link: case conceptualization and treatment planning (Unit 7) operationalize **goal** and
   **task** — see `course-map.md`.
 

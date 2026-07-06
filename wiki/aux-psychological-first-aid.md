@@ -48,17 +48,11 @@ helper's job is to *stabilize and accompany*, not to excavate. [S4][S5]
 ## The stance, in one paragraph
 
 You cannot fix this and trying to will hurt. A bereaved parent does not need your silver lining,
-your comparison to your own losses, or a reason their child died — and several well-meant sentences
-("everything happens for a reason," "they're in a better place," "I know how you feel") actively
-wound. [S14] What helps is almost embarrassingly plain: show up, say the child's name, tolerate
-silence and tears without rushing to close them, do a concrete useful thing (a meal, a ride, a load
-of laundry) instead of "let me know if you need anything," and keep showing up after everyone else
-has drifted away. [S14][S15] Presence over performance.
+your comparison to your own losses, or a reason their child died — and several well-meant sentences ("everything happens for a reason," "they're in a better place," "I know how you feel") actively wound. [S14] What helps is almost embarrassingly plain: show up, say the child's name, tolerate silence and tears without rushing to close them, do a concrete useful thing (a meal, a ride, a load of laundry) instead of "let me know if you need anything," and keep showing up after everyone else has drifted away. [S14][S15] Presence over performance.
 
 ## What's genuinely contested / easy to over-learn
 - **The "stages of grief" are a cultural default, not a clinical map.** Kübler-Ross drew them from
-  *dying patients*, not the bereaved, and grief does not move through them in order. Treating them
-  as a checklist can make a grieving person feel they're "doing it wrong." [S9] — see
+  *dying patients*, not the bereaved, and grief does not move through them in order. Treating them as a checklist can make a grieving person feel they're "doing it wrong." [S9] — see
   [[concept-grief-models]].
 - **Most grief is not a disorder and needs no treatment.** Prolonged grief disorder is a real
   diagnosis with a time threshold (12 months in adults, 6 in children), but pathologizing ordinary

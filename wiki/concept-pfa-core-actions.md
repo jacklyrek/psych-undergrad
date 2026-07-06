@@ -27,8 +27,7 @@ The simplest, most portable version, designed for field workers and lay helpers 
   **urgent basic needs**, and identify people with **serious distress reactions**. You triage with
   your eyes first.
 - **LISTEN** — *approach those who may need support and listen.* Make contact, ask about needs and
-  concerns, **listen and help people feel calm** — without pressing them to talk about what happened.
-  Listening here means being present and attentive, not interviewing.
+  concerns, **listen and help people feel calm** — without pressing them to talk about what happened. Listening here means being present and attentive, not interviewing.
 - **LINK** — *connect people to practical support.* Help with **basic needs and services**, help
   people **access information**, **connect them with loved ones** and social support. The verb that
   matters most is *link*: PFA largely succeeds by joining a person to the resources and people they
@@ -36,8 +35,7 @@ The simplest, most portable version, designed for field workers and lay helpers 
 
 ## NCTSN: the eight Core Actions
 
-The U.S. evidence-informed standard (NCTSN & National Center for PTSD), a more granular sequence for
-trained responders in disaster settings. [S2][S3] The eight are flexible modules, not a rigid order:
+The U.S. evidence-informed standard (NCTSN & National Center for PTSD), a more granular sequence for trained responders in disaster settings. [S2][S3] The eight are flexible modules, not a rigid order:
 
 1. **Contact and Engagement** — respond to contacts, or initiate them, in a **non-intrusive,
    compassionate, helpful** way.
@@ -45,8 +43,7 @@ trained responders in disaster settings. [S2][S3] The eight are flexible modules
    and emotional comfort.
 3. **Stabilization** *(if needed)* — calm and orient survivors who are **emotionally overwhelmed or
    disoriented.** (Not everyone needs this step.)
-4. **Information Gathering: Current Needs and Concerns** — identify **immediate needs and concerns**,
-   and tailor the PFA to them. (Gather what's needed to help — not a trauma history.)
+4. **Information Gathering: Current Needs and Concerns** — identify **immediate needs and concerns**, and tailor the PFA to them. (Gather what's needed to help — not a trauma history.)
 5. **Practical Assistance** — offer **concrete help** in addressing immediate needs.
 6. **Connection with Social Supports** — establish **brief or ongoing contacts** with primary
    support persons and other sources of support (family, friends, community).
@@ -65,22 +62,17 @@ The single most important negative in this material. For years the standard "cri
 was **Critical Incident Stress Debriefing (CISD)** — gather people soon after a trauma and have them
 recount what happened and their reactions, to head off PTSD. The evidence dismantled it:
 
-- A **Cochrane systematic review** found **single-session psychological debriefing does not prevent
-  PTSD**, and is **equivalent to or worse than** control conditions — with **some evidence it
-  increases the risk** of PTSD and depression. [S4]
+- A **Cochrane systematic review** found **single-session psychological debriefing does not prevent PTSD**, and is **equivalent to or worse than** control conditions — with **some evidence it increases the risk** of PTSD and depression. [S4]
 - **NICE** (UK national guideline) is unequivocal: **do not offer** psychologically-focused
   debriefing for the prevention or treatment of PTSD. [S5]
 
-The takeaway that defines acute response: **do not pressure a recently traumatized person to narrate
-the event.** PFA explicitly **does not require survivors to talk about their experience.** [S3] If
+The takeaway that defines acute response: **do not pressure a recently traumatized person to narrate the event.** PFA explicitly **does not require survivors to talk about their experience.** [S3] If
 they choose to talk, you listen; you never extract. This is the hardest instinct to override,
 because "getting it out" feels caring — and here it can harm.
 
 ## Why this matters in the room
 When you walk up to someone in the worst hour of their life, you are not there to counsel. You are
-there to make them physically safe, meet a concrete need, sit with them, and connect them onward.
-The structure above keeps a flooded helper on task and — just as important — keeps you from doing the
-well-meant things (probing, debriefing, fixing) that the evidence says don't help.
+there to make them physically safe, meet a concrete need, sit with them, and connect them onward. The structure above keeps a flooded helper on task and — just as important — keeps you from doing the well-meant things (probing, debriefing, fixing) that the evidence says don't help.
 
 ## Connects to
 - [[aux-psychological-first-aid]] — the module hub and stance.

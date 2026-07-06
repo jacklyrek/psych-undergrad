@@ -113,3 +113,75 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
 - Log schema: box_before/box_after → interval_before/interval_after + ease + reps. A pre-upgrade
   review_log.csv is rotated to review_log.leitner.csv on first SM-2 write (one-time, automatic).
 - Verified: `python apps/scheduler.py` summary, update() transitions, and log rotation all pass.
+
+## [2026-07-06] create-chapter | Unit 3 Ethics, Law & Professional Identity | 12 sources, 9 readings, 51 items
+- Depth: in-depth (high-stakes unit; syllabus: "a mistake can end a career"). Scope from course-map
+  (entry was rich — no outline-confirmation pause needed). CACREP: Professional Orientation & Ethics.
+- Research: **anchored on the primary document** — fetched the official 2014 ACA Code of Ethics PDF
+  (counseling.org), extracted full text via pypdf (installed this pass), quoted standards verbatim
+  [S1]. Triangulated with *Jaffee v. Redmond* opinion text (Cornell LII) [S2], StatPearls Duty to
+  Warn NBK542236 [S3], Darby & Weinstock 2018 PMC [S4], APA Services mandatory-reporting [S5] +
+  prescribing-psychologists [S8] (dated — CO/UT additions flagged), Child Welfare Info Gateway [S6],
+  APA professions page [S7], UMN open textbook [S9], Northwestern .edu [S10], SAP Div-29 boundaries
+  [S11], Zur Institute (orientation) [S12].
+- Readings: unit03-ethics-law (hub: nine sections, 5 values + 6 principles, legal-vs-ethical),
+  concept-informed-consent, concept-confidentiality-limits (incl. the **confidentiality-speech
+  worked model** — the syllabus practice rep), concept-duty-to-warn, study-tarasoff,
+  concept-mandated-reporting, concept-dual-relationships, concept-scope-of-practice,
+  concept-helping-professions-compared. All cited [S#], interlinked; worked dialogue contrasts on
+  consent, threat response, reporting-while-preserving-alliance, and small-town boundaries (per
+  standing user preference for dialogue examples).
+- Tensions flagged: duty-to-warn is a 50-state patchwork (mandatory/permissive/silent);
+  Tarasoff assumes violence prediction the science lacks; how-much-consent-up-front debate
+  (retention research); RxP state count moving target; ACA 5-yr vs APA 2-yr post-termination rule.
+- Items: 51 across 5 clusters (`confidentiality-exceptions` 16 — main interleaving target,
+  `duty-concepts` 10, `ethics-principles` 5, `boundary-concepts` 5, `the-helping-professions` 5,
+  10 unclustered consent/competence). Bloom R=16/U=7/Ap=14/An=11/E=3; types: 11 vignette, 11 recall,
+  9 compare, 7 cloze, 7 explain, 6 mcq. Stance probes: threat minimizing, report-vs-alliance,
+  values-referral, impairment-as-selfishness framing.
+- Clusters added beyond course-map (noted there + coverage.md): `ethics-principles`,
+  `boundary-concepts`.
+- Build: items/build/items.json rebuilt — 127 items total (17+36+51+23 aux), validated clean.
+- Bookkeeping: index.md, coverage.md (row + 4 new hole notes incl. Unit 8 handoff), course-map.md
+  (☐→☑, cluster + pages lines) updated.
+- Deferred: Unit 8 forward-references are by name (no unit08 page yet) — wire to wikilinks at Unit 8
+  build, together with the PFA-module handoff.
+
+## [2026-07-06] create-chapter | Unit 4 Multicultural & Social-Justice Competence | 16 sources, 7 readings, 48 items
+- Emphasis: the three-framework arc (tripartite 1992 → cultural humility 1998 → MSJCC 2015) as a
+  conversation, stance-heavy (this unit's content IS stance), contested material surfaced rather
+  than smoothed. Depth: in-depth.
+- Research: anchored on the profession's framework documents — MSJCC official PDF + the authors'
+  Counseling Today companion [S1][S2], Sue/Arredondo/McDavis 1992 [S3] — triangulated with the
+  primary concept articles (Tervalon & Murray-García [S4], McIntosh [S5], Sue 2007 microaggressions
+  [S6], Berry 1997 [S7], Day-Vines broaching [S10]), outcome research (Hook 2013 [S8], Tao 2015
+  meta-analysis [S9]), critiques (Lilienfeld 2017 [S12], SAP MCC-measurement review [S11]), and
+  disparities data (NIMHD/PMC [S15]). Paywalled primaries (Wiley: S3, S7) corroborated via
+  abstracts + multiple secondaries, flagged in sources file.
+- Readings: unit04-multicultural (hub), theory-tripartite-model, concept-msjcc,
+  concept-cultural-humility, concept-acculturation (incl. worldview + help-seeking norms),
+  concept-privilege-power (incl. broaching), concept-microaggressions (split out beyond course-map's
+  six pages — one concept per page). All cited [S#], interlinked; worked dialogue contrasts on
+  one-client-three-failures (tripartite), knowledge-as-hypothesis vs stereotype-with-good-intentions
+  (humility), help-seeking "resistance" reframe, congruent broaching, and microaggression repair
+  (per standing user preference for dialogue examples).
+- Tensions flagged: competence-vs-humility framing debate; self-report MCC invalid after social-
+  desirability control (Constantine & Ladany) while client-perception predicts (Tao r≈.29, Hook);
+  Lilienfeld-vs-Sue microaggression dispute (Sue conceded points; Williams 2019 replied); Berry's
+  boxes static/choice-constrained; MSJCC advocacy-scope boundary questions.
+- Items: 48 across 5 clusters (`mc-frameworks` 8, `microaggression-types` 8, `acculturation-
+  strategies` 8, `broaching-styles` 6, `mc-competence-dimensions` 6, 12 unclustered privilege/
+  help-seeking/mcc-evidence). Bloom R=13/U=8/Ap=11/An=8/E=8; types: 13 recall, 9 mcq
+  (discrimination tasks), 8 explain, 6 vignette, 6 compare, 6 cloze, incl. 2 production reps
+  (congruent broach; cultural-autobiography slice — the syllabus practice rep). Stance probes:
+  privilege-confession-
+  at-client, resistance-reframe, misgendering repair, defensive-apology-as-microinvalidation.
+- Clusters added beyond course-map (noted there + coverage.md): `mc-frameworks`,
+  `acculturation-strategies`, `microaggression-types`, `broaching-styles`.
+- Back-links wired: unit03-ethics-law + concept-scope-of-practice "Unit 4" mentions → real
+  [[unit04-multicultural]] wikilinks.
+- Build: items/build/items.json rebuilt — 175 items total (17+36+51+48+23 aux), validated clean.
+- Bookkeeping: index.md, coverage.md (row + 3 new hole notes), course-map.md (☐→☑, clusters +
+  pages + built line) updated.
+- Deferred: Unit 6/Unit 7 forward-references by name (culture-bound presentations; culture-fair
+  assessment) — wire to wikilinks at those builds. Tier 1 now complete (Units 1–4 ☑).
