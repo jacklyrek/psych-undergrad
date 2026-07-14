@@ -1,0 +1,1283 @@
+{
+  "u1-coreconditions-cloze-01": {
+    "due": "2026-07-23",
+    "reps": 3,
+    "last": "2026-07-07",
+    "ease": 2.8,
+    "interval": 16
+  },
+  "u1-upr-understand-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-06",
+    "ease": 2.7,
+    "interval": 16
+  },
+  "u1-upr-apply-01": {
+    "due": "2026-07-23",
+    "reps": 3,
+    "last": "2026-07-08",
+    "ease": 2.56,
+    "interval": 15
+  },
+  "u1-empathy-analyze-01": {
+    "due": "2026-07-23",
+    "reps": 3,
+    "last": "2026-07-08",
+    "ease": 2.56,
+    "interval": 15
+  },
+  "u1-coreconditions-evaluate-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-06",
+    "ease": 2.7,
+    "interval": 16
+  },
+  "u1-attending-cloze-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-06",
+    "ease": 2.8,
+    "interval": 16
+  },
+  "u1-microskills-recall-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-07",
+    "ease": 2.66,
+    "interval": 15
+  },
+  "u1-reflect-analyze-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-06",
+    "ease": 2.7,
+    "interval": 16
+  },
+  "u1-reflect-apply-01": {
+    "due": "2026-07-23",
+    "reps": 3,
+    "last": "2026-07-08",
+    "ease": 2.56,
+    "interval": 15
+  },
+  "u1-stance-apply-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-06",
+    "ease": 2.7,
+    "interval": 16
+  },
+  "u1-stance-evaluate-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-07",
+    "ease": 2.66,
+    "interval": 15
+  },
+  "u1-bordin-cloze-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-06",
+    "ease": 2.7,
+    "interval": 16
+  },
+  "u1-bordin-apply-01": {
+    "due": "2026-07-23",
+    "reps": 3,
+    "last": "2026-07-07",
+    "ease": 2.8,
+    "interval": 16
+  },
+  "u1-bordin-understand-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-06",
+    "ease": 2.7,
+    "interval": 16
+  },
+  "u1-alliance-evidence-recall-01": {
+    "due": "2026-07-22",
+    "reps": 3,
+    "last": "2026-07-06",
+    "ease": 2.7,
+    "interval": 16
+  },
+  "u1-commonfactors-evaluate-01": {
+    "due": "2026-07-23",
+    "reps": 3,
+    "last": "2026-07-08",
+    "ease": 2.66,
+    "interval": 15
+  },
+  "u1-contextual-understand-01": {
+    "due": "2026-07-19",
+    "reps": 3,
+    "last": "2026-07-12",
+    "ease": 2.52,
+    "interval": 7
+  },
+  "u2-psychodynamic-cloze-01": {
+    "ease": 2.58,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-07-23",
+    "last": "2026-07-08"
+  },
+  "u2-psychodynamic-stuckbetter-01": {
+    "ease": 2.52,
+    "interval": 7,
+    "reps": 3,
+    "due": "2026-07-19",
+    "last": "2026-07-12"
+  },
+  "u2-psychodynamic-apply-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-23",
+    "last": "2026-07-07"
+  },
+  "u2-personcentered-cloze-01": {
+    "ease": 2.52,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-07-23",
+    "last": "2026-07-08"
+  },
+  "u2-personcentered-stuckbetter-01": {
+    "ease": 2.52,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-07-23",
+    "last": "2026-07-08"
+  },
+  "u2-personcentered-apply-01": {
+    "ease": 2.14,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-14",
+    "last": "2026-07-08"
+  },
+  "u2-existential-cloze-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-23",
+    "last": "2026-07-07"
+  },
+  "u2-existential-frankl-recall-01": {
+    "ease": 2.48,
+    "interval": 14,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-08"
+  },
+  "u2-existential-apply-01": {
+    "ease": 2.34,
+    "interval": 13,
+    "reps": 3,
+    "due": "2026-07-21",
+    "last": "2026-07-08"
+  },
+  "u2-cbt-cloze-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-cbt-stuckbetter-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-cbt-apply-01": {
+    "ease": 2.48,
+    "interval": 14,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-08"
+  },
+  "u2-familysystems-cloze-01": {
+    "ease": 2.34,
+    "interval": 13,
+    "reps": 3,
+    "due": "2026-07-21",
+    "last": "2026-07-08"
+  },
+  "u2-familysystems-stuckbetter-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-familysystems-apply-01": {
+    "ease": 2.48,
+    "interval": 14,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-08"
+  },
+  "u2-postmodern-cloze-01": {
+    "ease": 2.48,
+    "interval": 14,
+    "reps": 3,
+    "due": "2026-07-21",
+    "last": "2026-07-07"
+  },
+  "u2-postmodern-stuckbetter-01": {
+    "ease": 2.66,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-07"
+  },
+  "u2-postmodern-apply-01": {
+    "ease": 2.34,
+    "interval": 13,
+    "reps": 3,
+    "due": "2026-07-21",
+    "last": "2026-07-08"
+  },
+  "u2-psychodynamic-vs-cbt-compare-01": {
+    "ease": 2.66,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-07"
+  },
+  "u2-personcentered-vs-existential-compare-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-23",
+    "last": "2026-07-07"
+  },
+  "u2-ellis-vs-beck-compare-01": {
+    "ease": 2.48,
+    "interval": 14,
+    "reps": 3,
+    "due": "2026-07-21",
+    "last": "2026-07-07"
+  },
+  "u2-bowen-vs-minuchin-compare-01": {
+    "ease": 1.78,
+    "interval": 3,
+    "reps": 2,
+    "due": "2026-07-16",
+    "last": "2026-07-13"
+  },
+  "u2-sfbt-vs-narrative-compare-01": {
+    "ease": 2.06,
+    "interval": 12,
+    "reps": 3,
+    "due": "2026-07-25",
+    "last": "2026-07-13"
+  },
+  "u2-cbt-vs-postmodern-compare-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-unitofanalysis-analyze-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-differential-mcq-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-differential-mcq-02": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-differential-mcq-03": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-23",
+    "last": "2026-07-07"
+  },
+  "u2-differential-mcq-04": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-differential-mcq-05": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-integrative-evaluate-01": {
+    "ease": 2.66,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-07"
+  },
+  "u2-psychodynamic-evaluate-01": {
+    "ease": 2.34,
+    "interval": 13,
+    "reps": 3,
+    "due": "2026-07-25",
+    "last": "2026-07-12"
+  },
+  "u2-postmodern-evaluate-01": {
+    "ease": 2.16,
+    "interval": 12,
+    "reps": 3,
+    "due": "2026-07-20",
+    "last": "2026-07-08"
+  },
+  "u2-stance-evaluate-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-existential-vs-personcentered-apply-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-22",
+    "last": "2026-07-06"
+  },
+  "u2-defense-apply-01": {
+    "ease": 1.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-15",
+    "last": "2026-07-09"
+  },
+  "ax-pfa-lll-cloze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-objectives-recall-01": {
+    "ease": 1.64,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-09",
+    "last": "2026-07-08"
+  },
+  "ax-pfa-debrief-understand-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-coreactions-recall-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-14",
+    "last": "2026-07-08"
+  },
+  "ax-pfa-lll-apply-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-debrief-apply-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-coreactions-analyze-01": {
+    "ease": 2.06,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-14",
+    "last": "2026-07-08"
+  },
+  "ax-pfa-evidence-evaluate-01": {
+    "ease": 2.42,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-15",
+    "last": "2026-07-09"
+  },
+  "ax-pfa-dpm-cloze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-worden-recall-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-kublerross-evaluate-01": {
+    "ease": 1.96,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-09",
+    "last": "2026-07-08"
+  },
+  "ax-pfa-dpm-apply-01": {
+    "ease": 2.56,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-14",
+    "last": "2026-07-08"
+  },
+  "ax-pfa-pgd-analyze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-pgd-cloze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-grief-compare-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-pgd-risk-mcq-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-ring-cloze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-ring-apply-01": {
+    "ease": 2.56,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-condolence-analyze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-name-understand-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-12",
+    "last": "2026-07-06"
+  },
+  "ax-pfa-help-apply-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-13",
+    "last": "2026-07-07"
+  },
+  "ax-pfa-refer-analyze-01": {
+    "ease": 2.0,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-09",
+    "last": "2026-07-08"
+  },
+  "ax-pfa-selfcare-evaluate-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-14",
+    "last": "2026-07-08"
+  },
+  "u3-code-structure-cloze-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-code-newsection-mcq-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-principles-recall-01": {
+    "ease": 2.04,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-principles-compare-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-principles-apply-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-ethicslaw-compare-01": {
+    "ease": 2.56,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-ethicslaw-conflict-recall-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-decision-model-explain-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-consent-cloze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-15",
+    "last": "2026-07-09"
+  },
+  "u3-consent-elements-recall-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-consent-trainee-apply-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-consent-assent-compare-01": {
+    "ease": 2.56,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-consent-ongoing-why-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-consent-mandated-apply-01": {
+    "ease": 2.14,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-conf-triad-compare-01": {
+    "ease": 2.56,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-jaffee-recall-01": {
+    "ease": 1.96,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-exceptions-freerecall-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-b2a-wording-cloze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-minimal-disclosure-explain-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-court-order-apply-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-disease-apply-01": {
+    "ease": 2.56,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-conf-speech-produce-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-exception-discrim-mcq-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-tarasoff-facts-recall-01": {
+    "ease": 2.14,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-warn-protect-compare-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-tobriner-cloze-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-protect-menu-recall-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-trigger-discrim-vignette-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-state-variation-mcq-01": {
+    "ease": 2.38,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-tarasoff-critique-evaluate-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-threat-stance-vignette-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-reporting-trigger-cloze-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-reporting-mechanics-recall-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-report-vs-warn-compare-01": {
+    "ease": 2.24,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-reporting-hesitate-vignette-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-reporting-alliance-stance-01": {
+    "ease": 2.22,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-dual-5year-cloze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-crossing-violation-compare-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-19",
+    "last": "2026-07-13"
+  },
+  "u3-boundary-discrim-mcq-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-rural-apply-01": {
+    "ease": 2.46,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-slippery-slope-explain-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-scope-competence-compare-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-15",
+    "last": "2026-07-09"
+  },
+  "u3-c2b-newspecialty-recall-01": {
+    "ease": 2.56,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-values-referral-vignette-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-impairment-vignette-01": {
+    "ease": 2.04,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-multicultural-floor-cloze-01": {
+    "ease": 1.96,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-professions-prescribe-mcq-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-professions-testing-mcq-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-professions-lens-compare-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-18",
+    "last": "2026-07-12"
+  },
+  "u3-professions-paths-recall-01": {
+    "ease": 1.86,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u3-rxp-recall-01": {
+    "ease": 1.72,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-14",
+    "last": "2026-07-13"
+  },
+  "u4-tripartite-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-tripartite-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-dimension-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-dimension-vignette-02": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-dimension-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-msjcc-aksa-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-msjcc-domains-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-msjcc-quadrants-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-msjcc-socioeco-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-msjcc-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-frameworks-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-humility-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-humility-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-humility-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-humility-stance-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-evidence-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-evidence-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-evidence-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-accult-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-accult-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-accult-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-accult-vignette-02": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-accult-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-accult-society-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-accult-family-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-accult-critique-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-helpseek-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-worldview-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-helpseek-stance-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-privilege-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-privilege-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-privilege-power-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-privilege-stance-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-broach-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-broach-recall-02": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-broach-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-broach-vignette-02": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-broach-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-broach-production-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-autobiography-production-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-microagg-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-microagg-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-microagg-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-microagg-vignette-02": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-microagg-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-microagg-repair-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-microagg-critique-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "u4-microagg-clinical-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-07",
+    "last": null
+  },
+  "ax-pfa-notify-principles-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-09",
+    "last": null
+  },
+  "ax-pfa-notify-grieving-recall-01": {
+    "ease": 2.18,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-10",
+    "last": "2026-07-09"
+  },
+  "ax-pfa-notify-dwords-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-09",
+    "last": null
+  },
+  "ax-pfa-notify-deliver-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-09",
+    "last": null
+  },
+  "ax-pfa-notify-unconfirmed-mcq-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-10",
+    "last": "2026-07-09"
+  },
+  "ax-pfa-notify-reasking-analyze-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-10",
+    "last": "2026-07-09"
+  },
+  "ax-pfa-notify-scenarios-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-09",
+    "last": null
+  },
+  "ax-pfa-notify-viewing-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-09",
+    "last": null
+  }
+}

@@ -4,10 +4,6 @@ __pycache__/
 .venv/
 venv/
 
-# Personal study data (your review history + scheduler state — local, changes constantly).
-# Remove these lines if you'd rather version your progress.
-review_log.csv
-review_state.json
 
 # Obsidian per-machine workspace state
 .obsidian/workspace.json
