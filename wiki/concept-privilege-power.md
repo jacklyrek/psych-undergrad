@@ -85,8 +85,7 @@ advocacy ([[concept-msjcc]]). [S5][S4]
 ## What's contested (don't over-learn it)
 
 - **McIntosh's essay is a personal-observational text, not an empirical study** — its authority is
-  conceptual (it named a real phenomenon memorably) and it's the standard teaching source, but
-  don't cite it as data. The measurable correlates live in the disparities literature. [S5][S15]
+  conceptual (it named a real phenomenon memorably) and it's the standard teaching source, but don't cite it as data. The measurable correlates live in the disparities literature. [S5][S15]
 - **How much to broach, how early** is a clinical-judgment debate: too little reads as avoidance,
   too much can subordinate the client's stated concern to the counselor's agenda. The congruent
   ideal is *client-led openness*, not mandatory race talk in minute one. [S10]

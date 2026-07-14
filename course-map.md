@@ -119,13 +119,13 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 - **CACREP:** Human Growth & Development (biological bases).
 - **Pages:** `unit11-neuroscience`, `concept-stress-response`, `concept-autonomic-nervous-system`, `concept-psychotropic-classes`, `concept-neuroplasticity-therapy`.
 
-### Unit 12 — Research Methods & Program Evaluation  ☐  (the human's home turf — confirm, don't re-teach)
+### Unit 12 — Research Methods & Program Evaluation  ☐
 - **Objectives:** read & critically evaluate counseling research; understand outcome measurement.
 - **Core concepts:** experimental vs. correlational designs; effect sizes; evidence-based practice; single-case designs & progress monitoring; research ethics / IRB.
 - **Depends on:** → Unit 7 (progress monitoring ↔ outcome measurement).
 - **Clusters:** `research-designs` (experimental vs. correlational vs. single-case); `validity-threats`.
 - **CACREP:** Research & Program Evaluation.
-- **Note:** human has CS background — lean on **interleaving** to keep it from feeling too easy; quiz *choosing* the method, not executing it. Keep this unit lighter on volume.
+- **Note:** lean on **interleaving**; quiz *choosing* the method, not executing it.
 - **Pages:** `unit12-research`, `concept-experimental-vs-correlational`, `concept-effect-size`, `concept-evidence-based-practice`, `concept-single-case-design`, `concept-irb-research-ethics`.
 
 ---
@@ -137,7 +137,7 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 - **Confidentiality limits ↔ crisis/duty-to-warn** (Unit 3 ↔ Unit 8).
 - **Attachment ↔ the therapeutic alliance & client relating** (Unit 5 ↔ Unit 1).
 - **Diagnosis ↔ assessment ↔ meds** (Unit 6 ↔ Unit 7 ↔ Unit 11).
-- **The "fix-it" stance caution** (CS background) runs through every unit — generate stance-probing
+- **The "fix-it" stance caution** runs through every unit — generate stance-probing
   items, not just fact items, where the material allows.
 
 ## Suggested pace (from syllabus)

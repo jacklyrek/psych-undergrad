@@ -116,10 +116,14 @@ _Readings:_
   **eight Core Actions**, and **why PFA is not debriefing** (Cochrane/NICE).
 - [concept-grief-models](wiki/concept-grief-models.md) — Kübler-Ross stages + their retirement;
   Worden's tasks; Stroebe & Schut **dual process model**; normal grief vs. **prolonged grief disorder**.
+- [concept-death-notification](wiki/concept-death-notification.md) — telling someone their person
+  died: **in person / in time / in pairs / in plain language / with compassion**, the **GRIEV_ING**
+  protocol, the three "where is she?" scenarios (confirmed / unknown / re-asking), viewing-the-body
+  evidence (offered, prepared choice).
 - [concept-supporting-the-bereaved](wiki/concept-supporting-the-bereaved.md) — the child-death case:
   presence over fixing, say the name, **Ring Theory** ("comfort in, dump out"), when to refer, helper load.
 
-_Items:_ [aux-psychological-first-aid](items/aux-psychological-first-aid.md) — 23 items across 3 clusters
-(`pfa-frameworks`, `grief-models`, `bereavement-support`), all 5 Bloom levels; heavy on
-application/stance + a compare item and risk-discrimination mcq. _Sources:_
+_Items:_ [aux-psychological-first-aid](items/aux-psychological-first-aid.md) — 31 items across 3 clusters
+(`pfa-frameworks`, `grief-models`, `bereavement-support` incl. an 8-item death-notification set), all
+5 Bloom levels; heavy on application/stance + compare items and discrimination mcqs. _Sources:_
 [aux PFA sources](research/aux-psychological-first-aid-sources.md).

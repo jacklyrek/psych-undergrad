@@ -32,7 +32,8 @@
       "WebFetch(domain:en.wikipedia.org)",
       "WebFetch(domain:open.maricopa.edu)",
       "WebFetch(domain:scholarworks.gvsu.edu)",
-      "WebFetch(domain:www.societyforpsychotherapy.org)"
+      "WebFetch(domain:www.societyforpsychotherapy.org)",
+      "WebFetch(domain:www.cambridge.org)"
     ]
   }
 }

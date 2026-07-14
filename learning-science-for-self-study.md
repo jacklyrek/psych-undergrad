@@ -226,7 +226,7 @@ Psych undergrad material isn't uniform, and different content types want differe
 - **Theories and frameworks** (developmental, personality, counseling theories): free-recall ("explain X"), compare-and-contrast items, and elaborative "why" prompts. These reward generation, not flashcard drilling. Build diagrams (dual coding) of each theory's logic.
 - **Studies and findings** (social, cognitive, research methods): application items — give a scenario, ask what a finding predicts. Tag the classic studies and quiz the *implication*, not just the author's name.
 - **Disorders / diagnostic criteria** (abnormal, clinical): a prime interleaving target. Cluster confusable disorders and quiz with vignettes that force differential discrimination. This mirrors real clinical reasoning and is far more useful than memorizing criteria in isolation.
-- **Statistics and research methods**: worked problems with self-explanation ("why this test?"), interleaved across problem types so you practice *choosing* the method, not just executing it. (Your CS background means this will likely come quickly — lean on interleaving here to keep it from feeling too easy, which would waste the time.)
+- **Statistics and research methods**: worked problems with self-explanation ("why this test?"), interleaved across problem types so you practice *choosing* the method, not just executing it.
 
 A reasonable build order for your tools: start with a spaced-repetition cloze engine for terminology (highest volume, clearest payoff, simplest to build), then layer in application/vignette items and the calibration dashboard, then add elaboration prompts for theories last.
 
@@ -241,7 +241,7 @@ These are the failure modes that quietly waste study time. Build your tools to r
 - **Recognition masquerading as recall.** Multiple choice feels like testing but is the weakest form. Don't let MC dominate the item bank; reserve it for genuine discrimination tasks.
 - **Drilling only definitions.** Vocabulary is the easy 30%. If every item is "Remember"-level, you'll know the words and fail the application questions. Force Apply/Analyze items into every topic.
 - **Ignoring the misses.** Items you get wrong are the most valuable in your bank. The scheduler should resurface them fast, and the calibration view should make your overconfident errors impossible to ignore.
-- **Optimizing the tool instead of using it.** This is the CS-brain risk specifically: it is very easy to spend three weeks building a perfect FSRS implementation and zero weeks actually retrieving. Get Leitner working in an afternoon, start studying, and improve the engine only when real usage demands it.
+- **Optimizing the tool instead of using it.** It is very easy to spend three weeks building a perfect FSRS implementation and zero weeks actually retrieving. Get Leitner working in an afternoon, start studying, and improve the engine only when real usage demands it.
 
 ---
 

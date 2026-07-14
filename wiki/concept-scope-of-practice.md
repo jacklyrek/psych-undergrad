@@ -25,9 +25,7 @@ subtler, more common failure. [S1][S7]
 - **C.2.a — Boundaries of competence.** "Counselors practice only within the boundaries of their
   competence, based on their **education, training, supervised experience, state and national
   professional credentials, and appropriate professional experience**." Note what's *not* on the
-  list: enthusiasm, having read a book, or a weekend webinar certificate. The same standard makes
-  **multicultural counseling competency required across all specialties** — cultural competence is
-  not a specialty; it's floor-level (Unit 4 takes this up). [S1]
+  list: enthusiasm, having read a book, or a weekend webinar certificate. The same standard makes **multicultural counseling competency required across all specialties** — cultural competence is not a specialty; it's floor-level (Unit 4 takes this up). [S1]
 - **C.2.b — New specialty areas** only after appropriate education, training, **and supervised
   experience** — and while developing the new skill, take steps to ensure competence and protect
   others from harm. The path into (say) trauma work or play therapy is coursework → training →
@@ -44,8 +42,7 @@ subtler, more common failure. [S1][S7]
 ## The referral reflex (and its limits)
 
 The classic answer to "a client presents beyond my competence" is **refer** — with an appropriate
-warm handoff, not abandonment (A.11 governs termination and referral; abandonment is prohibited).
-But two cautions keep the reflex honest:
+warm handoff, not abandonment (A.11 governs termination and referral; abandonment is prohibited). But two cautions keep the reflex honest:
 
 - **Referral isn't rejection.** Done well it sounds like: *"What you're describing — the
   flashbacks, the nightmares — deserves someone with specific trauma training, and that's not yet
@@ -56,14 +53,14 @@ But two cautions keep the reflex honest:
   conflicts with the counselor's **personal values** (A.4.b, A.11.b) — you refer for lack of
   *skill*, never lack of *approval*. This distinction is heavily tested in programs. [S1]
 
-## The stance note (for the CS brain)
+## The stance note
 
-Scope discipline runs against two engineering reflexes: "I can figure this out" (self-taught
-competence is real in software; in clinical work, unsupervised self-teaching *is* the ethics
+Scope discipline runs against two self-reliant reflexes: "I can figure this out" (in many fields
+self-teaching is a virtue; in clinical work, unsupervised self-teaching *is* the ethics
 violation), and "more tools = better" (in clinical work, a technique you half-know is a liability,
 not an asset). The professional habit to build instead: **know the edges of what you know, say
-them out loud, and treat supervision as the compiler** — the thing that catches errors you can't
-see from inside your own code.
+them out loud, and treat supervision as the safeguard** — the thing that catches the errors you
+can't see from inside your own perspective.
 
 ## What's contested (don't over-learn it)
 

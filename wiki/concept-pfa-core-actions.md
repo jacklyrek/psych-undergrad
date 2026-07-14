@@ -40,7 +40,8 @@ The U.S. evidence-informed standard (NCTSN & National Center for PTSD), a more g
 1. **Contact and Engagement** — respond to contacts, or initiate them, in a **non-intrusive,
    compassionate, helpful** way.
 2. **Safety and Comfort** — enhance **immediate and ongoing physical safety**, and provide physical
-   and emotional comfort.
+   and emotional comfort. (This action houses the hardest cases: missing loved ones, death
+   notification, and body identification — see [[concept-death-notification]].)
 3. **Stabilization** *(if needed)* — calm and orient survivors who are **emotionally overwhelmed or
    disoriented.** (Not everyone needs this step.)
 4. **Information Gathering: Current Needs and Concerns** — identify **immediate needs and concerns**, and tailor the PFA to them. (Gather what's needed to help — not a trauma history.)

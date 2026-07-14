@@ -64,7 +64,7 @@ supervision: that's A.2.b's "qualifications" requirement working. [S1]
 ## Why "ongoing" is not just a nicety
 
 Patients demonstrably don't retain consent information: studies find clients and surrogate
-decision-makers "not remember[ing] relevant information weeks after" it was given. A one-time
+decision-makers "not remembering relevant information weeks after" it was given. A one-time
 recitation therefore can't carry the ethical load; the fix is briefer, clearer initial disclosure
 plus revisiting the relevant limit *when a situation makes it live* — e.g., re-explaining the
 harm exception before asking detailed risk questions. [S4] The counterweight: exhaustively listing
@@ -73,8 +73,7 @@ skill is calibrated candor, not a legal recitation. [S4]
 
 ## What's contested (don't over-learn it)
 
-- **How much detail up front** is genuinely debated (see above) — plain-language summary + process
-  view is the consensus, but where exactly to draw the line is judgment. [S4]
+- **How much detail up front** is genuinely debated (see above) — plain-language summary + process view is the consensus, but where exactly to draw the line is judgment. [S4]
 - **Consent for minors varies by state** — some states let minors consent to outpatient mental
   health care at specific ages, especially for substance use or crisis; check your statute. [S6]
 

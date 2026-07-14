@@ -254,9 +254,9 @@ Health-check both layers and update `coverage.md`.
 
 - The syllabus is ordered by **clinical payoff**, not the usual academic sequence. Tier 1 (Units 1–4)
   first. Respect that ordering in suggestions.
-- The human comes from CS — strong on stats/research (Unit 12) and protocols; the *stance* shift
-  (resisting the urge to "fix") is the hard part. Generate items that probe stance, not just facts,
-  where the material allows.
+- The *stance* shift (resisting the urge to "fix") is the hard part of this material. Generate
+  items that probe stance, not just facts, where the material allows. **Do not frame readings or
+  items around the human's prior background or career** — no "for a CS brain"-style asides.
 - Map units to **CACREP** core areas where relevant; programs test these.
 - Unit 8 (crisis/suicide/trauma) is emotionally heavy. Keep generated material clinical and precise;
   no sensationalism.

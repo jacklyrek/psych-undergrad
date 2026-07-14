@@ -59,8 +59,7 @@ and usually best — to tell the client, unless doing so would endanger the chil
 
 > **Honest and warm:** "I need to stop us for a second, because something you just said matters a
 > lot. You remember at the start I told you that if I heard a child might be being hurt, I'm
-> required by law to report it? What you've described about how your boyfriend disciplines your son
-> is in that category. I have to make that call. I want to do it *with* you if you're willing — and
+> required by law to report it? What you've described about how your boyfriend disciplines your son is in that category. I have to make that call. I want to do it *with* you if you're willing — and
 > I want you to know this doesn't end our work. My job is still to be in your corner. Let's talk
 > about what happens next."
 
@@ -72,9 +71,7 @@ often survives a well-handled report — it rarely survives a concealed one. [S4
 ## What's contested (don't over-learn it)
 
 - **Does mandatory reporting deter help-seeking?** A live policy debate: some researchers argue
-  broad mandates discourage struggling parents from disclosing and flood the system with unfounded
-  reports; defenders point to detection gains. As a clinician your duty is unambiguous either way —
-  the debate is about the *law*, not your compliance with it. [S5]
+  broad mandates discourage struggling parents from disclosing and flood the system with unfounded reports; defenders point to detection gains. As a clinician your duty is unambiguous either way —  the debate is about the *law*, not your compliance with it. [S5]
 - **State variation is real:** who is mandated (in ~18 states, *everyone* is), what standard
   applies, whether clergy/attorney privileges carve out — the Child Welfare Information Gateway
   maintains the state-by-state compilation; read yours before practicum. [S6]

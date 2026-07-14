@@ -185,3 +185,24 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   pages + built line) updated.
 - Deferred: Unit 6/Unit 7 forward-references by name (culture-bound presentations; culture-fair
   assessment) — wire to wikilinks at those builds. Tier 1 now complete (Units 1–4 ☑).
+
+## [2026-07-08] extend-module | psychological-first-aid | +1 reading, +8 items
+- Trigger: user Q&A on PFA stabilization → "what if their kid is dead and they ask where they are?"
+  → gap identified: the module started *after* the parent knows. Built the missing page on request.
+- New reading: wiki/concept-death-notification.md — the five MADD/DOJ principles (in person, in
+  time, in pairs, in plain language, with compassion), GRIEV_ING protocol (Hobgood/ACEP), plain
+  "D-words" over euphemisms, the three "where is she?" scenarios (confirmed / unknown / re-asking)
+  with worked scripts + instinct-vs-practice table, viewing-the-body evidence (Chapple & Ziebland
+  BMJ 2010: offered prepared choice, don't assume harm).
+- Sources: S16–S20 added to research/aux-psychological-first-aid-sources.md (Hobgood 2005 AEM, ACEP
+  trainer manual, MADD/DOJ curriculum, Chapple & Ziebland BMJ, McCarroll 2024 review
+  [orientation only — paywalled]); S2 (NCTSN guide) noted for its notification/missing-person/
+  body-identification sections.
+- Items: 8 new (ax-pfa-notify-*) in cluster `bereavement-support`, remember→evaluate, incl. a
+  three-scenario compare and an unconfirmed-missing mcq. Module now 31 items.
+- Cross-links: hub map (+entry #3), concept-pfa-core-actions (Core Action 2 line),
+  concept-supporting-the-bereaved ("starts after the parent knows" pointer).
+- Bookkeeping: index.md + coverage.md updated (bereavement-support now has a compare;
+  pfa-frameworks still the only cluster without one). items.json rebuilt.
+
+## [2026-07-13] maintenance | all units | removed CS-background framing from CLAUDE.md, course-map, learning-science doc, 8 wiki pages, and 2 item files (per human request: not a typical CS profile); rebuilt items.json (183 items)

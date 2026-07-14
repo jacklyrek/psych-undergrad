@@ -17,11 +17,11 @@ because it is not absolute, you must know its limits **cold** and tell clients a
 
 ## Three words that aren't synonyms
 
-| Term | What it is | Who enforces it |
-|---|---|---|
-| **Privacy** | the client's underlying *right* to control access to themselves and their information | constitutional/common-law right |
-| **Confidentiality** | the professional's *ethical duty* not to disclose what the client reveals (B.1.c) | ethics code, licensing board |
-| **Privileged communication** | the *legal* protection against forced disclosure **in court** | evidence law; belongs to the **client**, not the counselor |
+| Term                         | What it is                                                                            | Who enforces it                                            |
+| ---------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **Privacy**                  | the client's underlying *right* to control access to themselves and their information | constitutional/common-law right                            |
+| **Confidentiality**          | the professional's *ethical duty* not to disclose what the client reveals (B.1.c)     | ethics code, licensing board                               |
+| **Privileged communication** | the *legal* protection against forced disclosure **in court**                         | evidence law; belongs to the **client**, not the counselor |
 
 Privilege is the narrowest: it only matters in legal proceedings, it is created by statute or case
 law, and the client (not you) holds it — the client can waive it; you can't. *Jaffee v. Redmond*
@@ -40,9 +40,7 @@ including licensed clinical social workers; states have their own privilege stat
 
 1. **Serious and foreseeable harm** (B.2.a) — disclosure "required to protect clients or identified
    others from serious and foreseeable harm." Covers **danger to self** (suicide — see Unit 8) and
-   **danger to others** ([[concept-duty-to-warn]]). Note the 2014 wording: *serious and
-   foreseeable*, not "imminent" — a deliberate change to a more workable standard. When in doubt,
-   **consult**. [S1]
+   **danger to others** ([[concept-duty-to-warn]]). Note the 2014 wording: *serious and foreseeable*, not "imminent" — a deliberate change to a more workable standard. When in doubt, **consult**. [S1]
 2. **Legal requirements** (B.2.a) — chiefly **mandated reporting** of suspected abuse/neglect of
    children and vulnerable adults ([[concept-mandated-reporting]]). [S1][S5]
 3. **Contagious, life-threatening diseases** (B.2.c) — *may* (not must) disclose to an identifiable
@@ -67,6 +65,9 @@ necessary fact, not the client's history. [S1]
 ## The confidentiality speech (the syllabus practice rep — worked model)
 
 Write yours first, then compare:
+
+MINE:
+	Let's go over confidentiality. The main idea is that I can't tell anyone anything you say, unless there are legal or ethical concerns. Those concerns are narrow, but pretty understandable: if you present a clear threat to your own or someone else's life, then I have to report that. If you are neglecting or abusing children or special needs adults, I need to report that. If I am asked to testify in court, I will ask you for permission and then say whatever you have allowed me to say with the above exceptions in mind. Any time that I would disclose something, I always keep the details as narrow as possible. Only giving out information that is absolutely necessary. This is all so that you can feel confident being completely honest with me, which is the only way this is gonna work.
 
 > "One more thing before we start, and it's important. What you say in this room stays in this
 > room. I don't tell your family, your employer, or anyone else that you're even here. There are a

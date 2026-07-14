@@ -41,7 +41,11 @@ helper's job is to *stabilize and accompany*, not to excavate. [S4][S5]
    The **five stages** and why clinicians have largely retired them; **Worden's tasks** and the
    **dual process model** (the better mental models); and the line between **normal grief and
    prolonged grief disorder.** [S6][S8][S9][S12]
-3. **[[concept-supporting-the-bereaved]]** — the anchor case: being useful to someone whose child
+3. **[[concept-death-notification]]** — the hardest moment: telling someone their person has died,
+   and answering *"where is she?"* honestly when you don't yet know. The five principles (**in
+   person, in time, in pairs, in plain language, with compassion**), the **GRIEV_ING** protocol,
+   and the viewing-the-body evidence. [S2][S16][S17][S18][S19]
+4. **[[concept-supporting-the-bereaved]]** — the anchor case: being useful to someone whose child
    has died. What helps, what harms, **Ring Theory** ("comfort in, dump out"), when to refer, and
    the load this puts on *you.* [S13][S14][S15]
 

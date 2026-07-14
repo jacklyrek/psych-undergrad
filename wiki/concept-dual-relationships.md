@@ -11,9 +11,7 @@ source_units: [3]
 **The idea:** a **dual (multiple) relationship** exists when a counselor holds more than one role
 with a client — therapist *and* friend, business partner, professor, in-law, fellow congregant.
 Terminology note: APA's code says "multiple relationships"; the ACA Code mostly speaks of
-**"nonprofessional relationships"** and boundary management. The 2014 ACA Code's key move is that
-**not all dual relationships are unethical** — some are prohibited outright, the rest are *managed*
-with a risk–benefit analysis, consent, consultation, and documentation. [S1][S11][S12]
+**"nonprofessional relationships"** and boundary management. The 2014 ACA Code's key move is that **not all dual relationships are unethical** — some are prohibited outright, the rest are *managed* with a risk–benefit analysis, consent, consultation, and documentation. [S1][S11][S12]
 
 ## The prohibited list (A.5 — bright lines)
 
@@ -73,10 +71,7 @@ intends ([[concept-informed-consent]]).
 ## What's contested (don't over-learn it)
 
 - **Where the crossing/violation line sits** is contextual — the same act (a hug, self-disclosure,
-  a gift) can be therapeutic with one client and harmful with another; culture changes the meaning
-  too. Zur and others argue rigid "risk-management" boundary avoidance can itself harm care;
-  more conservative voices emphasize slippery-slope risk. The codes deliberately split the
-  difference (bright lines for sex and exploitation; judgment for the rest). [S11][S12]
+  a gift) can be therapeutic with one client and harmful with another; culture changes the meaning too. Zur and others argue rigid "risk-management" boundary avoidance can itself harm care; more conservative voices emphasize slippery-slope risk. The codes deliberately split the difference (bright lines for sex and exploitation; judgment for the rest). [S11][S12]
 - **Post-termination romance:** ACA says 5 years + documented non-exploitation; APA says 2 + a
   heavy multi-factor test; some ethicists argue "once a client, never a partner." Know the rule
   *and* that it's debated. [S1][S11]

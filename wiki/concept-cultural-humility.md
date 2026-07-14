@@ -61,8 +61,7 @@ called a *stereotype with good intentions*). Counselor B holds the same knowledg
 **hypothesis the client can veto**. That veto power is dimension 2 — the power redress — done at
 conversational scale. [S4][S8]
 
-The same stance governs mistakes. A counselor who mispronounces a client's name, misgenders them,
-or assumes their partner's gender doesn't collapse into self-flagellation (which recenters the
+The same stance governs mistakes. A counselor who mispronounces a client's name, misgenders them, or assumes their partner's gender doesn't collapse into self-flagellation (which recenters the
 counselor — self-focused, the exact opposite pole of other-oriented); they correct, briefly own
 it, and return the session to the client. Repair over performance. [S8] (For repairing a
 microaggression specifically, see [[concept-microaggressions]].)

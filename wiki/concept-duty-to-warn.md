@@ -11,8 +11,7 @@ cluster: confidentiality-exceptions
 
 **The idea:** when a client poses a serious danger of violence to an **identifiable other person**,
 the counselor's obligation to protect that person can override confidentiality. The doctrine comes
-from the *Tarasoff* case ([[study-tarasoff]]); Justice Tobriner's formulation is the line every
-program quotes: **"The protective privilege ends where the public peril begins."** [S3]
+from the *Tarasoff* case ([[study-tarasoff]]); Justice Tobriner's formulation is the line every program quotes: **"The protective privilege ends where the public peril begins."** [S3]
 
 ## Warn vs. protect — the distinction exams love
 
@@ -78,10 +77,7 @@ trigger the duty — not just the client's own words). [S3]
 > assessment; if he does mean it, you've closed the door.)*
 >
 > **Stronger response:** "I hear how much rage is in that. I need to take it seriously, and I want
-> to understand exactly where you are with it. When you say put him in the ground — is that a plan
-> you've thought about, or the size of the anger talking? … You remember when we started, I said if
-> I ever believed someone was in real danger I'd have to act to keep people safe. I want us to work
-> this together so nobody gets hurt and you don't lose your future to this."
+> to understand exactly where you are with it. When you say put him in the ground — is that a plan you've thought about, or the size of the anger talking? … You remember when we started, I said if I ever believed someone was in real danger I'd have to act to keep people safe. I want us to work this together so nobody gets hurt and you don't lose your future to this."
 
 Note the sequence: take it seriously → assess (plan, means, intent, timeline) → *recall the
 already-disclosed limit* (this is why the informed-consent speech matters) → prefer collaborative
@@ -90,8 +86,7 @@ protective steps; warn/notify only as needed. Then **document the assessment and
 ## What's contested (don't over-learn it)
 
 - **Prediction is the weak link.** StatPearls is blunt: "guidelines on accurately predicting and
-  assessing dangerousness are lacking." The law demands a judgment the science can't make reliably —
-  which is exactly why consultation + documentation, not clairvoyance, is the standard. [S3]
+  assessing dangerousness are lacking." The law demands a judgment the science can't make reliably —  which is exactly why consultation + documentation, not clairvoyance, is the standard. [S3]
 - **Did Tarasoff chill treatment?** A long-running debate: critics argue duty-to-protect rules
   deter dangerous clients from disclosing (or entering treatment at all); defenders note the
   catastrophic alternative. Empirical evidence is thin either way. [S3][S4]

@@ -49,14 +49,12 @@ American student whose parents oppose her changing majors:
 > family-as-unit decision-making; pathologizes an interdependent norm as dysfunction.)
 
 > **Skills failure:** "Let's do a two-chair exercise where you confront your mother." (Technique
-> selected from the counselor's toolkit with no adaptation — a confrontation exercise imposed on a
-> client for whom direct confrontation of a parent may be the *problem framing itself*.)
+> selected from the counselor's toolkit with no adaptation — a confrontation exercise imposed on a client for whom direct confrontation of a parent may be the *problem framing itself*.)
 
 > **Competent:** "I'm hearing two things that both matter to you — the major that fits you, and
 > being a good daughter, which I know isn't a small thing. I don't want to assume how those weigh
 > against each other for you. Can you tell me what honoring your family looks like from inside?"
-> (Awareness: doesn't export her own autonomy norms. Knowledge: recognizes the value conflict as
-> cultural, not pathological. Skill: turns it into an open exploration the client steers.)
+> (Awareness: doesn't export her own autonomy norms. Knowledge: recognizes the value conflict as cultural, not pathological. Skill: turns it into an open exploration the client steers.)
 
 ## What the research did with it
 
@@ -74,8 +72,7 @@ critique is half of why [[concept-cultural-humility]] exists.
 - **The self-assessment problem** (above) — the model's dimensions are sound as training targets,
   but the instruments built to measure them are shaky. [S11]
 - **"Competence" as a word** — Tervalon & Murray-García's endpoint critique lands directly on this
-  model: you can complete a curriculum; you cannot complete a culture. Most programs now teach
-  tripartite + humility as a pair. [S4]
+  model: you can complete a curriculum; you cannot complete a culture. Most programs now teach tripartite + humility as a pair. [S4]
 - **Scope creep by design:** the 1992 paper was written about race/ethnicity; later frameworks
   (and the [[concept-msjcc]]) extend it to all intersecting identities. Know which scope a question
   is asking about. [S3][S1]

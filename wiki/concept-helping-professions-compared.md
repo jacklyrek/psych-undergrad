@@ -26,17 +26,14 @@ informed-consent element, A.2.b). [S1][S7]
 | Prescribes? | **no** (no state) | **no**, except specially trained psychologists in a **handful of states** (see below) | **no** | **yes** |
 
 Adjacent roles worth recognizing: **psychiatric-mental-health nurse practitioners (PMHNPs)**
-prescribe in every state and provide much of real-world medication management; **marriage & family
-therapists (LMFTs)** are master's-level clinicians with a systems specialty; **school counselors**
+prescribe in every state and provide much of real-world medication management; **marriage & family therapists (LMFTs)** are master's-level clinicians with a systems specialty; **school counselors**
 hold a distinct master's credential; "**psychotherapist**" is, in most states, not a protected title
 by itself — the license behind it is what matters. [S7]
 
 ## The prescribing exception (RxP) — and why the number keeps changing
 
 Psychologists with a **postdoctoral master's in clinical psychopharmacology**, supervised practice
-hours, and a national psychopharmacology exam can prescribe in a small set of states: **New Mexico
-(2002, first), Louisiana (2004), Illinois (2014), Iowa (2016), Idaho (2017)** — APA's page stops
-there, but **Colorado (2023)** and **Utah (2024)** have since joined (≈7 states as of 2024–25, a
+hours, and a national psychopharmacology exam can prescribe in a small set of states: **New Mexico (2002, first), Louisiana (2004), Illinois (2014), Iowa (2016), Idaho (2017)** — APA's page stops there, but **Colorado (2023)** and **Utah (2024)** have since joined (≈7 states as of 2024–25, a
 moving target as bills advance elsewhere). Appropriately trained psychologists may also prescribe
 in the **military (DoD)**, the **U.S. Public Health Service**, and the **Indian Health Service**. [S8]
 
@@ -50,19 +47,14 @@ psychotropic prescriptions in the U.S.). Coordinating with prescribers is a core
 "Professional counseling orientation" is a CACREP core area partly *because* counseling had to
 carve an identity distinct from psychology and social work. The distinguishing story programs
 teach: counseling grew from the **guidance/vocational movement** (Frank Parsons, early 1900s) and
-the **humanistic tradition** ([[theory-person-centered]]), so its center of gravity is
-**developmental and wellness-oriented** — clients are people navigating problems of living, not
-primarily patients with pathology. In practice the professions' day-to-day work overlaps heavily
-(all four diagnose and treat in most settings); identity shows up in emphasis, training, and
-advocacy priorities more than in what the hour with a client looks like. [S7]
+the **humanistic tradition** ([[theory-person-centered]]), so its center of gravity is **developmental and wellness-oriented** — clients are people navigating problems of living, not primarily patients with pathology. In practice the professions' day-to-day work overlaps heavily (all four diagnose and treat in most settings); identity shows up in emphasis, training, and advocacy priorities more than in what the hour with a client looks like. [S7]
 
 ## Choosing a referral (the applied skill)
 
 - Needs medication evaluation → **psychiatrist / PMHNP** (or PCP for straightforward cases).
 - Needs IQ, learning-disability, ADHD, or neuropsychological **testing** → **psychologist**.
 - Needs housing, benefits, elder services, discharge planning *alongside* therapy → **LCSW**.
-- Needs weekly psychotherapy for anxiety/depression/adjustment → any of the therapy professions;
-  fit and availability matter more than the letters ([[theory-common-factors]]).
+- Needs weekly psychotherapy for anxiety/depression/adjustment → any of the therapy professions; fit and availability matter more than the letters ([[theory-common-factors]]).
 
 ## What's contested (don't over-learn it)
 

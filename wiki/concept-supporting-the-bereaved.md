@@ -92,6 +92,8 @@ stress — a named clinical phenomenon Unit 8 covers). Use your **own** support 
 Ring Theory), don't make the bereaved person carry your reaction, and treat your self-care as part of being able to keep showing up — not a luxury. A depleted helper disappears, and disappearing is the thing grieving parents say hurt most.
 
 ## Connects to
+- [[concept-death-notification]] — this page starts *after* the parent knows; the moment of telling
+  (and answering "where is she?" before it's confirmed) is its own skill.
 - [[concept-pfa-core-actions]] — Listen (accompany, don't probe) and Linkage (referral) in action.
 - [[concept-grief-models]] — the dual process oscillation and the PGD boundary behind these moves.
 - [[aux-psychological-first-aid]] — module hub and stance.

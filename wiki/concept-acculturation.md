@@ -10,8 +10,7 @@ cluster: acculturation-strategies
 # Acculturation, Worldview & Help-Seeking Norms
 
 **The idea:** when a person lives between a heritage culture and a receiving culture, the ways of
-managing that are not one-dimensional ("how American have you become?") but two-dimensional. Berry
-(1997) built the canonical model on two independent questions: [S7]
+managing that are not one-dimensional ("how American have you become?") but two-dimensional. Berry (1997) built the canonical model on two independent questions: [S7]
 
 1. Do I value **maintaining my heritage culture and identity**?
 2. Do I value **contact and participation with the larger society**?
@@ -40,11 +39,7 @@ by how open the receiving society actually is. [S7]
 
 ## Why the counselor cares
 
-- **Never assume acculturation level from appearance, surname, or generation.** A third-generation
-  client may hold a separation stance; a recent immigrant may be furthest integrated. Assess, don't
-  infer — and assess *within* the family, because **acculturation gaps between parents and
-  children** (children typically acculturate faster) are a classic engine of the family conflict
-  that walks into your office labeled as a "defiant teenager." [S7][S14]
+- **Never assume acculturation level from appearance, surname, or generation.** A third-generation client may hold a separation stance; a recent immigrant may be furthest integrated. Assess, don't infer — and assess *within* the family, because **acculturation gaps between parents and children** (children typically acculturate faster) are a classic engine of the family conflict that walks into your office labeled as a "defiant teenager." [S7][S14]
 - **The presenting problem may *be* acculturative stress** — grief for a lost context, identity
   strain, discrimination — arriving disguised as anxiety or depression. The intervention differs if
   the stressor is a life transition rather than an internal disorder.

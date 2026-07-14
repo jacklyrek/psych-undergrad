@@ -40,9 +40,7 @@ people can jointly fail to notice anything. [S2]
    dyad itself.
 4. **Counseling and advocacy interventions** — doing something about it, in and beyond the office.
 
-The order encodes the theory of change: self-awareness precedes understanding others, both precede
-the relationship, and all three precede intervention. Skipping to domain 4 without domains 1–3 is
-activism without a clinician attached; stopping at domain 3 is insight without consequences.
+The order encodes the theory of change: self-awareness precedes understanding others, both precede the relationship, and all three precede intervention. Skipping to domain 4 without domains 1–3 is activism without a clinician attached; stopping at domain 3 is insight without consequences.
 
 **AKSA — the aspirational competencies.** Within each of the first three domains, competence
 develops across **A**ttitudes & beliefs, **K**nowledge, **S**kills — the tripartite triad — plus
@@ -66,7 +64,7 @@ pathology in the person suffering it. Advocacy "with, and on behalf of" clients 
 answer — and it deliberately echoes the counselor stance debate from [[theory-postmodern]] (the
 client is not the problem; the problem is the problem). [S1][S2]
 
-The CS-brain caution cuts both ways here. Advocacy *is* a fix-it move — and this is the one place
+The fix-it caution (see [[unit01-helping-skills]]) cuts both ways here. Advocacy *is* a fix-it move — and this is the one place
 the curriculum licenses it. But the discipline still applies: advocacy done *for* a client without
 their steering can recreate the paternalism it means to correct ("non-paternalistic" is written
 into [[concept-cultural-humility]]'s definition for exactly this reason). Empower first; act with;

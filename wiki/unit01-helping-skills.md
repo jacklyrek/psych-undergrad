@@ -32,8 +32,8 @@ foundation everything else sits on. Read the four concept pages in order; they b
 
 ## The stance note (read this twice)
 
-A CS background trains one reflex hard: locate the broken thing, fix it, move on. Counseling
-inverts it. Most of the first session's work is helping a person feel *understood* — which a
+Everyday problem-solving trains one reflex hard: locate the broken thing, fix it, move on.
+Counseling inverts it. Most of the first session's work is helping a person feel *understood* — which a
 solution actively interrupts. The core skill of this unit is **reflect the feeling, then stop
 talking.** When you notice yourself reaching for the fix, that noticing *is* the skill. Several
 items in this unit's practice set are built specifically to drill that reflex, because it won't come

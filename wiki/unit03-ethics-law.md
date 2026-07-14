@@ -25,17 +25,17 @@ the contours need to be in your head *before* you're in the chair. The unit has 
 The 2014 ACA Code of Ethics (the current edition) contains **nine sections**, each opening with an
 aspirational introduction followed by enforceable standards: [S1][S9]
 
-| § | Title | One-line gist |
-|---|---|---|
-| A | The Counseling Relationship | welfare, consent, boundaries, termination |
-| B | Confidentiality and Privacy | the promise and its exceptions |
-| C | Professional Responsibility | competence, advertising, public responsibility |
-| D | Relationships With Other Professionals | colleagues, teams, consultation |
-| E | Evaluation, Assessment, and Interpretation | testing and diagnosis done properly |
-| F | Supervision, Training, and Teaching | duties of supervisors & educators |
-| G | Research and Publication | research ethics with clients/participants |
-| H | Distance Counseling, Technology, and Social Media | new in 2014 — telehealth & the digital boundary |
-| I | Resolving Ethical Issues | what to do about violations, ethics vs. law |
+| §   | Title                                             | One-line gist                                   |
+| --- | ------------------------------------------------- | ----------------------------------------------- |
+| A   | The Counseling Relationship                       | welfare, consent, boundaries, termination       |
+| B   | Confidentiality and Privacy                       | the promise and its exceptions                  |
+| C   | Professional Responsibility                       | competence, advertising, public responsibility  |
+| D   | Relationships With Other Professionals            | colleagues, teams, consultation                 |
+| E   | Evaluation, Assessment, and Interpretation        | testing and diagnosis done properly             |
+| F   | Supervision, Training, and Teaching               | duties of supervisors & educators               |
+| G   | Research and Publication                          | research ethics with clients/participants       |
+| H   | Distance Counseling, Technology, and Social Media | new in 2014 — telehealth & the digital boundary |
+| I   | Resolving Ethical Issues/                         | what to do about violations, ethics vs. law     |
 
 Memory scaffold: A and B are where clinical life happens (the relationship and the secret); C–E are
 your professional conduct; F–G teaching and research; H technology; I meta-rules.
@@ -55,7 +55,7 @@ competent, ethical practice) and **six ethical principles**: [S1][S10]
 
 These six are the vocabulary of every ethics discussion you'll have in a program. Real dilemmas are
 almost always **principle vs. principle**: breaking confidentiality to stop a suicide is
-nonmaleficence/beneficence overriding autonomy and fidelity. Notice the CS-brain trap here: the
+nonmaleficence/beneficence overriding autonomy and fidelity. Notice the trap here: the
 principles are not a decision procedure you can execute. The Code itself says **"no specific
 ethical decision-making model is always most effective"** — you're expected to use *a* credible,
 defensible process (identify the problem → consult the Code and the law → consult colleagues →
@@ -65,11 +65,11 @@ weigh principles → document your reasoning), not to find the one right algorit
 
 Two different systems regulate you, and they can disagree: [S1]
 
-| | Ethical duty | Legal duty |
-|---|---|---|
-| Source | professional code (ACA), enforced by association & licensing board | statute, regulation, case law — enforced by courts & the state |
-| Breach means | ethics complaint, sanction, loss of license | criminal/civil liability, damages |
-| Example | don't abandon a client (A.12) | report suspected child abuse (state statute) |
+|              | Ethical duty                                                       | Legal duty                                                     |
+| ------------ | ------------------------------------------------------------------ | -------------------------------------------------------------- |
+| Source       | professional code (ACA), enforced by association & licensing board | statute, regulation, case law — enforced by courts & the state |
+| Breach means | ethics complaint, sanction, loss of license                        | criminal/civil liability, damages                              |
+| Example      | don't abandon a client (A.12)                                      | report suspected child abuse (state statute)                   |
 
 The Code is explicit that breaching it "does not necessarily constitute legal liability" — and the
 reverse also holds: something can be legal and still unethical (dating a client the day after

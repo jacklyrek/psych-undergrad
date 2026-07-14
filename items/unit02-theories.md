@@ -338,7 +338,7 @@ the `topic` tag names the specific school. See generate rules in [`../CLAUDE.md`
 ]
 ```
 
-## Evaluate & stance (the integrative move + the CS fix-it caution)
+## Evaluate & stance (the integrative move + the fix-it caution)
 
 ```json
 [
@@ -374,8 +374,8 @@ the `topic` tag names the specific school. See generate rules in [`../CLAUDE.md`
   },
   {
     "id": "u2-stance-evaluate-01",
-    "prompt": "STANCE DRILL (for a CS background). You feel most drawn to CBT because it resembles a debuggable algorithm. Why is it worth deliberately mastering person-centered and existential theory too?",
-    "answer": "Because the 'find the bug and fix it' reflex actively backfires in the relational and meaning-based schools — person-centered and existential therapy work precisely BECAUSE the counselor resists solving and instead offers relationship or honest encounter. Treating theory as an identity/algorithm to optimize also misses the point: theory is a tool for attention, held loosely. Over-relying on the most protocol-like school would leave you unable to help clients whose problem isn't a faulty cognition to correct.",
+    "prompt": "STANCE DRILL. You feel most drawn to CBT because it is the most structured and protocol-like family. Why is it worth deliberately mastering person-centered and existential theory too?",
+    "answer": "Because the 'fix-it' reflex actively backfires in the relational and meaning-based schools — person-centered and existential therapy work precisely BECAUSE the counselor resists solving and instead offers relationship or honest encounter. Treating a theory as an identity to defend also misses the point: theory is a tool for attention, held loosely. Over-relying on the most protocol-like school would leave you unable to help clients whose problem isn't a faulty cognition to correct.",
     "type": "explain",
     "source_page": "wiki/unit02-theories.md",
     "topic": "stance",

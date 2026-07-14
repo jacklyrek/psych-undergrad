@@ -100,3 +100,46 @@ work, not SEO grief blogs.
   <https://www.childrenscolorado.org/doctors-and-departments/departments/grief-and-loss/how-to-help-a-grieving-parent/>
   — *Corroborating hospital grief-program guidance: presence over fixing, tolerate silence, mark
   anniversaries/birthdays, offer concrete help rather than "let me know if you need anything."*
+
+## Death notification (added 2026-07-08)
+
+- **[S16] Hobgood C, Harward D, Newton K, Davis W (2005). "The educational intervention 'GRIEV_ING'
+  improves the death notification skills of residents." _Academic Emergency Medicine_ 12(4):296–301.**
+  <https://pubmed.ncbi.nlm.nih.gov/15805319/>
+  — *Peer-reviewed origin of the **GRIEV_ING** death-notification protocol; a defined training built
+  on it measurably improved resident physicians' confidence and competence.*
+
+- **[S17] American College of Emergency Physicians (ACEP) — _Delivering the News with Compassion:
+  The GRIEV_ING Death Notification Protocol_ (trainer's manual).**
+  <https://www.acep.org/siteassets/uploads/uploaded-files/acep/clinical-and-practice-management/resources/academics/deathnotificationtrainersmanual.pdf>
+  — *Professional-body training standard; full expansion of the mnemonic (Gather, Resources,
+  Identify, Educate, **Verify with the words "died"/"dead"**, _space_, Inquire, Nuts-and-bolts,
+  Give), incl. the explicit instruction to avoid euphemisms.*
+
+- **[S18] MADD (Mothers Against Drunk Driving), adopted by the U.S. DOJ Office for Victims of Crime —
+  _Death Notification: Breaking the Bad News with Concern for the Professional and Compassion for
+  the Survivor_ (training curriculum).**
+  Described in: <https://www.officer.com/home/article/10249064/death-notification-breaking-the-bad-news>
+  — *The de-facto law-enforcement standard, source of the five principles: **in person, in time, in
+  pairs, in plain language, with compassion** — including "don't be afraid of the D-words; 'expired,'
+  'passed on,' 'lost' are words of denial."*
+
+- **[S19] Chapple A, Ziebland S (2010). "Viewing the body after bereavement due to a traumatic
+  death: qualitative study in the UK." _BMJ_ 340:c2032.**
+  <https://pmc.ncbi.nlm.nih.gov/articles/PMC2862150/>
+  — *Peer-reviewed qualitative study (n=80 bereaved by suicide/traumatic death): of 49 who viewed,
+  35 said it was right, 2 regretted it (both with badly damaged bodies and no real choice); some
+  non-viewers later wished they had. Conclusion: offer a **prepared, genuine choice** — "clinicians
+  should not assume that relatives will be harmed by seeing a bruised or damaged body."*
+
+- **[S20] McCarroll JE et al. (2024). "Notification, viewing the body, and social and cultural
+  considerations after traumatic death: a systematic literature review." _Disaster Medicine and
+  Public Health Preparedness_.**
+  <https://doi.org/10.1017/dmp.2024.209> (Cambridge Core; paywalled)
+  — *Recent systematic review confirming notification + viewing-the-body as an evidence topic;
+  **abstract-level orientation only** (full text not consulted).*
+
+- **[S2 — additional use]** The NCTSN/NCPTSD *PFA Field Operations Guide* (see above) contains the
+  acute-response sections this page leans on: *when a family member is missing* (accurate
+  information, no premature reassurance), *when a death occurs*, *support for death notification*,
+  and *support for body identification* (Core Action 2, Safety and Comfort).

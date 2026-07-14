@@ -94,7 +94,7 @@ just rule recall. See generate rules in [`../CLAUDE.md`](../CLAUDE.md).
   {
     "id": "u3-decision-model-explain-01",
     "prompt": "A classmate says: 'Just tell me the correct ethical decision-making algorithm and I'll apply it.' What does the ACA Code actually say about decision-making models, and what does it expect instead?",
-    "answer": "The Code says no specific ethical decision-making model is always most effective. It expects counselors to use *a* credible model that can bear public scrutiny — identify the problem, consult the Code/law/colleagues, weigh the principles, involve the client where possible, document the reasoning. The deliverable is a defensible process, not a provably-correct output. (Stance note: this is exactly the anti-algorithm adjustment the CS reflex resists.)",
+    "answer": "The Code says no specific ethical decision-making model is always most effective. It expects counselors to use *a* credible model that can bear public scrutiny — identify the problem, consult the Code/law/colleagues, weigh the principles, involve the client where possible, document the reasoning. The deliverable is a defensible process, not a provably-correct output. (Stance note: the Code deliberately refuses to hand you a single correct algorithm.)",
     "type": "explain",
     "source_page": "wiki/unit03-ethics-law.md",
     "topic": "ethics-vs-law",

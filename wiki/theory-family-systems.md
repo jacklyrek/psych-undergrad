@@ -14,7 +14,7 @@ dysfunctional patterns, roles, and boundaries in the family (or other system) ge
 the symptom. **Better by:** changing those patterns — the structure, the boundaries, the level of
 emotional reactivity — rather than "fixing" the person who carries the symptom. [S10]
 
-This is the school where your **systems-thinking** background transfers most directly: stop debugging the component, look at the architecture. The unit of analysis shifts from the person to the **family as an emotional unit.** [S10]
+This is the school built on **systems thinking**: stop searching for the broken part, look at the pattern of the whole. The unit of analysis shifts from the person to the **family as an emotional unit.** [S10]
 
 ## The core shift: the identified patient
 The family typically arrives pointing at one member — the "problem child," the symptomatic spouse — the **identified patient (IP).** Systems theory reframes the IP as the **symptom-bearer of tension in the whole system**, not the location of the pathology. The depressed teenager may be expressing a strained marriage; treating only the teen misses the system that produces the symptom. [S10][S17]

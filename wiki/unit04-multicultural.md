@@ -13,8 +13,7 @@ one-line case for this unit, and it's worth sitting with: the failure mode isn't
 well-meaning counselor reflecting feelings accurately while assuming that *talking to a stranger
 about feelings* is a normal thing to do, that eye contact means engagement, that individuating from
 your family is health, and that the client's hesitancy is "resistance" rather than a reasonable
-response to a system that has treated their community badly. None of that requires malice — just an
-unexamined counselor. This unit is the examination.
+response to a system that has treated their community badly. None of that requires malice — just an unexamined counselor. This unit is the examination.
 
 It is also not optional garnish: the ACA Code makes multicultural competency part of the
 **boundaries of competence themselves** (C.2.a — see [[concept-scope-of-practice]]), and CACREP
@@ -27,14 +26,11 @@ The unit has three jobs:
    has a culture too.** Yours is not the neutral default the others deviate from.
 2. **Learn the profession's frameworks** — the [[theory-tripartite-model]] (1992) and its successor
    the [[concept-msjcc]] (2015), plus the stance that animates both: [[concept-cultural-humility]].
-3. **Get concrete** — what privilege and power do inside the dyad
-   ([[concept-privilege-power]]), what [[concept-microaggressions]] look like in session and how to
-   repair them, and how [[concept-acculturation]] and help-seeking norms shape who shows up and who
-   stays.
+3. **Get concrete** — what privilege and power do inside the dyad ([[concept-privilege-power]]), what [[concept-microaggressions]] look like in session and how to repair them, and how [[concept-acculturation]] and help-seeking norms shape who shows up and who stays.
 
 ## Why this is clinical, not ceremonial
 
-The outcome data first, because a CS brain will want it:
+The outcome data first:
 
 - Among U.S. adults with mental disorders, racial/ethnic minority clients are roughly **half as
   likely as White clients to get treatment**, and those who start are **more likely to drop out**
@@ -57,11 +53,11 @@ cultural competence — which is, in itself, the best argument for humility.
 
 ## The map: three frameworks, one stance
 
-| Framework | Year | Core structure | What it added |
-|---|---|---|---|
-| [[theory-tripartite-model]] (Sue, Arredondo & McDavis) | 1992 | **awareness / knowledge / skills** | made multicultural competence definable and trainable |
-| [[concept-cultural-humility]] (Tervalon & Murray-García) | 1998 | lifelong self-critique · redress power imbalance · institutional accountability | the corrective: competence is not a masterable endpoint |
-| [[concept-msjcc]] (Ratts et al.) | 2015 | 4 domains · privileged/marginalized **quadrants** · AKSA (adds **action**) · advocacy at 6 socioecological levels | intersectionality, bidirectional privilege, social justice |
+| Framework                                                | Year | Core structure                                                                                                    | What it added                                              |
+| -------------------------------------------------------- | ---- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| [[theory-tripartite-model]] (Sue, Arredondo & McDavis)   | 1992 | **awareness / knowledge / skills**                                                                                | made multicultural competence definable and trainable      |
+| [[concept-cultural-humility]] (Tervalon & Murray-García) | 1998 | lifelong self-critique · redress power imbalance · institutional accountability                                   | the corrective: competence is not a masterable endpoint    |
+| [[concept-msjcc]] (Ratts et al.)                         | 2015 | 4 domains · privileged/marginalized **quadrants** · AKSA (adds **action**) · advocacy at 6 socioecological levels | intersectionality, bidirectional privilege, social justice |
 
 Read them in that order — each is a response to the previous one. The `mc-frameworks` cluster
 exists because programs love asking you to tell them apart.
@@ -93,12 +89,10 @@ culture. Those are the load-bearing blind spots.
 - **Competence vs. humility** is a real framing debate, mostly resolved as *complements* —
   competencies name the learnable content, humility names the stance — but know the critique:
   "competence" implies an endpoint that doesn't exist. [S4][S13]
-- **The evidence is moderate, not miraculous** — r ≈ .29 with outcomes, an evidence base heavy on
-  analogue studies, and self-report measures of dubious validity. Both the importance of the
+- **The evidence is moderate, not miraculous** — r ≈ .29 with outcomes, an evidence base heavy on analogue studies, and self-report measures of dubious validity. Both the importance of the
   construct and the softness of its measurement are true at once. [S9][S11]
 - **Microaggression science is disputed in print** — taxonomy standard in curricula, critique
-  published in a top journal, Sue conceding several points. Details in
-  [[concept-microaggressions]]. [S6][S12]
+  published in a top journal, Sue conceding several points. Details in [[concept-microaggressions]]. [S6][S12]
 - **How far advocacy extends** — the MSJCC's sixth-level ambitions (public policy, global) raise
   live questions about the counselor's role boundaries. [S1][S2]
 

@@ -34,7 +34,7 @@ If you can fill in that sentence for all six, you've done the core work of Unit 
    distorted thinking and learned behavior; better by testing and changing both. The most-researched, most-requested family. [S4][S9]
 5. **[[theory-family-systems]]** — Bowen and Minuchin. The problem lives **in the relationships, not
    the person.** Stuck because of dysfunctional patterns in the system; better by changing the
-   patterns. Systems thinking — your CS background transfers here. [S10][S11]
+   patterns. [S10][S11]
 6. **[[theory-postmodern]]** — solution-focused and narrative. There is **no single objective truth**;
    reality is **constructed in language.** Stuck inside a problem-saturated story; better by
    re-authoring it. The therapist gives up the expert chair. [S13][S14]
@@ -58,13 +58,13 @@ A useful coarse grouping: the **first three** (psychodynamic, person-centered, e
 *action/learning*-oriented and empirical; **family systems** moves the unit of analysis from the
 person to the system; **postmodern** challenges the idea that the counselor knows the truth at all.
 
-## The stance note (for you specifically)
+## The stance note
 
-Two traps for a CS background here:
-- **Picking a theory like picking a framework — for elegance, then defending it.** Theory is a tool
+Two common traps here:
+- **Picking a theory for its elegance, then defending it.** Theory is a tool
   for *attention*, not an identity. Hold it loosely.
-- **Skipping straight to CBT because it looks like an algorithm.** CBT *is* the most protocol-like and
-  will feel most natural — which is exactly why you should make yourself understand the relational and meaning-based schools, where the "fix-it" reflex (see [[unit01-helping-skills]]) actively backfires. Person-centered and existential therapy work *because* the counselor resists solving.
+- **Gravitating straight to CBT because it's the most structured.** CBT *is* the most protocol-like and
+  can feel like the most comfortable place to start — which is exactly why you should make yourself understand the relational and meaning-based schools, where the "fix-it" reflex (see [[unit01-helping-skills]]) actively backfires. Person-centered and existential therapy work *because* the counselor resists solving.
 
 ## Where most counselors actually land: integrative
 

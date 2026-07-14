@@ -50,8 +50,7 @@ felt like you were writing off how our family does education":
 
 > **Counselor B (repair):** "Thank you for telling me — I can see that landed as a judgment on
 > your family's values, and I'm sorry. I think I was measuring against my own defaults without
-> noticing. Can you tell me more about what those standards mean in your family?" (Owns it briefly,
-> names the mechanism, returns the floor.)
+> noticing. Can you tell me more about what those standards mean in your family?" (Owns it briefly, names the mechanism, returns the floor.)
 
 Ruptures repaired this way can *strengthen* the alliance — the client learns difference is
 discussable here, which is broaching's promise kept under pressure ([[concept-privilege-power]]).

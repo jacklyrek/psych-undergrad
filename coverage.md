@@ -28,7 +28,7 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
 
 | Module | Borders | Readings | Items | Bloom spread | Clusters w/ compare items |
 |---|---|---|---|---|---|
-| PFA & Acute Grief Support (`aux-psychological-first-aid`) | Unit 8 | ☑ (4) | ☑ (23) | all 5 levels | `grief-models` ✓ (1 compare + risk mcq) |
+| PFA & Acute Grief Support (`aux-psychological-first-aid`) | Unit 8 | ☑ (5) | ☑ (31) | all 5 levels | `grief-models` ✓ · `bereavement-support` ✓ (notification-scenarios compare) |
 
 ## Coverage rules the lint pass enforces
 - Every major concept has at least one **Apply** or **Analyze** item, not only "define"-level.
@@ -84,7 +84,14 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   validity, Lilienfeld-vs-Sue): items quiz the debates themselves at evaluate level — if study
   sessions surface confusion between "what the framework says" and "what the critique says," that's
   the intended discrimination, not a bug.
-- **Elective cluster design:** `pfa-frameworks` and `bereavement-support` have analyze/evaluate items
-  but no dedicated `compare`-type item; the explicit compare lives in `grief-models`
-  (Kübler-Ross vs. dual process). Add compares to the other two on a later `lint`/`generate` pass if
-  desired (e.g. WHO Look/Listen/Link vs. NCTSN 8 Core Actions).
+- **Elective cluster design:** `pfa-frameworks` has analyze/evaluate items but no dedicated
+  `compare`-type item; explicit compares live in `grief-models` (Kübler-Ross vs. dual process) and
+  `bereavement-support` (the three "where is she?" notification scenarios, added 2026-07-08). Add a
+  `pfa-frameworks` compare on a later `lint`/`generate` pass if desired (e.g. WHO Look/Listen/Link
+  vs. NCTSN 8 Core Actions).
+- **Death-notification addition (2026-07-08):** `concept-death-notification` added to the PFA
+  elective (Core Action 2 territory: notification, missing loved ones, viewing the body) with an
+  8-item set inside `bereavement-support`. Viewing-the-body evidence is qualitative (Chapple &
+  Ziebland, n=80) — the practice standard is an *offered, prepared choice*; don't overstate it as
+  proof viewing helps. When Unit 8 is built, add notification-after-suicide specifics and wire the
+  forward wikilink (same handoff pass as the rest of the module).

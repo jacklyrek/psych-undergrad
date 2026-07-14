@@ -263,3 +263,97 @@ generate rules in [`../CLAUDE.md`](../CLAUDE.md). Clusters: `pfa-frameworks`, `g
   }
 ]
 ```
+
+## Topic: death notification (cluster: bereavement-support)
+
+```json
+[
+  {
+    "id": "ax-pfa-notify-principles-cloze-01",
+    "prompt": "The five law-enforcement death-notification principles: in person, in time, in pairs, in {{plain language}}, with compassion.",
+    "answer": "plain language",
+    "type": "cloze",
+    "source_page": "wiki/concept-death-notification.md",
+    "topic": "notification-principles",
+    "cluster": "bereavement-support",
+    "bloom_level": "remember"
+  },
+  {
+    "id": "ax-pfa-notify-grieving-recall-01",
+    "prompt": "Walk through the GRIEV_ING death-notification protocol — what does each letter (including the underscore) stand for?",
+    "answer": "Gather the family; Resources (call in support — chaplain, family, friends); Identify (yourself, the deceased BY NAME, and what the family already knows); Educate (briefly, what happened); Verify (say 'died'/'dead' — no euphemisms); _ = space (stop talking, let it land); Inquire (invite and answer all questions); Nuts and bolts (viewing the body, belongings, funeral steps); Give (your contact info for later questions). The news itself is one plain sentence in the middle — most of the protocol is preparation and presence.",
+    "type": "recall",
+    "source_page": "wiki/concept-death-notification.md",
+    "topic": "grieving-protocol",
+    "cluster": "bereavement-support",
+    "bloom_level": "understand"
+  },
+  {
+    "id": "ax-pfa-notify-dwords-explain-01",
+    "prompt": "Why do all death-notification protocols insist on the words 'died'/'dead' rather than 'passed away,' 'lost,' or 'didn't make it'?",
+    "answer": "Under acute shock, people take euphemisms literally or fail to parse them ('lost? then go find her'). Ambiguity forces the bereaved to do the inferential work of concluding their person is dead — which is crueler than the word. The MADD/DOJ curriculum calls euphemisms 'words of denial.' Plain words are a kindness, not bluntness for its own sake.",
+    "type": "explain",
+    "source_page": "wiki/concept-death-notification.md",
+    "topic": "plain-language",
+    "cluster": "bereavement-support",
+    "bloom_level": "understand"
+  },
+  {
+    "id": "ax-pfa-notify-deliver-apply-01",
+    "prompt": "A child has died; her mother doesn't know yet, and you must tell her. Construct the notification: what comes before the news, what are the exact kinds of words in it, and what do you do immediately after?",
+    "answer": "Seated and private if possible. Warning shot first ('Mrs. Alvarez, I have very hard news'). Then plain words with the child's name: 'Sofia died in the accident. She's dead. I am so sorry.' Then STOP TALKING and stay — collapse, screaming, denial, or anger at you are all normal and need presence, not correction or more information. If she is flooded past function, shift to stabilization (calm presence, time, grounding).",
+    "type": "vignette",
+    "source_page": "wiki/concept-death-notification.md",
+    "topic": "delivering-notification",
+    "cluster": "bereavement-support",
+    "bloom_level": "apply"
+  },
+  {
+    "id": "ax-pfa-notify-unconfirmed-mcq-01",
+    "prompt": "After a building collapse, a father grabs your arm: 'Where's my son? Is he okay?' You have no information about the boy. Which response is correct?",
+    "answer": "Honest uncertainty in both directions, plus what you know, plus visible follow-through. False reassurance destroys trust when the truth arrives; the NCTSN guide explicitly warns against premature reassurance about missing loved ones.",
+    "options": [
+      "'I'm sure he's fine — kids are resilient.'",
+      "'I don't know yet. Here's what I do know: rescue teams are searching. I'll find the person keeping the family list and come back to you either way.'",
+      "'Let's get you some water and sit down first.'",
+      "'You should prepare yourself for the worst.'"
+    ],
+    "correct": "'I don't know yet. Here's what I do know: rescue teams are searching. I'll find the person keeping the family list and come back to you either way.'",
+    "type": "mcq",
+    "source_page": "wiki/concept-death-notification.md",
+    "topic": "unconfirmed-missing",
+    "cluster": "bereavement-support",
+    "bloom_level": "apply"
+  },
+  {
+    "id": "ax-pfa-notify-reasking-analyze-01",
+    "prompt": "An hour after being told her child died, a mother asks you — for the third time — 'Where is she? When is she coming?' What is happening, and how do you respond each time?",
+    "answer": "Not a failure to hear you — shock/dissociation or the first crash of denial; the mind is metering out something unbearable (accepting the reality of the loss is Worden's TASK, not an event). Respond truthfully every time, gently, without escalating detail and without irritation: 'She died, remember — she's at the hospital now. I'm right here with you.' Never play along with the question, and never re-lecture the medical details.",
+    "type": "vignette",
+    "source_page": "wiki/concept-death-notification.md",
+    "topic": "re-asking",
+    "cluster": "bereavement-support",
+    "bloom_level": "analyze"
+  },
+  {
+    "id": "ax-pfa-notify-scenarios-compare-01",
+    "prompt": "'Where is my child?' can arise in three distinct situations for a helper. Name them and state how the honest answer differs in each — and the one rule common to all three.",
+    "answer": "(1) Death confirmed, family doesn't know: warning shot, then plain words with the name ('Sofia died'), then silence and presence. (2) Genuinely unknown: honest uncertainty in both directions — no 'I'm sure she's fine,' no grim hinting — plus what you DO know and visible follow-through. (3) Told but asking again (shock/denial): the same truth, gently, every time. Common rule: never lie and never stall with soothing vagueness — false reassurance poisons all later trust.",
+    "type": "compare",
+    "source_page": "wiki/concept-death-notification.md",
+    "topic": "notification-scenarios",
+    "cluster": "bereavement-support",
+    "bloom_level": "analyze"
+  },
+  {
+    "id": "ax-pfa-notify-viewing-evaluate-01",
+    "prompt": "A colleague says: 'Don't let the parents see the body — it was a violent death, it will traumatize them.' Evaluate this against the evidence.",
+    "answer": "The evidence doesn't support routine shielding. Chapple & Ziebland (BMJ, n=80 traumatic bereavements): of 49 who viewed, 35 said it was the right decision and only 2 regretted it (both had badly damaged bodies AND no real choice), while some who didn't view were later haunted by not knowing. Their conclusion: relatives should have the OPPORTUNITY to view — a prepared, genuine choice, with honest description of what they'll see, time to decide, and room for family members to choose differently. 'Clinicians should not assume that relatives will be harmed by seeing a bruised or damaged body.' Neither pushing viewing nor blocking it — an offered choice.",
+    "type": "vignette",
+    "source_page": "wiki/concept-death-notification.md",
+    "topic": "viewing-the-body",
+    "cluster": "bereavement-support",
+    "bloom_level": "evaluate"
+  }
+]
+```
