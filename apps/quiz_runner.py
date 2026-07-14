@@ -55,20 +55,21 @@ def read_reading(rel_path: str) -> str | None:
 
 # ---------- session bootstrap ----------
 
+def matches_filters(it, filters):
+    if filters["units"] and it.get("unit") not in filters["units"]:
+        return False
+    if filters["blooms"] and it.get("bloom_level") not in filters["blooms"]:
+        return False
+    if filters["types"] and it.get("type") not in filters["types"]:
+        return False
+    return True
+
+
 def new_session(items, filters, length, cram):
     state = sch.ensure_state(items, sch.load_state())
     sch.save_state(state)
     pool = sch.due_items(items, state, shuffle=True) if not cram else _shuffled(items)
-    # apply filters
-    def keep(it):
-        if filters["units"] and it.get("unit") not in filters["units"]:
-            return False
-        if filters["blooms"] and it.get("bloom_level") not in filters["blooms"]:
-            return False
-        if filters["types"] and it.get("type") not in filters["types"]:
-            return False
-        return True
-    pool = [it for it in pool if keep(it)][:length]
+    pool = [it for it in pool if matches_filters(it, filters)][:length]
     st.session_state.queue = [it["id"] for it in pool]
     st.session_state.idx = 0
     st.session_state.stage = "prompt"
@@ -109,7 +110,17 @@ NO_FILTERS = {"units": [], "blooms": [], "types": []}
 
 with st.sidebar:
     st.header("⚙️ Customize session")
-    st.caption(f"{len(items)} items in bank · **{len(due_now)} due today**")
+    # The filter widgets render below this caption, but their values persist in session_state
+    # across Streamlit's rerun-on-interaction, so the due count reflects the current selection.
+    sel = {"units": st.session_state.get("f_units", []),
+           "blooms": st.session_state.get("f_blooms", []),
+           "types": st.session_state.get("f_types", [])}
+    if any(sel.values()):
+        due_sel = [it for it in due_now if matches_filters(it, sel)]
+        st.caption(f"{len(items)} items in bank · **{len(due_sel)} due today in your selection** "
+                   f"({len(due_now)} due overall)")
+    else:
+        st.caption(f"{len(items)} items in bank · **{len(due_now)} due today**")
 
     mode = st.radio(
         "Mode",
@@ -126,11 +137,11 @@ with st.sidebar:
 
     with st.expander("🎯 Focus on specific material (optional)"):
         st.caption("Leave empty to draw from everything.")
-        f_units = st.multiselect("Units", all_units, default=[], format_func=unit_label,
+        f_units = st.multiselect("Units", all_units, default=[], format_func=unit_label, key="f_units",
                                  help="Focus on one or more syllabus units (or an elective module).")
-        f_blooms = st.multiselect("Bloom levels", all_blooms, default=[],
+        f_blooms = st.multiselect("Bloom levels", all_blooms, default=[], key="f_blooms",
                                   help="remember → understand → apply → analyze → evaluate. Apply/analyze is where exams concentrate.")
-        f_types = st.multiselect("Item types", all_types, default=[])
+        f_types = st.multiselect("Item types", all_types, default=[], key="f_types")
     filters = {"units": f_units, "blooms": f_blooms, "types": f_types}
 
     st.divider()
