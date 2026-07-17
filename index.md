@@ -127,3 +127,31 @@ _Items:_ [aux-psychological-first-aid](items/aux-psychological-first-aid.md) —
 (`pfa-frameworks`, `grief-models`, `bereavement-support` incl. an 8-item death-notification set), all
 5 Bloom levels; heavy on application/stance + compare items and discrimination mcqs. _Sources:_
 [aux PFA sources](research/aux-psychological-first-aid-sources.md).
+
+### Understanding & Changing Addictive Behavior  ☑ readings + items  · borders Units 6 & 9
+_Readings:_
+- [aux-addiction](wiki/aux-addiction.md) — hub: addiction as a chronic, relapsing condition (not a
+  willpower failure), the "meet them where they are" stance, and the map. Flags the contested
+  disease-vs-choice framing and harm-reduction vs. abstinence.
+- [concept-addiction-models](wiki/concept-addiction-models.md) — DSM-5-TR **SUD** (11 criteria / 4
+  groups / mild–moderate–severe), physical dependence vs. addiction (prescribed-med carve-out),
+  tolerance/withdrawal/craving, **gambling** as the only behavioral addiction, and the **three
+  models** (brain-disease vs. biopsychosocial vs. learning/choice).
+- [concept-neuroscience-of-addiction](wiki/concept-neuroscience-of-addiction.md) — dopamine & reward,
+  cue reactivity, Koob & Volkow's **three-stage cycle** (binge → withdrawal/negative affect →
+  preoccupation), and the **positive→negative reinforcement** shift.
+- [concept-stages-of-change](wiki/concept-stages-of-change.md) — Prochaska & DiClemente **TTM**:
+  precontemplation → contemplation → preparation → action → maintenance (spiral, not staircase);
+  decisional balance; stage-matched intervention.
+- [concept-relapse-prevention](wiki/concept-relapse-prevention.md) — Marlatt: high-risk situations,
+  coping/**self-efficacy**, **lapse vs. relapse**, the **abstinence violation effect**, urge surfing,
+  HALT; relapse ≠ failure.
+- [concept-treatment-and-recovery](wiki/concept-treatment-and-recovery.md) — **MI** (righting reflex,
+  change talk, RULE), CBT, **contingency management** (stimulants), **MOUD** (methadone/buprenorphine
+  reduce mortality), **mutual-help** (AA/TSF Cochrane + SMART Recovery), **harm reduction vs.
+  abstinence**, recovery capital.
+
+_Items:_ [aux-addiction](items/aux-addiction.md) — 35 items across 4 clusters (`addiction-models`,
+`change-stages`, `relapse-concepts`, `addiction-treatments`), all 5 Bloom levels; heavy on
+application/stance + 5 compare items and 4 discrimination mcqs. _Sources:_
+[aux addiction sources](research/aux-addiction-sources.md).

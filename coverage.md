@@ -29,6 +29,7 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
 | Module | Borders | Readings | Items | Bloom spread | Clusters w/ compare items |
 |---|---|---|---|---|---|
 | PFA & Acute Grief Support (`aux-psychological-first-aid`) | Unit 8 | ☑ (5) | ☑ (31) | all 5 levels | `grief-models` ✓ · `bereavement-support` ✓ (notification-scenarios compare) |
+| Understanding & Changing Addictive Behavior (`aux-addiction`) | Units 6, 9 | ☑ (6) | ☑ (35) | all 5 levels | 4/4 ✓ (`addiction-models`, `change-stages`, `relapse-concepts`, `addiction-treatments` each have a compare) |
 
 ## Coverage rules the lint pass enforces
 - Every major concept has at least one **Apply** or **Analyze** item, not only "define"-level.
@@ -95,3 +96,20 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   Ziebland, n=80) — the practice standard is an *offered, prepared choice*; don't overstate it as
   proof viewing helps. When Unit 8 is built, add notification-after-suicide specifics and wire the
   forward wikilink (same handoff pass as the rest of the module).
+- **Elective `aux-addiction` (2026-07-16):** 6 readings, 35 items, 16 sources; 4 clusters, each with
+  a compare item, all 5 Bloom levels (R=6/U=9/Ap=7/An=9/E=4). Deliberately high contested-material
+  load: the **brain-disease-vs-learning/choice** debate and **harm-reduction-vs-abstinence** are
+  quizzed at evaluate level as debates, not settled facts — if study sessions surface confusion
+  between "what the disease model says" and "what its critics say," that's the intended
+  discrimination. `topic` tags carry the fine-grained confusables (tolerance/withdrawal/craving;
+  MOUD-which-reduces-mortality; stage-matching).
+- **Elective `aux-addiction` → Units 6/8/9 handoff:** the hub and concept pages forward-reference the
+  *pending* Unit 6 (SUD as a DSM category), Unit 8 (overdose/naloxone/crisis), and Unit 9 (MI/CBT as
+  general modalities) by name, not wikilink (no `unit06/08/09-*` pages exist yet). When those units
+  are built, wire real wikilinks and reconcile overlap so the module and units don't duplicate or
+  contradict: **SUD criteria** (module vs. Unit 6), **MI/CBT** (module vs. Unit 9). MI's OARS also
+  traces to `unit01-helping-skills` (live wikilink already).
+- **Elective `aux-addiction` moving-target caveats:** MOUD/pharmacotherapy specifics and CM's
+  "gold-standard for stimulants" reflect 2024–25 evidence; the AA/TSF Cochrane finding (Kelly 2020)
+  reversed prior "no evidence" claims — re-verify if used beyond orientation. SMART Recovery's
+  evidence base is thinner than AA's (noted inline).

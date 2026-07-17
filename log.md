@@ -206,3 +206,36 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   pfa-frameworks still the only cluster without one). items.json rebuilt.
 
 ## [2026-07-13] maintenance | all units | removed CS-background framing from CLAUDE.md, course-map, learning-science doc, 8 wiki pages, and 2 item files (per human request: not a typical CS profile); rebuilt items.json (183 items)
+
+## [2026-07-16] create-module | aux-addiction (Understanding & Changing Addictive Behavior) | 16 sources, 6 readings, 35 items
+- Second elective module (after PFA). Off-spine `aux-` namespace; borders **Unit 6** (SUD as a
+  diagnostic category) and **Unit 9** (MI/CBT modalities). Built on request: *addictions and how to
+  break them.* Frontmatter: `track: elective`, `module: addiction`, `spine: false`,
+  `related_units: [6, 9]`. Item id prefix `ax-add-`.
+- Research (heavy/clinical + partly contested — kept precise): NIDA *Drug Misuse and Addiction* [S1],
+  *Treatment and Recovery* [S2, 40–60% relapse ≈ chronic disease], DrugFacts [S3]; Koob & Volkow
+  *Lancet Psychiatry* three-stage cycle [S4]; DSM-5-TR SUD 11 criteria/4 groups/severity via SAMHSA-
+  NCBI [S5]; Prochaska & DiClemente TTM [S6]; Marlatt/NIAAA relapse-prevention overview [S7];
+  SAMHSA TIP 35 MI [S8]; NIDA MOUD (methadone/bup reduce mortality, not naltrexone) [S9]; Kelly 2020
+  Cochrane AA/TSF [S10]; contingency management gold-standard for stimulants + harm-reduction tension
+  [S11]; gambling as sole behavioral addiction / Potenza [S12]; brain-disease-vs-learning debate
+  (Lewis; "neither brain disease nor moral failing") [S13]; SMART Recovery [S14]; Surgeon General
+  *Facing Addiction* [S15]; APA SUD/IGD [S16].
+- Readings: aux-addiction (hub), concept-addiction-models (SUD dx + tolerance/withdrawal/craving +
+  gambling + 3 models), concept-neuroscience-of-addiction (dopamine, cue reactivity, 3-stage cycle,
+  pos→neg reinforcement), concept-stages-of-change (TTM, spiral, stage-matching), concept-relapse-
+  prevention (Marlatt, HRS, lapse vs relapse, AVE, urge surfing), concept-treatment-and-recovery
+  (MI/CBT/CM/MOUD/mutual-help/harm-reduction). All cited [S#], interlinked, forward-linked to pending
+  Units 6/8/9.
+- Tensions flagged (per rules): brain-disease model is contested (learning/choice alternatives);
+  harm reduction vs. abstinence held as integrated not opposed; only gambling is a DSM behavioral
+  addiction (IGD = Section III); MOUD ≠ "swapping addictions"; physical dependence ≠ addiction
+  (prescribed-medication carve-out).
+- Items: 35 across 4 clusters (`addiction-models` 8, `change-stages` 8, `relapse-concepts` 9,
+  `addiction-treatments` 10); Bloom R=6/U=9/Ap=7/An=9/E=4. 5 compare items (one per major confusable:
+  models, stage-matching, lapse-vs-relapse, harm-reduction, AA-vs-SMART), 4 discrimination mcqs
+  (behavioral addiction, precontemplation move, stimulant tx, which MOUD reduce mortality), and
+  several stance drills (righting reflex, relapse≠failure, MOUD stigma).
+- Bookkeeping: index.md + coverage.md updated (elective sections); log appended; items.json rebuilt
+  (218 items total). Handoff hole logged: forward-links to Units 6/8/9 are by name (pending units) —
+  rewire to real wikilinks and reconcile SUD-criteria / MI-CBT overlap when those units are built.

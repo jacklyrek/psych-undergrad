@@ -18,8 +18,7 @@ client, not only the conversation with them). [S1][S2]
 
 ## The architecture (learn this cold — it's diagram-question bait)
 
-**Four quadrants.** The 1992 model quietly assumed a majority counselor and a minority client. The
-MSJCC crosses counselor × client status explicitly: [S1][S2]
+**Four quadrants.** The 1992 model quietly assumed a majority counselor and a minority client. The MSJCC crosses counselor × client status explicitly: [S1][S2]
 
 | | Marginalized client | Privileged client |
 |---|---|---|
@@ -49,26 +48,13 @@ skilled; the 2015 model asks what you *did about it*. [S1]
 
 **Six socioecological levels** structure the advocacy domain, from inside the client outward:
 **intrapersonal → interpersonal → institutional → community → public policy → international/
-global.** Worked examples from the authors: helping a client process internalized microaggressions
-(intrapersonal); a school counselor getting a wheelchair-accessible route fixed so a student stops
-losing instructional time (institutional); connecting a client to identity-affirming community
-organizations (community); advocacy on trans-inclusive public-facility policy (public policy).
-[S2]
+global.** Worked examples from the authors: helping a client process internalized microaggressions (intrapersonal); a school counselor getting a wheelchair-accessible route fixed so a student stops losing instructional time (institutional); connecting a client to identity-affirming community organizations (community); advocacy on trans-inclusive public-facility policy (public policy). [S2]
 
 ## What "advocacy" changes about the job
 
-The MSJCC's most consequential sentence is structural: problems are not always inside the client.
-When a client's distress is being produced by an inaccessible building, a discriminatory workplace,
-or a hostile policy, culturally competent treatment of the *feelings* alone quietly locates the
-pathology in the person suffering it. Advocacy "with, and on behalf of" clients is the framework's
-answer — and it deliberately echoes the counselor stance debate from [[theory-postmodern]] (the
-client is not the problem; the problem is the problem). [S1][S2]
+The MSJCC's most consequential sentence is structural: problems are not always inside the client. When a client's distress is being produced by an inaccessible building, a discriminatory workplace, or a hostile policy, culturally competent treatment of the *feelings* alone quietly locates the pathology in the person suffering it. Advocacy "with, and on behalf of" clients is the framework's answer — and it deliberately echoes the counselor stance debate from [[theory-postmodern]] (the client is not the problem; the problem is the problem). [S1][S2]
 
-The fix-it caution (see [[unit01-helping-skills]]) cuts both ways here. Advocacy *is* a fix-it move — and this is the one place
-the curriculum licenses it. But the discipline still applies: advocacy done *for* a client without
-their steering can recreate the paternalism it means to correct ("non-paternalistic" is written
-into [[concept-cultural-humility]]'s definition for exactly this reason). Empower first; act with;
-act on behalf of only where asked or where the client can't. [S4][S2]
+The fix-it caution (see [[unit01-helping-skills]]) cuts both ways here. Advocacy *is* a fix-it move — and this is the one place the curriculum licenses it. But the discipline still applies: advocacy done *for* a client without their steering can recreate the paternalism it means to correct ("non-paternalistic" is written into [[concept-cultural-humility]]'s definition for exactly this reason). Empower first; act with; act on behalf of only where asked or where the client can't. [S4][S2]
 
 ## What's contested (don't over-learn it)
 

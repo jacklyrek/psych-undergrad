@@ -11,8 +11,7 @@ source_units: [4]
 Empathy without cultural awareness quietly imposes your norms on people. That's the syllabus's
 one-line case for this unit, and it's worth sitting with: the failure mode isn't hostility, it's a
 well-meaning counselor reflecting feelings accurately while assuming that *talking to a stranger
-about feelings* is a normal thing to do, that eye contact means engagement, that individuating from
-your family is health, and that the client's hesitancy is "resistance" rather than a reasonable
+about feelings* is a normal thing to do, that eye contact means engagement, that individuating from your family is health, and that the client's hesitancy is "resistance" rather than a reasonable
 response to a system that has treated their community badly. None of that requires malice — just an unexamined counselor. This unit is the examination.
 
 It is also not optional garnish: the ACA Code makes multicultural competency part of the
@@ -22,8 +21,7 @@ gives it its own core area (**Social & Cultural Diversity**). [S16]
 The unit has three jobs:
 
 1. **Understand "culture" broadly** — race and ethnicity, yes, and also religion, class, ability,
-   gender, sexuality, age, region, language. And the pivot the whole field turns on: **the counselor
-   has a culture too.** Yours is not the neutral default the others deviate from.
+   gender, sexuality, age, region, language. And the pivot the whole field turns on: **the counselor has a culture too.** Yours is not the neutral default the others deviate from.
 2. **Learn the profession's frameworks** — the [[theory-tripartite-model]] (1992) and its successor
    the [[concept-msjcc]] (2015), plus the stance that animates both: [[concept-cultural-humility]].
 3. **Get concrete** — what privilege and power do inside the dyad ([[concept-privilege-power]]), what [[concept-microaggressions]] look like in session and how to repair them, and how [[concept-acculturation]] and help-seeking norms shape who shows up and who stays.
@@ -46,8 +44,7 @@ So the relationship — the thing Unit 1 established as the active ingredient �
 cultural incompetence damages and cultural responsiveness protects. Same engine, harder conditions.
 
 And a humbling measurement result to carry through the unit: **the counselor's self-rating is the
-wrong gauge.** Self-reported multicultural competence correlates with social desirability, and once
-you control for that, it stops predicting actual case-conceptualization ability at all. What
+wrong gauge.** Self-reported multicultural competence correlates with social desirability, and once you control for that, it stops predicting actual case-conceptualization ability at all. What
 predicts outcomes is the **client's** perception. [S11][S9] You do not get to grade your own
 cultural competence — which is, in itself, the best argument for humility.
 

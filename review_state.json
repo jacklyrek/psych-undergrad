@@ -154,11 +154,11 @@
     "last": "2026-07-08"
   },
   "u2-personcentered-apply-01": {
-    "ease": 2.14,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-14",
-    "last": "2026-07-08"
+    "ease": 2.24,
+    "interval": 13,
+    "reps": 3,
+    "due": "2026-07-27",
+    "last": "2026-07-14"
   },
   "u2-existential-cloze-01": {
     "ease": 2.8,
@@ -364,11 +364,11 @@
     "last": "2026-07-06"
   },
   "u2-defense-apply-01": {
-    "ease": 1.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-15",
-    "last": "2026-07-09"
+    "ease": 1.8,
+    "interval": 10,
+    "reps": 3,
+    "due": "2026-07-25",
+    "last": "2026-07-15"
   },
   "ax-pfa-lll-cloze-01": {
     "ease": 2.7,
@@ -378,18 +378,18 @@
     "last": "2026-07-07"
   },
   "ax-pfa-objectives-recall-01": {
-    "ease": 1.64,
+    "ease": 1.32,
     "interval": 1,
-    "reps": 1,
-    "due": "2026-07-09",
-    "last": "2026-07-08"
+    "reps": 0,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "ax-pfa-debrief-understand-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-13",
-    "last": "2026-07-07"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-31",
+    "last": "2026-07-15"
   },
   "ax-pfa-coreactions-recall-01": {
     "ease": 2.38,
@@ -399,18 +399,18 @@
     "last": "2026-07-08"
   },
   "ax-pfa-lll-apply-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-13",
-    "last": "2026-07-07"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-31",
+    "last": "2026-07-15"
   },
   "ax-pfa-debrief-apply-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-13",
-    "last": "2026-07-07"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-31",
+    "last": "2026-07-15"
   },
   "ax-pfa-coreactions-analyze-01": {
     "ease": 2.06,
@@ -420,11 +420,11 @@
     "last": "2026-07-08"
   },
   "ax-pfa-evidence-evaluate-01": {
-    "ease": 2.42,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-15",
-    "last": "2026-07-09"
+    "ease": 2.52,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-07-30",
+    "last": "2026-07-15"
   },
   "ax-pfa-dpm-cloze-01": {
     "ease": 2.7,
@@ -448,18 +448,18 @@
     "last": "2026-07-08"
   },
   "ax-pfa-dpm-apply-01": {
-    "ease": 2.56,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-14",
-    "last": "2026-07-08"
+    "ease": 2.66,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-07-30",
+    "last": "2026-07-15"
   },
   "ax-pfa-pgd-analyze-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-13",
-    "last": "2026-07-07"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-31",
+    "last": "2026-07-15"
   },
   "ax-pfa-pgd-cloze-01": {
     "ease": 2.7,
@@ -476,18 +476,18 @@
     "last": "2026-07-07"
   },
   "ax-pfa-pgd-risk-mcq-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-13",
-    "last": "2026-07-07"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-31",
+    "last": "2026-07-15"
   },
   "ax-pfa-ring-cloze-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-13",
-    "last": "2026-07-07"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-31",
+    "last": "2026-07-15"
   },
   "ax-pfa-ring-apply-01": {
     "ease": 2.56,
@@ -511,18 +511,18 @@
     "last": "2026-07-06"
   },
   "ax-pfa-help-apply-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-13",
-    "last": "2026-07-07"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-31",
+    "last": "2026-07-15"
   },
   "ax-pfa-refer-analyze-01": {
-    "ease": 2.0,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-09",
-    "last": "2026-07-08"
+    "ease": 2.1,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-21",
+    "last": "2026-07-15"
   },
   "ax-pfa-selfcare-evaluate-01": {
     "ease": 2.38,
@@ -546,11 +546,11 @@
     "last": "2026-07-12"
   },
   "u3-principles-recall-01": {
-    "ease": 2.04,
-    "interval": 1,
-    "reps": 0,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.24,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-21",
+    "last": "2026-07-15"
   },
   "u3-principles-compare-01": {
     "ease": 2.7,
@@ -574,25 +574,25 @@
     "last": "2026-07-13"
   },
   "u3-ethicslaw-conflict-recall-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
-  },
-  "u3-decision-model-explain-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
-  },
-  "u3-consent-cloze-01": {
-    "ease": 2.7,
+    "ease": 2.38,
     "interval": 6,
     "reps": 2,
-    "due": "2026-07-15",
-    "last": "2026-07-09"
+    "due": "2026-07-20",
+    "last": "2026-07-14"
+  },
+  "u3-decision-model-explain-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
+  },
+  "u3-consent-cloze-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-31",
+    "last": "2026-07-15"
   },
   "u3-consent-elements-recall-01": {
     "ease": 2.38,
@@ -623,11 +623,11 @@
     "last": "2026-07-13"
   },
   "u3-consent-mandated-apply-01": {
-    "ease": 2.14,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.24,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-conf-triad-compare-01": {
     "ease": 2.56,
@@ -637,18 +637,18 @@
     "last": "2026-07-12"
   },
   "u3-jaffee-recall-01": {
-    "ease": 1.96,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.06,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-exceptions-freerecall-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-b2a-wording-cloze-01": {
     "ease": 2.7,
@@ -658,11 +658,11 @@
     "last": "2026-07-13"
   },
   "u3-minimal-disclosure-explain-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.24,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-21",
+    "last": "2026-07-15"
   },
   "u3-court-order-apply-01": {
     "ease": 2.7,
@@ -693,11 +693,11 @@
     "last": "2026-07-12"
   },
   "u3-tarasoff-facts-recall-01": {
-    "ease": 2.14,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.24,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-warn-protect-compare-01": {
     "ease": 2.7,
@@ -707,11 +707,11 @@
     "last": "2026-07-12"
   },
   "u3-tobriner-cloze-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-protect-menu-recall-01": {
     "ease": 2.38,
@@ -721,25 +721,25 @@
     "last": "2026-07-13"
   },
   "u3-trigger-discrim-vignette-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-state-variation-mcq-01": {
-    "ease": 2.38,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.48,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-tarasoff-critique-evaluate-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-threat-stance-vignette-01": {
     "ease": 2.7,
@@ -777,11 +777,11 @@
     "last": "2026-07-13"
   },
   "u3-reporting-alliance-stance-01": {
-    "ease": 2.22,
+    "ease": 2.18,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u3-dual-5year-cloze-01": {
     "ease": 2.7,
@@ -805,25 +805,25 @@
     "last": "2026-07-12"
   },
   "u3-rural-apply-01": {
-    "ease": 2.46,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
-  },
-  "u3-slippery-slope-explain-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
-  },
-  "u3-scope-competence-compare-01": {
-    "ease": 2.7,
+    "ease": 2.56,
     "interval": 6,
     "reps": 2,
-    "due": "2026-07-15",
-    "last": "2026-07-09"
+    "due": "2026-07-20",
+    "last": "2026-07-14"
+  },
+  "u3-slippery-slope-explain-01": {
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
+  },
+  "u3-scope-competence-compare-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-07-31",
+    "last": "2026-07-15"
   },
   "u3-c2b-newspecialty-recall-01": {
     "ease": 2.56,
@@ -833,25 +833,25 @@
     "last": "2026-07-12"
   },
   "u3-values-referral-vignette-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-impairment-vignette-01": {
-    "ease": 2.04,
+    "ease": 1.58,
     "interval": 1,
     "reps": 0,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u3-multicultural-floor-cloze-01": {
-    "ease": 1.96,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "ease": 2.06,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-20",
+    "last": "2026-07-14"
   },
   "u3-professions-prescribe-mcq-01": {
     "ease": 2.7,
@@ -875,18 +875,18 @@
     "last": "2026-07-12"
   },
   "u3-professions-paths-recall-01": {
-    "ease": 1.86,
+    "ease": 1.64,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u3-rxp-recall-01": {
-    "ease": 1.72,
+    "ease": 1.44,
     "interval": 1,
     "reps": 0,
-    "due": "2026-07-14",
-    "last": "2026-07-13"
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-tripartite-recall-01": {
     "ease": 2.5,
@@ -896,11 +896,11 @@
     "last": null
   },
   "u4-tripartite-cloze-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-dimension-vignette-01": {
     "ease": 2.5,
@@ -910,11 +910,11 @@
     "last": null
   },
   "u4-dimension-vignette-02": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-dimension-compare-01": {
     "ease": 2.5,
@@ -938,18 +938,18 @@
     "last": null
   },
   "u4-msjcc-quadrants-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-msjcc-socioeco-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-msjcc-vignette-01": {
     "ease": 2.5,
@@ -959,39 +959,39 @@
     "last": null
   },
   "u4-frameworks-compare-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-humility-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-humility-compare-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-humility-vignette-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-humility-stance-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-evidence-recall-01": {
     "ease": 2.5,
@@ -1008,25 +1008,25 @@
     "last": null
   },
   "u4-evidence-analyze-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-accult-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.36,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-accult-cloze-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-accult-vignette-01": {
     "ease": 2.5,
@@ -1064,18 +1064,18 @@
     "last": null
   },
   "u4-accult-critique-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-helpseek-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.36,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-worldview-explain-01": {
     "ease": 2.5,
@@ -1085,11 +1085,11 @@
     "last": null
   },
   "u4-helpseek-stance-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-privilege-cloze-01": {
     "ease": 2.5,
@@ -1099,25 +1099,25 @@
     "last": null
   },
   "u4-privilege-explain-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-privilege-power-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-privilege-stance-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-broach-recall-01": {
     "ease": 2.5,
@@ -1127,25 +1127,25 @@
     "last": null
   },
   "u4-broach-recall-02": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-broach-vignette-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-broach-vignette-02": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-broach-compare-01": {
     "ease": 2.5,
@@ -1162,11 +1162,11 @@
     "last": null
   },
   "u4-autobiography-production-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-microagg-recall-01": {
     "ease": 2.5,
@@ -1176,18 +1176,18 @@
     "last": null
   },
   "u4-microagg-cloze-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-microagg-vignette-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "u4-microagg-vignette-02": {
     "ease": 2.5,
@@ -1211,73 +1211,73 @@
     "last": null
   },
   "u4-microagg-critique-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
-  },
-  "u4-microagg-clinical-analyze-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
-  },
-  "ax-pfa-notify-principles-cloze-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-09",
-    "last": null
-  },
-  "ax-pfa-notify-grieving-recall-01": {
     "ease": 2.18,
     "interval": 1,
     "reps": 0,
-    "due": "2026-07-10",
-    "last": "2026-07-09"
+    "due": "2026-07-16",
+    "last": "2026-07-15"
+  },
+  "u4-microagg-clinical-analyze-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
+  },
+  "ax-pfa-notify-principles-cloze-01": {
+    "ease": 2.18,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
+  },
+  "ax-pfa-notify-grieving-recall-01": {
+    "ease": 1.86,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "ax-pfa-notify-dwords-explain-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-09",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "ax-pfa-notify-deliver-apply-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-09",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "ax-pfa-notify-unconfirmed-mcq-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-10",
-    "last": "2026-07-09"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-21",
+    "last": "2026-07-15"
   },
   "ax-pfa-notify-reasking-analyze-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-10",
-    "last": "2026-07-09"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-21",
+    "last": "2026-07-15"
   },
   "ax-pfa-notify-scenarios-compare-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-09",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   },
   "ax-pfa-notify-viewing-evaluate-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.36,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-09",
-    "last": null
+    "due": "2026-07-16",
+    "last": "2026-07-15"
   }
 }
