@@ -11,9 +11,9 @@ What's built vs. pending, and where the readings and practice have holes. Update
 | 2 Theories | 1 | ☑ (7) | ☑ (36) | all 5 levels | theory-families ✓ (6 compares) |
 | 3 Ethics & Law | 1 | ☑ (9) | ☑ (51) | all 5 levels | 5/5 ✓ (9 compares) |
 | 4 Multicultural | 1 | ☑ (7) | ☑ (48) | all 5 levels | 5/5 ✓ (6 compares) |
-| 5 Development | 2 | ☐ | ☐ | — | — |
-| 6 Psychopathology | 2 | ☐ | ☐ | — | — |
-| 7 Assessment | 2 | ☐ | ☐ | — | — |
+| 5 Development | 2 | ☑ (7) | ☑ (45) | all 5 levels | 4/4 ✓ (5 compares) |
+| 6 Psychopathology | 2 | ☑ (12) | ☑ (75) | all 5 levels | 7/7 ✓ (8 compares) |
+| 7 Assessment | 2 | ☑ (7) | ☑ (51) | all 5 levels | 4/4 ✓ (`mse-domains`, `screening-tools`, `reliability-vs-validity`, `formulation-ps` — 5 compares) |
 | 8 Crisis & Trauma | 2 | ☐ | ☐ | — | — |
 | 9 Modalities | 3 | ☐ | ☐ | — | — |
 | 10 Group | 3 | ☐ | ☐ | — | — |
@@ -78,9 +78,11 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   one page beyond the promised six (`concept-microaggressions`, split out per one-concept-per-page).
   Course-map entry updated to match. 12 items (privilege, help-seeking, mcc-evidence topics) are
   intentionally unclustered — no confusable sibling.
-- **Unit 4 forward handoffs:** `concept-acculturation` and the hub forward-reference the *pending*
-  Unit 6 (culture-bound presentations / misreading acculturative stress as disorder) and Unit 7
-  (culture-fair assessment) by name, not wikilink. Wire when those units are built.
+- **Unit 4 forward handoffs (resolved 2026-07-17):** the Unit 6 handoff (culture-bound presentations
+  / misreading acculturative stress as disorder → `concept-dsm-structure`/CFI) and the Unit 7 handoff
+  (culture-fair assessment) are now **live wikilinks**: the hub's "Connects forward" and
+  `concept-acculturation`'s "Connects to" point to `unit07-assessment` / `concept-reliability-validity`
+  / `concept-screening-tools`. No remaining Unit 6/7 by-name refs on the Unit 4 pages.
 - **Unit 4 contested-material load is deliberately high** (humility-vs-competence, MCC measurement
   validity, Lilienfeld-vs-Sue): items quiz the debates themselves at evaluate level — if study
   sessions surface confusion between "what the framework says" and "what the critique says," that's
@@ -113,3 +115,114 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   "gold-standard for stimulants" reflect 2024–25 evidence; the AA/TSF Cochrane finding (Kelly 2020)
   reversed prior "no evidence" claims — re-verify if used beyond orientation. SMART Recovery's
   evidence base is thinner than AA's (noted inline).
+- **Unit 5 page consolidation (deliberate):** the course-map promised 10 pages including four
+  separate per-style pages (`concept-secure/anxious/avoidant/disorganized-attachment`) and a separate
+  `person-bowlby-ainsworth`. Built as **7 pages**: the four styles are folded into one
+  `concept-attachment-styles.md` (the confusable set is best taught side-by-side — compare/contrast
+  baked into one page, same rationale as Unit 1's `concept-core-conditions`), and Bowlby/Ainsworth
+  **plus Main** share one `person-bowlby-ainsworth.md`. Per-style topic tags (`secure-attachment`,
+  `avoidant-attachment`, `anxious-attachment`, `disorganized-attachment`) carry the fine-grained
+  discrimination inside the `attachment-styles` cluster. Split later if item volume grows.
+- **Unit 5 cluster addition beyond course-map:** added `piaget-stages` (the four cognitive stages are
+  a genuinely confusable set) alongside the course-map's `attachment-styles`, `erikson-stages`, and
+  `developmental-theorists`. Course-map entry updated to match. Attachment *theory/mechanism* items
+  (secure base, IWM, phases, Strange Situation, sensitivity/transmission-gap, AAI) are intentionally
+  **unclustered** (7 items) — they're not the styles confusable set; topic tags carry them. The 3
+  biopsychosocial items and 4 typical-vs-clinical/risk-not-destiny/rep items are also unclustered.
+- **Unit 5 Bloom spread:** R=7/U=9/Ap=12/An=9/E=8 across 45 items — heavy on apply/analyze/evaluate
+  per generate rules; every cluster has ≥1 compare (`attachment-styles` 1, `erikson-stages` 2,
+  `piaget-stages` 1, `developmental-theorists` 1 = 5 compares). Types: 12 explain, 10 mcq
+  (discrimination vignettes), 9 recall, 5 compare, 5 vignette, 4 cloze.
+- **Unit 5 → Unit 1 back-link wired:** `concept-therapeutic-alliance` (Unit 1) now forward-links to
+  `theory-attachment` / `concept-attachment-styles` (attachment as the developmental theory of the
+  bond; source_units updated to [1,3,5,7]) — the course-map's Unit 5 ↔ Unit 1 thread, made live.
+- **Unit 5 forward handoffs (Unit 6/7 resolved 2026-07-17):** the Unit 7 handoff on
+  `concept-biopsychosocial-model` (the intake biopsychosocial history) is now a **live wikilink** to
+  `unit07-assessment` / `concept-intake-interview` (both the body and the "Connects to" bullet); the
+  Unit 6 handoff was wired in the Unit 6 pass. Only **Unit 11** (biological domain) remains a by-name
+  forward-reference — wire when Unit 11 is built. Note the aging/grief end of the lifespan is handled
+  by cross-link to the existing PFA elective (`concept-grief-models`), not duplicated here.
+- **Unit 5 contested-material load is deliberately high** (maternal-sensitivity r≈.24 + transmission
+  gap; Strange Situation as possible imposed etic; Erikson/Piaget as heuristics not laws;
+  biopsychosocial "slogan" critique; disorganized-attachment risk-not-destiny): items quiz these as
+  live debates at evaluate level. If study sessions surface confusion between "what the framework
+  says" and "what its critique says," that's the intended discrimination. Disorganized-attachment
+  material is kept clinical and non-deterministic per the heavy-topic handling in CLAUDE.md.
+- **Unit 6 page plan deviations (deliberate, 2026-07-17):** built **12** pages vs. the course-map's
+  promised 11 — `concept-comorbidity` was **folded into `concept-categorical-vs-dimensional`**
+  (comorbidity is that debate's core evidence; one coherent argument, one page), and two pages were
+  **added** beyond the promise: `concept-neurodevelopmental-disorders` and
+  `concept-eating-disorders` (both syllabus core-concept categories the course-map page list had
+  skipped). `concept-substance-use-disorders` is deliberately concise: the DSM-structural view only,
+  deferring depth to the `aux-addiction` elective (overlap reconciled — see below). Course-map entry
+  updated to match.
+- **Unit 6 cluster additions beyond course-map:** `psychotic-spectrum` (the duration ladder is a
+  genuinely confusable set) and `eating-disorders` (AN/BN/BED hinges), alongside the promised
+  `mood-disorders`, `anxiety-disorders`, `trauma-disorders`, `personality-disorders`, and
+  `differential-vignettes`. OCD items (4), manual/structure items (7), SUD items (2),
+  neurodevelopmental items (4), and categorical-vs-dimensional items (8) are intentionally
+  **unclustered** (25 total) — topic tags carry them; their discriminations live as
+  `differential-vignettes` entries (OCD-vs-GAD, ASD-vs-social-anxiety, mania-vs-ADHD,
+  substance-induced, medical rule-out).
+- **Unit 6 Bloom spread:** R=20/U=10/Ap=18/An=19/E=8 across 75 items; every cluster has ≥1 compare
+  (8 total: grief-vs-MDD, mania-vs-hypomania, anxiety fear-map, trauma stressor×clock, psychotic
+  duration ladder, OCD-vs-OCPD, eating hinges, flashback-vs-hallucination). Types: 20 mcq
+  (discrimination vignettes — deliberately high for this unit per the course-map's "heavy vignette
+  unit" note), 18 explain, 15 recall, 11 cloze, 8 compare, 3 vignette. Includes the syllabus
+  practice rep as three production items (explain MDD/GAD/PTSD to a layperson in 2 minutes).
+- **Unit 6 ↔ aux-addiction reconciliation (done):** `concept-substance-use-disorders` carries the
+  DSM-structural view and wikilinks into the module; module hub + `concept-addiction-models`
+  "Unit 6 (planned)" references rewired to real wikilinks. No criteria duplication: the 11-criteria
+  deep-dive stays in the module.
+- **Unit 6 back-links wired:** `unit05-development` (both Unit 6 mentions), `concept-acculturation`
+  (culture-bound presentations → `concept-dsm-structure`/CFI), and the PFA elective's
+  `concept-grief-models` (PGD → `concept-trauma-stressor-disorders` + `concept-mood-disorders`).
+- **Unit 6 forward handoffs (Unit 7 resolved 2026-07-17):** the Unit 7 refs (case conceptualization,
+  MSE, intake) are now **live wikilinks** — the hub, `concept-dsm-structure`,
+  `concept-substance-use-disorders`, and `concept-categorical-vs-dimensional` point to
+  `unit07-assessment` / `concept-case-conceptualization` / `concept-intake-interview` /
+  `concept-treatment-planning`. Still by-name (pending): Unit 8 (risk assessment, suicidal-behavior
+  codes, trauma-informed care — `concept-trauma-stressor-disorders` explicitly defers neurobiology/
+  treatment there), Unit 9 (CBT/ERP/DBT/behavioral activation as modalities), and Unit 11 (medication,
+  dopamine hypothesis depth). The Unit 8 build should also reconcile PTSD/ASD criteria (here) vs.
+  trauma-informed care (there), and the new DSM-5-TR suicidal-behavior symptom codes.
+- **Unit 6 criteria-are-paraphrases caveat baked in:** all criteria summarized from peer-reviewed
+  secondary references (StatPearls et al.), not the paywalled DSM-5-TR text — flagged in the
+  sources file and the hub ("quote the manual before relying on a criterion clinically").
+  Prevalence figures are survey-era-dependent (NCS-R is DSM-IV-based); treat as order-of-magnitude.
+- **Unit 6 contested-material load is deliberately high** (categorical-vs-dimensional as a live
+  fight; diagnostic inflation vs. early intervention; bereavement exclusion / PGD; Criterion A as a
+  drawn line; neurodiversity vs. deficit framing): items quiz the debates themselves at evaluate
+  level — confusion between "what the DSM says" and "what its critics say" that surfaces in study
+  sessions is the intended discrimination, not a bug.
+- **Unit 7 page plan deviation (deliberate, 2026-07-17):** built **7** pages vs. the course-map's
+  promised 8 — the separate `concept-phq9` and `concept-gad7` pages were **consolidated into one
+  `concept-screening-tools.md`** (the two instruments are a confusable set best taught side-by-side,
+  same rationale as Unit 5's `concept-attachment-styles` and Unit 6's consolidations). Per-instrument
+  `topic` tags (`phq-9`, `gad-7`, `phq9-vs-gad7`) carry the fine-grained discrimination inside the
+  `screening-tools` cluster. Course-map entry updated to match.
+- **Unit 7 cluster addition beyond course-map:** added `formulation-ps` (the Five Ps are a genuinely
+  confusable set — predisposing/precipitating/perpetuating/protective) alongside the course-map's
+  `mse-domains`, `screening-tools`, and `reliability-vs-validity`. Intake (6) and treatment-planning
+  (6) items are intentionally **unclustered** — no confusable sibling set; topic tags carry them.
+- **Unit 7 Bloom spread:** R=15/U=12/Ap=10/An=7/E=7 across 51 items — heavy on apply/analyze/evaluate
+  (24) per generate rules. Types: 12 explain, 10 recall, 9 mcq (the confusable-pair discriminations),
+  9 cloze, 7 compare, 4 vignette. Every cluster has ≥1 compare — `mse-domains` 2, `screening-tools` 1,
+  `reliability-vs-validity` 1, `formulation-ps` 1 (5 clustered) + 2 unclustered (intake structure,
+  goal-vs-objective) = 7 compare items total. Includes the syllabus production rep as a one-page case
+  conceptualization of a novel/show character (`u7-formulation-rep-01`, a `recall`-type item).
+- **Unit 7 back-links wired (resolved earlier by-name handoffs):** `concept-dsm-structure`,
+  `unit06-psychopathology`, `concept-categorical-vs-dimensional`, `concept-substance-use-disorders`
+  (Unit 6); `concept-biopsychosocial-model` (Unit 5); `unit04-multicultural`, `concept-acculturation`
+  (Unit 4); `unit02-theories` (theory→formulation thread); `concept-therapeutic-alliance` (Unit 1 —
+  `source_units: [1,3,5,7]` verified, now forward-links case-conceptualization/treatment-planning).
+- **Unit 7 forward handoffs (by name, not wikilink):** the screening/MSE/intake pages forward-reference
+  the *pending* Unit 8 (item-9 → suicide-risk protocol, C-SSRS, PC-PTSD-5) and Unit 12 (outcome
+  monitoring / MBC as program evaluation; `concept-reliability-validity` carries `source_units: [7,12]`)
+  by name. Wire to real wikilinks when Units 8 and 12 are built.
+- **Unit 7 sourcing caveats baked in:** two sources 403'd to automated fetch — the Psychiatric Services
+  MBC full text (S12) and the OER reliability chapter (S11) — and are cited via abstracts/search-indexed
+  summaries **plus a corroborating source** (S5 IOM for psychometrics; the journal abstract for MBC),
+  flagged inline in the sources file. The "golden thread" (S14) is a documentation/compliance
+  convention, not a scientific finding — labeled orientation-tier. Screening cut-points are flagged as
+  population-dependent, not universal (S10's ≥8 vs. the standard ≥10).

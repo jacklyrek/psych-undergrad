@@ -207,6 +207,53 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
 
 ## [2026-07-13] maintenance | all units | removed CS-background framing from CLAUDE.md, course-map, learning-science doc, 8 wiki pages, and 2 item files (per human request: not a typical CS profile); rebuilt items.json (183 items)
 
+## [2026-07-17] create-chapter | Unit 5 Human Development Across the Lifespan | 11 sources, 7 readings, 45 items
+- Depth: **in-depth** (matches Units 2–4; course-map entry was rich, so no outline-confirmation pause).
+  Tier 2 clinical foundation. CACREP: Human Growth & Development. Emphasis (per syllabus/course-map):
+  **attachment as the centerpiece** ("the single most clinically useful developmental idea"),
+  typical-vs-clinical discrimination, and the **attachment ↔ alliance** thread (Unit 5 ↔ Unit 1).
+- Research: triangulated across peer-reviewed clinical refs + primaries — StatPearls Erikson [S1] and
+  Cognitive Development/Piaget [S2]; *Development and Psychopathology* attachment review PMC4085672
+  [S3] (secure base/script, transmission gap, risk-not-destiny, therapist-as-attachment-figure);
+  NCBI Bookshelf *Biopsychosocial Model 40 Years On* [S4] + Engel 1977 Science [S5]; van IJzendoorn &
+  Kroonenberg 1988 cross-cultural meta-analysis [S6]; Main & Solomon disorganized + disorganized-risk
+  meta-analyses [S7]; adult attachment — Hazan & Shaver / Bartholomew & Horowitz / AAI [S8];
+  orientation-tier Simply Psychology (Ainsworth Strange Situation, caregiving correlates, sensitivity
+  critiques) [S9] and Bowlby phases/monotropy [S10]; AAP developmental surveillance [S11]. Engel full
+  text and the 1992-primaries were corroborated via secondary/open sources, flagged.
+- Readings (7): unit05-development (hub — four frameworks, why attachment leads, risk-not-destiny w/
+  equifinality/multifinality, typical-vs-clinical, practice rep), theory-attachment (Bowlby system +
+  Ainsworth Strange Situation + adult attachment + the therapy-room handoff), concept-attachment-
+  styles (four styles side-by-side, deactivation/hyperactivation, disorganized-as-risk),
+  theory-eriksons-stages (8 stages/virtues, the two confusable pairs, clinical use), theory-piaget
+  (4 stages, schema/assim/accom, critiques incl. Vygotsky), concept-biopsychosocial-model (Engel,
+  systems theory, the "slogan" critique), person-bowlby-ainsworth (Bowlby + Ainsworth + Main). All
+  cited [S#], interlinked.
+- **Page consolidation (noted in coverage.md + course-map):** course-map promised 10 pages incl. four
+  per-style pages + a lone person page; built as **7** — four attachment styles folded into one
+  `concept-attachment-styles` (confusable set taught side-by-side, à la Unit 1 core-conditions), and
+  Bowlby/Ainsworth/**Main** on one person page. Per-style topic tags preserve discrimination.
+- **Cluster added beyond course-map:** `piaget-stages` (noted in course-map + coverage). Attachment
+  theory/mechanism items (7), biopsychosocial (3), and typical-vs-clinical/rep (4) intentionally
+  unclustered.
+- Cross-unit: wired the **Unit 5 ↔ Unit 1** back-link — `concept-therapeutic-alliance` now
+  forward-links to `theory-attachment`/`concept-attachment-styles` (source_units → [1,3,5,7]).
+- Tensions flagged (per rules): maternal-sensitivity r≈.24 + transmission gap (temperament rival);
+  Strange Situation as possible imposed etic (cross-cultural); Erikson/Piaget as heuristics not laws
+  (ages approximate, culturally situated; Vygotsky critique); biopsychosocial "vague slogan" critique;
+  disorganized attachment = transdiagnostic **risk, not destiny** (kept clinical/non-deterministic).
+- Items: 45 across 4 clusters (`attachment-styles` 12, `erikson-stages` 9, `piaget-stages` 7,
+  `developmental-theorists` 3; 14 unclustered). Bloom R=7/U=9/Ap=12/An=9/E=8; types: 12 explain,
+  10 mcq (which-style/stage/theorist vignettes), 9 recall, 5 compare (≥1 per cluster), 5 vignette,
+  4 cloze. Stance probes: don't-type-the-client, over-pathologizing normal development, secure-base
+  moves with preoccupied/dismissing clients; + the syllabus practice rep (own attachment history +
+  Erikson stage) as a production item.
+- Build: items/build/items.json rebuilt — 263 items total (17+36+51+48+45+31+35 aux), validated clean.
+- Bookkeeping: index.md, coverage.md (row + 7 hole/consolidation notes), course-map.md (☐→☑,
+  cluster + pages + built line), log.md updated.
+- Deferred: Unit 6/7/11 forward-references are by name (pending units) — wire to wikilinks at those
+  builds. Tier 2 now 1 of 4 built (Unit 5 ☑).
+
 ## [2026-07-16] create-module | aux-addiction (Understanding & Changing Addictive Behavior) | 16 sources, 6 readings, 35 items
 - Second elective module (after PFA). Off-spine `aux-` namespace; borders **Unit 6** (SUD as a
   diagnostic category) and **Unit 9** (MI/CBT modalities). Built on request: *addictions and how to
@@ -239,3 +286,114 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
 - Bookkeeping: index.md + coverage.md updated (elective sections); log appended; items.json rebuilt
   (218 items total). Handoff hole logged: forward-links to Units 6/8/9 are by name (pending units) —
   rewire to real wikilinks and reconcile SUD-criteria / MI-CBT overlap when those units are built.
+
+## [2026-07-17] create-chapter | Unit 6 Psychopathology & the DSM-5-TR | 23 sources, 12 readings, 75 items
+- Depth: **in-depth** (the syllabus's biggest unit — 2 weeks at suggested pace; course-map entry was
+  rich, no outline-confirmation pause). Tier 2. CACREP: ties into Assessment & Diagnosis. Emphasis
+  (per syllabus/course-map): **diagnosis as shorthand, not verdict**; heavy **differential-vignette**
+  discrimination; the criteria-cold practice rep (MDD/GAD/PTSD in 2 minutes) as the
+  over-pathologizing antidote.
+- Research: anchored on peer-reviewed clinical references — StatPearls for every category (MDD
+  NBK559078 [S5], Bipolar [S6], GAD [S7], Panic [S8], PTSD [S9], Schizophrenia [S10], Personality
+  [S11], OCD [S12], Anorexia [S13], ADHD [S14], ASD [S15]) + First et al. 2022 *World Psychiatry*
+  DSM-5-TR overview by the manual's editors [S2]; triangulated with OpenStax §15.2 [S1], Kress/TPC
+  multiaxial-removal counselor implications [S3], NCBI DSM-IV→5 overview [S4], SAMHSA SUD table
+  (shared with aux-addiction) [S16], Kessler NCS-R comorbidity [S17], HiTOP consortium [S18], Caspi
+  & Moffitt p factor [S19], NIMH RDoC [S20], Frances diagnostic inflation [S21], Pies bereavement
+  exclusion [S22], SAMHSA TIP 59 cultural formulation [S23]. psychiatry.org 403'd — TR facts cited
+  via First et al.; criteria-are-paraphrases caveat flagged in sources file + hub.
+- Readings (12): unit06-psychopathology (hub — what "disorder" is, impairment clause, comorbidity
+  norm, person-first, insurance reality, practice rep), concept-dsm-structure (history, lifespan
+  order, multiaxial removal, other-specified/unspecified, ICD/billing, CFI + cultural concepts),
+  concept-mood-disorders, concept-anxiety-disorders, concept-trauma-stressor-disorders (incl. PGD),
+  concept-ocd, concept-psychotic-disorders, concept-personality-disorders,
+  concept-substance-use-disorders (concise, defers to aux-addiction),
+  concept-neurodevelopmental-disorders, concept-eating-disorders,
+  concept-categorical-vs-dimensional (absorbs comorbidity). All cited [S#], interlinked.
+- **Page plan deviations (noted in coverage + course-map):** concept-comorbidity folded into
+  concept-categorical-vs-dimensional; concept-neurodevelopmental-disorders +
+  concept-eating-disorders added beyond the course-map list (syllabus categories it had skipped).
+- **Clusters added beyond course-map:** `psychotic-spectrum`, `eating-disorders` (alongside
+  mood/anxiety/trauma/personality/differential-vignettes). 25 items intentionally unclustered
+  (manual, OCD, SUD, neurodevelopmental, categorical-dimensional topics).
+- Cross-unit wiring done: aux-addiction hub + concept-addiction-models "Unit 6 (planned)" → real
+  wikilinks (SUD overlap reconciled: module keeps the criteria deep-dive);
+  unit05-development (both mentions) → [[unit06-psychopathology]]; concept-acculturation →
+  concept-dsm-structure (CFI); PFA concept-grief-models PGD → concept-trauma-stressor-disorders.
+- Tensions flagged (per rules): categorical system's four cracks (field-trial reliability,
+  comorbidity 45%, heterogeneity, continuity) vs. its clinical utility; HiTOP/p-factor/RDoC as
+  serious-but-not-clinic-ready (RDoC explicitly not diagnostic); Frances inflation vs.
+  early-intervention defense; bereavement exclusion + PGD as the medicalizing-grief emblem;
+  Criterion A as drawn line; neurodiversity vs. deficit framing; prevalence figures as
+  order-of-magnitude.
+- Items: 75 across 7 clusters (differential-vignettes 10 — the cross-category interleaving target,
+  mood 8, trauma 8, anxiety 7, psychotic 6, personality 6, eating 5; 25 unclustered). Bloom
+  R=20/U=10/Ap=18/An=19/E=8; types: 20 mcq (discrimination vignettes — deliberately high per the
+  "heavy vignette unit" note), 18 explain, 15 recall, 11 cloze, 8 compare (≥1 per cluster), 3
+  vignette. Stance probes: over-pathologizing grief, reassurance traps (anxiety + OCD),
+  person-first, delusion don't-argue-don't-collude, PD stigma discipline, disclosure-pushing,
+  eating-disorder screening, diagnostic inflation. The three 2-minute production reps included.
+- Build: items/build/items.json rebuilt — **338 items** total (17+36+51+48+45+75 spine + 31+35 aux),
+  validated clean by build_items.py.
+- Bookkeeping: index.md (full Unit 6 entry), coverage.md (row + 8 new notes), course-map.md (☐→☑,
+  clusters + pages + built line), log.md updated.
+- Deferred: Unit 7/8/9/11 forward-references by name (pending units) — wire at those builds; Unit 8
+  build should reconcile PTSD-criteria/trauma-informed-care split + suicidal-behavior codes. Tier 2
+  now 2 of 4 built (Units 5–6 ☑).
+
+## [2026-07-17] create-chapter | Unit 7 Assessment, Diagnosis & Case Conceptualization | 14 sources, 7 readings, 51 items
+- Depth: **in-depth** (matching Units 2–6). Tier 2. CACREP: Assessment & Testing. Emphasis (per
+  syllabus/course-map): the arc **intake → MSE/screens → formulation → plan**; the load-bearing
+  stance **a screen is not a diagnosis**; diagnosis (*what*) vs. case conceptualization (*how/why*)
+  as the unit's spine; the syllabus production rep (a one-page conceptualization of a character).
+- Research: anchored on peer-reviewed clinical references — StatPearls MSE [S1] + diagnostic-accuracy
+  (sensitivity/specificity/PPV) [S9]; the IOM/National Academies psychological-testing report for
+  reliability/validity/standardization [S5]; the instrument-validation primaries Kroenke 2001 PHQ-9
+  [S2] and Spitzer 2006 GAD-7 [S3] (+ Rutter & Brown 2017 psychometric replication [S10]); the anchor
+  author Sommers-Flanagan on the clinical interview [S7]; the peer-reviewed counseling journal (TPC)
+  Five Ps framework [S4]; PsychDB 4Ps×BPS grid [S8]; Fortney 2017 measurement-based care [S12]; APA
+  PHQ page [S6]; Doran 1981 SMART origin [S13]; OER psychometrics [S11]; golden-thread practitioner
+  refs [S14]. Two sources 403'd to automated fetch (Psychiatric Services MBC PDF [S12], OER
+  reliability chapter [S11]) — cited via abstract/search-indexed summaries **plus a corroborating
+  source**, flagged in the sources file.
+- Readings (7): unit07-assessment (hub), concept-intake-interview, concept-mental-status-exam
+  (cluster mse-domains), concept-screening-tools (cluster screening-tools — PHQ-9 + GAD-7 together),
+  concept-reliability-validity (cluster reliability-vs-validity), concept-case-conceptualization
+  (cluster formulation-ps), concept-treatment-planning. All cited [S#], interlinked, each with a
+  ## Sources section.
+- **Page plan deviation (noted in coverage + course-map):** the course-map's separate
+  `concept-phq9` + `concept-gad7` consolidated into one `concept-screening-tools` (confusable set
+  taught side-by-side, same rationale as Unit 5 attachment-styles / Unit 6 consolidations) → **7
+  pages, not 8**.
+- **Cluster added beyond course-map:** `formulation-ps` (the Five Ps), alongside the promised
+  `mse-domains`, `screening-tools`, `reliability-vs-validity`. Intake (6) + treatment-planning (6)
+  items intentionally unclustered.
+- Cross-unit wiring done (earlier by-name handoffs made live): concept-dsm-structure,
+  unit06-psychopathology (both mentions + related-pages bullet), concept-categorical-vs-dimensional,
+  concept-substance-use-disorders → Unit 7 pages (Unit 6); concept-biopsychosocial-model (body +
+  "Connects to") → concept-intake-interview/unit07-assessment (Unit 5); unit04-multicultural +
+  concept-acculturation → concept-reliability-validity/screening-tools (Unit 4); unit02-theories
+  (theory→formulation) → concept-case-conceptualization (Unit 2); concept-therapeutic-alliance
+  forward link made live (Unit 1 — source_units [1,3,5,7] verified).
+- Tensions flagged (per rules): a screen is not a diagnosis and cut-points are population-dependent
+  (≥8 vs. ≥10) [S2][S3][S9][S10]; reliability ≠ validity and neither licenses use outside the norming
+  population (the culture-fair worry from Unit 4) [S5][S11]; diagnosis-vs-formulation as the unit's
+  spine [S4][S8]; the MSE is a subjective snapshot that only supports (never makes) a diagnosis [S1];
+  "measurable" can crowd out "meaningful" (SMART/MBC serve the work, not the reverse) [S12][S13][S14];
+  golden thread labeled a documentation/compliance convention, not a scientific finding.
+- Items: 51 across 4 clusters (mse-domains 10, screening-tools 9, reliability-vs-validity 10,
+  formulation-ps 10) + unclustered intake (6) and treatment-planning (6). Bloom
+  R=15/U=12/Ap=10/An=7/E=7 (apply/analyze/evaluate = 24); types: 12 explain, 10 recall, 9 mcq
+  (confusable-pair discriminations: mood/affect, process/content, insight/judgment, which-anxiety,
+  classify-the-P, SMART-objective), 9 cloze, 7 compare (5 clustered — ≥1 per cluster — + 2
+  unclustered), 4 vignette. Stance probes: interrogation-drift, I-need-all-the-data,
+  describe-don't-interpret, screen-is-not-a-diagnosis, formulate-with-not-about, measurable≠meaningful.
+  Syllabus production rep included (u7-formulation-rep-01, a recall-type item).
+- Build: items/build/items.json rebuilt — **389 items** total (17+36+51+48+45+75+51 spine + 31+35
+  aux), validated clean by build_items.py.
+- Bookkeeping: index.md (full Unit 7 entry), coverage.md (row 7 ☐→☑ + 6 new notes + 3 resolved-
+  handoff updates), course-map.md (☐→☑, clusters + pages + built line), log.md updated.
+- Deferred: Unit 8 (item-9 → suicide-risk protocol, C-SSRS, PC-PTSD-5) and Unit 12 (MBC as outcome
+  monitoring / program evaluation; concept-reliability-validity carries source_units [7,12])
+  forward-referenced by name — wire at those builds. Tier 2 now **3 of 4 built (Units 5–7 ☑)**;
+  only Unit 8 remains in Tier 2.

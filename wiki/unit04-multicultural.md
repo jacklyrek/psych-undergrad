@@ -104,8 +104,9 @@ culture. Those are the load-bearing blind spots.
 - [[unit02-theories]] — every theory family carries cultural assumptions (individuation,
   self-actualization, direct emotional disclosure); the postmodern family
   ([[theory-postmodern]]) is the most explicitly culture-aware.
-- Unit 7 (assessment) — culture-fair assessment and the culture-bound limits of diagnosis pick this
-  thread up clinically.
+- [[unit07-assessment]] — [[concept-reliability-validity | culture-fair assessment]] (norms,
+  standardization, and the limits of a validity coefficient outside its population) and the
+  culture-bound limits of diagnosis pick this thread up clinically.
 
 ## Sources
 

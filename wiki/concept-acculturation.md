@@ -88,8 +88,12 @@ Counselor A pathologizes the norm; Counselor B **names it and works with it** �
 - [[concept-informed-consent]] — A.2.c: consent conversations must be culturally appropriate; for
   a client new to counseling-as-practice, explaining *what counseling even is* becomes part of
   consent. [S16]
-- Unit 6 (psychopathology) — culture-bound presentations and the risk of misreading acculturative
-  stress as disorder.
+- [[unit06-psychopathology]] / [[concept-dsm-structure]] — cultural syndromes, idioms of distress,
+  and the Cultural Formulation Interview; the risk of misreading acculturative stress as disorder
+  is exactly what the CFI exists to catch.
+- [[unit07-assessment]] / [[concept-reliability-validity]] — the same worry in numeric form:
+  a test normed on one population can misfire on a client acculturating into another, and
+  self-report is filtered through language and help-seeking norms ([[concept-screening-tools]]).
 
 ## Sources
 

@@ -61,7 +61,9 @@ not avoidance.** A helper who expects unbroken devastation may misread restorati
 
 Most grief — even shattering grief — is **not a mental disorder** and does not need treatment; it
 needs time, support, and presence. But a minority develop a persistent, disabling condition that
-DSM-5-TR now names **Prolonged Grief Disorder (PGD).** [S12] The boundary is drawn by **time +
+DSM-5-TR now names **Prolonged Grief Disorder (PGD)** — housed with the
+[[concept-trauma-stressor-disorders|trauma- and stressor-related disorders]] (Unit 6), which also
+carries the grief-vs-depression discrimination ([[concept-mood-disorders]]). [S12] The boundary is drawn by **time +
 persistence + impairment**, not by intensity of early grief:
 
 - **Time threshold:** the death was at least **12 months ago for adults** (**6 months** for children

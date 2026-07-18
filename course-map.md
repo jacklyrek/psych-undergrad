@@ -53,32 +53,32 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 
 ## Tier 2 — Clinical Foundations  (~6 weeks)
 
-### Unit 5 — Human Development Across the Lifespan  ☐
+### Unit 5 — Human Development Across the Lifespan  ☑
 - **Objectives:** know major developmental frameworks & normal milestones; distinguish typical development from clinical concern.
 - **Core concepts:** Erikson's psychosocial stages; **attachment theory** (Bowlby/Ainsworth; secure/anxious/avoidant/disorganized) — flagged as the single most clinically useful developmental idea; Piaget's cognitive stages; adolescent/adult development; aging & grief; biopsychosocial model.
 - **Anchor:** Broderick & Blewitt, *The Life Span* (written for helping professionals).
 - **Depends on:** → Unit 1.
-- **Clusters:** `attachment-styles` (secure vs. anxious vs. avoidant vs. disorganized — prime vignette/interleaving); `erikson-stages`; `developmental-theorists` (Erikson vs. Piaget vs. Bowlby).
+- **Clusters:** `attachment-styles` (secure vs. anxious vs. avoidant vs. disorganized — prime vignette/interleaving); `erikson-stages`; `piaget-stages` (added at build — the four cognitive stages); `developmental-theorists` (Erikson vs. Piaget vs. Bowlby).
 - **CACREP:** Human Growth & Development.
-- **Pages:** `unit05-development`, `theory-attachment`, `theory-eriksons-stages`, `theory-piaget`, `concept-biopsychosocial-model`, `person-bowlby-ainsworth`, `concept-secure-attachment`, `concept-anxious-attachment`, `concept-avoidant-attachment`, `concept-disorganized-attachment`.
+- **Pages:** [`unit05-development`](wiki/unit05-development.md), [`theory-attachment`](wiki/theory-attachment.md), [`concept-attachment-styles`](wiki/concept-attachment-styles.md) (the four styles folded onto one discrimination page), [`theory-eriksons-stages`](wiki/theory-eriksons-stages.md), [`theory-piaget`](wiki/theory-piaget.md), [`concept-biopsychosocial-model`](wiki/concept-biopsychosocial-model.md), [`person-bowlby-ainsworth`](wiki/person-bowlby-ainsworth.md) (Bowlby + Ainsworth + Main). **Built 2026-07-17** (in-depth): 7 readings, 45 items, 11 sources. Per-style pages consolidated into `concept-attachment-styles`; aging/grief handled via cross-link to the PFA elective (`concept-grief-models`).
 
-### Unit 6 — Psychopathology & the DSM-5-TR  ☐
+### Unit 6 — Psychopathology & the DSM-5-TR  ☑
 - **Objectives:** learn major diagnostic categories and DSM organization; understand diagnosis as shorthand, not verdict — and its limits.
 - **Core concepts:** mood, anxiety, trauma/stressor-related, OCD, psychotic, personality, substance use, neurodevelopmental, eating disorders; categorical vs. dimensional debate; comorbidity; culture-bound considerations; diagnosis ↔ insurance & treatment planning.
 - **Anchor:** **DSM-5-TR** (learn structure, use as reference) + Barlow & Durand *Abnormal Psychology* or Morrison *DSM-5-TR Made Easy*.
 - **Depends on:** → Unit 5.
-- **Clusters:** `mood-disorders`; `anxiety-disorders`; `trauma-disorders`; `personality-disorders`; **`differential-vignettes`** (cross-category discrimination — the big interleaving target). Heavy vignette unit.
+- **Clusters:** `mood-disorders`; `anxiety-disorders`; `trauma-disorders`; `personality-disorders`; **`differential-vignettes`** (cross-category discrimination — the big interleaving target); `psychotic-spectrum` (added at build — the duration ladder); `eating-disorders` (added at build — AN/BN/BED hinges). Heavy vignette unit.
 - **CACREP:** ties into Assessment & Diagnosis.
-- **Pages:** `unit06-psychopathology`, `concept-dsm-structure`, `concept-mood-disorders`, `concept-anxiety-disorders`, `concept-trauma-stressor-disorders`, `concept-ocd`, `concept-psychotic-disorders`, `concept-personality-disorders`, `concept-substance-use-disorders`, `concept-categorical-vs-dimensional`, `concept-comorbidity`. (Per-disorder pages as needed.)
+- **Pages:** [`unit06-psychopathology`](wiki/unit06-psychopathology.md), [`concept-dsm-structure`](wiki/concept-dsm-structure.md), [`concept-mood-disorders`](wiki/concept-mood-disorders.md), [`concept-anxiety-disorders`](wiki/concept-anxiety-disorders.md), [`concept-trauma-stressor-disorders`](wiki/concept-trauma-stressor-disorders.md), [`concept-ocd`](wiki/concept-ocd.md), [`concept-psychotic-disorders`](wiki/concept-psychotic-disorders.md), [`concept-personality-disorders`](wiki/concept-personality-disorders.md), [`concept-substance-use-disorders`](wiki/concept-substance-use-disorders.md) (concise — defers depth to the `aux-addiction` elective), [`concept-neurodevelopmental-disorders`](wiki/concept-neurodevelopmental-disorders.md) (added at build), [`concept-eating-disorders`](wiki/concept-eating-disorders.md) (added at build), [`concept-categorical-vs-dimensional`](wiki/concept-categorical-vs-dimensional.md) (absorbs the promised `concept-comorbidity` — comorbidity is that debate's core evidence). **Built 2026-07-17** (in-depth): 12 readings, 75 items, 23 sources.
 
-### Unit 7 — Assessment, Diagnosis & Case Conceptualization  ☐
+### Unit 7 — Assessment, Diagnosis & Case Conceptualization  ☑
 - **Objectives:** conduct intake/clinical interview components; turn client info into a coherent picture + plan.
 - **Core concepts:** clinical interview & **mental status exam (MSE)**; intake structure (presenting problem, history, biopsychosocial, risk screen); screening tools (PHQ-9, GAD-7) + reliability/validity basics; case conceptualization (the bridge to treatment, filtered through theory — Unit 2); treatment planning & measurable goals.
 - **Anchor:** Sommers-Flanagan & Sommers-Flanagan, *Clinical Interviewing*.
 - **Depends on:** → Unit 2 (theory as lens), → Unit 6 (diagnosis), → Unit 8 (risk screen overlaps).
-- **Clusters:** `mse-domains`; `screening-tools` (PHQ-9 vs. GAD-7 vs. others); `reliability-vs-validity`.
+- **Clusters:** `mse-domains`; `screening-tools` (PHQ-9 vs. GAD-7 vs. others); `reliability-vs-validity`; `formulation-ps` (added at build — the Five Ps are a confusable set).
 - **CACREP:** Assessment & Testing.
-- **Pages:** `unit07-assessment`, `concept-mental-status-exam`, `concept-intake-interview`, `concept-case-conceptualization`, `concept-treatment-planning`, `concept-phq9`, `concept-gad7`, `concept-reliability-validity`.
+- **Pages:** [`unit07-assessment`](wiki/unit07-assessment.md), [`concept-intake-interview`](wiki/concept-intake-interview.md), [`concept-mental-status-exam`](wiki/concept-mental-status-exam.md), [`concept-screening-tools`](wiki/concept-screening-tools.md) (absorbs the promised `concept-phq9` + `concept-gad7` — the two instruments are a confusable set taught side-by-side), [`concept-reliability-validity`](wiki/concept-reliability-validity.md), [`concept-case-conceptualization`](wiki/concept-case-conceptualization.md), [`concept-treatment-planning`](wiki/concept-treatment-planning.md). **Built 2026-07-17** (in-depth): 7 readings, 51 items, 14 sources.
 
 ### Unit 8 — Crisis, Risk Assessment & Trauma-Informed Care  ☐  ⚠ heavy topic — keep clinical, precise
 - **Objectives:** screen for & respond to suicide risk, self-harm, danger to others; understand trauma's effects & not re-traumatizing people.

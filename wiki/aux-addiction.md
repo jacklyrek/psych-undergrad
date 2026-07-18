@@ -12,9 +12,10 @@ related_units: [6, 9]
 
 > **This is an off-syllabus elective module, not a numbered unit.** It lives in the `aux-`
 > namespace (see the *Ad-hoc / elective modules* section of [`../CLAUDE.md`](../CLAUDE.md)) and
-> cross-links forward into the planned **Unit 6 — Psychopathology & the DSM-5-TR** (where substance
-> use disorders are a diagnostic category) and **Unit 9 — Evidence-Based Modalities** (where MI,
-> CBT, and the change methods live). Built on request: *what addiction is, and how people actually
+> cross-links forward into **[[unit06-psychopathology|Unit 6 — Psychopathology & the DSM-5-TR]]**
+> (where substance use disorders are a diagnostic category — see
+> [[concept-substance-use-disorders]]) and **Unit 9 — Evidence-Based Modalities** (planned; where
+> MI, CBT, and the change methods live). Built on request: *what addiction is, and how people actually
 > break it.*
 
 > **The one-line version:** addiction is a **chronic, relapsing** condition in which the brain's
@@ -90,9 +91,9 @@ Presence and patience over persuasion.
   reduce death.** [S9]
 
 ## Connects to
-- **Unit 6 (planned)** — Psychopathology & the DSM-5-TR. Substance use disorders are one of its
-  diagnostic categories; this module is the deep-dive on that category plus the change process. When
-  Unit 6 is built, reconcile the SUD-criteria overlap and wire the wikilinks.
+- [[unit06-psychopathology]] — Psychopathology & the DSM-5-TR (built 2026-07-17). Its
+  [[concept-substance-use-disorders]] page carries the DSM-structural view of SUD and defers the
+  full treatment to this module — the two are reconciled, not duplicated.
 - **Unit 9 (planned)** — Evidence-Based Modalities. **Motivational Interviewing** and **CBT** are
   covered there as general tools; here they are applied to addiction specifically. MI's OARS also
   traces back to [[unit01-helping-skills]] (same relational engine, crisis/change-specific use).

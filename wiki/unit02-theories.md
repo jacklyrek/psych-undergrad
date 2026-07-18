@@ -83,7 +83,7 @@ is consistently among the most common self-identified orientations (estimates va
   meaning*, not a denial of clinical reality. [S13]
 
 ## Connects forward
-- **Theory → case conceptualization** (Unit 7): the lens you pick here becomes the structure you use to turn intake data into a plan. This is the payoff of Unit 2.
+- **Theory → [[concept-case-conceptualization | case conceptualization]]** ([[unit07-assessment | Unit 7]]): the lens you pick here becomes the structure you use to turn intake data into a plan. This is the payoff of Unit 2.
 - **CBT here → CBT/MI as practical method** (Unit 9): this is the theory; Unit 9 is the toolkit.
 - **Person-centered here → core conditions** (Unit 1): same engine, named as a theory.
 

@@ -97,8 +97,9 @@ the person retains **agency you can recruit** (so build motivation and skills). 
   model reinterprets).
 - [[concept-treatment-and-recovery]] — how the models cash out into methods (and the harm-reduction
   vs. abstinence debate).
-- **Unit 6 (planned)** — DSM-5-TR structure and the wider psychopathology context; SUD is one of its
-  categories. Reconcile criteria overlap when built.
+- [[unit06-psychopathology]] / [[concept-substance-use-disorders]] — the DSM-5-TR structural view
+  (chapter placement, substance-induced mimics, comorbidity); [[concept-dsm-structure]] for the
+  manual itself. This page remains the criteria deep-dive.
 
 ## Sources
 [S1] NIDA, *Drug Misuse and Addiction* — addiction as chronic relapsing brain disorder; multifactorial

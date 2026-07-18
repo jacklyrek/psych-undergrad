@@ -3,7 +3,7 @@ title: "The Therapeutic Alliance (Bordin's Bond/Goal/Task Model)"
 type: concept
 tags: [alliance, bordin, bond, goal, task, working-alliance]
 unit: 1
-source_units: [1, 3, 7]
+source_units: [1, 3, 5, 7]
 cluster: alliance-components
 ---
 
@@ -47,12 +47,17 @@ directly onto these three parts.
 ## Connects to
 - [[concept-core-conditions]] — UPR/empathy/congruence are how you build the **bond.**
 - [[concept-microskills-hierarchy]] — the moment-to-moment behaviors that grow the alliance.
+- [[theory-attachment]] (Unit 5) — the *developmental* theory of the bond: a client's attachment
+  pattern ([[concept-attachment-styles]]) shapes how readily they can form and trust the alliance,
+  and Bowlby cast the therapist as a **secure base**. A frayed bond with a dismissing or preoccupied
+  client is often the old internal working model showing up in the room.
 - [[theory-common-factors]] — the alliance is the best-measured of the common factors.
 - [[concept-informed-consent]] (Unit 3) — consent done well is an early alliance intervention:
   Bordin's **goal** and **task** agreement is basically structured consent, and honest
   confidentiality limits ([[concept-confidentiality-limits]]) build rather than threaten the bond.
-- Forward link: case conceptualization and treatment planning (Unit 7) operationalize **goal** and
-  **task** — see `course-map.md`.
+- Forward link: [[concept-case-conceptualization | case conceptualization]] and
+  [[concept-treatment-planning | treatment planning]] (Unit 7) operationalize **goal** and
+  **task** — the plan is co-authored *with* the client, which is itself an alliance intervention.
 
 ## Sources
 [S2] Flückiger et al. (2018). [S4] *Therapeutic Alliance and Outcome of Psychotherapy*, PMC3198542.

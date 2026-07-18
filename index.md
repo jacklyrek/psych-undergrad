@@ -91,9 +91,114 @@ vignettes, compare items (6), stance probes, and two production reps (congruent 
 autobiography). _Sources:_ [unit04 sources](research/unit04-multicultural-sources.md).
 
 ## Tier 2 — Clinical Foundations
-- **Unit 5 — Human Development Across the Lifespan** — _pending_
-- **Unit 6 — Psychopathology & the DSM-5-TR** — _pending_
-- **Unit 7 — Assessment, Diagnosis & Case Conceptualization** — _pending_
+
+### Unit 5 — Human Development Across the Lifespan  ☑ readings + items
+_Readings:_
+- [unit05-development](wiki/unit05-development.md) — hub: the four frameworks, why attachment leads,
+  the risk-not-destiny thread (equifinality/multifinality), typical-vs-clinical, the practice rep.
+- [theory-attachment](wiki/theory-attachment.md) — Bowlby's behavioral system, secure base/safe
+  haven, internal working models, the four phases; Ainsworth's Strange Situation + the maternal-
+  sensitivity hypothesis & its limits (r≈.24, transmission gap); adult attachment (2 dimensions,
+  AAI); attachment in the therapy room (the Unit 1 handoff).
+- [concept-attachment-styles](wiki/concept-attachment-styles.md) — the four styles side by side
+  (secure/avoidant/resistant/disorganized + adult echoes), deactivation vs. hyperactivation,
+  disorganized-as-risk (held carefully), and the don't-type-the-client stance.
+- [theory-eriksons-stages](wiki/theory-eriksons-stages.md) — the eight psychosocial stages + virtues,
+  syntonic/dystonic ratio, the identity-vs-intimacy and initiative-vs-industry traps, clinical use.
+- [theory-piaget](wiki/theory-piaget.md) — schema/assimilation/accommodation; the four cognitive
+  stages (object permanence, egocentrism, conservation, formal ops); critiques (underestimated
+  infants, Vygotsky, early theory of mind).
+- [concept-biopsychosocial-model](wiki/concept-biopsychosocial-model.md) — Engel (1977), systems
+  theory, the three domains as a case-formulation frame, and the "slogan" critique + how to use it well.
+- [person-bowlby-ainsworth](wiki/person-bowlby-ainsworth.md) — Bowlby (theory, ethology roots),
+  Ainsworth (Uganda/Baltimore, Strange Situation), Main (disorganized category + the AAI).
+
+_Items:_ [unit05-development](items/unit05-development.md) — 45 items across 4 clusters
+(`attachment-styles` — the prime discrimination set, `erikson-stages`, `piaget-stages`,
+`developmental-theorists`), all 5 Bloom levels; heavy on which-style/which-stage/which-theorist
+vignettes, 5 compares, stance probes (don't-type-the-client, over-pathologizing, secure-base moves),
+and the syllabus practice rep (own attachment history + Erikson stage). _Sources:_
+[unit05 sources](research/unit05-development-sources.md).
+
+### Unit 6 — Psychopathology & the DSM-5-TR  ☑ readings + items
+_Readings:_
+- [unit06-psychopathology](wiki/unit06-psychopathology.md) — hub: diagnosis as shorthand not
+  verdict, what "disorder" means (the impairment clause), comorbidity-as-norm, person-first
+  language, the practice rep (explain MDD/GAD/PTSD in two minutes).
+- [concept-dsm-structure](wiki/concept-dsm-structure.md) — DSM-I→5-TR history, lifespan chapter
+  order, the multiaxial removal (axes → WHODAS + V/Z codes), other-specified/unspecified, ICD &
+  insurance, culture in the manual (CFI, cultural concepts of distress).
+- [concept-mood-disorders](wiki/concept-mood-disorders.md) — MDD (5/9, 2 wks), recurrence
+  staircase, grief-vs-depression + the bereavement-exclusion debate, manic vs. hypomanic, bipolar
+  I/II/cyclothymia, the screen-for-mania habit.
+- [concept-anxiety-disorders](wiki/concept-anxiety-disorders.md) — GAD, panic attack vs. panic
+  disorder (expected vs. unexpected), agoraphobia, social anxiety, phobias, separation anxiety;
+  the "what is the fear about" table; the reassurance trap.
+- [concept-trauma-stressor-disorders](wiki/concept-trauma-stressor-disorders.md) — Criterion A
+  gate, PTSD's four clusters, acute stress vs. adjustment vs. PGD (stressor × clock grammar),
+  don't-push-disclosure stance.
+- [concept-ocd](wiki/concept-ocd.md) — obsessions/compulsions loop, ego-dystonic, the related
+  disorders (BDD, hoarding, trich, excoriation), OCD vs. OCPD, reassurance-as-compulsion-fuel.
+- [concept-psychotic-disorders](wiki/concept-psychotic-disorders.md) — five symptom domains,
+  positive vs. negative, the duration ladder (brief/schizophreniform/schizophrenia), schizoaffective
+  vs. mood-with-psychosis, aberrant salience, don't-argue-don't-collude stance.
+- [concept-personality-disorders](wiki/concept-personality-disorders.md) — pattern vs. episode,
+  clusters A/B/C + the ten, DBT-for-borderline, stigma/countertransference discipline, the AMPD.
+- [concept-substance-use-disorders](wiki/concept-substance-use-disorders.md) — the DSM-structural
+  view (11 criteria/4 groups/severity, dependence ≠ addiction, substance-induced mimics); depth
+  lives in the [aux-addiction](wiki/aux-addiction.md) elective.
+- [concept-neurodevelopmental-disorders](wiki/concept-neurodevelopmental-disorders.md) — ADHD
+  mechanics + the timeline discriminator, ASD's two pillars + the spectrum merger, neurodiversity
+  stance.
+- [concept-eating-disorders](wiki/concept-eating-disorders.md) — AN/BN/BED/ARFID on the two hinges
+  (low weight? compensation?), AN mortality, behavioral screening.
+- [concept-categorical-vs-dimensional](wiki/concept-categorical-vs-dimensional.md) — the four
+  cracks (reliability, comorbidity, heterogeneity, continuity), NCS-R comorbidity numbers, HiTOP,
+  p factor, RDoC, Frances's diagnostic inflation, and the diagnose-categorically-think-dimensionally
+  synthesis.
+
+_Items:_ [unit06-psychopathology](items/unit06-psychopathology.md) — 75 items across 7 clusters
+(`differential-vignettes` — the cross-category interleaving target, `mood-disorders`,
+`anxiety-disorders`, `trauma-disorders`, `psychotic-spectrum`, `personality-disorders`,
+`eating-disorders`), all 5 Bloom levels; heavy on discrimination mcq vignettes, 8 compares, the
+three 2-minute production reps (MDD/GAD/PTSD), and stance probes (over-pathologizing, reassurance
+traps, person-first, diagnostic inflation). _Sources:_
+[unit06 sources](research/unit06-psychopathology-sources.md).
+
+### Unit 7 — Assessment, Diagnosis & Case Conceptualization  ☑ readings + items
+_Readings:_
+- [unit07-assessment](wiki/unit07-assessment.md) — hub: the arc from intake → MSE/screens →
+  formulation → plan; assessment as a relationship, not an interrogation; the screen-is-not-a-diagnosis
+  thread; diagnosis (what) vs. conceptualization (how/why).
+- [concept-intake-interview](wiki/concept-intake-interview.md) — the foundational assessment method;
+  structure as a dial (unstructured/semi/structured); three core areas (presenting problem,
+  biopsychosocial history, current functioning); the risk screen; interrogation-drift and
+  "I-need-all-the-data" stance traps.
+- [concept-mental-status-exam](wiki/concept-mental-status-exam.md) — snapshot-not-diagnosis, the
+  domains, and the three confusable pairs beginners flatten (mood vs. affect, process vs. content,
+  insight vs. judgment); describe-don't-interpret; orientation → delirium.
+- [concept-screening-tools](wiki/concept-screening-tools.md) — PHQ-9 (9 items/0–27/cutoffs
+  5-10-15-20/item-9 trip-wire) and GAD-7 (0–21/5-10-15, not GAD-specific); PHQ-2/GAD-2 pre-screens;
+  measurement-based care; cut-points are population-dependent; a number is a flag, not a verdict.
+- [concept-reliability-validity](wiki/concept-reliability-validity.md) — the four reliabilities and
+  the validities; reliable≠valid (dartboard) and reliability-necessary-not-sufficient; sensitivity/
+  specificity (SnNout/SpPin), PPV-depends-on-prevalence, why screens over-flag; standardization/norms
+  as culture-fair assessment.
+- [concept-case-conceptualization](wiki/concept-case-conceptualization.md) — diagnosis vs.
+  formulation, the Five Ps (perpetuating = load-bearing), the 4Ps × biopsychosocial grid, theory as
+  the lens that turns a formulation into a plan, formulate-with-not-about.
+- [concept-treatment-planning](wiki/concept-treatment-planning.md) — the golden thread
+  (assessment→goal→objective→interventions→notes→review), goals vs. objectives, SMART objectives,
+  the MBC not-met→revise loop, and measurable ≠ meaningful.
+
+_Items:_ [unit07-assessment](items/unit07-assessment.md) — 51 items across 4 clusters
+(`mse-domains`, `screening-tools`, `reliability-vs-validity`, `formulation-ps`) plus unclustered
+intake and treatment-planning sets; all 5 Bloom levels, heavy on apply/analyze; ≥1 compare per
+cluster, the confusable-pair discrimination mcqs (mood/affect, process/content, insight/judgment,
+which-anxiety, classify-the-P), the screen-is-not-a-diagnosis stance probes, and the syllabus
+production rep (a one-page case conceptualization of a novel/show character). _Sources:_
+[unit07 sources](research/unit07-assessment-sources.md).
+
 - **Unit 8 — Crisis, Risk Assessment & Trauma-Informed Care** — _pending_
 
 ## Tier 3 — Rounding Out
