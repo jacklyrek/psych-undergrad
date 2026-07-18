@@ -266,11 +266,11 @@
     "last": "2026-07-07"
   },
   "u2-bowen-vs-minuchin-compare-01": {
-    "ease": 1.78,
-    "interval": 3,
-    "reps": 2,
-    "due": "2026-07-16",
-    "last": "2026-07-13"
+    "ease": 1.88,
+    "interval": 5,
+    "reps": 3,
+    "due": "2026-07-23",
+    "last": "2026-07-18"
   },
   "u2-sfbt-vs-narrative-compare-01": {
     "ease": 2.06,
@@ -539,11 +539,11 @@
     "last": "2026-07-13"
   },
   "u3-code-newsection-mcq-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-03",
+    "last": "2026-07-18"
   },
   "u3-principles-recall-01": {
     "ease": 2.24,
@@ -630,11 +630,11 @@
     "last": "2026-07-14"
   },
   "u3-conf-triad-compare-01": {
-    "ease": 2.56,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.66,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-08-02",
+    "last": "2026-07-18"
   },
   "u3-jaffee-recall-01": {
     "ease": 2.06,
@@ -686,11 +686,11 @@
     "last": "2026-07-13"
   },
   "u3-exception-discrim-mcq-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-03",
+    "last": "2026-07-18"
   },
   "u3-tarasoff-facts-recall-01": {
     "ease": 2.24,
@@ -700,11 +700,11 @@
     "last": "2026-07-14"
   },
   "u3-warn-protect-compare-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-03",
+    "last": "2026-07-18"
   },
   "u3-tobriner-cloze-01": {
     "ease": 2.38,
@@ -742,25 +742,25 @@
     "last": "2026-07-14"
   },
   "u3-threat-stance-vignette-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-03",
+    "last": "2026-07-18"
   },
   "u3-reporting-trigger-cloze-01": {
-    "ease": 2.38,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.48,
+    "interval": 14,
+    "reps": 3,
+    "due": "2026-08-01",
+    "last": "2026-07-18"
   },
   "u3-reporting-mechanics-recall-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-03",
+    "last": "2026-07-18"
   },
   "u3-report-vs-warn-compare-01": {
     "ease": 2.24,
@@ -777,18 +777,18 @@
     "last": "2026-07-13"
   },
   "u3-reporting-alliance-stance-01": {
-    "ease": 2.18,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
-  },
-  "u3-dual-5year-cloze-01": {
-    "ease": 2.7,
+    "ease": 2.28,
     "interval": 6,
     "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "due": "2026-07-24",
+    "last": "2026-07-18"
+  },
+  "u3-dual-5year-cloze-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-03",
+    "last": "2026-07-18"
   },
   "u3-crossing-violation-compare-01": {
     "ease": 2.38,
@@ -798,11 +798,11 @@
     "last": "2026-07-13"
   },
   "u3-boundary-discrim-mcq-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-03",
+    "last": "2026-07-18"
   },
   "u3-rural-apply-01": {
     "ease": 2.56,
@@ -826,11 +826,11 @@
     "last": "2026-07-15"
   },
   "u3-c2b-newspecialty-recall-01": {
-    "ease": 2.56,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.66,
+    "interval": 15,
+    "reps": 3,
+    "due": "2026-08-02",
+    "last": "2026-07-18"
   },
   "u3-values-referral-vignette-01": {
     "ease": 2.38,
@@ -840,11 +840,11 @@
     "last": "2026-07-14"
   },
   "u3-impairment-vignette-01": {
-    "ease": 1.58,
+    "ease": 1.68,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u3-multicultural-floor-cloze-01": {
     "ease": 2.06,
@@ -854,375 +854,375 @@
     "last": "2026-07-14"
   },
   "u3-professions-prescribe-mcq-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-03",
+    "last": "2026-07-18"
   },
   "u3-professions-testing-mcq-01": {
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-03",
+    "last": "2026-07-18"
+  },
+  "u3-professions-lens-compare-01": {
+    "ease": 2.48,
+    "interval": 14,
+    "reps": 3,
+    "due": "2026-08-01",
+    "last": "2026-07-18"
+  },
+  "u3-professions-paths-recall-01": {
+    "ease": 1.74,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
+  },
+  "u3-rxp-recall-01": {
+    "ease": 1.54,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
+  },
+  "u4-tripartite-recall-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
+  },
+  "u4-tripartite-cloze-01": {
     "ease": 2.7,
     "interval": 6,
     "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
-  },
-  "u3-professions-lens-compare-01": {
-    "ease": 2.38,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-18",
-    "last": "2026-07-12"
-  },
-  "u3-professions-paths-recall-01": {
-    "ease": 1.64,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
-  },
-  "u3-rxp-recall-01": {
-    "ease": 1.44,
-    "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
-  },
-  "u4-tripartite-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
-  },
-  "u4-tripartite-cloze-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-dimension-vignette-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-dimension-vignette-02": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-dimension-compare-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-msjcc-aksa-cloze-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-msjcc-domains-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.36,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-msjcc-quadrants-recall-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-msjcc-socioeco-recall-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-msjcc-vignette-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-frameworks-compare-01": {
-    "ease": 2.18,
+    "ease": 1.86,
     "interval": 1,
     "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-humility-recall-01": {
-    "ease": 2.18,
+    "ease": 1.86,
     "interval": 1,
     "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-humility-compare-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-humility-vignette-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-humility-stance-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-evidence-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-evidence-cloze-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.36,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-evidence-analyze-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-accult-recall-01": {
-    "ease": 2.36,
+    "ease": 2.46,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-accult-cloze-01": {
-    "ease": 2.6,
+    "ease": 2.28,
     "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "reps": 0,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-accult-vignette-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-accult-vignette-02": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-accult-compare-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-accult-society-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-accult-family-vignette-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-accult-critique-01": {
-    "ease": 2.18,
+    "ease": 1.86,
     "interval": 1,
     "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-helpseek-recall-01": {
-    "ease": 2.36,
+    "ease": 2.46,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-worldview-explain-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-helpseek-stance-01": {
-    "ease": 2.18,
+    "ease": 2.28,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-privilege-cloze-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-privilege-explain-01": {
-    "ease": 2.18,
+    "ease": 2.28,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-privilege-power-recall-01": {
-    "ease": 2.18,
+    "ease": 1.86,
     "interval": 1,
     "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-privilege-stance-01": {
-    "ease": 2.18,
+    "ease": 2.28,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-broach-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-broach-recall-02": {
-    "ease": 2.18,
+    "ease": 1.86,
     "interval": 1,
     "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-broach-vignette-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-broach-vignette-02": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-broach-compare-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-broach-production-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-autobiography-production-01": {
-    "ease": 2.18,
+    "ease": 2.28,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-microagg-recall-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-07",
-    "last": null
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-microagg-cloze-01": {
-    "ease": 2.18,
+    "ease": 2.28,
     "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
   },
   "u4-microagg-vignette-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "u4-microagg-vignette-02": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
-  },
-  "u4-microagg-compare-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
-  },
-  "u4-microagg-repair-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-07",
-    "last": null
-  },
-  "u4-microagg-critique-01": {
-    "ease": 2.18,
-    "interval": 1,
-    "reps": 0,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
-  },
-  "u4-microagg-clinical-analyze-01": {
     "ease": 2.6,
     "interval": 1,
     "reps": 1,
-    "due": "2026-07-16",
-    "last": "2026-07-15"
+    "due": "2026-07-19",
+    "last": "2026-07-18"
+  },
+  "u4-microagg-compare-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
+  },
+  "u4-microagg-repair-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
+  },
+  "u4-microagg-critique-01": {
+    "ease": 2.28,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-19",
+    "last": "2026-07-18"
+  },
+  "u4-microagg-clinical-analyze-01": {
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-07-24",
+    "last": "2026-07-18"
   },
   "ax-pfa-notify-principles-cloze-01": {
     "ease": 2.18,
@@ -1279,5 +1279,1447 @@
     "reps": 0,
     "due": "2026-07-16",
     "last": "2026-07-15"
+  },
+  "ax-add-sud-severity-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-sud-groups-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-dependence-vs-addiction-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-prescribed-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-terms-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-behavioral-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-models-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-bdm-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-ttm-stages-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-precontemp-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-stage-id-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-mismatch-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-precontemp-vs-contemp-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-spiral-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-precontemp-move-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-decisional-balance-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-ave-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-hrs-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-lapse-vs-relapse-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-ave-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-sid-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-lapse-relapse-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-halt-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-urge-surf-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-relapse-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-righting-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-rule-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-changetalk-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-stimulant-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-moud-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-moud-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-harm-reduction-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-aa-evidence-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-aa-vs-smart-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "ax-add-match-method-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-attach-secure-base-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-attach-iwm-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-attach-not-feeding-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-attach-phases-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-attach-reunion-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-attach-sensitivity-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-attach-aai-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-secure-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-avoidant-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-resistant-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-disorganized-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-avoidant-vs-resistant-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-caregiving-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-deactivation-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-adult-map-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-adult-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-disorg-risk-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-stance-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-style-preoccupied-inroom-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-erik-stages-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-erik-virtue-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-erik-syntonic-dystonic-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-erik-identity-vs-intimacy-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-erik-initiative-vs-industry-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-erik-adolescent-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-erik-midlife-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-erik-carried-forward-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-erik-critique-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-piaget-stages-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-piaget-object-permanence-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-piaget-assim-accom-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-piaget-conservation-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-piaget-formal-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-piaget-clinical-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-piaget-critique-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-theorists-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-theorists-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-theorists-trust-parallel-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-bps-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-bps-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-bps-critique-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-typical-clinical-stance-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-risk-not-destiny-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-milestones-surveillance-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u5-practice-rep-production-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-dsmtr-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-multiaxial-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-disorder-def-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-culture-dx-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-culture-terms-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-insurance-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-personfirst-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-mdd-rep-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-mdd-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-mdd-recur-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-griefmdd-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-bereave-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-maniahypo-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-bipolar-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-maniascreen-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-gad-rep-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-gad-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-panicattack-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-panic-cued-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-agorasocial-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-anxietymap-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-reassure-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-ptsd-rep-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-criteriona-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-ptsdclusters-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-asd-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-adjust-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-traumaclock-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-pgd-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-disclosure-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-ocd-def-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-ocd-egodystonic-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-ocd-family-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-ocd-reassure-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-psychosis-domains-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-schizo-duration-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-duration-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-schizoaffective-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-spectrum-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-delusion-stance-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-pd-def-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-pd-clusters-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-schizoid-avoidant-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-ocpd-ocd-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-ampd-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-pd-stigma-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-sud-structure-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-sud-mimic-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-adhd-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-adhd-timeline-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-asd-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-neurodiversity-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-an-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-anbn-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-eating-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-an-mortality-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-eating-screen-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-cracks-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-comorbid-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-comorbid-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-hitop-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-pfactor-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-rdoc-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-inflation-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-synthesis-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-grief-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-ocdgad-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-panicphobia-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-ptsdadjust-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-flash-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-maniaadhd-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-bpdbipolar-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-asdsocial-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-substance-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u6-diff-medical-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-intake-areas-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-intake-structure-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-intake-whynow-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-intake-bps-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-intake-drift-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-intake-alldata-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-def-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-moodaffect-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-incongruent-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-processcontent-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-process-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-insightjudgment-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-insightjudgment-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-describe-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-orientation-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mse-affect-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-phq9-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-gad7-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-phq9-item9-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-screen-notdx-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-gad7-which-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-phq9-gad7-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mbc-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-phq2-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-cutpoint-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-relval-def-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-rel-types-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-relval-dartboard-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-relval-necessary-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-validity-types-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-snsp-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-screen-highsens-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-ppv-prevalence-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-norms-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-alpha-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-dx-formulation-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-fiveps-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-perpetuating-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-classifyp-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-classifyp-mcq-02": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-sameps-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-formulation-rep-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-formulate-with-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-4ps-bps-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-idiographic-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-goldenthread-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-goalobjective-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-smart-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-smart-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-measurable-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
+  },
+  "u7-mbc-loop-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-18",
+    "last": null
   }
 }

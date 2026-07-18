@@ -143,6 +143,12 @@ support; borders Unit 8). Use it as the template.
 ## Page conventions (wiki/)
 
 - **One concept per page.** Split if a page is doing two jobs.
+- **Do not hard-wrap prose.** Write each paragraph as one continuous line — no manual line breaks to
+  keep lines under some column width. Obsidian (and every other markdown renderer) soft-wraps for
+  display, so hard wraps only make prose harder to edit and produce ragged diffs. Insert newlines
+  only where markdown needs them: between paragraphs, and for list items, headings, tables, and
+  code blocks. (This file is itself hard-wrapped for legacy reasons; **do not imitate that** in the
+  readings you author.)
 - **YAML frontmatter on every page:**
   ```yaml
   ---
