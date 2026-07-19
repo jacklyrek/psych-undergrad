@@ -11,7 +11,7 @@ cluster: trauma-disorders
 
 This chapter is unique in the DSM: every diagnosis in it **requires an identified external event**. Nowhere else does etiology sit inside the criteria. That gives the whole family a two-part grammar — *which stressor* (a Criterion-A trauma, any stressor, or a death) and *which clock* (how long since, how long lasting). Master the grammar and the four diagnoses sort themselves.
 
-⚠ *This page borders Unit 8's territory (trauma-informed care, crisis). Here we do the diagnostic map only; the neurobiology, treatment, and how-not-to-retraumatize belong to Unit 8.*
+⚠ *This page borders [[unit08-crisis-trauma | Unit 8]]'s territory ([[concept-trauma-informed-care | trauma-informed care]], crisis). Here we do the diagnostic map only; the neurobiology, treatment, and how-not-to-retraumatize belong to Unit 8 ([[concept-neurobiology-of-trauma]], [[concept-trauma-informed-care]]).*
 
 ## The gate: Criterion A
 
@@ -47,7 +47,7 @@ Two specifiers worth knowing: **dissociative subtype** (prominent depersonalizat
 
 ## In the room
 
-Two Unit-8 previews that can't wait: **screening is asking, plainly and without pressure** — "Has anything happened to you that still intrudes on your life?" — and **detailed disclosure is not required for diagnosis or safety**; pushing for the full narrative before stabilization is how helpers re-traumatize. The counselor's Criterion-A footnote applies to you too: repeated professional exposure is a real risk channel (vicarious trauma — an ethical competency in Unit 8, previewed in [[concept-scope-of-practice]]'s impairment material).
+Two [[unit08-crisis-trauma | Unit 8]] previews that can't wait: **screening is asking, plainly and without pressure** — "Has anything happened to you that still intrudes on your life?" — and **detailed disclosure is not required for diagnosis or safety**; pushing for the full narrative before stabilization is how helpers re-traumatize. The counselor's Criterion-A footnote applies to you too: repeated professional exposure is a real risk channel ([[concept-vicarious-trauma | vicarious trauma]] — an ethical competency in Unit 8, previewed in [[concept-scope-of-practice]]'s impairment material).
 
 ## Sources
 

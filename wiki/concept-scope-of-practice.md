@@ -37,7 +37,7 @@ subtler, more common failure. [S1][S7]
 - **C.2.g — Impairment.** Monitor yourself for impairment from physical, mental, or emotional
   problems, and **refrain from providing services when impaired**. Seek help; if needed, limit,
   suspend, or terminate your practice. This is the ethical root of the self-care material in
-  Unit 8 — burnout management isn't a wellness perk, it's a competence obligation. [S1]
+  [[concept-counselor-self-care | Unit 8]] — burnout management isn't a wellness perk, it's a competence obligation. [S1]
 
 ## The referral reflex (and its limits)
 
@@ -74,7 +74,7 @@ can't see from inside your own perspective.
 
 - [[concept-helping-professions-compared]] — scope of practice at the *profession* level.
 - [[concept-dual-relationships]] — the other self-discipline standard: knowing where your role ends.
-- Unit 8 — impairment, vicarious trauma, and self-care as ethical competencies (C.2.g is the hook).
+- [[unit08-crisis-trauma | Unit 8]] — impairment, [[concept-vicarious-trauma | vicarious trauma]], and [[concept-counselor-self-care | self-care]] as ethical competencies (C.2.g is the hook).
 - [[unit04-multicultural]] — multicultural competence as required-for-everyone (C.2.a).
 
 ## Sources

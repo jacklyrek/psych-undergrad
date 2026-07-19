@@ -10,7 +10,7 @@ source_units: [6]
 
 This unit teaches the language of diagnosis — the major categories of mental disorder and the manual that organizes them — while holding onto the syllabus's framing sentence: **diagnosis is a shorthand, not a verdict.** You will be expected to formulate diagnostic impressions in practicum, and knowing the criteria cold is also the best protection against the opposite error: calling ordinary distress a disorder. Roughly a quarter of U.S. adults meet criteria for *some* DSM disorder in a given year (26.2% twelve-month prevalence), and nearly half will at some point in their lives [S17][S1] — numbers that read either as "mental illness is common" or as "the categories are drawn too wide," and that tension is itself part of the curriculum.
 
-This is a Tier 2 clinical-foundations unit. It feeds CACREP's **Assessment & Diagnosis** territory, sits on the developmental baseline from [[unit05-development]] (you can't call something abnormal without knowing what's normal for the age), and hands forward to [[unit07-assessment | Unit 7]] (turning diagnosis into assessment and [[concept-case-conceptualization | case conceptualization]]) and Unit 8 (risk). The cultural competence of [[unit04-multicultural]] is load-bearing here: misdiagnosis is what cultural incompetence looks like when it holds a pen.
+This is a Tier 2 clinical-foundations unit. It feeds CACREP's **Assessment & Diagnosis** territory, sits on the developmental baseline from [[unit05-development]] (you can't call something abnormal without knowing what's normal for the age), and hands forward to [[unit07-assessment | Unit 7]] (turning diagnosis into assessment and [[concept-case-conceptualization | case conceptualization]]) and [[unit08-crisis-trauma | Unit 8]] (risk). The cultural competence of [[unit04-multicultural]] is load-bearing here: misdiagnosis is what cultural incompetence looks like when it holds a pen.
 
 ## The map of the unit
 
@@ -21,17 +21,17 @@ Two kinds of pages. First, the manual itself and its limits:
 
 Second, the major categories a counselor must recognize — each page built around *what distinguishes this from its neighbors*, because differential discrimination is the actual clinical skill:
 
-| Page | Category | The discrimination that matters most |
-| --- | --- | --- |
-| [[concept-mood-disorders]] | depressive & bipolar disorders | depression vs. grief; unipolar vs. bipolar |
-| [[concept-anxiety-disorders]] | GAD, panic, phobias, social anxiety | *what* the fear is about; expected vs. unexpected panic |
-| [[concept-trauma-stressor-disorders]] | PTSD, acute stress, adjustment, prolonged grief | which stressor + which clock |
-| [[concept-ocd]] | OCD & related | obsession/compulsion vs. worry; OCD vs. OCPD |
-| [[concept-psychotic-disorders]] | schizophrenia spectrum | duration lines; psychosis vs. mood-with-psychosis |
-| [[concept-personality-disorders]] | the ten PDs in three clusters | trait pattern vs. episode; cluster A/B/C |
-| [[concept-substance-use-disorders]] | SUDs (bridge to the addiction elective) | use vs. disorder; dependence vs. addiction |
-| [[concept-neurodevelopmental-disorders]] | ADHD, autism spectrum | developmental onset vs. adult-onset lookalikes |
-| [[concept-eating-disorders]] | anorexia, bulimia, binge-eating | the weight criterion; compensation or not |
+| Page                                     | Category                                        | The discrimination that matters most                    |
+| ---------------------------------------- | ----------------------------------------------- | ------------------------------------------------------- |
+| [[concept-mood-disorders]]               | depressive & bipolar disorders                  | depression vs. grief; unipolar vs. bipolar              |
+| [[concept-anxiety-disorders]]            | GAD, panic, phobias, social anxiety             | *what* the fear is about; expected vs. unexpected panic |
+| [[concept-trauma-stressor-disorders]]    | PTSD, acute stress, adjustment, prolonged grief | which stressor + which clock                            |
+| [[concept-ocd]]                          | OCD & related                                   | obsession/compulsion vs. worry; OCD vs. OCPD            |
+| [[concept-psychotic-disorders]]          | schizophrenia spectrum                          | duration lines; psychosis vs. mood-with-psychosis       |
+| [[concept-personality-disorders]]        | the ten PDs in three clusters                   | trait pattern vs. episode; cluster A/B/C                |
+| [[concept-substance-use-disorders]]      | SUDs (bridge to the addiction elective)         | use vs. disorder; dependence vs. addiction              |
+| [[concept-neurodevelopmental-disorders]] | ADHD, autism spectrum                           | developmental onset vs. adult-onset lookalikes          |
+| [[concept-eating-disorders]]             | anorexia, bulimia, binge-eating                 | the weight criterion; compensation or not               |
 
 ## What is a "disorder" in the first place?
 
@@ -68,7 +68,7 @@ Pick the big three — **major depressive disorder, generalized anxiety disorder
 - [[unit04-multicultural]] — cultural humility is the anti-misdiagnosis skill; [[concept-acculturation]] flags acculturative stress masquerading as disorder.
 - [[unit03-ethics-law]] — diagnosis within scope/competence ([[concept-scope-of-practice]]); who does what ([[concept-helping-professions-compared]]).
 - [[aux-addiction]] — the elective module is this unit's substance-use chapter at full depth.
-- [[unit07-assessment]] — assessment, diagnosis & [[concept-case-conceptualization | case conceptualization]] turn this unit's categories into a working plan (the intake gathers it, the formulation explains it); Unit 8 (crisis/risk) is pending. Unit 11 (neuroscience) picks up medication.
+- [[unit07-assessment]] — assessment, diagnosis & [[concept-case-conceptualization | case conceptualization]] turn this unit's categories into a working plan (the intake gathers it, the formulation explains it); [[unit08-crisis-trauma | Unit 8]] (crisis/risk) covers risk assessment and trauma-informed care. Unit 11 (neuroscience) picks up medication.
 
 ## Sources
 

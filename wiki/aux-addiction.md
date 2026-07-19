@@ -97,7 +97,7 @@ Presence and patience over persuasion.
 - **Unit 9 (planned)** — Evidence-Based Modalities. **Motivational Interviewing** and **CBT** are
   covered there as general tools; here they are applied to addiction specifically. MI's OARS also
   traces back to [[unit01-helping-skills]] (same relational engine, crisis/change-specific use).
-- **Unit 8 (planned)** — Crisis, Risk & Trauma-Informed Care. Overdose response, naloxone, and
+- **[[unit08-crisis-trauma | Unit 8]]** — Crisis, Risk & Trauma-Informed Care. Overdose response, naloxone, and
   co-occurring trauma border this module; a person in withdrawal or post-overdose can be in acute
   crisis. See also the elective [[aux-psychological-first-aid]] for acute-support stance.
 

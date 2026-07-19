@@ -80,14 +80,14 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 - **CACREP:** Assessment & Testing.
 - **Pages:** [`unit07-assessment`](wiki/unit07-assessment.md), [`concept-intake-interview`](wiki/concept-intake-interview.md), [`concept-mental-status-exam`](wiki/concept-mental-status-exam.md), [`concept-screening-tools`](wiki/concept-screening-tools.md) (absorbs the promised `concept-phq9` + `concept-gad7` — the two instruments are a confusable set taught side-by-side), [`concept-reliability-validity`](wiki/concept-reliability-validity.md), [`concept-case-conceptualization`](wiki/concept-case-conceptualization.md), [`concept-treatment-planning`](wiki/concept-treatment-planning.md). **Built 2026-07-17** (in-depth): 7 readings, 51 items, 14 sources.
 
-### Unit 8 — Crisis, Risk Assessment & Trauma-Informed Care  ☐  ⚠ heavy topic — keep clinical, precise
+### Unit 8 — Crisis, Risk Assessment & Trauma-Informed Care  ☑  ⚠ heavy topic — keep clinical, precise
 - **Objectives:** screen for & respond to suicide risk, self-harm, danger to others; understand trauma's effects & not re-traumatizing people.
 - **Core concepts:** suicide risk assessment frameworks; collaborative safety planning; means-reduction conversations; de-escalation/crisis-intervention models; neurobiology of trauma (working level); trauma-*informed* care vs. trauma *treatment*; vicarious trauma & counselor self-care (an ethical competency).
 - **Anchors:** James & Gilliland *Crisis Intervention Strategies*; Herman *Trauma and Recovery*; van der Kolk *The Body Keeps the Score* (popular); Shea *The Practical Art of Suicide Assessment* (note: van der Kolk is popular-press — corroborate neurobiology claims against peer-reviewed sources).
-- **Depends on:** → Unit 3 (confidentiality limits), → Unit 7 (risk screen).
-- **Clusters:** `crisis-response-models`; `trauma-informed-vs-treatment`.
+- **Depends on:** → Unit 3 (confidentiality limits / duty-to-warn), → Unit 7 (risk screen), → Unit 6 (trauma-stressor diagnoses).
+- **Clusters:** `crisis-response-models`; `trauma-informed-vs-treatment`; plus (added at build) `suicide-risk-concepts` (warning sign vs. risk factor vs. protective; acute/chronic; ideation vs. plan vs. intent vs. means; ideation-to-action), `trauma-brain` (amygdala/hippocampus/PFC; window of tolerance; explicit/implicit memory), `counselor-distress-types` (VT vs. STS vs. compassion fatigue vs. burnout vs. countertransference — a prime interleaving set).
 - **CACREP:** ties into Helping Relationships & crisis competencies.
-- **Pages:** `unit08-crisis-trauma`, `concept-suicide-risk-assessment`, `concept-safety-planning`, `concept-means-reduction`, `concept-de-escalation`, `concept-trauma-informed-care`, `concept-neurobiology-of-trauma`, `concept-vicarious-trauma`, `concept-counselor-self-care`.
+- **Pages:** [`unit08-crisis-trauma`](wiki/unit08-crisis-trauma.md), [`concept-suicide-risk-assessment`](wiki/concept-suicide-risk-assessment.md), [`concept-safety-planning`](wiki/concept-safety-planning.md), [`concept-means-reduction`](wiki/concept-means-reduction.md), [`concept-de-escalation`](wiki/concept-de-escalation.md), [`concept-trauma-informed-care`](wiki/concept-trauma-informed-care.md), [`concept-neurobiology-of-trauma`](wiki/concept-neurobiology-of-trauma.md), [`concept-vicarious-trauma`](wiki/concept-vicarious-trauma.md), [`concept-counselor-self-care`](wiki/concept-counselor-self-care.md). **Built 2026-07-18** (in-depth): 9 readings, 67 items, 21 sources. Suicide-behavior codes/PTSD-criteria handoff from Unit 6 reconciled; PFA & addiction elective forward-links wired to real wikilinks.
 
 ---
 

@@ -14,7 +14,7 @@ What's built vs. pending, and where the readings and practice have holes. Update
 | 5 Development | 2 | ☑ (7) | ☑ (45) | all 5 levels | 4/4 ✓ (5 compares) |
 | 6 Psychopathology | 2 | ☑ (12) | ☑ (75) | all 5 levels | 7/7 ✓ (8 compares) |
 | 7 Assessment | 2 | ☑ (7) | ☑ (51) | all 5 levels | 4/4 ✓ (`mse-domains`, `screening-tools`, `reliability-vs-validity`, `formulation-ps` — 5 compares) |
-| 8 Crisis & Trauma | 2 | ☐ | ☐ | — | — |
+| 8 Crisis & Trauma | 2 | ☑ (9) | ☑ (67) | all 5 levels | 5/5 ✓ (8 compares) |
 | 9 Modalities | 3 | ☐ | ☐ | — | — |
 | 10 Group | 3 | ☐ | ☐ | — | — |
 | 11 Neuroscience | 3 | ☐ | ☐ | — | — |
@@ -56,8 +56,11 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   (CBT/MI as practical toolkit). Fix that wikilink target when Unit 9 is built.
 - **Elective `aux-psychological-first-aid` → Unit 8 handoff:** all three concept pages link forward
   to the *pending* Unit 8 (crisis/risk/trauma-informed care) by name, not by wikilink (no
-  `unit08-*` page exists yet). When Unit 8 is built, wire these into real wikilinks and reconcile the
-  PGD / vicarious-trauma overlap so the module and Unit 8 don't duplicate or contradict.
+  `unit08-*` page exists yet). ~~When Unit 8 is built, wire these into real wikilinks and reconcile the
+  PGD / vicarious-trauma overlap so the module and Unit 8 don't duplicate or contradict.~~ **RESOLVED
+  2026-07-18:** forward-links wired to real wikilinks; overlap reconciled — PGD depth stays in Unit 6
+  (`concept-trauma-stressor-disorders`), and the module's helper-load note now points to Unit 8's full
+  `concept-vicarious-trauma` / `concept-counselor-self-care`.
 - **Unit 3 cluster additions:** the unit introduced two clusters beyond the course-map's three —
   `ethics-principles` (the six principles are a genuinely confusable set: fidelity vs. veracity) and
   `boundary-concepts` (crossing vs. violation). Course-map entry updated to match. 10 items
@@ -110,7 +113,9 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   general modalities) by name, not wikilink (no `unit06/08/09-*` pages exist yet). When those units
   are built, wire real wikilinks and reconcile overlap so the module and units don't duplicate or
   contradict: **SUD criteria** (module vs. Unit 6), **MI/CBT** (module vs. Unit 9). MI's OARS also
-  traces to `unit01-helping-skills` (live wikilink already).
+  traces to `unit01-helping-skills` (live wikilink already). **Unit 8 portion RESOLVED 2026-07-18:**
+  the hub's overdose/naloxone/crisis forward-link is now a live wikilink to `unit08-crisis-trauma`
+  (`concept-means-reduction`); Units 6 and 9 remain by-name (Unit 9 pending).
 - **Elective `aux-addiction` moving-target caveats:** MOUD/pharmacotherapy specifics and CM's
   "gold-standard for stimulants" reflect 2024–25 evidence; the AA/TSF Cochrane finding (Kelly 2020)
   reversed prior "no evidence" claims — re-verify if used beyond orientation. SMART Recovery's
@@ -226,3 +231,47 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   flagged inline in the sources file. The "golden thread" (S14) is a documentation/compliance
   convention, not a scientific finding — labeled orientation-tier. Screening cut-points are flagged as
   population-dependent, not universal (S10's ≥8 vs. the standard ≥10).
+- **Unit 8 page plan (as promised, 2026-07-18):** built the full **9** pages the course-map listed
+  (hub + suicide-risk-assessment, safety-planning, means-reduction, de-escalation, trauma-informed-care,
+  neurobiology-of-trauma, vicarious-trauma, counselor-self-care) — no consolidation this time; each is
+  a genuinely distinct topic. `concept-neurobiology-of-trauma` carries `source_units: [8, 11]` (a
+  working-level preview of the Unit 11 stress-response material).
+- **Unit 8 clusters added beyond course-map (noted in course-map):** the course-map named
+  `crisis-response-models` and `trauma-informed-vs-treatment`; the build added three more genuinely
+  confusable sets — `suicide-risk-concepts` (warning-sign/risk-factor/protective; acute/chronic;
+  ideation/plan/intent/means; ideation-to-action), `trauma-brain` (amygdala/hippocampus/PFC; window of
+  tolerance hyper/hypo; explicit/implicit memory), and `counselor-distress-types` (VT vs. STS vs.
+  compassion fatigue vs. burnout vs. countertransference — the prime interleaving target). Note
+  `crisis-response-models` deliberately spans three pages (safety-planning, means-reduction,
+  de-escalation) — it *is* the "what do I do in a crisis" confusable set.
+- **Unit 8 Bloom spread:** R=16/U=11/Ap=17/An=13/E=10 across 67 items — heavy on apply/analyze/evaluate
+  (40) per generate rules. Types: 16 explain, 14 mcq (discrimination vignettes), 12 recall, 10 cloze,
+  8 compare (≥1 per cluster: suicide-risk-concepts 2, crisis-response-models 2, trauma-brain 2,
+  trauma-informed-vs-treatment 1, counselor-distress-types 1), 7 vignette. Includes the syllabus
+  practice rep (a memorized structure for asking about suicidal ideation, `u8-sra-rep-01`). Stance
+  probes throughout: ask-directly/don't-freeze, assess-to-manage-not-predict, safety-plan-not-contract,
+  don't-dig, freeze-is-not-a-choice, self-care-as-ethics/martyr-reflex.
+- **Unit 8 forward handoffs WIRED (resolved 2026-07-18):** all previously by-name "Unit 8" references
+  are now live wikilinks (40 replacements across 22 files) — **Unit 3** (`concept-duty-to-warn`,
+  `concept-confidentiality-limits`, `study-tarasoff`, `concept-scope-of-practice`, `concept-mandated-
+  reporting`, hub), **Unit 6** (`concept-trauma-stressor-disorders` [neurobiology/treatment/don't-
+  retraumatize + suicidal-behavior codes reconciled], `concept-dsm-structure`, `concept-mood-disorders`,
+  `concept-psychotic-disorders`, `concept-ocd`, hub), **Unit 7** (`unit07-assessment`,
+  `concept-screening-tools` [item-9 trip-wire, PC-PTSD-5, C-SSRS], `concept-intake-interview`), the
+  **PFA elective** (hub, `concept-grief-models`, `concept-supporting-the-bereaved`,
+  `concept-death-notification`), the **addiction elective** (hub, `concept-treatment-and-recovery`),
+  and `theory-postmodern`. No `unit08-*` by-name refs remain in the wiki.
+- **Unit 8 contested-material load is deliberately high** and surfaced as items at evaluate level:
+  individual suicide is **not predictable** (the Tarasoff prediction critique in a new setting — assess
+  to manage, not prophesy); **no-suicide contracts are not evidence-based**; trauma **cortisol findings
+  are inconsistent** (no clean biomarker); the **window of tolerance** and **polyvagal theory** are
+  heuristics, not validated brain states; **van der Kolk's *Body Keeps the Score* is popular-press**
+  (mechanisms corroborated against peer-reviewed S14/S15; the memory-as-storage and recovered-memory
+  claims flagged). Per CLAUDE.md's heavy-topic rule the material is kept clinical and precise, no
+  sensationalism.
+- **Unit 8 sourcing caveats baked in:** the two anchor **books** (James & Gilliland; Herman) are offline
+  and cited via reputable secondary summaries; SAMHSA's exact 4Rs/6-principles/3Es wording was confirmed
+  across two secondary summaries + the primary publication record; the HPA-axis review (S14) and the
+  Trippany/Kress *Journal of Counseling & Development* vicarious-trauma article (S19) were **read in full
+  via pypdf**. Firearm case-fatality (~85–90%) and crisis-duration (minutes–hour) figures are
+  order-of-magnitude public-health estimates (Means Matter), not precise constants.

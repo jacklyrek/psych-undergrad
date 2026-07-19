@@ -134,7 +134,7 @@ showing up." [S16][S17]
 - [[concept-supporting-the-bereaved]] — what helps and harms from the moment after notification.
 - [[concept-grief-models]] — why denial and re-asking are normal first minutes, not pathology.
 - [[aux-psychological-first-aid]] — module hub and stance.
-- **Unit 8 (planned)** — crisis response, and notification after suicide specifically.
+- **[[unit08-crisis-trauma | Unit 8]]** — crisis response, and notification after suicide specifically.
 
 ## Sources
 [S2] NCTSN/NCPTSD *PFA Field Operations Guide* — missing-loved-one, death, notification-support and

@@ -86,7 +86,7 @@ These models do one job for the helper: they stop you from imposing a shape on s
 ## Connects to
 - [[concept-supporting-the-bereaved]] — applying these models to the child-death case.
 - [[aux-psychological-first-aid]] — the module hub.
-- **Unit 8 (planned)** — trauma-informed care and the clinical handling of complicated/prolonged
+- **[[unit08-crisis-trauma | Unit 8]]** — [[concept-trauma-informed-care | trauma-informed care]] and the clinical handling of complicated/prolonged
   grief and trauma sit there; this page is the orienting overview.
 
 ## Sources

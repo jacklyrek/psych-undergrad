@@ -49,7 +49,7 @@ Through **conversation that shifts meaning** — not insight into the past, not 
 
 ## What's contested (don't over-learn it)
 - **"No single truth"** is philosophically contested and can sit awkwardly with **evidence-based
-  practice** and real diagnostic/risk realities (you still assess suicide risk objectively — Unit 8).
+  practice** and real diagnostic/risk realities (you still assess suicide risk objectively — [[concept-suicide-risk-assessment | Unit 8]]).
   Most clinicians treat constructionism as a stance toward the client's *meaning*, not a denial of
   clinical fact. [S13]
 - **Brevity vs. depth.** Critics ask whether solution-focused brevity can shortchange clients with

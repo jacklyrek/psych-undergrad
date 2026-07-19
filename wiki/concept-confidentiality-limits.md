@@ -39,7 +39,7 @@ including licensed clinical social workers; states have their own privilege stat
 ## The exceptions (B.2 — the part to know cold)
 
 1. **Serious and foreseeable harm** (B.2.a) — disclosure "required to protect clients or identified
-   others from serious and foreseeable harm." Covers **danger to self** (suicide — see Unit 8) and
+   others from serious and foreseeable harm." Covers **danger to self** (suicide — see [[concept-suicide-risk-assessment]]) and
    **danger to others** ([[concept-duty-to-warn]]). Note the 2014 wording: *serious and foreseeable*, not "imminent" — a deliberate change to a more workable standard. When in doubt, **consult**. [S1]
 2. **Legal requirements** (B.2.a) — chiefly **mandated reporting** of suspected abuse/neglect of
    children and vulnerable adults ([[concept-mandated-reporting]]). [S1][S5]
@@ -103,7 +103,7 @@ hear the discomfort, not the content. Saying it calmly is a skill; rep it out lo
 - [[concept-informed-consent]] — the speech lives inside the consent conversation (B.1.d ↔ A.2.b).
 - [[concept-duty-to-warn]] and [[concept-mandated-reporting]] — the two big exceptions, unpacked.
 - [[study-tarasoff]] — where the harm exception's legal teeth came from.
-- Unit 8 (crisis) — operationalizes "danger to self": risk assessment, safety planning.
+- [[unit08-crisis-trauma | Unit 8]] (crisis) — operationalizes "danger to self": [[concept-suicide-risk-assessment | risk assessment]], [[concept-safety-planning | safety planning]].
 
 ## Sources
 

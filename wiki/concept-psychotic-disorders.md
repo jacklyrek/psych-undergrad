@@ -38,7 +38,7 @@ Same symptom pool, different clocks — this is the spectrum's core discriminati
 
 ## The facts that shape clinical care
 
-Lifetime risk ~1%, strikingly stable across populations; men are diagnosed ~1.7× as often, earlier (early twenties vs. late twenties), and with more negative symptoms. Onset in adolescence/early adulthood, often after a prodrome of withdrawal and odd ideas. Course is heterogeneous but sobering: complete recovery in ~13.5%; life expectancy runs ~15 years short, and **suicide is the most common cause of premature death** — psychosis and Unit 8's risk work overlap heavily. [S10]
+Lifetime risk ~1%, strikingly stable across populations; men are diagnosed ~1.7× as often, earlier (early twenties vs. late twenties), and with more negative symptoms. Onset in adolescence/early adulthood, often after a prodrome of withdrawal and odd ideas. Course is heterogeneous but sobering: complete recovery in ~13.5%; life expectancy runs ~15 years short, and **suicide is the most common cause of premature death** — psychosis and [[concept-suicide-risk-assessment | Unit 8's risk work]] overlap heavily. [S10]
 
 The reigning (and incomplete) mechanistic story is the **dopamine hypothesis**: mesolimbic dysregulation decouples dopamine signaling from genuinely salient events, producing "misattribution of importance to irrelevant objects or events" — *aberrant salience*, a compact way to understand how referential delusions feel from inside (everything seems to mean something). [S10] Unit 11 picks up the neurobiology and antipsychotics.
 

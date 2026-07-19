@@ -78,7 +78,7 @@ protect the actual victim. [S3]
 - [[concept-duty-to-warn]] — the doctrine in operation (triggers, menu of steps, state variation).
 - [[concept-confidentiality-limits]] — where the exception sits among the others; *Jaffee* and the
   privilege distinction.
-- Unit 8 — risk assessment practice; means restriction traces straight back to the Tarasoff menu.
+- [[unit08-crisis-trauma | Unit 8]] — [[concept-suicide-risk-assessment | risk assessment]] practice; [[concept-means-reduction | means restriction]] traces straight back to the Tarasoff menu.
 
 ## Sources
 

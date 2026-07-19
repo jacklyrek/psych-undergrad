@@ -26,7 +26,7 @@ These are **not** synonyms, and the difference *is* the history:
 The menu of reasonable protective steps: [S3]
 
 - increase session frequency; intensify treatment
-- arrange **removal of weapons** from the client's home (means restriction — reappears in Unit 8)
+- arrange **removal of weapons** from the client's home (means restriction — reappears in [[concept-means-reduction | Unit 8]])
 - initiate or adjust **medication** (via a prescriber — see [[concept-helping-professions-compared]])
 - **voluntary or involuntary hospitalization**
 - involve family or other third parties in the treatment
@@ -98,7 +98,7 @@ protective steps; warn/notify only as needed. Then **document the assessment and
 - [[study-tarasoff]] — the case itself; facts, holdings, aftermath.
 - [[concept-confidentiality-limits]] — the exception this doctrine lives inside (B.2.a).
 - [[concept-mandated-reporting]] — the confusable sibling duty; see box above.
-- Unit 8 — suicide risk assessment applies the same logic to danger-to-self, with its own tools.
+- [[unit08-crisis-trauma | Unit 8]] — [[concept-suicide-risk-assessment | suicide risk assessment]] applies the same logic to danger-to-self, with its own tools.
 
 ## Sources
 

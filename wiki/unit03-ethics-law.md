@@ -100,7 +100,7 @@ The working sequence to internalize:
 
 This chain is the **`confidentiality-exceptions`** cluster — the unit's main interleaving target,
 because the exceptions are confusable in exactly the way that matters: *who* triggers them, *what
-discretion* you have, and *who* you tell. Unit 8 (crisis work) will build directly on it. [S3][S5]
+discretion* you have, and *who* you tell. [[unit08-crisis-trauma | Unit 8]] (crisis work) will build directly on it. [S3][S5]
 
 ## Boundaries and the professional self
 
@@ -137,7 +137,7 @@ write yours before reading it, then compare. You will say a version of this for 
 
 - [[unit01-helping-skills]] — informed consent and honest limits are alliance *builders*
   ([[concept-therapeutic-alliance]]): clients trust a counselor who is straight about the rules.
-- Unit 8 (crisis/risk) — the operational side of danger-to-self/others; `confidentiality-exceptions`
+- [[unit08-crisis-trauma | Unit 8]] (crisis/risk) — the operational side of danger-to-self/others; `confidentiality-exceptions`
   is the legal scaffolding under suicide risk assessment. See also
   [[aux-psychological-first-aid]] for the adjacent acute-support skill set.
 - [[unit04-multicultural]] — C.2.a makes multicultural competency an ethical requirement,

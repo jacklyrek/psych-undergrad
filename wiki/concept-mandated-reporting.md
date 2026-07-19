@@ -81,7 +81,7 @@ often survives a well-handled report — it rarely survives a concealed one. [S4
 - [[concept-confidentiality-limits]] — this is the "legal requirements" arm of B.2.a; it belongs in
   the confidentiality speech verbatim.
 - [[concept-duty-to-warn]] — the confusable sibling; table above.
-- Unit 8 — abuse discovery often co-presents with crisis; the reporting conversation is itself a
+- [[unit08-crisis-trauma | Unit 8]] — abuse discovery often co-presents with crisis; the reporting conversation is itself a
   crisis-communication skill.
 
 ## Sources

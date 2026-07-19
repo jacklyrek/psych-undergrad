@@ -12,7 +12,7 @@ related_units: [8]
 
 > **This is an off-syllabus elective module, not a numbered unit.** It lives in the `aux-`
 > namespace (see the *Ad-hoc / elective modules* section of [`../CLAUDE.md`](../CLAUDE.md)) and
-> cross-links forward into the planned **Unit 8 — Crisis, Risk Assessment & Trauma-Informed Care**.
+> cross-links forward into **[[unit08-crisis-trauma | Unit 8 — Crisis, Risk Assessment & Trauma-Informed Care]]**.
 > Built on request: *how do you actually help someone in the acute aftermath of something terrible
 > — e.g. a parent whose child has just died.*
 
@@ -66,9 +66,9 @@ your comparison to your own losses, or a reason their child died — and several
   not proven efficacy. [S2]
 
 ## Connects to
-- **Unit 8 (planned)** — Crisis, Risk Assessment & Trauma-Informed Care. PFA is the acute-response
+- **[[unit08-crisis-trauma | Unit 8]]** — Crisis, Risk Assessment & Trauma-Informed Care. PFA is the acute-response
   half; safety planning, suicide-risk screening, and the neurobiology of trauma live there. If a
-  bereaved person shows risk to self, this module hands off to Unit 8's risk assessment.
+  bereaved person shows risk to self, this module hands off to [[concept-suicide-risk-assessment | Unit 8's risk assessment]].
 - **[[unit01-helping-skills]]** — the listening and core-conditions work underneath PFA's "Listen."
   PFA *uses* those microskills but adds the crisis-specific rule: don't probe.
 

@@ -19,7 +19,7 @@ The Patient Health Questionnaire-9 — Kroenke, Spitzer & Williams (2001) [S2]:
 - **Severity anchors: 5 / 10 / 15 / 20 = mild / moderate / moderately severe / severe** (0–4 minimal).
 - **Cut-point ≥10**: sensitivity **88%**, specificity **88%** for major depression [S2]. Scoring ≥10 makes a depression diagnosis 7–14× more likely; ≤4 drops it below ~1-in-25 [S6].
 - **Reliability:** Cronbach's α ≈ **0.86–0.89** (good internal consistency) [S2].
-- **Item 9 is a suicide-risk trip-wire** — "thoughts that you would be better off dead, or of hurting yourself." *Any* non-zero answer obligates a direct, in-person risk follow-up; never let a self-report scale substitute for the conversation (Unit 8).
+- **Item 9 is a suicide-risk trip-wire** — "thoughts that you would be better off dead, or of hurting yourself." *Any* non-zero answer obligates a direct, in-person risk follow-up; never let a self-report scale substitute for the conversation ([[concept-suicide-risk-assessment]]).
 - **Free and public-domain**, in 30+ languages [S6] — a real reason it's everywhere.
 - **PHQ-2** = the first two items (mood + anhedonia) as an **ultra-brief pre-screen**; a positive PHQ-2 (≥3) prompts the full PHQ-9.
 
@@ -38,9 +38,9 @@ You don't need to memorize these, but recognize them — they populate the same 
 
 | Tool | Screens for | Notes |
 | --- | --- | --- |
-| **PC-PTSD-5** | PTSD | 5-item primary-care trauma screen (Unit 8) |
+| **PC-PTSD-5** | PTSD | 5-item primary-care trauma screen ([[unit08-crisis-trauma | Unit 8]]) |
 | **AUDIT / AUDIT-C** | alcohol use | AUDIT-C = 3 items; ties to [[concept-substance-use-disorders]] |
-| **C-SSRS** | suicide risk | Columbia protocol — structured risk, not a "score" (Unit 8) |
+| **C-SSRS** | suicide risk | Columbia protocol — structured risk, not a "score" ([[concept-suicide-risk-assessment | Unit 8]]) |
 | **MoCA / MMSE / Mini-Cog** | cognitive impairment | when the MSE flags cognition — a screen, then referral |
 | **CFI** | cultural context | the DSM's Cultural Formulation Interview ([[concept-dsm-structure]]) |
 

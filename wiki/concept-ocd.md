@@ -17,7 +17,7 @@ DSM-5 moved OCD out of the anxiety chapter and gave it a family of its own — *
 
 The compulsion buys short-term relief and thereby *feeds* the obsession — the same avoidance-maintains-anxiety loop as [[concept-anxiety-disorders]], wound tighter. Diagnosis requires obsessions and/or compulsions that are **time-consuming (≥1 hour/day) or cause marked distress/impairment**, not better explained by a substance, medical condition, or another disorder. [S12]
 
-**Ego-dystonic is the key word:** most people with OCD know the fear is irrational — only 2–4% lack insight — and are tormented *because* the thoughts feel alien to who they are. [S12] (DSM-5 grades this with insight specifiers: good/fair, poor, absent/delusional.) A gentle clinical implication: the client with intrusive harm-thoughts is horrified by them; the thought is not a plan, and treating it as a risk signal by reflex compounds their shame. (Genuine risk assessment still applies — Unit 8 — but *content of obsession ≠ intent*.)
+**Ego-dystonic is the key word:** most people with OCD know the fear is irrational — only 2–4% lack insight — and are tormented *because* the thoughts feel alien to who they are. [S12] (DSM-5 grades this with insight specifiers: good/fair, poor, absent/delusional.) A gentle clinical implication: the client with intrusive harm-thoughts is horrified by them; the thought is not a plan, and treating it as a risk signal by reflex compounds their shame. (Genuine risk assessment still applies — [[concept-suicide-risk-assessment | Unit 8]] — but *content of obsession ≠ intent*.)
 
 ## The relatives
 

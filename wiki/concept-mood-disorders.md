@@ -25,7 +25,7 @@ The anchor criteria set of the whole unit — and one of the syllabus's "big thr
 8. poor concentration / indecisiveness
 9. recurrent thoughts of death or suicidal ideation
 
-Lifetime prevalence ~12%, roughly **twice as common in women**; untreated episodes typically run 6–12 months. The recurrence staircase is worth memorizing because it changes treatment conversations: **~50% recur after a first episode, ~70% after a second, ~90% after a third.** [S5] Depression is also potentially lethal — suicidal ideation is a *criterion symptom*, and risk assessment (Unit 8) is inseparable from this diagnosis. [S22]
+Lifetime prevalence ~12%, roughly **twice as common in women**; untreated episodes typically run 6–12 months. The recurrence staircase is worth memorizing because it changes treatment conversations: **~50% recur after a first episode, ~70% after a second, ~90% after a third.** [S5] Depression is also potentially lethal — suicidal ideation is a *criterion symptom*, and risk assessment ([[concept-suicide-risk-assessment]]) is inseparable from this diagnosis. [S22]
 
 **Persistent depressive disorder** (dysthymia) is the low-grade, long-haul variant: depressed mood more days than not for **≥2 years** (1 year in youth), with milder symptom load. A person can carry both ("double depression"). [S5]
 
@@ -51,7 +51,7 @@ Bipolar diagnoses are built out of **episodes**:
 
 Then: **Bipolar I** = at least one manic episode, ever (depression common but *not required*). **Bipolar II** = at least one hypomanic episode **plus** at least one major depressive episode, and never a full manic episode — not a "milder" illness; its depressive burden is heavy. **Cyclothymic disorder** = ≥2 years of hypomanic-ish and depressive-ish symptoms that never reach either episode threshold. [S6]
 
-**The screening habit that protects clients:** people with bipolar disorder mostly seek help while *depressed*; correct diagnosis lags first contact by ~6–10 years on average, and **20–30% of "MDD" presentations transition to bipolar within 3 years**. An antidepressant given to undetected bipolar depression can destabilize mood. So before anyone concludes "unipolar depression," ask about lifetime highs: *Has there ever been a stretch of days when you needed almost no sleep and still felt full of energy?* [S6] Suicide risk in bipolar disorder runs ~20–30× the general population — this category and Unit 8 are never far apart. [S6]
+**The screening habit that protects clients:** people with bipolar disorder mostly seek help while *depressed*; correct diagnosis lags first contact by ~6–10 years on average, and **20–30% of "MDD" presentations transition to bipolar within 3 years**. An antidepressant given to undetected bipolar depression can destabilize mood. So before anyone concludes "unipolar depression," ask about lifetime highs: *Has there ever been a stretch of days when you needed almost no sleep and still felt full of energy?* [S6] Suicide risk in bipolar disorder runs ~20–30× the general population — this category and [[concept-suicide-risk-assessment | Unit 8]] are never far apart. [S6]
 
 ## In the room
 

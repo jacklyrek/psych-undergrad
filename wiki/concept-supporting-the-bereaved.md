@@ -77,7 +77,7 @@ Acute, even ferocious, grief is normal and not your cue to refer. Escalate to pr
 you see signs beyond ordinary bereavement — and especially:
 
 - **Suicidal ideation or intent**, or expressed wish to die/join the child → this is a risk
-  situation; hand off to crisis/clinical care now (see **Unit 8 — risk assessment**), don't manage
+  situation; hand off to crisis/clinical care now (see **[[concept-suicide-risk-assessment | Unit 8 — risk assessment]]**), don't manage
   it solo.
 - **Inability to function** in basic ways that **persists and isn't oscillating** — no movement
   toward restoration-oriented coping at all over time.
@@ -88,7 +88,7 @@ Referral is not abandonment — "I want to keep showing up *and* connect you wit
 
 ## Look after yourself, too
 Sitting with a parent whose child died has a cost. Helpers absorb some of it (vicarious/secondary
-stress — a named clinical phenomenon Unit 8 covers). Use your **own** support (your outer ring per
+stress — a named clinical phenomenon [[concept-vicarious-trauma | Unit 8]] covers). Use your **own** support (your outer ring per
 Ring Theory), don't make the bereaved person carry your reaction, and treat your self-care as part of being able to keep showing up — not a luxury. A depleted helper disappears, and disappearing is the thing grieving parents say hurt most.
 
 ## Connects to
@@ -97,7 +97,7 @@ Ring Theory), don't make the bereaved person carry your reaction, and treat your
 - [[concept-pfa-core-actions]] — Listen (accompany, don't probe) and Linkage (referral) in action.
 - [[concept-grief-models]] — the dual process oscillation and the PGD boundary behind these moves.
 - [[aux-psychological-first-aid]] — module hub and stance.
-- **Unit 8 (planned)** — suicide-risk assessment, trauma-informed care, and vicarious-trauma /
+- **[[unit08-crisis-trauma | Unit 8]]** — [[concept-suicide-risk-assessment | suicide-risk assessment]], [[concept-trauma-informed-care | trauma-informed care]], and vicarious-trauma /
   counselor self-care as an ethical competency.
 
 ## Sources

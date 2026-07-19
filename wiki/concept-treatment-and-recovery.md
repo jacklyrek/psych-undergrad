@@ -116,7 +116,7 @@ for durable support, and harm reduction to keep the person alive long enough for
 - [[concept-relapse-prevention]] — the CBT-family maintenance toolkit that underlies much of this.
 - [[concept-neuroscience-of-addiction]] — what the medications act on (agonists/antagonists at the
   reward circuit).
-- **Unit 9 (planned)** — Evidence-Based Modalities; MI and CBT are core there. **Unit 8 (planned)** —
+- **Unit 9 (planned)** — Evidence-Based Modalities; MI and CBT are core there. **[[unit08-crisis-trauma | Unit 8]]** —
   overdose/naloxone and crisis border harm reduction. Reconcile wikilinks when built.
 
 ## Sources

@@ -15,7 +15,7 @@ This is a Tier 2 clinical-foundations unit feeding CACREP's **Assessment & Testi
 - **← Unit 2 (theory as lens).** Case conceptualization is theory *doing work*: your orientation decides what counts as the cause and what counts as the fix ([[unit02-theories]]).
 - **← Unit 6 (diagnosis).** The DSM label is an *input* to the formulation, not the endpoint of thinking ([[concept-dsm-structure]]).
 - **← Unit 5 (the normal baseline) and Unit 4 (culture).** You can't read a mental status exam or a screening score without knowing what's developmentally normal ([[unit05-development]]) and without the humility not to misread a cultural difference as pathology ([[unit04-multicultural]]).
-- **→ Unit 8 (risk).** The risk screen embedded in every intake is where this unit and crisis work overlap — deferred there for full treatment.
+- **→ [[unit08-crisis-trauma | Unit 8]] (risk).** The risk screen embedded in every intake is where this unit and crisis work overlap — built out there in full.
 
 ## The map of the unit
 
@@ -36,12 +36,12 @@ The beginner's picture is a pipeline: assess first, then treat. The reality is t
 
 ## Four things a counselor assesses (and where each lives)
 
-Sommers-Flanagan names four assessment-interview types [S7]; this unit covers three, and the fourth is Unit 8:
+Sommers-Flanagan names four assessment-interview types [S7]; this unit covers three, and the fourth is [[unit08-crisis-trauma | Unit 8]]:
 
 1. **Intake interview** — the most common; gathers the initial picture. → [[concept-intake-interview]]
 2. **Mental status examination** — a semi-structured description of current state. → [[concept-mental-status-exam]]
 3. **Psychodiagnostic interview** — pins a DSM impression to guide treatment. → Unit 6 supplies the categories; [[concept-case-conceptualization]] is where the impression becomes a plan.
-4. **Suicide / risk assessment** — the highest-stakes interview. → Unit 8 (previewed by item 9 of the PHQ-9 and the intake risk screen).
+4. **Suicide / risk assessment** — the highest-stakes interview. → [[concept-suicide-risk-assessment | Unit 8]] (previewed by item 9 of the PHQ-9 and the intake risk screen).
 
 ## The through-line: measure, but don't be captured by the measure
 
@@ -65,7 +65,7 @@ Take a character from a novel or show and write a **one-page conceptualization**
 - [[unit05-development]] — the normal baseline the MSE and screens are read against; [[concept-biopsychosocial-model]] is the natural formulation frame.
 - [[unit04-multicultural]] — culture-fair assessment; a screen or MSE read context-blind misdiagnoses.
 - [[unit01-helping-skills]] — the intake is the microskills doing assessment work.
-- Unit 8 (crisis/risk) and Unit 12 (progress monitoring ↔ outcome measurement) — pending; the risk screen and measurement-based care hand forward to them.
+- [[unit08-crisis-trauma | Unit 8]] (crisis/risk) — the risk screen hands forward to it (built); and Unit 12 (progress monitoring ↔ outcome measurement) — pending; measurement-based care hands forward to it.
 
 ## Sources
 

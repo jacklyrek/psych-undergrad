@@ -397,3 +397,62 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   monitoring / program evaluation; concept-reliability-validity carries source_units [7,12])
   forward-referenced by name — wire at those builds. Tier 2 now **3 of 4 built (Units 5–7 ☑)**;
   only Unit 8 remains in Tier 2.
+
+## [2026-07-18] create-chapter | Unit 8 Crisis, Risk Assessment & Trauma-Informed Care | 21 sources, 9 readings, 67 items
+- Depth: **in-depth** (course-map entry was rich → no outline-confirmation pause). Tier 2, and one of
+  the syllabus's "if only a month, do Units 1, 3, 8." CACREP: Helping Relationships & crisis
+  competencies. **Heavy/high-stakes topic — kept clinical and precise, no sensationalism** (per
+  CLAUDE.md). Emphasis (per syllabus/course-map): the two opposite reflexes the unit corrects —
+  **lean in on danger** (ask about suicide directly; freezing is not an option) and **hold back on
+  trauma** (don't dig / don't re-traumatize) — with **safety as the continuous through-line**.
+- Research: anchored where possible on **primary instruments/validations and government/professional
+  bodies** — Columbia C-SSRS + Posner 2011 [S1]; Shea CASE approach [S2]; VA Suicide Risk Assessment
+  Guide (IS PATH WARM, acute/chronic, stratification) [S3]; Dazzi 2014 (asking doesn't plant the idea)
+  [S4]; Klonsky & May 3ST + Joiner IPTS (ideation-to-action) [S5]; Stanley & Brown SPI [S6] + Stanley
+  2018 JAMA Psychiatry (~45% reduction) & Rudd no-suicide-contract critique [S7]; Harvard Means Matter
+  [S8]; James & Gilliland six-step [S9] + Roberts seven-stage [S10]; Richmond 2012 Project BETA
+  de-escalation (PMC3298202) [S11]; SAMHSA 2014 trauma-informed framework — 3 Es/4 Rs/6 principles [S12];
+  APA + VA/DoD PTSD guidelines (PE/CPT/TF-CBT/EMDR) [S13]; HPA-axis review PMC9120425 [S14, **read in
+  full via pypdf**]; Simply Psychology neurobiology (orientation) [S15]; Siegel window of tolerance [S16];
+  van der Kolk *Body Keeps the Score* (popular-press, flagged) [S17]; McCann & Pearlman 1990 (VT/CSDT)
+  [S18]; Trippany/Kress/Wilcoxon 2004 *JCD* [S19, **read in full via pypdf**]; Figley/Stamm ProQOL [S20];
+  ACA Code C.2.g [S21]. Two anchor books (James & Gilliland; Herman) offline → reputable secondary; SAMHSA
+  wording confirmed across two secondaries + the primary publication record.
+- Readings (9, full course-map list — no consolidation): unit08-crisis-trauma (hub), concept-suicide-
+  risk-assessment, concept-safety-planning, concept-means-reduction, concept-de-escalation,
+  concept-neurobiology-of-trauma (`source_units: [8, 11]`), concept-trauma-informed-care,
+  concept-vicarious-trauma, concept-counselor-self-care. All cited [S#], interlinked, each with a
+  ## Sources section.
+- **Clusters added beyond course-map (noted in course-map + coverage):** the course-map named
+  `crisis-response-models` + `trauma-informed-vs-treatment`; added `suicide-risk-concepts`,
+  `trauma-brain`, and `counselor-distress-types` (the last a prime interleaving set:
+  VT/STS/compassion-fatigue/burnout/countertransference).
+- **Cross-unit wiring done — all by-name "Unit 8" refs → live wikilinks (40 replacements, 22 files):**
+  Unit 3 (concept-duty-to-warn, concept-confidentiality-limits, study-tarasoff, concept-scope-of-
+  practice, concept-mandated-reporting, hub); Unit 6 (concept-trauma-stressor-disorders [neurobiology/
+  treatment/don't-retraumatize + suicidal-behavior codes reconciled], concept-dsm-structure,
+  concept-mood-disorders, concept-psychotic-disorders, concept-ocd, hub); Unit 7 (unit07-assessment,
+  concept-screening-tools [item-9 trip-wire, PC-PTSD-5, C-SSRS], concept-intake-interview); PFA elective
+  (hub, concept-grief-models, concept-supporting-the-bereaved, concept-death-notification); addiction
+  elective (hub, concept-treatment-and-recovery); theory-postmodern. No unit08-* by-name refs remain.
+- Tensions flagged (per rules, quizzed at evaluate level): individual suicide is **not predictable**
+  (the Tarasoff prediction critique — assess to MANAGE, not prophesy); **no-suicide contracts not
+  evidence-based**; means-restriction works despite the substitution objection; trauma **cortisol
+  findings inconsistent** (no clean biomarker); window of tolerance + polyvagal theory are **heuristics**;
+  **van der Kolk popular-press** (mechanisms corroborated vs. S14/S15; memory-as-storage & recovered-
+  memory claims flagged); trauma-**informed** (avoid harm, no disclosure required) ≠ trauma **treatment**;
+  the counselor-cost terms overlap; self-care is an **ethical duty (C.2.g)** and prevention is
+  **organizational**, not only personal.
+- Items: 67 across 5 clusters (crisis-response-models 20, suicide-risk-concepts 15, counselor-distress-
+  types 13, trauma-brain 10, trauma-informed-vs-treatment 9). Bloom R=16/U=11/Ap=17/An=13/E=10 (apply/
+  analyze/evaluate = 40); types: 16 explain, 14 mcq, 12 recall, 10 cloze, 8 compare (≥1 per cluster),
+  7 vignette. Includes the syllabus practice rep (memorized ideation-asking structure, u8-sra-rep-01)
+  and stance probes throughout (ask-directly, assess-to-manage-not-predict, safety-plan-not-contract,
+  don't-dig, freeze-is-not-a-choice, martyr-reflex).
+- Build: items/build/items.json rebuilt — **456 items** total (17+36+51+48+45+75+51+67 spine + 31+35
+  aux), validated clean by build_items.py.
+- Bookkeeping: index.md (full Unit 8 entry), coverage.md (row 8 ☐→☑ + 6 new notes + 2 resolved-handoff
+  markers), course-map.md (☐→☑, clusters + pages + built line), log.md updated.
+- **Tier 2 now COMPLETE (Units 5–8 ☑); Tier 1 + Tier 2 done (Units 1–8).** Remaining: Tier 3
+  (Units 9–12). Note: van der Kolk / Herman anchor books were offline — neurobiology corroborated
+  against peer-reviewed sources as required.

@@ -199,7 +199,40 @@ which-anxiety, classify-the-P), the screen-is-not-a-diagnosis stance probes, and
 production rep (a one-page case conceptualization of a novel/show character). _Sources:_
 [unit07 sources](research/unit07-assessment-sources.md).
 
-- **Unit 8 — Crisis, Risk Assessment & Trauma-Informed Care** — _pending_
+### Unit 8 — Crisis, Risk Assessment & Trauma-Informed Care  ☑ readings + items
+_Readings:_
+- [unit08-crisis-trauma](wiki/unit08-crisis-trauma.md) — hub: the two opposite reflexes (lean in on
+  danger, hold back on trauma), safety-first, the map, and the heavy-topic handling.
+- [concept-suicide-risk-assessment](wiki/concept-suicide-risk-assessment.md) — ask directly (it doesn't
+  plant the idea); C-SSRS ideation-vs-behavior + the ideation ladder; Shea's CASE approach & reflected
+  intent; warning-sign vs. risk-factor vs. protective (IS PATH WARM); ideation-to-action; assess to
+  **manage**, not predict (the Tarasoff critique).
+- [concept-safety-planning](wiki/concept-safety-planning.md) — the Stanley-Brown six steps (internal→
+  external order), built *with* the client; safety plan vs. the discredited **no-suicide contract**.
+- [concept-means-reduction](wiki/concept-means-reduction.md) — case fatality, transient crises,
+  incomplete substitution, survivors live; firearms (off-site) & meds; the assess-but-don't-counsel gap.
+- [concept-de-escalation](wiki/concept-de-escalation.md) — crisis = perception exceeds coping; James &
+  Gilliland six-step + Roberts seven-stage; Project BETA's ten domains; restraint as last resort.
+- [concept-neurobiology-of-trauma](wiki/concept-neurobiology-of-trauma.md) — amygdala/hippocampus/PFC,
+  HPA axis, explicit vs. implicit memory, freeze/tonic immobility, the window of tolerance; the
+  van-der-Kolk / polyvagal caveats.
+- [concept-trauma-informed-care](wiki/concept-trauma-informed-care.md) — SAMHSA's three E's, four R's,
+  six principles; trauma-*informed* (avoid re-traumatization) vs. trauma *treatment* (PE/CPT/TF-CBT/
+  EMDR); the **don't-dig** stance.
+- [concept-vicarious-trauma](wiki/concept-vicarious-trauma.md) — VT as schema disruption via empathic
+  exposure (CSDT); the confusable cluster VT / STS / compassion fatigue / burnout / countertransference;
+  why unaddressed VT is a clinical-ethical problem.
+- [concept-counselor-self-care](wiki/concept-counselor-self-care.md) — self-care as an ethical duty
+  (ACA C.2.g); prevention as **organizational**, not just personal; peer supervision as ethical
+  debriefing; the martyr-reflex trap.
+
+_Items:_ [unit08-crisis-trauma](items/unit08-crisis-trauma.md) — 67 items across 5 clusters
+(`suicide-risk-concepts`, `crisis-response-models`, `trauma-informed-vs-treatment`, `trauma-brain`,
+`counselor-distress-types`), all 5 Bloom levels; heavy on apply/analyze/evaluate, 8 compares, the
+discrimination mcqs (which-warning-sign, which-distress-type, hypo- vs. hyperarousal), the syllabus
+practice rep (a memorized structure for asking about suicidal ideation), and stance probes throughout
+(ask-directly, assess-to-manage-not-predict, safety-plan-not-contract, don't-dig, self-care-as-ethics).
+_Sources:_ [unit08 sources](research/unit08-crisis-trauma-sources.md).
 
 ## Tier 3 — Rounding Out
 - **Unit 9 — Evidence-Based Modalities** — _pending_

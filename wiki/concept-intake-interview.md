@@ -53,7 +53,7 @@ The old DSM-IV multiaxial system *forced* this context onto every diagnosis; DSM
 
 - The **mental status exam** — a structured description of present state ([[concept-mental-status-exam]]).
 - **Screening measures** where indicated — a PHQ-9, a GAD-7 ([[concept-screening-tools]]) — to baseline severity and enable [[concept-treatment-planning | measurement-based care]].
-- **A risk screen — every intake, non-negotiable.** Item 9 of the PHQ-9 (thoughts of death/self-harm) or a direct question. Asking about suicide **plainly and non-anxiously** does not plant the idea; freezing is not an option (full treatment in Unit 8). This is also where [[unit03-ethics-law | the limits of confidentiality]] get spoken — informed consent and the confidentiality speech usually open the intake ([[concept-informed-consent]], [[concept-confidentiality-limits]]).
+- **A risk screen — every intake, non-negotiable.** Item 9 of the PHQ-9 (thoughts of death/self-harm) or a direct question. Asking about suicide **plainly and non-anxiously** does not plant the idea; freezing is not an option (full treatment in [[concept-suicide-risk-assessment | Unit 8]]). This is also where [[unit03-ethics-law | the limits of confidentiality]] get spoken — informed consent and the confidentiality speech usually open the intake ([[concept-informed-consent]], [[concept-confidentiality-limits]]).
 
 ## Opening and closing the intake
 
