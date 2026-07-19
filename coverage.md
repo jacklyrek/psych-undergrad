@@ -7,7 +7,7 @@ What's built vs. pending, and where the readings and practice have holes. Update
 
 | Unit | Tier | Readings | Items | Bloom spread | Clusters w/ compare items |
 |---|---|---|---|---|---|
-| 1 Helping Skills | 1 | ☑ (5) | ☑ (17) | all 5 levels | 1/4 (microskill-types*) |
+| 1 Helping Skills | 1 | ☑ (5) | ☑ (19) | all 5 levels | 3/4 ✓ (microskill-types, alliance-components, common-factors — 3 compares; rogers-conditions via analyze) |
 | 2 Theories | 1 | ☑ (7) | ☑ (36) | all 5 levels | theory-families ✓ (6 compares) |
 | 3 Ethics & Law | 1 | ☑ (9) | ☑ (51) | all 5 levels | 5/5 ✓ (9 compares) |
 | 4 Multicultural | 1 | ☑ (7) | ☑ (48) | all 5 levels | 5/5 ✓ (6 compares) |
@@ -28,7 +28,7 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
 
 | Module | Borders | Readings | Items | Bloom spread | Clusters w/ compare items |
 |---|---|---|---|---|---|
-| PFA & Acute Grief Support (`aux-psychological-first-aid`) | Unit 8 | ☑ (5) | ☑ (31) | all 5 levels | `grief-models` ✓ · `bereavement-support` ✓ (notification-scenarios compare) |
+| PFA & Acute Grief Support (`aux-psychological-first-aid`) | Unit 8 | ☑ (5) | ☑ (32) | all 5 levels | 3/3 ✓ (`pfa-frameworks`, `grief-models`, `bereavement-support` each have a compare) |
 | Understanding & Changing Addictive Behavior (`aux-addiction`) | Units 6, 9 | ☑ (6) | ☑ (35) | all 5 levels | 4/4 ✓ (`addiction-models`, `change-stages`, `relapse-concepts`, `addiction-treatments` each have a compare) |
 
 ## Coverage rules the lint pass enforces
@@ -38,10 +38,13 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
 - No orphan readings (a page nothing links to) and no missing concept pages the course-map promised.
 
 ## Known holes
-- **Unit 1 compare-coverage:** only the `microskill-types` cluster has an explicit compare item
-  (`u1-empathy-analyze-01` also serves `rogers-conditions`). `alliance-components` and
-  `common-factors` have analyze/evaluate items but no dedicated `compare`-type item. Add on next
-  `lint` or `generate items 1` pass if desired.
+- **Unit 1 compare-coverage (RESOLVED 2026-07-19):** ~~only the `microskill-types` cluster has an
+  explicit compare item; `alliance-components` and `common-factors` have analyze/evaluate items but
+  no dedicated `compare`-type item.~~ Added `u1-alliance-compare-01` (bond/goal/task → rupture
+  patterns) and `u1-commonfactors-compare-01` (common-factors/contextual vs. specific-ingredients
+  model), both `compare`/analyze. Now 3/4 clusters have a dedicated compare (`microskill-types`,
+  `alliance-components`, `common-factors`); `rogers-conditions` is covered by the empathy-vs-
+  sympathy-vs-interpretation analyze item (`u1-empathy-analyze-01`).
 - Per-condition pages (separate UPR/empathy/congruence) were folded into `concept-core-conditions`
   for the concise build; split later if item volume grows.
 - `person-carl-rogers` page deferred (concise build) — folded into `concept-core-conditions`.
@@ -67,11 +70,13 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   (informed-consent + competence topics) are intentionally unclustered — no confusable sibling.
 - **Unit 3 Bloom balance:** evaluate=3 of 51 (decision-model, Tarasoff critique, report-while-
   preserving-alliance) — proportionally light; acceptable for a rules-heavy unit, revisit on `lint`.
-- **Unit 3 → Unit 8 handoff:** `concept-duty-to-warn`, `concept-confidentiality-limits`,
-  `study-tarasoff`, `concept-scope-of-practice` (impairment), and the hub all forward-reference the
-  *pending* Unit 8 by name (danger-to-self operationalization, means restriction, self-care as
-  ethical competency). Wire to real `unit08-*` wikilinks when Unit 8 is built — same reconciliation
-  pass as the PFA-module handoff below.
+- **Unit 3 → Unit 8 handoff (RESOLVED 2026-07-18):** ~~`concept-duty-to-warn`,
+  `concept-confidentiality-limits`, `study-tarasoff`, `concept-scope-of-practice` (impairment), and
+  the hub all forward-reference the *pending* Unit 8 by name.~~ Wired in the Unit 8 build — all Unit 3
+  Unit-8 references are now live wikilinks (`[[unit08-crisis-trauma]]`, `[[concept-means-reduction]]`,
+  `[[concept-suicide-risk-assessment]]`, `[[concept-counselor-self-care]]`; also
+  `concept-mandated-reporting`). No by-name Unit-8 refs remain in the Unit 3 pages. See the "Unit 8
+  forward handoffs WIRED" note below.
 - **Unit 3 state-law caveat baked in:** duty-to-protect state counts cite a 2012-era compilation
   (StatPearls) and the RxP state list is a moving target (~7 as of 2024–25) — both flagged inline;
   re-verify numbers if this material is ever used for anything beyond orientation.
@@ -90,11 +95,12 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   validity, Lilienfeld-vs-Sue): items quiz the debates themselves at evaluate level — if study
   sessions surface confusion between "what the framework says" and "what the critique says," that's
   the intended discrimination, not a bug.
-- **Elective cluster design:** `pfa-frameworks` has analyze/evaluate items but no dedicated
-  `compare`-type item; explicit compares live in `grief-models` (Kübler-Ross vs. dual process) and
-  `bereavement-support` (the three "where is she?" notification scenarios, added 2026-07-08). Add a
-  `pfa-frameworks` compare on a later `lint`/`generate` pass if desired (e.g. WHO Look/Listen/Link
-  vs. NCTSN 8 Core Actions).
+- **Elective cluster design (RESOLVED 2026-07-19):** ~~`pfa-frameworks` has analyze/evaluate items but
+  no dedicated `compare`-type item.~~ Added `ax-pfa-frameworks-compare-01` (WHO Look/Listen/Link vs.
+  NCTSN 8 Core Actions — who each is for, the mapping, and that they're two slicings of one logic),
+  `compare`/analyze. All three module clusters now have a dedicated compare: `pfa-frameworks`,
+  `grief-models` (Kübler-Ross vs. dual process), `bereavement-support` (the three "where is she?"
+  notification scenarios).
 - **Death-notification addition (2026-07-08):** `concept-death-notification` added to the PFA
   elective (Core Action 2 territory: notification, missing loved ones, viewing the body) with an
   8-item set inside `bereavement-support`. Viewing-the-body evidence is qualitative (Chapple &

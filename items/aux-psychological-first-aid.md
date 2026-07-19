@@ -89,6 +89,16 @@ generate rules in [`../CLAUDE.md`](../CLAUDE.md). Clusters: `pfa-frameworks`, `g
     "topic": "pfa-evidence",
     "cluster": "pfa-frameworks",
     "bloom_level": "evaluate"
+  },
+  {
+    "id": "ax-pfa-frameworks-compare-01",
+    "prompt": "Compare WHO's 'Look / Listen / Link' with NCTSN's eight Core Actions: who each is built for, how they map onto each other, and whether choosing one over the other changes what you actually do.",
+    "answer": "WHO LOOK/LISTEN/LINK is the pocket-sized, portable version built for lay helpers and field workers anywhere — three action principles: Look (scan for safety, urgent basic needs, serious distress), Listen (make contact, ask about needs, help them feel calm without pressing them to recount), Link (connect to basic needs, services, and loved ones). NCTSN's 8 CORE ACTIONS is the more granular U.S. evidence-informed standard for trained responders in disaster settings: Contact & Engagement, Safety & Comfort, Stabilization (if needed), Information Gathering, Practical Assistance, Connection with Social Supports, Information on Coping, Linkage with Collaborative Services. MAPPING: Look ≈ Core Actions 1–3 (contact, safety, stabilization); Listen ≈ Core Action 4 (needs and concerns); Link ≈ Core Actions 5–8 (practical help, social support, coping info, services). Does the choice change what you do? No — they're two slicings of the same logic, not competing methods: both triage safety first, accompany without probing, connect onward, are evidence-INFORMED (not evidence-based), and both reject debriefing. Master one; the other re-slices it.",
+    "type": "compare",
+    "source_page": "wiki/concept-pfa-core-actions.md",
+    "topic": "pfa-framework-comparison",
+    "cluster": "pfa-frameworks",
+    "bloom_level": "analyze"
   }
 ]
 ```

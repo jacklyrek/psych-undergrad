@@ -13,9 +13,9 @@ _Readings:_
 - [concept-microskills-hierarchy](wiki/concept-microskills-hierarchy.md) — Ivey's ladder; reflect vs. paraphrase vs. interpret.
 - [concept-therapeutic-alliance](wiki/concept-therapeutic-alliance.md) — Bordin's bond/goal/task model.
 
-_Items:_ [unit01-helping-skills](items/unit01-helping-skills.md) — 17 items across 4 clusters
-(`rogers-conditions`, `microskill-types`, `alliance-components`, `common-factors`), all 5 Bloom
-levels; emphasis on application + stance. _Sources:_ [unit01 sources](research/unit01-helping-skills-sources.md).
+_Items:_ [unit01-helping-skills](items/unit01-helping-skills.md) — 19 items across 4 clusters
+(`rogers-conditions`, `microskill-types`, `alliance-components`, `common-factors` — the last three
+each with a dedicated compare), all 5 Bloom levels; emphasis on application + stance. _Sources:_ [unit01 sources](research/unit01-helping-skills-sources.md).
 
 ### Unit 2 — Counseling Theories: The Major Schools  ☑ readings + items
 _Readings:_
@@ -261,9 +261,10 @@ _Readings:_
 - [concept-supporting-the-bereaved](wiki/concept-supporting-the-bereaved.md) — the child-death case:
   presence over fixing, say the name, **Ring Theory** ("comfort in, dump out"), when to refer, helper load.
 
-_Items:_ [aux-psychological-first-aid](items/aux-psychological-first-aid.md) — 31 items across 3 clusters
-(`pfa-frameworks`, `grief-models`, `bereavement-support` incl. an 8-item death-notification set), all
-5 Bloom levels; heavy on application/stance + compare items and discrimination mcqs. _Sources:_
+_Items:_ [aux-psychological-first-aid](items/aux-psychological-first-aid.md) — 32 items across 3 clusters
+(`pfa-frameworks`, `grief-models`, `bereavement-support` incl. an 8-item death-notification set — each
+cluster with a dedicated compare), all 5 Bloom levels; heavy on application/stance + compare items and
+discrimination mcqs. _Sources:_
 [aux PFA sources](research/aux-psychological-first-aid-sources.md).
 
 ### Understanding & Changing Addictive Behavior  ☑ readings + items  · borders Units 6 & 9

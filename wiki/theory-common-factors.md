@@ -19,6 +19,14 @@ If the relationship is a primary active ingredient, then your attending, empathy
 building (the rest of this unit) aren't "soft skills" you do before the real work — they *are* a
 large part of the real work. This reframes the beginner's instinct to rush to a technique. [S3]
 
+## Where the idea came from (a short history)
+The common-factors position is nearly a century old, and knowing the lineage keeps you from treating it as a recent fad. [S16]
+
+- **Rosenzweig (1936)** coined the term "common factors" in a short, prophetic paper and invoked the **Dodo bird** from *Alice in Wonderland* — "**Everybody has won, and all must have prizes**" — to capture his observation that very different therapies seemed to produce roughly *equivalent* outcomes. That outcome-equivalence claim is still called the **dodo bird verdict.**
+- **Frank & Frank, *Persuasion and Healing* (1961)** built the first full theory of the shared ingredients. Frank argued clients arrive **demoralized** (helpless, isolated, stuck) and that all effective healing — across cultures and eras — shares four features: an **emotionally charged, confiding relationship**; a **healing setting**; a **rationale or myth** that explains the suffering; and a **ritual or procedure** both parties believe in. Technique matters, on this view, largely by supplying a credible ritual and rationale.
+- **Lambert's "percentages."** A widely-reproduced heuristic (Assay & Lambert, 1999) apportions outcome *roughly* as ~40% client/extratherapeutic factors, ~30% relationship, ~15% expectancy/placebo, ~15% technique. Memorable — but treat it as an **illustration, not a measured partition** (it isn't a formal variance decomposition, and it's contested). [S16]
+- **Wampold & Imel, *The Great Psychotherapy Debate* (2015)** is the modern statement, formalizing the [[#Wampold's Contextual Model (the theory behind the numbers) | Contextual Model]] below against the "specific ingredients / medical model."
+
 ## The evidence backbone
 - **The alliance predicts outcome, reliably.** The Flückiger et al. (2018) meta-analysis found an
   alliance–outcome correlation of **r ≈ .28** (95% CI [.256, .299]) across **295 studies and more
@@ -56,5 +64,6 @@ client and clinician something credible to do together inside a working relation
 ## Sources
 [S2] Flückiger et al. (2018), *The Alliance in Adult Psychotherapy: A Meta-Analytic Synthesis.*
 [S3] Wampold (2015), *How important are the common factors in psychotherapy? An update*, World
-Psychiatry. [S4] *Therapeutic Alliance and Outcome of Psychotherapy*, PMC3198542. Full notes in
+Psychiatry. [S4] *Therapeutic Alliance and Outcome of Psychotherapy*, PMC3198542. [S16] Common-factors
+history — Rosenzweig (1936), Frank & Frank (1961), Assay & Lambert (1999), Wampold & Imel (2015). Full notes in
 [`../research/unit01-helping-skills-sources.md`](../research/unit01-helping-skills-sources.md).

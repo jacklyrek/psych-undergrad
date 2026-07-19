@@ -38,15 +38,25 @@ treatment types. [S2] Bordin's operationalization is what made it *measurable* �
 **Working Alliance Inventory (WAI)** and similar instruments. [S4] (See [[theory-common-factors]] for
 the full evidence discussion and the correlation-vs-causation caveat.)
 
+## Alliance ruptures and their repair
+A **rupture** is a deterioration in the alliance — and, tellingly, it shows up as a breakdown in exactly Bordin's three parts: a **disagreement on goals**, a **lack of collaboration on tasks**, or a **strain in the bond.** [S15] Ruptures are not failures to avoid at all costs; they're routine, and how you handle them is a large part of the work. They come in two markers: [S15]
+
+- **Withdrawal ruptures** — the client moves *away*: placating, going quiet, giving minimal answers, intellectualizing, changing the subject. Easy to miss precisely because the surface stays pleasant.
+- **Confrontation ruptures** — the client moves *against*: expressing anger or dissatisfaction, complaining about the therapy or the therapist, trying to control the session.
+
+The repair is usually **[[concept-congruence | immediacy]]** — gently naming what's happening between you ("I get the sense I pushed us somewhere you didn't want to go — can we check that?") and, when it's your misstep, owning it. The striking finding: **Eubanks, Muran & Safran's (2018) meta-analysis** links successful rupture *repair* to better outcomes (**r ≈ .29**), and rupture-resolution *training* improves outcomes too. [S15] Safran & Muran's earlier work raised the deeper possibility that **living through a repaired rupture may help a client more than an alliance that never ruptured** — because it models that conflict and disappointment in a relationship can be survived and worked through. Unrepaired ruptures, by contrast, are a leading path to **dropout.**
+
 ## Why it matters in the room
 Bond/goal/task is a fast diagnostic when a session feels stuck. Ask: is the *bond* frayed, or do we
-disagree on the *goal*, or on the *task*? Each points to a different repair. The skill of noticing
-and repairing **alliance ruptures** is a core competency you'll develop in supervision — and it maps
-directly onto these three parts.
+disagree on the *goal*, or on the *task*? Each points to a different repair. Noticing and repairing
+**alliance ruptures** — especially the quiet **withdrawal** kind — is a core competency you'll develop
+in supervision, and it maps directly onto these three parts.
 
 ## Connects to
 - [[concept-core-conditions]] — UPR/empathy/congruence are how you build the **bond.**
+- [[concept-congruence]] — **immediacy** is the specific skill for naming and repairing a rupture.
 - [[concept-microskills-hierarchy]] — the moment-to-moment behaviors that grow the alliance.
+- [[concept-attending-and-listening]] — spotting a quiet **withdrawal** rupture is an observation skill.
 - [[theory-attachment]] (Unit 5) — the *developmental* theory of the bond: a client's attachment
   pattern ([[concept-attachment-styles]]) shapes how readily they can form and trust the alliance,
   and Bowlby cast the therapist as a **secure base**. A frayed bond with a dismissing or preoccupied
@@ -61,5 +71,6 @@ directly onto these three parts.
 
 ## Sources
 [S2] Flückiger et al. (2018). [S4] *Therapeutic Alliance and Outcome of Psychotherapy*, PMC3198542.
-Full notes in
+[S15] Eubanks, Muran & Safran (2018), *Alliance Rupture Repair: A Meta-Analysis*; Safran & Muran
+(2000). Full notes in
 [`../research/unit01-helping-skills-sources.md`](../research/unit01-helping-skills-sources.md).

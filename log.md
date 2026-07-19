@@ -456,3 +456,24 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
 - **Tier 2 now COMPLETE (Units 5–8 ☑); Tier 1 + Tier 2 done (Units 1–8).** Remaining: Tier 3
   (Units 9–12). Note: van der Kolk / Herman anchor books were offline — neurobiology corroborated
   against peer-reviewed sources as required.
+
+## [2026-07-19] lint | fill known compare-coverage holes | +3 items (Unit 1 ×2, PFA elective ×1)
+- Filled the three actionable "Known holes" from coverage.md — each a cluster that had analyze/
+  evaluate items but no dedicated `compare`-type item (all flagged "add on a later lint/generate pass").
+- **Unit 1:** `u1-alliance-compare-01` (`alliance-components`, analyze) — Bordin bond/goal/task paired
+  with the distinct rupture each signals + why "more rapport" is the wrong fix for goal/task ruptures;
+  `u1-commonfactors-compare-01` (`common-factors`, analyze) — common-factors/contextual (Wampold) vs.
+  specific-ingredients/medical model, evidence each leans on, interdependence synthesis. Unit 1 now
+  17→**19 items**, 3/4 clusters with a dedicated compare (rogers-conditions covered by the empathy
+  analyze item).
+- **PFA elective:** `ax-pfa-frameworks-compare-01` (`pfa-frameworks`, analyze) — WHO Look/Listen/Link
+  vs. NCTSN 8 Core Actions (audience, the 1–3 / 4 / 5–8 mapping, two-slicings-of-one-logic). Module
+  31→**32 items**, all 3 clusters now have a compare.
+- Sourced from existing readings only (no new research): concept-therapeutic-alliance, theory-common-
+  factors, concept-pfa-core-actions. Build clean — **459 items** total; Bloom analyze 93→96.
+- **Bookkeeping-only resolutions (no content change):** marked the **Unit 3 → Unit 8 handoff** hole
+  RESOLVED — verified every Unit-8 ref in the Unit 3 pages is already a live wikilink (wired in the
+  2026-07-18 Unit 8 build), so the stale "pending Unit 8" bullet was struck through.
+- Remaining "Known holes" are all either deliberate design decisions (page/cluster consolidations,
+  contested-material load), permanent sourcing caveats, or forward-handoffs to **unbuilt** Units 9/11/12
+  — none fillable until those units exist.

@@ -14,21 +14,34 @@ source_units: [1]
 > starts here. [S2][S3]
 
 This is the literal mechanics of what you do in the first minutes of every session, and the
-foundation everything else sits on. Read the four concept pages in order; they build.
+foundation everything else sits on. The pages build in order.
 
 ## The map
 
-1. **[[theory-common-factors]]** — *why* the relationship matters. The evidence that what helps
-   clients is shared across therapies (the bond, the rationale, the client's expectation) more than
-   any one technique. This is the empirical reason to take the rest of the unit seriously. [S3]
-2. **[[concept-core-conditions]]** — Carl Rogers' three conditions: **unconditional positive
-   regard, empathy, congruence.** The attitudes that make a relationship therapeutic, and the base
-   of every skill above them. [S1]
-3. **[[concept-microskills-hierarchy]]** — Ivey's ladder of teachable skills: attending →
-   observing → questioning → **reflecting / paraphrasing / summarizing** → influencing. Where the
-   reflection-vs-paraphrase-vs-interpretation distinction lives. [S5][S7]
-4. **[[concept-therapeutic-alliance]]** — Bordin's **bond + task + goal** model: a concrete,
-   measurable way to think about the relationship that works in any orientation. [S4]
+**Why the relationship is the work**
+1. **[[theory-common-factors]]** — *why* the relationship matters. The evidence (and the near-century
+   of history, from Rosenzweig's 1936 "dodo bird" to Wampold) that what helps clients is shared across
+   therapies — the bond, the rationale, the client's expectation — more than any one technique. The
+   empirical reason to take the rest of the unit seriously. [S3][S16]
+
+**The attitudes (Rogers' core conditions)**
+2. **[[concept-core-conditions]]** — the overview of Carl Rogers' three conditions, the six-condition
+   model, and the necessary-vs-sufficient debate. It fans out to three deep pages: [S1]
+   - **[[concept-unconditional-positive-regard]]** — non-contingent worth, and the *conditions of
+     worth* it reverses.
+   - **[[concept-empathy]]** — accurate empathy, the "as if," and **Carkhuff's five levels.**
+   - **[[concept-congruence]]** — genuineness, immediacy, and therapist self-disclosure.
+3. **[[person-carl-rogers]]** — the person and the self-theory the conditions come from (actualizing
+   tendency, organismic valuing, incongruence), plus the honest record (Wisconsin, the Gloria films). [S12]
+
+**The skills (what you actually do)**
+4. **[[concept-attending-and-listening]]** — the foundation skill: **SOLER**, the three Vs, the use of
+   silence, and observation — plus why attending is *not* culturally universal. [S5][S14]
+5. **[[concept-microskills-hierarchy]]** — Ivey's ladder of teachable skills (attending → observing →
+   questioning → **reflecting / paraphrasing / summarizing** → influencing) and his five-stage
+   interview. Where the reflection-vs-paraphrase-vs-interpretation distinction lives. [S5][S7]
+6. **[[concept-therapeutic-alliance]]** — Bordin's **bond + task + goal** model, and the **rupture &
+   repair** skill: a concrete, measurable way to think about the relationship in any orientation. [S4][S15]
 
 ## The stance note (read this twice)
 
@@ -51,4 +64,4 @@ naturally from where you're starting — and that's normal, not a deficit.
 
 ## Sources
 See [`../research/unit01-helping-skills-sources.md`](../research/unit01-helping-skills-sources.md)
-for full citations [S1]–[S9].
+for full citations [S1]–[S17].
