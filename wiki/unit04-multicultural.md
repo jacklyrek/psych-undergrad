@@ -96,7 +96,7 @@ culture. Those are the load-bearing blind spots.
 ## Connects to
 
 - [[unit01-helping-skills]] — the alliance is the mechanism through which cultural humility works
-  ([[concept-therapeutic-alliance]]); empathy ([[concept-core-conditions]]) is necessary but not
+  ([[concept-therapeutic-alliance]]); empathy ([[concept-empathy]]) is necessary but not
   culturally self-executing.
 - [[unit03-ethics-law]] — C.2.a makes this unit an ethical requirement, not an elective
   ([[concept-scope-of-practice]]); informed consent must be culturally and developmentally

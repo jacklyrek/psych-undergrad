@@ -8,14 +8,20 @@ when answering a `query`**, then drill into pages. Updated by `create chapter` a
 ### Unit 1 — Helping Skills & the Therapeutic Relationship  ☑ readings + items
 _Readings:_
 - [unit01-helping-skills](wiki/unit01-helping-skills.md) — hub: why the relationship is an active ingredient, the stance shift, and the map of the unit.
-- [theory-common-factors](wiki/theory-common-factors.md) — the evidence (alliance r≈.28, Wampold's Contextual Model) and the correlation/causation caveats.
-- [concept-core-conditions](wiki/concept-core-conditions.md) — Rogers' UPR, empathy, congruence; the necessary-vs-sufficient debate.
-- [concept-microskills-hierarchy](wiki/concept-microskills-hierarchy.md) — Ivey's ladder; reflect vs. paraphrase vs. interpret.
-- [concept-therapeutic-alliance](wiki/concept-therapeutic-alliance.md) — Bordin's bond/goal/task model.
+- [theory-common-factors](wiki/theory-common-factors.md) — the evidence (alliance r≈.28, Wampold's Contextual Model), the history (Rosenzweig's dodo bird, Frank's demoralization, Lambert), and the correlation/causation caveats.
+- [concept-core-conditions](wiki/concept-core-conditions.md) — **overview/synthesis hub** for Rogers' three conditions, the six-condition model, and the necessary-vs-sufficient debate.
+- [concept-unconditional-positive-regard](wiki/concept-unconditional-positive-regard.md) — non-contingent worth; UPR vs. approval/agreement/liking; conditions of worth.
+- [concept-empathy](wiki/concept-empathy.md) — accurate empathy, the "as if," **Carkhuff's five levels**, and empathy vs. sympathy vs. interpretation.
+- [concept-congruence](wiki/concept-congruence.md) — genuineness, immediacy, therapist self-disclosure, and the congruence↔UPR tension.
+- [concept-attending-and-listening](wiki/concept-attending-and-listening.md) — SOLER, the three Vs, the use of silence, observation; why attending isn't culturally universal.
+- [concept-microskills-hierarchy](wiki/concept-microskills-hierarchy.md) — Ivey's ladder + five-stage interview; reflect vs. paraphrase vs. interpret.
+- [concept-therapeutic-alliance](wiki/concept-therapeutic-alliance.md) — Bordin's bond/goal/task model, plus alliance **ruptures** (withdrawal vs. confrontation) and repair.
+- [person-carl-rogers](wiki/person-carl-rogers.md) — the person and self-theory (actualizing tendency, conditions of worth), the Wisconsin project, the Gloria films.
 
-_Items:_ [unit01-helping-skills](items/unit01-helping-skills.md) — 19 items across 4 clusters
-(`rogers-conditions`, `microskill-types`, `alliance-components`, `common-factors` — the last three
-each with a dedicated compare), all 5 Bloom levels; emphasis on application + stance. _Sources:_ [unit01 sources](research/unit01-helping-skills-sources.md).
+_Items:_ [unit01-helping-skills](items/unit01-helping-skills.md) — 38 items across 4 clusters
+(`rogers-conditions`, `microskill-types`, `alliance-components`, `common-factors` — **each** with a
+dedicated compare), all 5 Bloom levels (R7/U8/Ap9/An9/E5, heavy on apply/analyze/evaluate); emphasis
+on application + stance. _Sources:_ [unit01 sources](research/unit01-helping-skills-sources.md).
 
 ### Unit 2 — Counseling Theories: The Major Schools  ☑ readings + items
 _Readings:_

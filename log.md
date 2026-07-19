@@ -477,3 +477,42 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
 - Remaining "Known holes" are all either deliberate design decisions (page/cluster consolidations,
   contested-material load), permanent sourcing caveats, or forward-handoffs to **unbuilt** Units 9/11/12
   — none fillable until those units exist.
+
+## [2026-07-19] create-chapter (in-depth upgrade) | Unit 1 Helping Skills | +7 sources, +5 readings, +19 items
+- **Why:** Unit 1 was the only spine unit built **concise** (2026-06-27); every later unit's log entry
+  contrasts itself against it ("in-depth … Unit 1 was concise"). Brought it to the Units 2–8 standard.
+  Scope confirmed with user = **Standard in-depth** (split core conditions + person page + attending
+  page; not the Egan/extended option). Depth: **in-depth**. Tier 1. CACREP: Helping Relationships.
+  (The `concept-substance-use-disorders` "concise" note is a *deliberate* defer-to-`aux-addiction`
+  choice, left as-is.)
+- Research (7 new sources S11–S17, triangulated): **Carkhuff five-level empathy scale** [S11, book
+  offline → ≥2 secondary]; **Rogers biography/self-theory** [S12, encyclopedia.com + Wisconsin
+  publication record]; **conditions of worth / organismic valuing** [S13, tracing to Rogers 1959];
+  **Egan Skilled Helper / SOLER** [S14, book offline → secondary]; **alliance rupture-repair**
+  [S15, Eubanks/Muran/Safran 2018 meta-analysis, r≈.29, + Safran & Muran 2000]; **common-factors
+  history** [S16, Rosenzweig 1936 dodo bird + Frank & Frank 1961 + Assay & Lambert 1999 + Wampold &
+  Imel 2015]; **therapeutic silence** [S17, Montgomery 2024, Wiley].
+- Readings: **5 → 10.** Split `concept-core-conditions` (now an **overview/synthesis hub**) into three
+  deep pages — `concept-unconditional-positive-regard` (conditions of worth), `concept-empathy`
+  (Carkhuff levels; empathy vs sympathy vs interpretation moved here), `concept-congruence` (immediacy
+  + self-disclosure). Added `concept-attending-and-listening` (SOLER, silence, observation, cultural
+  non-universality) and `person-carl-rogers` (self-theory, actualizing tendency, Wisconsin, Gloria,
+  peace work, critiques). Deepened `theory-common-factors` (history), `concept-microskills-hierarchy`
+  (Ivey's five-stage interview), `concept-therapeutic-alliance` (rupture types + repair), and the hub.
+  All cited [S#], interlinked; keeping the hub live means **no inbound wikilink broke** (verified: 0
+  broken links across 80 wiki pages; all 5 new pages have inbound links, no orphans).
+- Clusters unchanged (4) but richer topic tags; **compare-coverage now 4/4** (5 compares total — added
+  UPR-vs-approval, reflecting-skills, and the two from the earlier lint pass). Corrected an earlier
+  coverage note that miscredited the `microskill-types` compare.
+- Tensions flagged (quizzed at evaluate level): necessary-vs-sufficient (Wisconsin tempered it);
+  Rogers' "organismic trusting" / Western-individualism critiques; Lambert percentages = heuristic,
+  not variance partition; SOLER culturally loaded; congruence↔UPR tension; Carkhuff/Egan anchors
+  offline-and-corroborated; Rogers Nobel nomination stated as "reportedly."
+- Items: **19 → 38.** Bloom R=7/U=8/Ap=9/An=9/E=5 (apply/analyze/evaluate = 23); types: 11 explain,
+  9 vignette, 6 recall, 5 cloze, 5 compare, 2 mcq (Carkhuff-level + rupture-type discriminations).
+  Three items' `source_page` repointed from `concept-core-conditions` to the split pages.
+- Build: items/build/items.json rebuilt — **478 items** total, validated clean by build_items.py
+  (source_pages all exist; no mcq missing/`correct` mismatch; every cluster ≥1 compare).
+- Bookkeeping: course-map (☐→☑ + built Pages list + upgrade line), index.md (10 readings + item line),
+  coverage.md (row + 2 concise holes RESOLVED + new deviation/Bloom/contested notes), log.md.
+- **Tier 1 + Tier 2 now uniformly in-depth (Units 1–8).** Remaining: Tier 3 (Units 9–12).

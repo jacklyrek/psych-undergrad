@@ -7,7 +7,7 @@ What's built vs. pending, and where the readings and practice have holes. Update
 
 | Unit | Tier | Readings | Items | Bloom spread | Clusters w/ compare items |
 |---|---|---|---|---|---|
-| 1 Helping Skills | 1 | ☑ (5) | ☑ (19) | all 5 levels | 3/4 ✓ (microskill-types, alliance-components, common-factors — 3 compares; rogers-conditions via analyze) |
+| 1 Helping Skills | 1 | ☑ (10) | ☑ (38) | all 5 levels | 4/4 ✓ (5 compares) |
 | 2 Theories | 1 | ☑ (7) | ☑ (36) | all 5 levels | theory-families ✓ (6 compares) |
 | 3 Ethics & Law | 1 | ☑ (9) | ☑ (51) | all 5 levels | 5/5 ✓ (9 compares) |
 | 4 Multicultural | 1 | ☑ (7) | ☑ (48) | all 5 levels | 5/5 ✓ (6 compares) |
@@ -38,16 +38,36 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
 - No orphan readings (a page nothing links to) and no missing concept pages the course-map promised.
 
 ## Known holes
-- **Unit 1 compare-coverage (RESOLVED 2026-07-19):** ~~only the `microskill-types` cluster has an
-  explicit compare item; `alliance-components` and `common-factors` have analyze/evaluate items but
-  no dedicated `compare`-type item.~~ Added `u1-alliance-compare-01` (bond/goal/task → rupture
-  patterns) and `u1-commonfactors-compare-01` (common-factors/contextual vs. specific-ingredients
-  model), both `compare`/analyze. Now 3/4 clusters have a dedicated compare (`microskill-types`,
-  `alliance-components`, `common-factors`); `rogers-conditions` is covered by the empathy-vs-
-  sympathy-vs-interpretation analyze item (`u1-empathy-analyze-01`).
-- Per-condition pages (separate UPR/empathy/congruence) were folded into `concept-core-conditions`
-  for the concise build; split later if item volume grows.
-- `person-carl-rogers` page deferred (concise build) — folded into `concept-core-conditions`.
+- **Unit 1 upgraded concise → in-depth (2026-07-19):** the only spine unit built concise (2026-06-27)
+  was brought to the Units 2–8 standard. **5 → 10 readings, 19 → 38 items, ~9 → 17 sources.** Both
+  concise-build shortcuts are now **RESOLVED**:
+  - ~~Per-condition pages (separate UPR/empathy/congruence) were folded into `concept-core-conditions`
+    for the concise build; split later if item volume grows.~~ **Split done:** built
+    `concept-unconditional-positive-regard`, `concept-empathy` (adds Carkhuff's five levels), and
+    `concept-congruence` (adds immediacy + self-disclosure), each with real depth.
+    `concept-core-conditions` is **retained as an overview/synthesis hub** (holds the six-condition
+    model + necessary-vs-sufficient debate + how the three relate) so no inbound wikilink broke.
+  - ~~`person-carl-rogers` page deferred (concise build) — folded into `concept-core-conditions`.~~
+    **Built:** `person-carl-rogers` (self-theory, actualizing tendency, conditions of worth, the
+    Wisconsin project, Gloria films, peace work, critiques).
+  - **Added beyond the course-map's eight:** `concept-attending-and-listening` (SOLER, the three Vs,
+    use of silence, observation, and the cultural non-universality of attending) — split out per
+    one-concept-per-page. Course-map entry updated to match.
+- **Unit 1 compare-coverage now 4/4 (2026-07-19):** every cluster has ≥1 dedicated `compare` (5 total)
+  — `rogers-conditions` 2 (empathy-vs-sympathy-vs-interpretation; UPR-vs-approval/agreement/liking),
+  `microskill-types` 1 (paraphrase-vs-reflection-vs-summarizing), `alliance-components` 1
+  (bond/goal/task → rupture patterns), `common-factors` 1 (contextual vs. specific-ingredients model).
+  (Corrects an earlier note that miscredited the `microskill-types` compare.)
+- **Unit 1 Bloom spread:** R=7/U=8/Ap=9/An=9/E=5 across 38 items — heavy on apply/analyze/evaluate (23)
+  per generate rules. Types: 11 explain, 9 vignette, 6 recall, 5 cloze, 5 compare, 2 mcq (reserved for
+  the two discrimination tasks: Carkhuff-level and rupture-type). Three items' `source_page` was
+  repointed from `concept-core-conditions` to the new split pages (UPR ×2, empathy ×1).
+- **Unit 1 contested-material load raised deliberately** and surfaced as items at evaluate level:
+  necessary-vs-sufficient (the Wisconsin project as the reason "sufficient" was tempered); the
+  "organismic trusting" / Western-individualism critiques of Rogers; Lambert's percentages as a
+  heuristic, **not** a measured variance partition; SOLER's cultural non-universality; congruence↔UPR
+  tension. Two anchor **books** (Carkhuff 1969; Egan 1975) are offline — corroborated via ≥2 secondary
+  sources + the primary publication record, flagged inline.
 - **Unit 2 cluster design:** all 36 items share one cluster (`theory-families`) by design — it *is*
   the confusable set the unit is built to interleave; the `topic` tag carries the specific school and
   the confusable pairs (ellis-vs-beck, bowen-vs-minuchin, sfbt-vs-narrative, etc.). Compare coverage

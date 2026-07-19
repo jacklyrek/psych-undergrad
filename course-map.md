@@ -13,14 +13,14 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 
 ## Tier 1 — The Relationship and the Rules  (~6 weeks)
 
-### Unit 1 — Basic Helping Skills & the Therapeutic Relationship  ☐
+### Unit 1 — Basic Helping Skills & the Therapeutic Relationship  ☑
 - **Objectives:** distinguish helping conversations from advice-giving; practice core microskills; understand common-factors research (the relationship predicts outcomes more than technique).
 - **Core concepts:** Rogers' three conditions (unconditional positive regard, empathy, congruence); Ivey's microskills hierarchy (attending → questioning → reflecting → influencing); reflection vs. paraphrase vs. interpretation; therapeutic alliance (Bordin: bond/goals/tasks).
 - **Anchor:** Ivey, Ivey & Zalaquett, *Intentional Interviewing and Counseling* (alt: Egan, *The Skilled Helper*).
 - **Depends on:** — (start here)
-- **Clusters:** `rogers-conditions` (UPR vs. empathy vs. congruence); `microskill-types` (reflection vs. paraphrase vs. interpretation vs. summary).
+- **Clusters:** `rogers-conditions` (UPR vs. empathy vs. congruence + Carkhuff levels + Rogers self-theory); `microskill-types` (attending/SOLER vs. reflection vs. paraphrase vs. interpretation vs. summary); `alliance-components` (bond/goal/task + rupture types, added at build); `common-factors` (added at build).
 - **CACREP:** Helping Relationships.
-- **Pages to produce:** `unit01-helping-skills`, `theory-common-factors`, `concept-unconditional-positive-regard`, `concept-empathy`, `concept-congruence`, `concept-microskills-hierarchy`, `concept-therapeutic-alliance`, `person-carl-rogers`.
+- **Pages:** [`unit01-helping-skills`](wiki/unit01-helping-skills.md), [`theory-common-factors`](wiki/theory-common-factors.md), [`concept-core-conditions`](wiki/concept-core-conditions.md) (kept as an **overview/synthesis hub** over the three condition pages), [`concept-unconditional-positive-regard`](wiki/concept-unconditional-positive-regard.md), [`concept-empathy`](wiki/concept-empathy.md), [`concept-congruence`](wiki/concept-congruence.md), [`concept-attending-and-listening`](wiki/concept-attending-and-listening.md) (SOLER/silence/observation, added at build), [`concept-microskills-hierarchy`](wiki/concept-microskills-hierarchy.md), [`concept-therapeutic-alliance`](wiki/concept-therapeutic-alliance.md), [`person-carl-rogers`](wiki/person-carl-rogers.md). **Built concise 2026-06-27 → upgraded in-depth 2026-07-19:** 10 readings, 38 items, 17 sources. The three conditions promised as separate pages are now separate (UPR/empathy/congruence) with a synthesis hub retained; `concept-attending-and-listening` added beyond the original eight.
 
 ### Unit 2 — Counseling Theories: The Major Schools  ☑
 - **Objectives:** map the major theoretical families and what each believes causes change; locate an emerging (likely integrative) orientation.
