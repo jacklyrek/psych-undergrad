@@ -25,7 +25,7 @@ Cluster-internal discriminations worth drilling: **schizoid vs. avoidant** (indi
 
 ## Treatment honesty
 
-"With the exception of borderline personality disorder, there are no high-quality, evidence-based psychotherapies for personality disorders." [S11] The borderline exception is a genuine success story: **dialectical behavior therapy (DBT)** — skills for emotion regulation, distress tolerance, and relationships — has real trial support (Unit 9 covers the modality family). The clinical posture for the rest is long-game: alliance, consistency, and boundaries, not cure-by-protocol.
+"With the exception of borderline personality disorder, there are no high-quality, evidence-based psychotherapies for personality disorders." [S11] The borderline exception is a genuine success story: **dialectical behavior therapy (DBT)** — skills for emotion regulation, distress tolerance, and relationships — has real trial support ([[concept-dbt-skills]] covers the modality, Unit 9). The clinical posture for the rest is long-game: alliance, consistency, and boundaries, not cure-by-protocol.
 
 ## Held carefully: stigma, countertransference, and the label
 

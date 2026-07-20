@@ -15,7 +15,7 @@ What's built vs. pending, and where the readings and practice have holes. Update
 | 6 Psychopathology | 2 | ☑ (12) | ☑ (75) | all 5 levels | 7/7 ✓ (8 compares) |
 | 7 Assessment | 2 | ☑ (7) | ☑ (51) | all 5 levels | 4/4 ✓ (`mse-domains`, `screening-tools`, `reliability-vs-validity`, `formulation-ps` — 5 compares) |
 | 8 Crisis & Trauma | 2 | ☑ (9) | ☑ (67) | all 5 levels | 5/5 ✓ (8 compares) |
-| 9 Modalities | 3 | ☐ | ☐ | — | — |
+| 9 Modalities | 3 | ☑ (9) | ☑ (57) | all 5 levels | 6/6 ✓ (7 compares) |
 | 10 Group | 3 | ☐ | ☐ | — | — |
 | 11 Neuroscience | 3 | ☐ | ☐ | — | — |
 | 12 Research | 3 | ☐ | ☐ | — | — |
@@ -75,8 +75,11 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
 - **Unit 2 person pages deferred** (in-depth build kept theory pages as the unit of organization):
   no separate `person-freud` / `person-yalom` / `person-beck` pages — figures are covered inline on
   each theory page. Split out if a later unit needs to link a person directly.
-- **Unit 2 → Unit 9 handoff:** `theory-cbt` links forward to a pending `unit09-modalities` page
-  (CBT/MI as practical toolkit). Fix that wikilink target when Unit 9 is built.
+- **Unit 2 → Unit 9 handoff (RESOLVED 2026-07-19):** ~~`theory-cbt` links forward to a pending
+  `unit09-modalities` page.~~ Wired in the Unit 9 build — `theory-cbt` now points to live
+  `[[theory-cbt-practice]]` / `[[concept-cognitive-triangle]]` / `[[concept-behavioral-activation]]`
+  (fixing a self-link bug where it pointed at itself), and `theory-postmodern` gained a forward link to
+  `[[theory-solution-focused]]`. Theory (Unit 2) and practice (Unit 9) are paired, not duplicated.
 - **Elective `aux-psychological-first-aid` → Unit 8 handoff:** all three concept pages link forward
   to the *pending* Unit 8 (crisis/risk/trauma-informed care) by name, not by wikilink (no
   `unit08-*` page exists yet). ~~When Unit 8 is built, wire these into real wikilinks and reconcile the
@@ -141,7 +144,11 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   contradict: **SUD criteria** (module vs. Unit 6), **MI/CBT** (module vs. Unit 9). MI's OARS also
   traces to `unit01-helping-skills` (live wikilink already). **Unit 8 portion RESOLVED 2026-07-18:**
   the hub's overdose/naloxone/crisis forward-link is now a live wikilink to `unit08-crisis-trauma`
-  (`concept-means-reduction`); Units 6 and 9 remain by-name (Unit 9 pending).
+  (`concept-means-reduction`). **Unit 9 portion RESOLVED 2026-07-19:** the hub, `concept-stages-of-change`,
+  and `concept-treatment-and-recovery` now point to live `[[unit09-modalities]]` /
+  `[[theory-motivational-interviewing]]` / `[[theory-cbt-practice]]` / `[[concept-oars]]` — MI/CBT are
+  the *general* tools there, applied to addiction here (no duplication). All aux-addiction forward
+  handoffs (Units 6, 8, 9) are now wired.
 - **Elective `aux-addiction` moving-target caveats:** MOUD/pharmacotherapy specifics and CM's
   "gold-standard for stimulants" reflect 2024–25 evidence; the AA/TSF Cochrane finding (Kelly 2020)
   reversed prior "no evidence" claims — re-verify if used beyond orientation. SMART Recovery's
@@ -217,6 +224,11 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   treatment there), Unit 9 (CBT/ERP/DBT/behavioral activation as modalities), and Unit 11 (medication,
   dopamine hypothesis depth). The Unit 8 build should also reconcile PTSD/ASD criteria (here) vs.
   trauma-informed care (there), and the new DSM-5-TR suicidal-behavior symptom codes.
+  **Unit 8 portion RESOLVED 2026-07-18** (see the "Unit 8 forward handoffs WIRED" note). **Unit 9
+  portion RESOLVED 2026-07-19:** `concept-mood-disorders` (behavioral activation → `[[concept-behavioral-activation]]`),
+  `concept-anxiety-disorders` + `concept-ocd` (CBT/exposure/ERP → `[[theory-cbt-practice]]`), and
+  `concept-personality-disorders` (DBT → `[[concept-dbt-skills]]`) now use live wikilinks. Only **Unit 11**
+  (medication / dopamine depth) remains by-name.
 - **Unit 6 criteria-are-paraphrases caveat baked in:** all criteria summarized from peer-reviewed
   secondary references (StatPearls et al.), not the paywalled DSM-5-TR text — flagged in the
   sources file and the hub ("quote the manual before relying on a criterion clinically").
@@ -301,3 +313,48 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   Trippany/Kress *Journal of Counseling & Development* vicarious-trauma article (S19) were **read in full
   via pypdf**. Firearm case-fatality (~85–90%) and crisis-duration (minutes–hour) figures are
   order-of-magnitude public-health estimates (Means Matter), not precise constants.
+- **Unit 9 page plan deviation (deliberate, 2026-07-19):** built **9** pages vs. the course-map's
+  promised 8 — the single `concept-act-dbt-skills` page was **split** into `concept-act` and
+  `concept-dbt-skills` (ACT and DBT are distinct third-wave therapies; one-concept-per-page, same
+  rationale as prior splits). `theory-cbt-practice` and `theory-solution-focused` are the **practice**
+  counterparts to Unit 2's `theory-cbt` / `theory-postmodern` (theory there, hands-on toolkit here) —
+  paired via bidirectional wikilinks, not duplicated. Course-map entry updated to match.
+- **Unit 9 cluster additions beyond course-map:** the course-map named `ebt-modalities` and
+  `oars-skills`; the build added four genuinely confusable sets — `cbt-techniques` (cognitive
+  restructuring vs. behavioral activation vs. exposure), `mi-processes` (spirit/PACE, four processes,
+  change vs. sustain talk, righting reflex), `sfbt-techniques` (miracle vs. exception vs. scaling vs.
+  coping), and `third-wave-skills` (ACT hexaflex vs. DBT modules; acceptance vs. change). Note
+  `ebt-modalities` is the **big cross-modality "which tool fits this client?" differential** — the
+  unit's prime interleaving target, carried by the four modality-fit discrimination mcqs.
+- **Unit 9 Bloom spread:** R=13/U=7/Ap=17/An=13/E=7 across 57 items — heavy on apply/analyze/evaluate
+  (37) per generate rules. Types: 21 explain, 9 recall, 7 compare, 7 mcq (the modality-fit
+  discriminations), 7 vignette, 6 cloze. Every cluster has ≥1 compare (6/6, 7 total: `third-wave-skills`
+  has 2 — ACT-vs-DBT and defusion-vs-restructuring). Includes the syllabus practice rep (run a thought
+  record on a recent frustration, `u9-thought-record-rep-01`).
+- **Unit 9 stance thread is the spine:** these are the "fixing" tools, and the unit leans into the
+  paradox that two of them make *not* fixing the central move — MI's **righting reflex** (hold it) and
+  the third wave's **acceptance** (ACT/DBT). Stance probes throughout: hold-the-righting-reflex,
+  act-not-feel (BA outside-in), acceptance-is-not-resignation, affirmation-vs-contingent-approval,
+  reflect-more-than-you-ask, prescribe-BA-collaboratively-not-at-the-client, borrow-DBT-skills-vs-
+  claim-to-do-DBT (scope).
+- **Unit 9 contested-material load is deliberately high** and quizzed at evaluate level: (1) the
+  **common-factors / dodo-bird** caveat — "evidence-based modality" ≠ "best"; the alliance carries much
+  of the outcome and between-therapy technique differences are typically small (`ebt-modalities`
+  frames every "which tool?" item under this); (2) the **CBT dismantling** finding — BA alone matched
+  full CBT (Jacobson 1996) and beat cognitive therapy / matched meds for severe depression (Dimidjian
+  2006; COBRA non-inferiority), genuinely complicating "you must fix the thoughts"; (3) **third-wave ≠
+  proven-superior** to standard CBT; (4) **allegiance/publication bias** inflates SFBT's largest
+  reported effect sizes (proponent g≈3.02 flagged; the peer-reviewed g≈1.17 preferred). If study
+  sessions surface confusion between "what the modality claims" and "what the evidence shows," that's
+  the intended discrimination.
+- **Unit 9 sourcing caveats baked in:** four anchor **books** (J. Beck; Miller & Rollnick; Hayes et al.;
+  Linehan) are offline and cited via reputable secondary sources + the primary publication record,
+  flagged. MI is anchored on **SAMHSA TIP 35** (government consensus, NCBI); ACT on the **ACBS**
+  in-tradition society; BA on **primary trials** (Jacobson 1996, Dimidjian 2006, COBRA/Richards 2016).
+  The SFBT institute page (S12) is a **proponent source** — used for technique descriptions/study
+  tallies, with its largest effect sizes explicitly down-weighted in favor of the peer-reviewed
+  Franklin 2024 meta-analysis (S13).
+- **Unit 9 forward handoffs (by name, not wikilink):** `theory-cbt-practice`/`concept-cognitive-triangle`
+  reference **Unit 11** (neuroscience) only implicitly; the unit's own outward links (Units 1/2/6/7/8 +
+  both electives) are all **live wikilinks**. No `unit09-*` by-name refs remain in the wiki (verified:
+  0 broken links across 89 wiki pages; all 9 new pages have inbound links, no orphans).

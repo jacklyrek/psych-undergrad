@@ -15,14 +15,14 @@ There is no single "cure" for addiction and no one method that fits everyone —
 
 ## Motivational Interviewing (MI): the engine for ambivalence
 
-MI (Miller & Rollnick) is the method for the **contemplation** stage — a person stuck in ambivalence. Its counterintuitive core: **you do not argue people into change.** [S8]
+MI (Miller & Rollnick) is the method for the **contemplation** stage — a person stuck in ambivalence. The general modality is [[theory-motivational-interviewing]] (Unit 9); here it's applied to substance use. Its counterintuitive core: **you do not argue people into change.** [S8]
 
 - **Resist the righting reflex.** The helper's instinct to correct, warn, and fix ("you need to quit") reliably provokes the client to defend the behavior — people talk themselves *deeper* into the side they argue. Resisting this urge is rule one.
 - **Evoke change talk, don't supply it.** The goal is to draw out the client's **own** reasons, ability, need, and desire to change (**change talk**) rather than reinforcing their reasons to stay the same (**sustain talk**). People are persuaded by what they hear *themselves* say.
 - **Roll with resistance.** Don't meet a push with a push; "resistance" is a signal to change your approach, not to argue harder.
 - **RULE**, the pocket version: **R**esist the righting reflex, **U**nderstand the client's motivations, **L**isten with empathy, **E**mpower the client. [S8]
 
-MI's relational skills (open questions, affirmations, reflections, summaries — **OARS**) are the same engine as [[unit01-helping-skills]]; MI adds the directional goal of eliciting change talk.
+MI's relational skills (open questions, affirmations, reflections, summaries — **OARS**, in full at [[concept-oars]]) are the same engine as [[unit01-helping-skills]]; MI adds the directional goal of eliciting change talk.
 
 ## The behavioral methods
 
@@ -60,7 +60,7 @@ The two failure modes are **method-ideology** (forcing every client into your fa
 - [[concept-stages-of-change]] — the map that tells you *which* method now (MI for ambivalence, action-stage methods for the ready).
 - [[concept-relapse-prevention]] — the CBT-family maintenance toolkit that underlies much of this.
 - [[concept-neuroscience-of-addiction]] — what the medications act on (agonists/antagonists at the reward circuit).
-- **Unit 9 (planned)** — Evidence-Based Modalities; MI and CBT are core there. **[[unit08-crisis-trauma | Unit 8]]** — overdose/naloxone and crisis border harm reduction. Reconcile wikilinks when built.
+- [[unit09-modalities]] — Evidence-Based Modalities; [[theory-motivational-interviewing]] and [[theory-cbt-practice]] are the general tools this page applies to addiction. **[[unit08-crisis-trauma | Unit 8]]** — overdose/naloxone and crisis border harm reduction.
 
 ## Sources
 [S2] NIDA, *Treatment and Recovery* — 40–60% relapse, chronic-disease comparison, relapse-not-failure. [S8] SAMHSA TIP 35 — Motivational Interviewing: righting reflex, change vs. sustain talk, rolling with resistance, RULE. [S9] NIDA, *Medications for Opioid Use Disorder* — methadone/buprenorphine reduce mortality; naltrexone; MOUD ≠ substitution. [S10] Kelly, Humphreys & Ferri (2020) Cochrane — AA/TSF effective for abstinence, lower cost. [S11] Contingency management as gold standard for stimulant use disorder; harm-reduction vs. abstinence tension. [S14] SMART Recovery — secular 4-Point/CBT-REBT alternative. Full notes in [`../research/aux-addiction-sources.md`](../research/aux-addiction-sources.md).

@@ -44,7 +44,7 @@ A **panic attack** is "an abrupt surge of intense fear or discomfort" that **pea
 
 ## In the room
 
-Anxious clients frequently arrive asking you to help them *stop feeling anxious* — and reassurance is the trap. Reassurance and avoidance are the two behaviors that *maintain* anxiety disorders (each relief teaches the alarm it was right to fire), which is why the evidence-based treatments (Unit 9: CBT, exposure) run through the fear rather than around it. Your microskills matter first: an anxious client who feels rushed will perform calm and change nothing. Also normalize the body: many panic clients have been to the ER convinced they were dying — the 2-minute physiology explanation is itself therapeutic.
+Anxious clients frequently arrive asking you to help them *stop feeling anxious* — and reassurance is the trap. Reassurance and avoidance are the two behaviors that *maintain* anxiety disorders (each relief teaches the alarm it was right to fire), which is why the evidence-based treatments ([[theory-cbt-practice]] and exposure, Unit 9) run through the fear rather than around it. Your microskills matter first: an anxious client who feels rushed will perform calm and change nothing. Also normalize the body: many panic clients have been to the ER convinced they were dying — the 2-minute physiology explanation is itself therapeutic.
 
 ## Sources
 

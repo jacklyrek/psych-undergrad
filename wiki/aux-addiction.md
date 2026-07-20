@@ -10,7 +10,7 @@ related_units: [6, 9]
 
 # Elective Module — Understanding & Changing Addictive Behavior
 
-> **This is an off-syllabus elective module, not a numbered unit.** It lives in the `aux-` namespace (see the *Ad-hoc / elective modules* section of [`../CLAUDE.md`](../CLAUDE.md)) and cross-links forward into **[[unit06-psychopathology|Unit 6 — Psychopathology & the DSM-5-TR]]** (where substance use disorders are a diagnostic category — see [[concept-substance-use-disorders]]) and **Unit 9 — Evidence-Based Modalities** (planned; where MI, CBT, and the change methods live). Built on request: *what addiction is, and how people actually break it.*
+> **This is an off-syllabus elective module, not a numbered unit.** It lives in the `aux-` namespace (see the *Ad-hoc / elective modules* section of [`../CLAUDE.md`](../CLAUDE.md)) and cross-links forward into **[[unit06-psychopathology|Unit 6 — Psychopathology & the DSM-5-TR]]** (where substance use disorders are a diagnostic category — see [[concept-substance-use-disorders]]) and **[[unit09-modalities|Unit 9 — Evidence-Based Modalities]]** (where MI, CBT, and the change methods live as general tools). Built on request: *what addiction is, and how people actually break it.*
 
 > **The one-line version:** addiction is a **chronic, relapsing** condition in which the brain's reward, stress, and self-control circuits are hijacked so that a person keeps using **despite mounting harm** — not a simple failure of willpower or morals. [S1] "Breaking it" is rarely a single act of will; it is a **process** — building motivation, changing behavior, and preventing relapse — and it is what the evidence-based methods in this module are for. [S2][S6]
 
@@ -40,7 +40,7 @@ You cannot want someone's recovery more than they do, and trying to — arguing,
 
 ## Connects to
 - [[unit06-psychopathology]] — Psychopathology & the DSM-5-TR (built 2026-07-17). Its [[concept-substance-use-disorders]] page carries the DSM-structural view of SUD and defers the full treatment to this module — the two are reconciled, not duplicated.
-- **Unit 9 (planned)** — Evidence-Based Modalities. **Motivational Interviewing** and **CBT** are covered there as general tools; here they are applied to addiction specifically. MI's OARS also traces back to [[unit01-helping-skills]] (same relational engine, crisis/change-specific use).
+- [[unit09-modalities]] — Evidence-Based Modalities. [[theory-motivational-interviewing]] and [[theory-cbt-practice]] are covered there as general tools; here they are applied to addiction specifically. MI's [[concept-oars]] also traces back to [[unit01-helping-skills]] (same relational engine, crisis/change-specific use).
 - **[[unit08-crisis-trauma | Unit 8]]** — Crisis, Risk & Trauma-Informed Care. Overdose response, naloxone, and co-occurring trauma border this module; a person in withdrawal or post-overdose can be in acute crisis. See also the elective [[aux-psychological-first-aid]] for acute-support stance.
 
 ## Sources

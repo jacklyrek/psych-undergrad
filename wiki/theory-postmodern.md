@@ -63,6 +63,7 @@ Through **conversation that shifts meaning** — not insight into the past, not 
   givens of existence, postmodern in social/linguistic story.
 - [[theory-person-centered]] — shares the "client as expert" and non-directive DNA, pushed further:
   even the counselor's *understanding* is just another story.
+- [[theory-solution-focused]] (Unit 9) — the hands-on SFBT *toolkit* (miracle/exception/scaling/coping questions) that puts this worldview to work.
 - [[unit02-theories]] — where this sits among the six families.
 
 ## Sources

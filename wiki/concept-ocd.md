@@ -36,7 +36,7 @@ Same chapter, same repetitive-behavior signature [S12]:
 
 ## In the room
 
-Reassurance is compulsion fuel. "Are you *sure* I didn't hit someone driving here?" answered with "I'm sure" relieves for minutes and strengthens the loop — family members are usually deep in this pattern by the time treatment starts. The evidence-based treatment (exposure and response prevention, a CBT specialty — Unit 9) works by breaking exactly that circuit, which is why a supportive-but-reassuring counselor can accidentally be part of the disorder. Warmth, yes; certificates of certainty, no.
+Reassurance is compulsion fuel. "Are you *sure* I didn't hit someone driving here?" answered with "I'm sure" relieves for minutes and strengthens the loop — family members are usually deep in this pattern by the time treatment starts. The evidence-based treatment (exposure and response prevention, a CBT specialty — [[theory-cbt-practice]], Unit 9) works by breaking exactly that circuit, which is why a supportive-but-reassuring counselor can accidentally be part of the disorder. Warmth, yes; certificates of certainty, no.
 
 ## Sources
 

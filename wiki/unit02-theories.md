@@ -84,7 +84,7 @@ is consistently among the most common self-identified orientations (estimates va
 
 ## Connects forward
 - **Theory → [[concept-case-conceptualization | case conceptualization]]** ([[unit07-assessment | Unit 7]]): the lens you pick here becomes the structure you use to turn intake data into a plan. This is the payoff of Unit 2.
-- **CBT here → CBT/MI as practical method** (Unit 9): this is the theory; Unit 9 is the toolkit.
+- **CBT here → CBT/MI as practical method** ([[unit09-modalities | Unit 9]]): this is the theory; Unit 9 is the toolkit ([[theory-cbt-practice]], [[theory-motivational-interviewing]]).
 - **Person-centered here → core conditions** (Unit 1): same engine, named as a theory.
 
 ## Sources

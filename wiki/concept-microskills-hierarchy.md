@@ -73,8 +73,8 @@ instinct is to fix, default down the ladder to a reflection and let silence do t
 - [[concept-empathy]] — reflection of feeling is empathy made teachable; interpretation is its
   higher-risk neighbor one rung up.
 - [[concept-therapeutic-alliance]] — these skills are how you build the *bond.*
-- Forward link: Unit 9's **OARS** (Motivational Interviewing) is the same listening engine reused —
-  see `course-map.md`.
+- [[concept-oars]] (Unit 9) — Motivational Interviewing's **OARS** is this same listening engine
+  reused, given a direction (drawing out change talk). The named "Microskills ↔ OARS" cross-unit thread.
 
 ## Sources
 [S5] Penn State, *Counseling Microskills.* [S6] iResearchNet, *Allen Ivey.* [S7]

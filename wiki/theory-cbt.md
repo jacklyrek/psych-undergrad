@@ -13,7 +13,7 @@ cluster: theory-families
 distress going in the present. **Better by:** identifying and testing those thoughts, and changing the
 behaviors — through structured, collaborative, present-focused work. [S4][S5]
 
-CBT is the most-researched and most-requested family, and the most **protocol-like.** That very structure can make it the most comfortable place to start — which is the reason to make sure you also understand the relational and meaning-based schools, where a purely procedural stance backfires (see [[unit02-theories]]). This page is the **theory**; the hands-on toolkit (thought records, behavioral activation, exposure) is Unit 9 ([[theory-cbt]] → `unit09-modalities`, pending). [S4]
+CBT is the most-researched and most-requested family, and the most **protocol-like.** That very structure can make it the most comfortable place to start — which is the reason to make sure you also understand the relational and meaning-based schools, where a purely procedural stance backfires (see [[unit02-theories]]). This page is the **theory**; the hands-on toolkit is Unit 9 — [[theory-cbt-practice]] (session structure, restructuring), [[concept-cognitive-triangle]] (thought records), and [[concept-behavioral-activation]] (the possibly-load-bearing behavioral half). [S4]
 
 ## The core model
 

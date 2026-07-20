@@ -29,7 +29,7 @@ Pull any session note and you should be able to trace it *backward*: which objec
 
 - A **goal** is the **broad clinical outcome** the client is working toward: *"reduce depressive symptoms to the mild range,"* *"rebuild a supportive social network."* Goals are directional and often not directly measurable on their own.
 - An **objective** is a **small, measurable, time-bound step** that demonstrates movement toward the goal: *"complete three behavioral-activation activities per week, logged,"* *"reduce PHQ-9 from 18 to below 10 within 12 weeks,"* *"initiate one social contact per week for four weeks."*
-- **Interventions** are what *the counselor* does to help the client meet the objective (behavioral activation, cognitive restructuring, referral) — chosen by your theory ([[concept-case-conceptualization]]).
+- **Interventions** are what *the counselor* does to help the client meet the objective ([[concept-behavioral-activation]], cognitive restructuring, referral — the Unit 9 toolkit) — chosen by your theory ([[concept-case-conceptualization]]).
 
 One goal usually has several objectives; each objective has interventions. Confusing the levels (writing a "goal" of "attend three sessions," or an "objective" of "feel better") is the most common beginner error and breaks the thread.
 

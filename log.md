@@ -516,3 +516,52 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
 - Bookkeeping: course-map (☐→☑ + built Pages list + upgrade line), index.md (10 readings + item line),
   coverage.md (row + 2 concise holes RESOLVED + new deviation/Bloom/contested notes), log.md.
 - **Tier 1 + Tier 2 now uniformly in-depth (Units 1–8).** Remaining: Tier 3 (Units 9–12).
+
+## [2026-07-19] create-chapter | Unit 9 Evidence-Based Modalities (a practical toolkit) | 22 sources, 9 readings, 57 items
+- **Scope:** Tier 3 "rounding out" unit, built to the in-depth Units 1–8 standard. The concrete
+  toolkit a counselor reaches for: **CBT** (cognitive restructuring + behavioral activation),
+  **Motivational Interviewing**, **Solution-Focused Brief Therapy**, and the **third-wave**
+  acceptance/mindfulness therapies **ACT** and **DBT**. Framed by the three CBT "waves" and by what
+  "evidence-based practice" actually means (APA's three legs, not a horse race).
+- **Research:** triangulated across professional-body/government sources (**Beck Institute**;
+  **SAMHSA TIP 35** MI chapter on NCBI; **ACBS** for ACT), **primary trials/meta-analyses**
+  (Jacobson 1996 dismantling n=150; Dimidjian 2006 N=241; COBRA/Richards 2016 Lancet; Linehan
+  1991/2006 DBT RCTs; Franklin 2024 + Neipp 2021 SFBT), and peer-reviewed reviews (BA narrative
+  review; Hayes & Hofmann "third wave"; APA 2006 EBP policy). Four anchor **books** (J. Beck; Miller
+  & Rollnick; Hayes et al.; Linehan) offline → cited via secondary sources + publication record,
+  flagged. Sources file `research/unit09-modalities-sources.md` (22 sources, S1–S22).
+- **Readings (9):** `unit09-modalities` (hub), `theory-cbt-practice`, `concept-cognitive-triangle`,
+  `concept-behavioral-activation`, `theory-motivational-interviewing`, `concept-oars`,
+  `theory-solution-focused`, `concept-act`, `concept-dbt-skills`. **Page-plan deviation:** the
+  course-map's single `concept-act-dbt-skills` was **split** into `concept-act` + `concept-dbt-skills`
+  (distinct third-wave therapies; one-concept-per-page). `theory-cbt-practice`/`theory-solution-focused`
+  are the **practice** counterparts to Unit 2's `theory-cbt`/`theory-postmodern` (paired, not
+  duplicated). Course-map + index updated to match.
+- **Items (57):** 6 clusters — `ebt-modalities` (the cross-modality "which tool?" differential — the
+  prime interleaving target, 4 modality-fit mcqs), `cbt-techniques`, `mi-processes`, `oars-skills`,
+  `sfbt-techniques`, `third-wave-skills` — **each** with ≥1 dedicated compare (7 total). Bloom
+  R=13/U=7/Ap=17/An=13/E=7 (apply/analyze/evaluate = 37). Types: 21 explain, 9 recall, 7 compare,
+  7 mcq, 7 vignette, 6 cloze. Includes the syllabus practice rep (run a thought record).
+- **Stance thread as the spine:** these are the "fixing" tools, and two of them make *not* fixing the
+  central move — MI's **righting reflex** (hold it) and the third wave's **acceptance** (ACT/DBT).
+  Stance probes throughout (hold-the-reflex, act-not-feel, acceptance-not-resignation, affirm-not-
+  approve, reflect-more-than-ask, BA-collaborative-not-prescribed, borrow-DBT-vs-claim-to-do-DBT).
+- **Contested load (quizzed at evaluate):** common-factors/dodo-bird ("evidence-based" ≠ "best"); the
+  CBT **dismantling** finding (BA alone ≈ full CBT; BA ≈ meds > CT for severe depression); third-wave
+  **not proven superior** to standard CBT; **allegiance/publication bias** in SFBT's largest effect
+  sizes (proponent g≈3.02 down-weighted for peer-reviewed g≈1.17).
+- **Forward-links wired (Units 1/2/6 + electives → Unit 9):** `concept-microskills-hierarchy` →
+  `[[concept-oars]]`; `theory-cbt` → `[[theory-cbt-practice]]`/`[[concept-cognitive-triangle]]`/
+  `[[concept-behavioral-activation]]` (fixed a self-link bug); `theory-postmodern` →
+  `[[theory-solution-focused]]`; `concept-mood-disorders`/`concept-anxiety-disorders`/`concept-ocd`/
+  `concept-personality-disorders` → the relevant Unit 9 pages; `aux-addiction` hub +
+  `concept-stages-of-change` + `concept-treatment-and-recovery` → `[[unit09-modalities]]` /
+  `[[theory-motivational-interviewing]]` / `[[theory-cbt-practice]]` / `[[concept-oars]]`. No
+  `unit09-*` by-name refs remain.
+- **Build:** items/build/items.json rebuilt — **535 items** total, validated clean by build_items.py
+  (types/blooms valid, all source_pages exist, every mcq has `correct` ∈ options, every cluster ≥1
+  compare). 0 broken wikilinks across 89 wiki pages; all 9 new pages have inbound links, no orphans.
+- **Bookkeeping:** course-map (☐→☑ + built Pages list + split/cluster notes), index.md (Tier 3 Unit 9
+  section: 9 readings + item line), coverage.md (row + 7 Unit-9 notes + Unit 2→9 / aux→9 / Unit 6→9
+  handoffs marked RESOLVED), log.md.
+- **Tier 3 progress:** Unit 9 done. Remaining spine: Units 10 (Group), 11 (Neuroscience), 12 (Research).

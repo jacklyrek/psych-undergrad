@@ -93,13 +93,13 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 
 ## Tier 3 — Rounding Out  (ongoing / alongside year one)
 
-### Unit 9 — Evidence-Based Modalities (a practical toolkit)  ☐
+### Unit 9 — Evidence-Based Modalities (a practical toolkit)  ☑
 - **Objectives:** hands-on familiarity with methods you'll use directly.
 - **Core concepts:** CBT (cognitive triangle, behavioral activation — Judith Beck); Motivational Interviewing (OARS — reinforces Unit 1; Miller & Rollnick); solution-focused; mindfulness/acceptance (ACT, DBT skills).
 - **Depends on:** → Unit 1 (OARS ↔ microskills), → Unit 2 (CBT theory).
-- **Clusters:** `ebt-modalities` (CBT vs. MI vs. SFBT vs. ACT vs. DBT); `oars-skills`.
+- **Clusters:** `ebt-modalities` (the cross-modality "which tool?" differential — CBT vs. MI vs. SFBT vs. ACT vs. DBT); `oars-skills`; plus (added at build) `cbt-techniques` (restructuring vs. behavioral activation vs. exposure), `mi-processes` (spirit/PACE, four processes, change vs. sustain talk, righting reflex), `sfbt-techniques` (miracle vs. exception vs. scaling vs. coping), `third-wave-skills` (ACT hexaflex vs. DBT modules; acceptance vs. change).
 - **CACREP:** Counseling & Helping Relationships.
-- **Pages:** `unit09-modalities`, `theory-cbt-practice`, `concept-cognitive-triangle`, `concept-behavioral-activation`, `theory-motivational-interviewing`, `concept-oars`, `theory-solution-focused`, `concept-act-dbt-skills`.
+- **Pages:** [`unit09-modalities`](wiki/unit09-modalities.md), [`theory-cbt-practice`](wiki/theory-cbt-practice.md), [`concept-cognitive-triangle`](wiki/concept-cognitive-triangle.md), [`concept-behavioral-activation`](wiki/concept-behavioral-activation.md), [`theory-motivational-interviewing`](wiki/theory-motivational-interviewing.md), [`concept-oars`](wiki/concept-oars.md), [`theory-solution-focused`](wiki/theory-solution-focused.md), [`concept-act`](wiki/concept-act.md), [`concept-dbt-skills`](wiki/concept-dbt-skills.md). **Built 2026-07-19** (in-depth): 9 readings, 57 items, 22 sources. The course-map's single `concept-act-dbt-skills` page was **split** into `concept-act` + `concept-dbt-skills` (each is a distinct third-wave therapy — one-concept-per-page). Four clusters added beyond the course-map's two (see above). `theory-cbt-practice`/`theory-solution-focused` are the *practice* counterparts to Unit 2's `theory-cbt`/`theory-postmodern` (theory there, toolkit here). All Unit-1/2 and elective (`aux-addiction`) forward-links to Unit 9 wired to real wikilinks.
 
 ### Unit 10 — Group Counseling  ☐
 - **Objectives:** understand why groups heal differently than individual work.

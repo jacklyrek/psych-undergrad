@@ -241,7 +241,42 @@ practice rep (a memorized structure for asking about suicidal ideation), and sta
 _Sources:_ [unit08 sources](research/unit08-crisis-trauma-sources.md).
 
 ## Tier 3 — Rounding Out
-- **Unit 9 — Evidence-Based Modalities** — _pending_
+
+### Unit 9 — Evidence-Based Modalities (a practical toolkit)  ☑ readings + items
+_Readings:_
+- [unit09-modalities](wiki/unit09-modalities.md) — hub: what "evidence-based practice" actually means
+  (APA's 3 legs, not a horse race), the three CBT "waves," the six tools + a "reach for it when…"
+  table, and the stance thread (MI's held righting reflex; the third wave's acceptance).
+- [theory-cbt-practice](wiki/theory-cbt-practice.md) — CBT as *practice*: the session structure,
+  **collaborative empiricism**, cognitive restructuring, Socratic questioning, behavioral experiments,
+  exposure. (Theory is Unit 2's [theory-cbt](wiki/theory-cbt.md).)
+- [concept-cognitive-triangle](wiki/concept-cognitive-triangle.md) — situation→thought→feeling, the
+  three levels of cognition, the distortion catalog, and the **thought record** worksheet.
+- [concept-behavioral-activation](wiki/concept-behavioral-activation.md) — act your way into feeling;
+  the avoidance trap, **TRAP→TRAC**, activity scheduling; the dismantling evidence (Jacobson 1996,
+  Dimidjian 2006, COBRA) that BA may be CBT's active ingredient.
+- [theory-motivational-interviewing](wiki/theory-motivational-interviewing.md) — the style for
+  **ambivalence**: the **righting reflex**, spirit (**PACE**), the four processes, change vs. sustain
+  talk (**DARN-CAT**), "resistance" reframed as discord.
+- [concept-oars](wiki/concept-oars.md) — the four MI skills (Open questions, Affirmations, Reflective
+  listening, Summaries) = Unit 1 microskills with a direction; reflect more than you ask.
+- [theory-solution-focused](wiki/theory-solution-focused.md) — the SFBT *toolkit*: miracle / exception
+  / scaling / coping questions; the evidence + the **allegiance-bias caution** on giant effect sizes.
+  (Worldview is Unit 2's [theory-postmodern](wiki/theory-postmodern.md).)
+- [concept-act](wiki/concept-act.md) — third wave: **psychological flexibility**, the **hexaflex** six
+  processes, defusion vs. CBT restructuring, acceptance ≠ resignation.
+- [concept-dbt-skills](wiki/concept-dbt-skills.md) — the four modules (mindfulness/distress-tolerance =
+  acceptance; emotion-regulation/interpersonal-effectiveness = change), the **acceptance-AND-change**
+  dialectic, Linehan's RCT evidence for BPD/self-harm.
+
+_Items:_ [unit09-modalities](items/unit09-modalities.md) — 57 items across 6 clusters
+(`ebt-modalities` [the cross-modality "which tool?" differential], `cbt-techniques`, `mi-processes`,
+`oars-skills`, `sfbt-techniques`, `third-wave-skills` — **each** with a dedicated compare), all 5 Bloom
+levels (R13/U7/Ap17/An13/E7, heavy on apply/analyze/evaluate); the modality-fit discrimination mcqs,
+the syllabus practice rep (run a thought record), and stance probes throughout (hold the righting
+reflex; act-not-feel; acceptance-not-fixing; DBT-borrowing vs. scope). _Sources:_
+[unit09 sources](research/unit09-modalities-sources.md).
+
 - **Unit 10 — Group Counseling** — _pending_
 - **Unit 11 — Neuroscience & Biological Bases** — _pending_
 - **Unit 12 — Research Methods & Program Evaluation** — _pending_

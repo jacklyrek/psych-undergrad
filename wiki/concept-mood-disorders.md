@@ -55,7 +55,7 @@ Then: **Bipolar I** = at least one manic episode, ever (depression common but *n
 
 ## In the room
 
-Depression's presentation *is* often the stance problem this curriculum keeps flagging: a person whose motivation, hope, and concentration are symptoms — met by a helper itching to fix. Behavioral prescriptions bounce off anhedonia; the alliance ([[concept-therapeutic-alliance]]) and accurate empathy are what make later structured work (Unit 9's behavioral activation) possible. And an energized, grandiose client is not "finally doing better" — always read energy against the episode grammar above.
+Depression's presentation *is* often the stance problem this curriculum keeps flagging: a person whose motivation, hope, and concentration are symptoms — met by a helper itching to fix. Behavioral prescriptions bounce off anhedonia; the alliance ([[concept-therapeutic-alliance]]) and accurate empathy are what make later structured work ([[concept-behavioral-activation]], Unit 9) possible. And an energized, grandiose client is not "finally doing better" — always read energy against the episode grammar above.
 
 ## Sources
 
