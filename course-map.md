@@ -101,14 +101,14 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 - **CACREP:** Counseling & Helping Relationships.
 - **Pages:** [`unit09-modalities`](wiki/unit09-modalities.md), [`theory-cbt-practice`](wiki/theory-cbt-practice.md), [`concept-cognitive-triangle`](wiki/concept-cognitive-triangle.md), [`concept-behavioral-activation`](wiki/concept-behavioral-activation.md), [`theory-motivational-interviewing`](wiki/theory-motivational-interviewing.md), [`concept-oars`](wiki/concept-oars.md), [`theory-solution-focused`](wiki/theory-solution-focused.md), [`concept-act`](wiki/concept-act.md), [`concept-dbt-skills`](wiki/concept-dbt-skills.md). **Built 2026-07-19** (in-depth): 9 readings, 57 items, 22 sources. The course-map's single `concept-act-dbt-skills` page was **split** into `concept-act` + `concept-dbt-skills` (each is a distinct third-wave therapy — one-concept-per-page). Four clusters added beyond the course-map's two (see above). `theory-cbt-practice`/`theory-solution-focused` are the *practice* counterparts to Unit 2's `theory-cbt`/`theory-postmodern` (theory there, toolkit here). All Unit-1/2 and elective (`aux-addiction`) forward-links to Unit 9 wired to real wikilinks.
 
-### Unit 10 — Group Counseling  ☐
+### Unit 10 — Group Counseling  ☑
 - **Objectives:** understand why groups heal differently than individual work.
 - **Core concepts:** Yalom's therapeutic factors (universality, instillation of hope, cohesion, etc.); stages of group development; leader's role; managing difficult members.
-- **Anchor:** Yalom, *The Theory and Practice of Group Psychotherapy* (or Corey, *Theory and Practice of Group Counseling*).
-- **Depends on:** → Unit 1.
-- **Clusters:** `yalom-factors`; `group-stages`.
+- **Anchor:** Yalom & Leszcz, *The Theory and Practice of Group Psychotherapy* (or Corey, *Theory and Practice of Group Counseling*).
+- **Depends on:** → Unit 1 (cohesion = the alliance, multiplied; here-and-now moves = microskills).
+- **Clusters:** `yalom-factors`; `group-stages`; plus (added at build) `leadership-functions` (the four Lieberman/Yalom/Miles functions + linear/curvilinear finding + Lewin styles), `group-types` (ASGW's four specializations), `difficult-members` (Yalom's problem-member prototypes), `group-formation` (screening/consent/confidentiality).
 - **CACREP:** Group Counseling & Group Work.
-- **Pages:** `unit10-group`, `theory-yalom-factors`, `concept-group-development-stages`, `concept-group-leadership`.
+- **Pages:** [`unit10-group`](wiki/unit10-group.md), [`theory-yalom-factors`](wiki/theory-yalom-factors.md), [`concept-group-development-stages`](wiki/concept-group-development-stages.md), [`concept-group-leadership`](wiki/concept-group-leadership.md), [`concept-group-types`](wiki/concept-group-types.md) (added — ASGW's four types; core CACREP group-work content), [`concept-difficult-group-members`](wiki/concept-difficult-group-members.md) (added — the syllabus's "managing difficult members" as its own page), [`concept-group-ethics-and-formation`](wiki/concept-group-ethics-and-formation.md) (added — screening, preparation, and the group-specific confidentiality limit). **Built 2026-07-19** (in-depth): 7 readings, 57 items, 13 sources. Expanded from the course-map's 4-page list to **7** (the three additions are core CACREP group-work content the 4-page list skipped); four clusters added beyond the promised two.
 
 ### Unit 11 — Neuroscience & Biological Bases of Behavior  ☐
 - **Objectives:** working mental model of brain/body in mental health.
@@ -136,6 +136,8 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 - **Theory as lens ↔ case conceptualization** (Unit 2 ↔ Unit 7).
 - **Confidentiality limits ↔ crisis/duty-to-warn** (Unit 3 ↔ Unit 8).
 - **Attachment ↔ the therapeutic alliance & client relating** (Unit 5 ↔ Unit 1).
+- **The alliance ↔ group cohesion** (Unit 1 ↔ Unit 10) — cohesion is the client-*client* analog of
+  Bordin's bond; the whole common-factors lesson scales up to the group.
 - **Diagnosis ↔ assessment ↔ meds** (Unit 6 ↔ Unit 7 ↔ Unit 11).
 - **The "fix-it" stance caution** runs through every unit — generate stance-probing
   items, not just fact items, where the material allows.

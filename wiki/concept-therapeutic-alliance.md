@@ -3,7 +3,7 @@ title: "The Therapeutic Alliance (Bordin's Bond/Goal/Task Model)"
 type: concept
 tags: [alliance, bordin, bond, goal, task, working-alliance]
 unit: 1
-source_units: [1, 3, 5, 7]
+source_units: [1, 3, 5, 7, 10]
 cluster: alliance-components
 ---
 
@@ -62,6 +62,11 @@ in supervision, and it maps directly onto these three parts.
   and Bowlby cast the therapist as a **secure base**. A frayed bond with a dismissing or preoccupied
   client is often the old internal working model showing up in the room.
 - [[theory-common-factors]] — the alliance is the best-measured of the common factors.
+- [[theory-yalom-factors]] and [[unit10-group]] (Unit 10) — in group work the alliance has a
+  client-**client** analog: **group cohesion**, "the group therapy analog of the relationship in
+  individual therapy." Bordin's *bond* scales up to a web of member-to-member bonds, and — just like
+  a dyadic alliance — cohesion is *built, ruptured (especially in the storming/transition stage), and
+  repaired.*
 - [[concept-informed-consent]] (Unit 3) — consent done well is an early alliance intervention:
   Bordin's **goal** and **task** agreement is basically structured consent, and honest
   confidentiality limits ([[concept-confidentiality-limits]]) build rather than threaten the bond.

@@ -277,7 +277,39 @@ the syllabus practice rep (run a thought record), and stance probes throughout (
 reflex; act-not-feel; acceptance-not-fixing; DBT-borrowing vs. scope). _Sources:_
 [unit09 sources](research/unit09-modalities-sources.md).
 
-- **Unit 10 — Group Counseling** — _pending_
+### Unit 10 — Group Counseling  ☑ readings + items
+_Readings:_
+- [unit10-group](wiki/unit10-group.md) — hub: why a group heals *differently* (universality, altruism,
+  interpersonal learning — mechanisms a dyad can't supply), the decenter-yourself stance, the map, and
+  the "group is equivalent, not the budget option" evidence.
+- [theory-yalom-factors](wiki/theory-yalom-factors.md) — the **eleven therapeutic factors**, with
+  **cohesiveness** (the group analog of the alliance / precondition) and **interpersonal learning**
+  (the social microcosm; corrective emotional experience) as the two Yalom weighted most.
+- [concept-group-development-stages](wiki/concept-group-development-stages.md) — **Tuckman**
+  (forming/storming/norming/performing/adjourning) and **Corey** (pre-group/initial/transition/working/
+  final); storming is on-schedule, not failure; the leader's job changes by stage.
+- [concept-group-leadership](wiki/concept-group-leadership.md) — the **four functions** (Lieberman/
+  Yalom/Miles) + the **linear vs. curvilinear** finding and the "aggressive stimulator" casualties;
+  the **here-and-now** / process illumination; Lewin's styles; the decenter stance.
+- [concept-group-types](wiki/concept-group-types.md) — the **ASGW four types** (task,
+  psychoeducational, counseling, psychotherapy) by depth of aim; the tested counseling-vs-psychotherapy
+  hinge; type drives screening, leadership, and scope.
+- [concept-difficult-group-members](wiki/concept-difficult-group-members.md) — the **monopolist,
+  silent member, help-rejecting complainer ("yes, but"), scapegoat**; work the *process*, use the
+  group, protect while you work; the difficult member as opportunity, not obstacle.
+- [concept-group-ethics-and-formation](wiki/concept-group-ethics-and-formation.md) — **screening,
+  pre-group preparation, informed consent**, and the confidentiality you **cannot guarantee**
+  (ACA B.4.a; privilege usually doesn't apply); the protective duty; ASGW planning/performing/processing.
+
+_Items:_ [unit10-group](items/unit10-group.md) — 57 items across 6 clusters (`yalom-factors` — the
+prime interleaving set, `group-stages`, `leadership-functions`, `group-types`, `difficult-members`,
+`group-formation` — **each** with a dedicated compare) plus 4 unclustered throughline items; all 5
+Bloom levels (R10/U5/Ap17/An12/E13, heavy on apply/analyze/evaluate); the which-factor/which-stage/
+which-type/which-member discrimination mcqs, and stance probes throughout (decenter-yourself,
+don't-run-individual-therapy-in-front-of-an-audience, storming-is-normal, difficult-member-as-
+opportunity, can't-guarantee-group-confidentiality). _Sources:_
+[unit10 sources](research/unit10-group-sources.md).
+
 - **Unit 11 — Neuroscience & Biological Bases** — _pending_
 - **Unit 12 — Research Methods & Program Evaluation** — _pending_
 

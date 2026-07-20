@@ -29,7 +29,7 @@ DBT skills split cleanly into **two acceptance modules and two change modules** 
 
 ## Full DBT is more than a skills group
 
-The four modules are usually taught in a **skills-training group**, but comprehensive DBT has **four components** working together [S19]:
+The four modules are usually taught in a **skills-training group** — in the ASGW taxonomy a **psychoeducational group** ([[concept-group-types]]), curriculum-based and skills-focused rather than a here-and-now process group — but comprehensive DBT has **four components** working together [S19]:
 - **Individual therapy** (weekly),
 - the **skills-training group**,
 - **phone coaching** (in-the-moment skills help between sessions),

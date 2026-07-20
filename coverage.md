@@ -16,7 +16,7 @@ What's built vs. pending, and where the readings and practice have holes. Update
 | 7 Assessment | 2 | ☑ (7) | ☑ (51) | all 5 levels | 4/4 ✓ (`mse-domains`, `screening-tools`, `reliability-vs-validity`, `formulation-ps` — 5 compares) |
 | 8 Crisis & Trauma | 2 | ☑ (9) | ☑ (67) | all 5 levels | 5/5 ✓ (8 compares) |
 | 9 Modalities | 3 | ☑ (9) | ☑ (57) | all 5 levels | 6/6 ✓ (7 compares) |
-| 10 Group | 3 | ☐ | ☐ | — | — |
+| 10 Group | 3 | ☑ (7) | ☑ (57) | all 5 levels | 6/6 ✓ (7 compares) |
 | 11 Neuroscience | 3 | ☐ | ☐ | — | — |
 | 12 Research | 3 | ☐ | ☐ | — | — |
 
@@ -358,3 +358,49 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   reference **Unit 11** (neuroscience) only implicitly; the unit's own outward links (Units 1/2/6/7/8 +
   both electives) are all **live wikilinks**. No `unit09-*` by-name refs remain in the wiki (verified:
   0 broken links across 89 wiki pages; all 9 new pages have inbound links, no orphans).
+- **Unit 10 page plan expansion (deliberate, 2026-07-19):** built **7** pages vs. the course-map's
+  promised 4 — added `concept-group-types` (ASGW's four specializations), `concept-difficult-group-members`
+  (the syllabus's named "managing difficult members" core concept, given its own page), and
+  `concept-group-ethics-and-formation` (screening/preparation/consent + the group-specific confidentiality
+  limit). All three are core CACREP **Group Counseling & Group Work** content the 4-page list skipped.
+  Person page for Yalom **deferred** (covered inline on `theory-yalom-factors` + the hub), consistent
+  with the Unit 2 person-page deferral. Course-map entry updated to match.
+- **Unit 10 clusters added beyond course-map:** the course-map named `yalom-factors` + `group-stages`;
+  the build added four genuinely confusable sets — `leadership-functions` (the four Lieberman/Yalom/Miles
+  functions + the linear/curvilinear discrimination + Lewin's three styles), `group-types` (ASGW's
+  task/psychoeducational/counseling/psychotherapy), `difficult-members` (Yalom's monopolist/silent/
+  help-rejecting-complainer/scapegoat prototypes), and `group-formation` (screening/consent/confidentiality).
+  4 items are intentionally **unclustered** — the "why groups heal differently" throughline (why-group,
+  group-vs-individual efficacy, the audience trap, the cohesion-efficacy caveat) has no confusable sibling
+  set; topic tags carry them.
+- **Unit 10 Bloom spread:** R=10/U=5/Ap=17/An=12/E=13 across 57 items — heavy on apply/analyze/evaluate
+  (42) per generate rules. Types: 25 explain, 9 mcq (the which-factor/stage/type/member discriminations),
+  7 compare (≥1 per cluster — `leadership-functions` has 2: linear-vs-curvilinear and process-vs-content),
+  6 vignette, 5 recall, 5 cloze. **Understand is proportionally light (5)** — acceptable for a unit whose
+  payoff is discrimination and stance, but a candidate for a few added understand-level items on a later
+  `lint`/generate pass. No syllabus practice rep exists for this unit (the Unit 10 syllabus entry lists
+  none), so none was forced.
+- **Unit 10 stance thread is the spine:** the "resist the urge to fix" caution becomes **decenter
+  yourself and trust the group** — the beginner trap is running individual therapy in front of an
+  audience (serial dyads), which starves the group's distinctive engines (universality, altruism,
+  interpersonal learning). Stance probes throughout: decenter/turn-the-work-back-to-the-group,
+  storming-is-on-schedule, difficult-member-as-opportunity, decline-the-help-rejecting-complainer's-bait,
+  a-"resistant"-group-may-be-a-leadership-signal, can't-guarantee-group-confidentiality.
+- **Unit 10 contested-material load (quizzed at evaluate):** the therapeutic factors are **clinically
+  derived, not a validated factor structure** (rankings vary by group/member/study; lists count 11–14);
+  **cohesion's clinical centrality outruns its efficacy evidence** (interpersonal feedback and the
+  alliance have firmer support); groups can **harm** (the Lieberman/Yalom/Miles casualty finding →
+  aggressive stimulators); and "group is the cheaper/worse option" is **wrong** (Burlingame's 46-RCT
+  equivalence). Members and clinicians rank the factors differently — the intended humility check.
+- **Unit 10 sourcing caveats baked in:** three anchor **books** (Yalom & Leszcz; Corey; Lieberman/Yalom/
+  Miles *Encounter Groups: First Facts*) are offline and cited via reputable secondary sources +
+  the primary publication record (StatPearls, APA/Burlingame, ASGW/ACA, IAHIP), flagged in the sources
+  file. Two educational secondaries (psychology.town, S3/S9/S12) are **orientation-tier**, used for
+  definitions and cross-checked against StatPearls [S1] and the primaries. ACA **B.4.a** quoted verbatim.
+- **Unit 10 cross-unit wiring done:** the marquee **Unit 1 ↔ Unit 10** thread is live — `concept-therapeutic-alliance`
+  now forward-links `[[theory-yalom-factors]]`/`[[unit10-group]]` (cohesion = the alliance's client-client
+  analog; `source_units` → [1,3,5,7,10]), and `concept-dbt-skills` now points to `[[concept-group-types]]`
+  (a DBT skills group *is* a psychoeducational group). No earlier page carried a by-name "pending Unit 10"
+  handoff (Unit 10 is a leaf that depends on Unit 1, not one earlier units forward-referenced). All Unit 10
+  outward links (Units 1/2/3/5/6/9) are live wikilinks. Verified clean build; every new page has inbound
+  links (no orphans).

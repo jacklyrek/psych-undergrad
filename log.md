@@ -565,3 +565,56 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   section: 9 readings + item line), coverage.md (row + 7 Unit-9 notes + Unit 2→9 / aux→9 / Unit 6→9
   handoffs marked RESOLVED), log.md.
 - **Tier 3 progress:** Unit 9 done. Remaining spine: Units 10 (Group), 11 (Neuroscience), 12 (Research).
+
+## [2026-07-19] create-chapter | Unit 10 Group Counseling | 13 sources, 7 readings, 57 items
+- **Scope:** Tier 3 "rounding out" unit, built to the in-depth Units 1–9 standard. Course-map entry was
+  rich → no outline-confirmation pause. CACREP: **Group Counseling & Group Work**. The syllabus objective
+  is deliberately narrow — understand why groups heal **differently** (not just additionally or more
+  cheaply) than individual work: **Yalom's therapeutic factors**, **stages of group development**, the
+  **leader's role**, and **managing difficult members** — plus the CACREP group-work content the course-map
+  page list skipped (group types; ethics/formation). Depends on Unit 1 (cohesion = the alliance,
+  multiplied; here-and-now moves = microskills).
+- **Research:** anchored on a **peer-reviewed clinical reference** (StatPearls *Group Therapy* [S1]),
+  the field's **professional bodies** (AGPA therapeutic factors; **ASGW** four types + Best Practice
+  Guidelines [S10]; **ACA** Code B.4.a/A.8 [S11]; **APA/Div. 49** Burlingame outcomes [S4]), and the three
+  **anchor books** (Yalom & Leszcz [S2]; Corey [S8]; Lieberman/Yalom/Miles *Encounter Groups: First Facts*
+  [S5]) — books offline, cited via reputable secondaries + the primary publication record, flagged.
+  Verified two specifics by fetch: the **linear/curvilinear** leadership finding (caring + meaning-attribution
+  linear; emotional stimulation + executive curvilinear; best = moderate stim/exec, high caring/meaning
+  — IAHIP [S6]) and **ACA B.4.a verbatim**. Two educational secondaries (psychology.town [S3][S9][S12])
+  flagged orientation-tier, cross-checked against [S1]. Sources file `research/unit10-group-sources.md`
+  (13 sources, S1–S13).
+- **Readings (7):** `unit10-group` (hub), `theory-yalom-factors`, `concept-group-development-stages`,
+  `concept-group-leadership`, `concept-group-types`, `concept-difficult-group-members`,
+  `concept-group-ethics-and-formation`. **Page-plan expansion:** built **7** vs. the course-map's 4 —
+  added group-types, difficult-members, and ethics/formation (core CACREP group-work content). Yalom
+  person page **deferred** (covered inline), per the Unit 2 person-page convention. Course-map + index
+  updated to match.
+- **Items (57):** 6 clusters — `yalom-factors` (the prime interleaving set — 12), `group-stages` (9),
+  `leadership-functions` (9), `group-types` (7), `difficult-members` (8), `group-formation` (8) — **each**
+  with ≥1 dedicated compare (7 total; leadership-functions has 2) + 4 unclustered throughline items. Bloom
+  R=10/U=5/Ap=17/An=12/E=13 (apply/analyze/evaluate = 42). Types: 25 explain, 9 mcq (which-factor/stage/
+  type/member discriminations), 7 compare, 6 vignette, 5 recall, 5 cloze. No syllabus practice rep exists
+  for this unit, so none forced. (Understand proportionally light at 5 — flagged in coverage for a later pass.)
+- **Stance thread as the spine:** "resist the urge to fix" → **decenter yourself and trust the group.**
+  Probes throughout: don't-run-individual-therapy-in-front-of-an-audience, turn-the-work-back-to-the-group,
+  storming-is-on-schedule, difficult-member-as-opportunity, decline-the-help-rejecting-complainer's-bait,
+  a-resistant-group-may-be-a-leadership-signal, can't-guarantee-group-confidentiality.
+- **Contested load (quizzed at evaluate):** therapeutic factors are **clinically derived, not a validated
+  factor structure** (11–14 counts; rankings vary; members ≠ clinicians); **cohesion's centrality outruns
+  its efficacy evidence** (interpersonal feedback + alliance firmer); groups can **harm** (the casualty
+  finding → aggressive stimulators); and **group ≈ individual** (Burlingame 46-RCT equivalence — group is
+  underused, not inferior).
+- **Cross-unit wiring:** marquee **Unit 1 ↔ Unit 10** thread made live — `concept-therapeutic-alliance`
+  → `[[theory-yalom-factors]]`/`[[unit10-group]]` (cohesion = client-client alliance analog; source_units
+  → [1,3,5,7,10]); `concept-dbt-skills` → `[[concept-group-types]]` (DBT skills group = a psychoeducational
+  group). No earlier page carried a by-name "pending Unit 10" handoff (Unit 10 is a leaf depending on
+  Unit 1). All Unit 10 outward links (Units 1/2/3/5/6/9) are live wikilinks; every new page has inbound
+  links, no orphans.
+- **Build:** items/build/items.json rebuilt — **592 items** total (38+36+51+48+45+75+51+67+57+57 spine +
+  32+35 aux), validated clean by build_items.py (types/blooms valid, all source_pages exist, every mcq
+  has `correct` ∈ options, every cluster ≥1 compare).
+- **Bookkeeping:** course-map (☐→☑ + built Pages list + cluster/expansion notes + new Unit 1↔10 thread),
+  index.md (full Unit 10 section: 7 readings + item line), coverage.md (row + 8 Unit-10 notes), log.md.
+- **Tier 3 progress:** Units 9–10 done. Remaining spine: **Units 11 (Neuroscience), 12 (Research)** — two
+  units from a complete 12-unit spine.
