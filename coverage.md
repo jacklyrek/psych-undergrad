@@ -18,7 +18,7 @@ What's built vs. pending, and where the readings and practice have holes. Update
 | 9 Modalities | 3 | ☑ (9) | ☑ (57) | all 5 levels | 6/6 ✓ (7 compares) |
 | 10 Group | 3 | ☑ (7) | ☑ (57) | all 5 levels | 6/6 ✓ (7 compares) |
 | 11 Neuroscience | 3 | ☑ (6) | ☑ (57) | all 5 levels | 4/4 ✓ (6 compares) |
-| 12 Research | 3 | ☐ | ☐ | — | — |
+| 12 Research | 3 | ☑ (8) | ☑ (63) | all 5 levels | 6/6 ✓ (`research-designs` 3, `validity-threats` 2, others 1 — 9 compares) |
 
 ☐ pending · ◐ partial · ☑ complete
 
@@ -259,10 +259,21 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   (Unit 6); `concept-biopsychosocial-model` (Unit 5); `unit04-multicultural`, `concept-acculturation`
   (Unit 4); `unit02-theories` (theory→formulation thread); `concept-therapeutic-alliance` (Unit 1 —
   `source_units: [1,3,5,7]` verified, now forward-links case-conceptualization/treatment-planning).
-- **Unit 7 forward handoffs (by name, not wikilink):** the screening/MSE/intake pages forward-reference
-  the *pending* Unit 8 (item-9 → suicide-risk protocol, C-SSRS, PC-PTSD-5) and Unit 12 (outcome
-  monitoring / MBC as program evaluation; `concept-reliability-validity` carries `source_units: [7,12]`)
-  by name. Wire to real wikilinks when Units 8 and 12 are built.
+- **Unit 7 forward handoffs — RESOLVED (Unit 8 build 2026-07-18; Unit 12 build 2026-07-21):** the
+  screening/MSE/intake pages forward-referenced the then-pending Unit 8 (item-9 → suicide-risk protocol,
+  C-SSRS, PC-PTSD-5) and Unit 12 (outcome monitoring / MBC; `concept-reliability-validity` carries
+  `source_units: [7,12]`) **by name**. Both are now built and the by-name refs are wired to live wikilinks —
+  Unit 12: `concept-screening-tools` + `concept-treatment-planning` → [[concept-single-case-design]],
+  `concept-reliability-validity` → [[concept-validity-threats]], `unit07-assessment` hub → [[unit12-research]].
+- **Unit 12 built (2026-07-21) — the 12-unit spine is COMPLETE.** 8 readings (course-map promised 6; added
+  `concept-validity-threats` — the course-map's own `validity-threats` cluster earned its own page — and
+  `concept-program-evaluation` — a named syllabus core concept + half the CACREP area title), 63 items, 22
+  sources (S1–S22). 6 clusters, **all with ≥1 compare** (`research-designs` 3, `validity-threats` 2,
+  `significance-and-effect`/`evidence-hierarchy`/`evaluation-types`/`research-ethics` 1 each = 9 compares) +
+  7 unclustered single-case/program-eval items. Bloom R16/U11/Ap15/An13/E8 (all 5). Per the course-map, items
+  **quiz choosing the method, not executing it** — no statistics by hand. No orphans; every Unit 12 page has
+  inbound links (1–7 each). Contested/quizzed-at-evaluate: the **replication crisis**, allegiance &
+  publication bias, p-value misreadings, "RCT is not always the right question for a counselor."
 - **Unit 7 sourcing caveats baked in:** two sources 403'd to automated fetch — the Psychiatric Services
   MBC full text (S12) and the OER reliability chapter (S11) — and are cited via abstracts/search-indexed
   summaries **plus a corroborating source** (S5 IOM for psychometrics; the journal abstract for MBC),

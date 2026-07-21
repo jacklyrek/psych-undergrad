@@ -49,7 +49,7 @@ The objective is only useful if you can tell whether it was met. The **SMART** f
 
 ## Measurement-based care closes the loop
 
-A plan with measurable objectives only works if you actually *re-measure*. **Measurement-based care** — re-administering the same PHQ-9 / GAD-7 at each visit ([[concept-screening-tools]]) — is what turns the objective from a paragraph into a feedback loop: it catches **non-response and deterioration earlier than clinical impression alone**, and the benefit is largest for the clients who would otherwise quietly fail to improve [S12]. "Not met by the review date" then triggers a *revision* — a different intervention, a stepped-up level of care, a referral — rather than more of what isn't working. This is also the outcome-monitoring / progress-measurement thread Unit 12 formalizes.
+A plan with measurable objectives only works if you actually *re-measure*. **Measurement-based care** — re-administering the same PHQ-9 / GAD-7 at each visit ([[concept-screening-tools]]) — is what turns the objective from a paragraph into a feedback loop: it catches **non-response and deterioration earlier than clinical impression alone**, and the benefit is largest for the clients who would otherwise quietly fail to improve [S12]. "Not met by the review date" then triggers a *revision* — a different intervention, a stepped-up level of care, a referral — rather than more of what isn't working. This is also the outcome-monitoring / progress-measurement thread [[concept-single-case-design | Unit 12]] formalizes.
 
 ## The stance: measure to serve the work, not the reverse
 

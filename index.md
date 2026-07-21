@@ -340,7 +340,44 @@ throughout (biology-is-one-lens, educate-coordinate-refer-never-prescribe, chemi
 meds-help, freeze-is-not-a-choice, therapy-is-biological-too). _Sources:_
 [unit11 sources](research/unit11-neuroscience-sources.md).
 
-- **Unit 12 — Research Methods & Program Evaluation** — _pending_
+### Unit 12 — Research Methods & Program Evaluation  ☑
+_Readings:_
+- [unit12-research](wiki/unit12-research.md) — hub: the consumer-not-producer framing (**read and critique
+  research, don't run it**), the "which method?" spine, outcome measurement, and the stance thread (evidence
+  informs but does not replace the client in front of you — EBP's three legs).
+- [concept-experimental-vs-correlational](wiki/concept-experimental-vs-correlational.md) — the causal-claim
+  ladder: **manipulation + random assignment + control** = experiment (licenses cause); correlational =
+  association only (third-variable & directionality); **quasi-experiment** (groups you didn't randomize).
+  The `research-designs` differential.
+- [concept-validity-threats](wiki/concept-validity-threats.md) — Cook & Campbell's **four validities**
+  (internal / external / construct / statistical-conclusion) and the named internal-validity threats
+  (history, maturation, regression to the mean, selection, attrition…). The `validity-threats` cluster.
+- [concept-effect-size](wiki/concept-effect-size.md) — **statistical vs. clinical significance**; what a
+  p-value is and is **not**; Cohen's *d* / *r* / OR; why "significant" ≠ "big" ≠ "matters to this client"
+  (n drives p). The `significance-and-effect` cluster.
+- [concept-evidence-based-practice](wiki/concept-evidence-based-practice.md) — APA's **three-legged** EBP
+  (best evidence + clinical expertise + client values); the **evidence hierarchy** (meta-analysis/RCT →
+  cohort → case → opinion) and its limits; EST tiers; the **replication crisis**, allegiance & publication
+  bias. The `evidence-hierarchy` cluster.
+- [concept-single-case-design](wiki/concept-single-case-design.md) — **A-B-A-B & multiple-baseline**, the
+  practitioner's rigor; ties progress monitoring / **measurement-based care** back to Unit 7
+  ([[concept-treatment-planning]], [[concept-screening-tools]]).
+- [concept-program-evaluation](wiki/concept-program-evaluation.md) — **formative vs. summative**,
+  **process vs. outcome**, needs assessment; evaluating a service, not testing a theory. The
+  `evaluation-types` cluster.
+- [concept-irb-research-ethics](wiki/concept-irb-research-ethics.md) — the **Belmont Report** (respect /
+  beneficence / justice), the abuses behind it (Tuskegee, Willowbrook), informed consent, IRB review, and
+  **ACA Section G**. The `research-ethics` cluster.
+
+_Items:_ [unit12-research](items/unit12-research.md) — 63 items across 6 clusters (`research-designs` — the
+prime which-method differential, 3 compares; `validity-threats`, 2 compares; `significance-and-effect`,
+`evidence-hierarchy`, `evaluation-types`, `research-ethics` — 1 compare each; **9 compares total**) plus 7
+unclustered single-case-design / program-evaluation items; all 5 Bloom levels (R16/U11/Ap15/An13/E8, heavy
+on apply/analyze); production-first (23 explain, 9 compare, 8 vignette, 9 recall, 7 cloze) with mcq reserved
+for genuine discrimination (7: which-design, which-validity-threat, evidence-rank, effect-vs-significance).
+Course-map's "**quiz choosing the method, not executing it**" honored — no hand-calculation; stance probes
+throughout (p≠importance, correlation≠causation, evidence-informs-not-dictates, RCT-isn't-always-the-answer).
+_Sources:_ [unit12 sources](research/unit12-research-sources.md) (22 sources, S1–S22).
 
 ## Elective / ad-hoc modules
 

@@ -674,3 +674,51 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   section: 6 readings + item line), coverage.md (row 11 ☐→☑ + 7 Unit-11 notes), log.md.
 - **Tier 3 progress:** Units 9–11 done. Remaining spine: **Unit 12 (Research Methods & Program Evaluation)** —
   the final unit of the 12-unit spine.
+
+## [2026-07-21] create-chapter | Unit 12 Research Methods & Program Evaluation | 22 sources, 8 readings, 63 items
+- **Scope (course-map §Unit 12, CACREP Research & Program Evaluation §2.F.8):** the deliberately *practical*
+  objective — **read and critically evaluate counseling research; understand outcome measurement; know
+  research ethics.** Per the course-map, the unit **quizzes choosing the method, not executing it** — no
+  hand-calculation of statistics. Six substantive areas: experimental vs. correlational (vs. quasi) designs
+  & the requirements for a causal claim; threats to validity (Cook & Campbell's four validities); effect
+  size vs. statistical vs. clinical significance (+ what a p-value is/isn't); evidence-based practice (APA's
+  three legs, the evidence hierarchy, EST tiers, the **replication crisis**); single-case designs & progress
+  monitoring; program evaluation; and research ethics / the IRB (Belmont, the abuses behind it, ACA §G).
+- **Research (22 sources, S1–S22):** open methods textbooks (Price et al. *Research Methods in Psychology*),
+  canonical methodology (Cook & Campbell four validities; Chambless & Hollon on ESTs), APA EBP policy,
+  Cohen on effect size, Open Science Collaboration 2015 + the ASA p-value statement (replication/inference),
+  the Belmont Report + ACA Code §G. Triangulated; sources file `research/unit12-research-sources.md`.
+- **Readings (8):** `unit12-research` (hub), `concept-experimental-vs-correlational`,
+  `concept-validity-threats`, `concept-effect-size`, `concept-evidence-based-practice`,
+  `concept-single-case-design`, `concept-program-evaluation`, `concept-irb-research-ethics`. **Page-plan
+  expansion:** built **8** vs. the course-map's 6 — added `concept-validity-threats` (the course-map's own
+  named `validity-threats` cluster deserved a page, not just a cluster tag) and `concept-program-evaluation`
+  (a syllabus core concept and half the CACREP area title). Course-map + index updated to match.
+- **Items (63):** 6 clusters — `research-designs` (the prime which-method differential, 3 compares),
+  `validity-threats` (2 compares), `significance-and-effect`, `evidence-hierarchy`, `evaluation-types`,
+  `research-ethics` (1 compare each) = **9 compares**, all 6 clusters covered — plus 7 unclustered
+  single-case/program-eval items. Bloom R=16/U=11/Ap=15/An=13/E=8 (apply+analyze+evaluate = 36). Types:
+  23 explain, 9 compare, 9 recall, 8 vignette, 7 cloze, 7 mcq (mcq reserved for discrimination: which-design,
+  which-validity-threat, evidence-rank, effect-vs-significance). **"Choose the method, not execute it"**
+  honored — no statistics by hand; the skill is telling designs apart, reading an effect size, ranking
+  evidence, spotting a threat.
+- **Stance thread:** "resist the urge to fix" → **evidence informs but does not replace the client in front
+  of you** (EBP's third leg). Probes throughout: p≠importance≠clinical-meaning, correlation≠causation,
+  the-highest-tier-isn't-always-the-right-question, evidence-informs-not-dictates, single-case-rigor-for-the-
+  solo-practitioner.
+- **Contested load (quizzed at evaluate):** the **replication crisis** (Open Science Collaboration ~36–39%
+  replication rate) and its drivers — **researcher allegiance**, publication bias, p-hacking/HARKing; the
+  gap between *statistically* significant and *clinically* significant; the evidence hierarchy's blind spots
+  for relational/contextual factors (the common-factors tension from Unit 1).
+- **Cross-unit handoffs WIRED (4 prior by-name "Unit 12" refs → live wikilinks):** `concept-screening-tools`
+  and `concept-treatment-planning` (Unit 7, measurement-based care) → [[concept-single-case-design]];
+  `concept-reliability-validity` (Unit 7) → [[concept-validity-threats]]; `unit07-assessment` hub →
+  [[unit12-research]]. Closes the Unit 7 ↔ Unit 12 outcome-monitoring thread. No by-name "Unit 12" refs remain.
+- **Build:** items/build/items.json rebuilt — **712 items** total (spine 38+36+51+48+45+75+51+67+57+57+57+63
+  + aux 32+35), validated clean by build_items.py (types/blooms valid, all source_pages exist, every mcq has
+  `correct` ∈ options, every cluster ≥1 compare). No orphans; every Unit 12 page has inbound links (1–7 each);
+  no broken wikilinks.
+- **Bookkeeping:** course-map (☐→☑ + built Pages list + expansion note), index.md (full Unit 12 section:
+  8 readings + item line), coverage.md (row 12 ☐→☑ + spine-complete note + Unit 7 handoff resolved), log.md.
+- **🏁 MILESTONE — the 12-unit spine is COMPLETE.** All 12 spine units built in-depth (Tiers 1–3), plus 2
+  electives (PFA, addiction). Next natural passes: a full-bank `lint`, and optional depth/coverage sweeps.

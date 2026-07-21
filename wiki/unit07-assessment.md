@@ -65,7 +65,7 @@ Take a character from a novel or show and write a **one-page conceptualization**
 - [[unit05-development]] — the normal baseline the MSE and screens are read against; [[concept-biopsychosocial-model]] is the natural formulation frame.
 - [[unit04-multicultural]] — culture-fair assessment; a screen or MSE read context-blind misdiagnoses.
 - [[unit01-helping-skills]] — the intake is the microskills doing assessment work.
-- [[unit08-crisis-trauma | Unit 8]] (crisis/risk) — the risk screen hands forward to it (built); and Unit 12 (progress monitoring ↔ outcome measurement) — pending; measurement-based care hands forward to it.
+- [[unit08-crisis-trauma | Unit 8]] (crisis/risk) — the risk screen hands forward to it (built); and [[unit12-research | Unit 12]] (progress monitoring ↔ outcome measurement, built) — measurement-based care hands forward to it.
 
 ## Sources
 

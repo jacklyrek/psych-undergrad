@@ -9,7 +9,7 @@ cluster: reliability-vs-validity
 
 # Reliability, Validity & Screening Statistics
 
-Every number this unit produces — a PHQ-9 score, an IQ, a personality profile — is only as good as the instrument behind it, and there are exactly two questions to ask of any instrument: **is it consistent (reliability)?** and **does it measure what we think it measures, for the use we're putting it to (validity)?** Get the relationship between those two backwards and you'll either trust a number you shouldn't or discard one you should. This page is the psychometric floor under [[concept-screening-tools]], and it's where [[unit04-multicultural | culture-fair assessment]] and Unit 12's research methods meet clinical practice.
+Every number this unit produces — a PHQ-9 score, an IQ, a personality profile — is only as good as the instrument behind it, and there are exactly two questions to ask of any instrument: **is it consistent (reliability)?** and **does it measure what we think it measures, for the use we're putting it to (validity)?** Get the relationship between those two backwards and you'll either trust a number you shouldn't or discard one you should. This page is the psychometric floor under [[concept-screening-tools]], and it's where [[unit04-multicultural | culture-fair assessment]] and [[concept-validity-threats | Unit 12's research methods]] meet clinical practice.
 
 ## Reliability — is it consistent?
 

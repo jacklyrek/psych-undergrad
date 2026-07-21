@@ -49,7 +49,7 @@ You don't need to memorize these, but recognize them — they populate the same 
 The highest-value use of these tools isn't the one-time intake flag; it's **repeated administration to track change.** **Measurement-based care (MBC)** = giving a validated scale (PHQ-9, GAD-7, …) at *each visit* and using the score to steer treatment [S12]. Why it matters:
 
 - It **catches non-response and deterioration earlier** than clinical impression — clinicians relying on unaided judgment routinely fail to notice a client is worsening, and the benefit of MBC is **strongest precisely for the patients who would otherwise quietly not improve** [S12].
-- It closes the loop with the plan: the same instrument that flagged the problem now **defines a measurable goal** ("PHQ-9 from 18 to <10 in 12 weeks") and shows whether you're getting there ([[concept-treatment-planning]]). This is the outcome-monitoring thread Unit 12 picks up.
+- It closes the loop with the plan: the same instrument that flagged the problem now **defines a measurable goal** ("PHQ-9 from 18 to <10 in 12 weeks") and shows whether you're getting there ([[concept-treatment-planning]]). This is the outcome-monitoring thread [[concept-single-case-design | Unit 12]] picks up.
 
 ## The trap: a number is a flag, not a verdict
 

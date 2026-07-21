@@ -1,0 +1,58 @@
+---
+title: "Unit 12 — Research Methods & Program Evaluation"
+type: unit
+tags: [research-methods, program-evaluation, evidence-based-practice, effect-size, validity, single-case, irb, research-ethics, cacrep]
+unit: 12
+source_units: [12]
+cluster: research-designs
+---
+
+# Unit 12 — Research Methods & Program Evaluation
+
+You will spend far more of your career **reading** research than doing it — and that reading is not optional. "Evidence-based practice" is written into the ACA Code, into insurance requirements, into your program's accreditation, and into the expectation that you can tell a client's family why you chose the approach you did. The field you are entering is also crowded with confident claims that do not survive scrutiny: brand-name therapies promising outsized effects, "brain-based" workshops, screening gadgets, and a steady stream of headlines. The skill this unit builds is **discernment** — the ability to look at a study, a statistic, or a marketing claim and ask the right questions: *What kind of study is this? Can it support the causal claim being made? How big is the effect, and does the size matter for a real person? Who could this generalize to? Was it done ethically?* The syllabus objective is deliberately practical, and the course-map is explicit about the altitude: **quiz choosing the method, not executing it.** You are not being trained to be a statistician; you are being trained to be a **critical consumer** and, for your own caseload and program, a competent **evaluator**.
+
+This is the **final** unit of the twelve-unit spine and a Tier 3 "rounding out" unit. It maps directly onto CACREP's core area **Research and Program Evaluation** (§2.F.8), whose framing is exactly the consumer-and-evaluator posture above: critique research to inform practice, identify evidence-based practices, run needs assessments and outcome measures, and do all of it **ethically and with cultural humility** [S21]. It depends most on Unit 7.
+
+- **← Unit 7 (this is where outcome measurement gets its methods).** Unit 7's [[concept-reliability-validity]] carries `source_units: [7, 12]` because the psychometrics it introduced (reliability, validity, sensitivity/specificity) are **research-methods content** doing clinical work; and [[concept-screening-tools]] and [[concept-treatment-planning]] pointed forward to "the outcome-monitoring thread Unit 12 picks up." Here that thread gets its engine: [[concept-single-case-design]] and the **reliable-change** idea on [[concept-effect-size]] are what turn a repeated PHQ-9 into evidence that *this* client is actually getting better.
+- **↔ Unit 9 (this is the definition Unit 9 was already using).** [[unit09-modalities]]'s hub defined evidence-based practice as APA's **three-legged integration** and warned that "evidence-based" is not a horse race; [[concept-evidence-based-practice]] is the full account of that definition, the **evidence hierarchy** underneath it, and the **empirically-supported-treatment** tiers. The **allegiance-bias** caution that down-weighted [[theory-solution-focused | SFBT's largest effect sizes]] is a Unit 12 concept meeting you early.
+- **↔ Unit 10, Unit 3.** Unit 10's claim that [[theory-yalom-factors | group ≈ individual therapy]] (Burlingame's 46-RCT equivalence) — and that groups can **harm** — are effect-size and evidence-appraisal claims; and the research-ethics half of this unit is the study-world analog of Unit 3's clinical ethics: [[concept-irb-research-ethics]] is to a research participant what [[concept-informed-consent]] and [[concept-confidentiality-limits]] are to a client.
+
+## The map of the unit
+
+| Page | The one idea |
+| --- | --- |
+| [[concept-experimental-vs-correlational]] | **only an experiment (manipulation + random assignment + control) licenses a causal claim**; correlational studies show association, and the directionality/third-variable problems are why "correlation ≠ causation"; quasi-experiments sit in between |
+| [[concept-validity-threats]] | four questions of a study — **statistical-conclusion, internal, construct, external** validity — and the classic **threats** (history, maturation, selection, regression to the mean, attrition…); the **internal↔external tradeoff** |
+| [[concept-effect-size]] | a p-value tells you **whether**, an effect size tells you **how big**, and **clinical significance** tells you **whether it matters to a person**; what a p-value does and does **not** mean; confidence intervals; the **reliable change index** |
+| [[concept-evidence-based-practice]] | EBP = **integrating** best research + clinical expertise + client values (not "research wins"); the **evidence hierarchy**; empirically-supported-treatment tiers; and the **replication crisis** / allegiance & publication bias that keep you humble |
+| [[concept-single-case-design]] | you can run a rigorous experiment on **one person** — **ABAB (reversal)** and **multiple-baseline** designs, read by **visual inspection**; the clinical cousin is **progress monitoring** (good enough to guide care, not to prove causation) |
+| [[concept-program-evaluation]] | judging **a program or service** (not seeking generalizable knowledge): **needs assessment → formative → process → summative → outcome**; steering the ship vs. judging the trip |
+| [[concept-irb-research-ethics]] | the **Belmont** three principles (respect for persons / beneficence / justice) → consent, risk-benefit, fair selection; the **IRB**; the abuses (Nuremberg, Tuskegee) behind the rules; **ACA Section G** |
+
+## The stance shift for this unit
+
+The Unit-wide "resist the urge to fix" caution takes a quieter but important form here: **the number is not the person.** Research literacy is a tool *for* good clinical judgment, not a replacement for it — and the two failure modes are opposite and equally bad.
+
+- **Don't worship the evidence, and don't dismiss it.** A statistically significant result from a randomized trial is a real, valuable thing — and it is a statement about a **group average**, generated under study conditions, that may or may not describe the individual in your office ([[concept-effect-size | the nomothetic–idiographic gap]]). EBP is **integration**: the research is one leg of a three-legged stool, standing alongside your clinical expertise and *this* client's values and culture [S11]. Treating "the manual says" as a trump card is as much a failure of the stance as ignoring the evidence altogether.
+- **A finding is a claim, not a verdict — hold it at the right confidence.** The field's most famous results include ones that **did not replicate** [S14]. The discipline is calibration: strong designs and replicated effects earn more confidence; single studies, tiny effects, and developer-run trials earn less. Being a discerning consumer means resisting both credulity ("new study proves…") and cynicism ("it's all garbage") — the same both-sides posture Units 4, 6, 9, and 11 asked you to hold about contested claims.
+- **Measurement serves the work, not the reverse.** The reason to track outcomes ([[concept-single-case-design]], measurement-based care) is that it catches the client who is quietly **not** getting better — the one your clinical intuition is most likely to miss [S16]. That is measurement in service of the relationship, exactly the opposite of reducing a person to a score. "Measurable" is not the same as "meaningful" (the Unit 7 caution), and the RCI exists precisely to ask whether a numeric change is **real and meaningful for this person** [S10].
+- **Research ethics is clinical ethics, one step removed.** Consent, confidentiality, non-exploitation, honesty — [[concept-irb-research-ethics | Section G]] is the same duty of care you already met in Unit 3, applied to the person who agrees to be studied instead of the person who agrees to be helped [S18][S20].
+
+## What's contested — hold these carefully
+
+- **The replication crisis is real, and its scope is debated.** The 2015 Open Science Collaboration replicated only **~36%** of 100 studies at significance, with effect sizes halving [S14] — a genuine, field-shaking result. But how *bad* the crisis is, and how much **questionable research practices** vs. ordinary sampling variability drive it, is itself contested. Teach the direction as solid (the field over-published fragile, over-flexible findings; reforms like **preregistration** followed) without overclaiming that "most of psychology is false."
+- **The evidence hierarchy ranks designs, not quality.** The pyramid puts systematic reviews and RCTs on top [S13] — a good heuristic — but a **poorly conducted** meta-analysis is not automatically better than a **well-conducted** cohort study, RCTs can have poor external validity, and manualized-treatment research can miss what a naturalistic study captures. The hierarchy is a starting question, not the final answer; **appraise execution**, don't just read the label.
+- **"Empirically supported" ≠ "best," and allegiance inflates the record.** The empirically-supported-treatment list [S12] is a floor (this treatment has been *shown* to work for this problem), not a ranking that makes unlisted approaches worthless — and the common-factors / dodo-bird finding (Unit 9) shows technique differences are often small. **Allegiance and publication bias** systematically make the developer's own trials look best (the SFBT-effect-size caution from Unit 9; the group-therapy claims of Unit 10) [S14].
+- **Group averages under-describe individuals (nomothetic vs. idiographic).** Everything the significance-testing machinery produces is about **populations**; a clinician treats a **person**. A large average effect leaves some clients unchanged or worse, which is exactly why single-client outcome monitoring exists alongside group research [S10][S16]. This is the unit's central humility and the reason the stance section leads with "the number is not the person."
+
+## Connects to
+
+- [[concept-reliability-validity]] (Unit 7) — the psychometric floor; a research-methods topic doing clinical work (`source_units: [7, 12]`). This unit is its methods home.
+- [[concept-screening-tools]] and [[concept-treatment-planning]] (Unit 7) — measurement-based care and the "golden thread"; the outcome-monitoring thread this unit completes.
+- [[unit09-modalities]] and [[theory-solution-focused]] (Unit 9) — the EBP three legs and the allegiance-bias caution, given their full account here.
+- [[theory-yalom-factors]] (Unit 10) — "group ≈ individual" and "groups can harm" as effect-size / evidence-appraisal claims.
+- [[unit03-ethics-law]], [[concept-informed-consent]], [[concept-dual-relationships]] (Unit 3) — the clinical ethics that [[concept-irb-research-ethics | research ethics]] mirrors.
+
+## Sources
+
+[S1] Price et al., *Research Methods in Psychology* (open text — designs, single-subject, validity). [S4] Cook & Campbell (1979) / Shadish, Cook & Campbell (2002), the four-validity taxonomy. [S7] Cohen (1988) + Sullivan & Feinn (2012), effect size. [S8][S9] p-value education + the ASA statement. [S10] Jacobson & Truax (1991), clinical significance / RCI. [S11] APA (2006), evidence-based practice in psychology. [S12] Chambless & Hollon (1998), empirically supported therapies. [S13] evidence-hierarchy library guides. [S14] Open Science Collaboration (2015) + Simmons et al. (2011), the replication crisis. [S16] Fortney et al. (2017), measurement-based care. [S17] program-evaluation toolkits + Astramovich & Coker. [S18] the Belmont Report. [S19] Nuremberg/Tuskegee/Common Rule. [S20] ACA Code, Section G. [S21] CACREP 2016 §2.F.8. Full notes in [`../research/unit12-research-sources.md`](../research/unit12-research-sources.md).

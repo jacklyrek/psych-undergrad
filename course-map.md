@@ -119,14 +119,14 @@ Derived from [`counseling-syllabus.md`](counseling-syllabus.md). Ordered by **cl
 - **CACREP:** Human Growth & Development (biological bases).
 - **Pages:** [`unit11-neuroscience`](wiki/unit11-neuroscience.md), [`concept-neuron-neurotransmission`](wiki/concept-neuron-neurotransmission.md) (added — the substrate the med page needs), [`concept-autonomic-nervous-system`](wiki/concept-autonomic-nervous-system.md), [`concept-stress-response`](wiki/concept-stress-response.md) (`source_units: [11, 8]` — the full home of Unit 8's trauma-brain preview), [`concept-psychotropic-classes`](wiki/concept-psychotropic-classes.md) (`source_units: [11, 6]`), [`concept-neuroplasticity-therapy`](wiki/concept-neuroplasticity-therapy.md) (`source_units: [11, 9]`). **Built 2026-07-20** (in-depth): 6 readings, 57 items, 17 sources. Expanded from the course-map's 5-page list to **6** (added `concept-neuron-neurotransmission` — one-concept-per-page, and the agonist/antagonist/reuptake substrate the medication page leans on); three clusters added beyond the course-map's one. All by-name Unit-11 forward-refs from Units 5/6/8 + the addiction elective wired to live wikilinks.
 
-### Unit 12 — Research Methods & Program Evaluation  ☐
+### Unit 12 — Research Methods & Program Evaluation  ☑
 - **Objectives:** read & critically evaluate counseling research; understand outcome measurement.
 - **Core concepts:** experimental vs. correlational designs; effect sizes; evidence-based practice; single-case designs & progress monitoring; research ethics / IRB.
 - **Depends on:** → Unit 7 (progress monitoring ↔ outcome measurement).
-- **Clusters:** `research-designs` (experimental vs. correlational vs. single-case); `validity-threats`.
+- **Clusters:** `research-designs` (experimental vs. correlational vs. quasi); `validity-threats`; plus (added at build) `significance-and-effect` (statistical vs. clinical significance; p-value literacy), `evidence-hierarchy` (meta-analysis/RCT → opinion; EST tiers; replication crisis), `evaluation-types` (formative/summative, process/outcome), `research-ethics` (Belmont's three principles).
 - **CACREP:** Research & Program Evaluation.
-- **Note:** lean on **interleaving**; quiz *choosing* the method, not executing it.
-- **Pages:** `unit12-research`, `concept-experimental-vs-correlational`, `concept-effect-size`, `concept-evidence-based-practice`, `concept-single-case-design`, `concept-irb-research-ethics`.
+- **Note:** lean on **interleaving**; quiz *choosing* the method, not executing it — honored (no statistics by hand).
+- **Pages:** [`unit12-research`](wiki/unit12-research.md), [`concept-experimental-vs-correlational`](wiki/concept-experimental-vs-correlational.md), [`concept-validity-threats`](wiki/concept-validity-threats.md) (added — the course-map's own `validity-threats` cluster earned its own page), [`concept-effect-size`](wiki/concept-effect-size.md), [`concept-evidence-based-practice`](wiki/concept-evidence-based-practice.md), [`concept-single-case-design`](wiki/concept-single-case-design.md), [`concept-program-evaluation`](wiki/concept-program-evaluation.md) (added — a named syllabus core concept + half the CACREP area title), [`concept-irb-research-ethics`](wiki/concept-irb-research-ethics.md). **Built 2026-07-21** (in-depth): 8 readings, 63 items, 22 sources. Expanded from the course-map's 6-page list to **8** (the two additions above); four clusters added beyond the course-map's two. All prior by-name "Unit 12" forward-refs from Unit 7 wired to live wikilinks. **🏁 This completes the 12-unit spine.**
 
 ---
 
