@@ -68,7 +68,7 @@ Pick the big three — **major depressive disorder, generalized anxiety disorder
 - [[unit04-multicultural]] — cultural humility is the anti-misdiagnosis skill; [[concept-acculturation]] flags acculturative stress masquerading as disorder.
 - [[unit03-ethics-law]] — diagnosis within scope/competence ([[concept-scope-of-practice]]); who does what ([[concept-helping-professions-compared]]).
 - [[aux-addiction]] — the elective module is this unit's substance-use chapter at full depth.
-- [[unit07-assessment]] — assessment, diagnosis & [[concept-case-conceptualization | case conceptualization]] turn this unit's categories into a working plan (the intake gathers it, the formulation explains it); [[unit08-crisis-trauma | Unit 8]] (crisis/risk) covers risk assessment and trauma-informed care. Unit 11 (neuroscience) picks up medication.
+- [[unit07-assessment]] — assessment, diagnosis & [[concept-case-conceptualization | case conceptualization]] turn this unit's categories into a working plan (the intake gathers it, the formulation explains it); [[unit08-crisis-trauma | Unit 8]] (crisis/risk) covers risk assessment and trauma-informed care. [[unit11-neuroscience | Unit 11]] (neuroscience) picks up [[concept-psychotropic-classes | medication]].
 
 ## Sources
 

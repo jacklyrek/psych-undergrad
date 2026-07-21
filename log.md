@@ -618,3 +618,59 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   index.md (full Unit 10 section: 7 readings + item line), coverage.md (row + 8 Unit-10 notes), log.md.
 - **Tier 3 progress:** Units 9–10 done. Remaining spine: **Units 11 (Neuroscience), 12 (Research)** — two
   units from a complete 12-unit spine.
+
+## [2026-07-20] create-chapter | Unit 11 Neuroscience & Biological Bases of Behavior | 17 sources, 6 readings, 57 items
+- **Scope:** Tier 3 "rounding out" unit, built to the in-depth Units 1–10 standard. Course-map entry was
+  rich → no outline-confirmation pause. CACREP: **Human Growth & Development** (biological bases). The
+  syllabus objective is deliberately modest — a **working mental model** of brain/body in mental health so a
+  non-prescribing counselor can answer client questions responsibly ("what's wrong with my brain?", "should I
+  take meds?"), coordinate with prescribers, and refer. Four core areas: neuron/neurotransmission, the ANS,
+  the stress response, the psychotropic classes, and how psychotherapy changes the brain. Depends on Unit 8
+  (this is the full home of its trauma-brain preview) and Unit 6 (the medication depth its disorder pages
+  deferred). Anchor: Cozolino, *The Neuroscience of Psychotherapy*.
+- **Research:** anchored on **peer-reviewed clinical references** (StatPearls: neurotransmitters, autonomic
+  nervous system, GABA-A/benzodiazepines), **government/professional bodies** (**NIMH** *Mental Health
+  Medications* — the class-by-class anchor; **CACREP 2016** + TPC for the counselor's non-prescribing scope),
+  and the **primary literature** for the contested threads (**Moncrieff 2022** serotonin umbrella review,
+  Molecular Psychiatry, with its formal reply flagged; **Cipriani 2018** Lancet 21-antidepressant network
+  meta-analysis; **Howes & Kapur** dopamine-hypothesis v.III / aberrant salience; **Hebb**, **Kandel 1998**,
+  **Baxter 1992** OCD-PET; **McEwen** allostatic load; Davies & Read + 2024 Lancet Psychiatry discontinuation).
+  Anchor book **Cozolino** offline → corroborated via reputable secondary reviews + the primary publication
+  record, flagged. Sources file `research/unit11-neuroscience-sources.md` (17 sources, S1–S17).
+- **Readings (6):** `unit11-neuroscience` (hub), `concept-neuron-neurotransmission`,
+  `concept-autonomic-nervous-system`, `concept-stress-response` (`source_units: [11, 8]`),
+  `concept-psychotropic-classes` (`[11, 6]`), `concept-neuroplasticity-therapy` (`[11, 9]`). **Page-plan
+  expansion:** built **6** vs. the course-map's 5 — added `concept-neuron-neurotransmission` (the substrate
+  + the agonist/antagonist/reuptake/PAM vocabulary the medication page leans on; one-concept-per-page).
+  Course-map + index updated to match.
+- **Items (57):** 4 clusters — `psychotropic-classes` (the prime med differential — 15), `neurotransmitters`
+  (11), `autonomic-branches` (10), `stress-systems` (11) — **each** with ≥1 dedicated compare (6 total;
+  autonomic-branches has 2) + 10 unclustered neuroplasticity/"therapy changes the brain" throughline items
+  (incl. an unclustered therapy-vs-medication compare). Bloom R=11/U=9/Ap=17/An=9/E=11 (apply/analyze/evaluate
+  = 37). Types: 24 explain, 10 vignette, 6 compare, 6 mcq (reserved for discrimination: reuptake-mechanism,
+  which-ANS-branch, which-brain-structure, anxiety-first-line, which-class-for-mania, which-class-for-psychosis),
+  6 cloze, 5 recall. No syllabus practice rep exists for this unit, so none was forced.
+- **Clusters added beyond course-map:** `neurotransmitters`, `autonomic-branches`, `stress-systems` (alongside
+  the course-map's `psychotropic-classes`). Noted in course-map + coverage.
+- **Stance thread as the spine:** "resist the urge to fix" → **hold biology as one lens, not the master lens.**
+  Probes throughout: biology-is-one-leg-not-the-floor (resist neuro-reductionism), educate-coordinate-refer-
+  but-never-prescribe, don't-advise-stopping-meds, no-supplements/OTC (scope), chemical-imbalance-is-a-myth-
+  but-meds-help, stress-response-is-adaptive-not-broken, freeze-is-not-a-choice, therapy-is-biological-too.
+- **Contested load (quizzed at evaluate):** serotonin/"chemical-imbalance" theory of depression **not
+  supported** (Moncrieff — and itself contested, both-sides) yet antidepressants are **real but modest**
+  (Cipriani); dopamine hypothesis **revised/partial**; **neuroplasticity overhyped** (correlates ≠ mechanism);
+  **polyvagal / "adrenal fatigue"** contested/non-diagnostic; **no clean cortisol biomarker**; antidepressant
+  **discontinuation** real but ≠ addiction.
+- **Forward handoffs WIRED (all prior by-name "Unit 11" refs → live wikilinks; 9 edits, 7 files):** Unit 5
+  (`concept-biopsychosocial-model`), Unit 6 (`unit06-psychopathology` hub + `concept-psychotic-disorders`),
+  Unit 8 (`unit08-crisis-trauma` hub ×2 + `concept-neurobiology-of-trauma` "Connects to"), Unit 3
+  (`concept-helping-professions-compared` ×2), and the addiction elective (`concept-neuroscience-of-addiction`).
+  No `unit11-*` by-name refs remain.
+- **Build:** items/build/items.json rebuilt — **649 items** total (38+36+51+48+45+75+51+67+57+57+57 spine +
+  32+35 aux), validated clean by build_items.py (types/blooms valid, all source_pages exist, every mcq has
+  `correct` ∈ options, every cluster ≥1 compare). 0 new broken wikilinks across 102 wiki pages; all 6 new
+  pages have inbound links (8–13 each), no orphans.
+- **Bookkeeping:** course-map (☐→☑ + built Pages list + cluster/expansion notes), index.md (full Unit 11
+  section: 6 readings + item line), coverage.md (row 11 ☐→☑ + 7 Unit-11 notes), log.md.
+- **Tier 3 progress:** Units 9–11 done. Remaining spine: **Unit 12 (Research Methods & Program Evaluation)** —
+  the final unit of the 12-unit spine.

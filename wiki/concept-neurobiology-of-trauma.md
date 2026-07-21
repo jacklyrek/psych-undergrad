@@ -57,7 +57,7 @@ Trauma **narrows and destabilizes** the window, so small triggers push a survivo
 
 - [[concept-trauma-informed-care]] — the neurobiology is *why* the informed-care stance (safety, choice, don't-force-the-narrative) is what it is.
 - [[concept-trauma-stressor-disorders]] (Unit 6) — the PTSD/ASD *diagnoses* whose mechanisms this page supplies.
-- Unit 11 (neuroscience) — the stress response and autonomic nervous system in full; this page is the working-level preview (note `source_units: [8, 11]`).
+- [[concept-stress-response]] and [[concept-autonomic-nervous-system]] ([[unit11-neuroscience | Unit 11]]) — the stress response and autonomic nervous system in full; this page is the working-level preview (note `source_units: [8, 11]`).
 - [[concept-de-escalation]] — hyperarousal in the room *is* the window-of-tolerance model in action.
 
 ## Sources

@@ -310,7 +310,36 @@ don't-run-individual-therapy-in-front-of-an-audience, storming-is-normal, diffic
 opportunity, can't-guarantee-group-confidentiality). _Sources:_
 [unit10 sources](research/unit10-group-sources.md).
 
-- **Unit 11 — Neuroscience & Biological Bases** — _pending_
+### Unit 11 — Neuroscience & Biological Bases of Behavior  ☑ readings + items
+_Readings:_
+- [unit11-neuroscience](wiki/unit11-neuroscience.md) — hub: why a non-prescribing counselor needs a
+  working brain model (clients ask), the "biology is one lens, not the master lens" stance, the map, and
+  the contested threads (chemical-imbalance myth, neuroplasticity hype).
+- [concept-neuron-neurotransmission](wiki/concept-neuron-neurotransmission.md) — the substrate: the
+  neuron/synapse handoff; glutamate/GABA (master excitatory/inhibitory) vs. dopamine/serotonin/NE/ACh
+  (modulators); **agonist / antagonist / reuptake inhibitor / PAM**; the immediate-effect/delayed-benefit gap.
+- [concept-autonomic-nervous-system](wiki/concept-autonomic-nervous-system.md) — sympathetic (fight/flight)
+  vs. parasympathetic (rest/digest), the adrenal-medulla shortcut, the **vagus** and why slow-exhale calms,
+  and the third mode: **freeze** (with the polyvagal caveat).
+- [concept-stress-response](wiki/concept-stress-response.md) — the two-speed cascade: fast **SAM/adrenaline**
+  + slow **HPA/cortisol** (CRH→ACTH→cortisol, negative feedback); the amygdala/hippocampus/PFC gate;
+  allostasis vs. **allostatic load**; no clean cortisol biomarker (`source_units: [11, 8]`).
+- [concept-psychotropic-classes](wiki/concept-psychotropic-classes.md) — the five classes; the
+  **SSRI-vs-benzo** discrimination; efficacy (Cipriani: real but modest) and the **chemical-imbalance myth**
+  (Moncrieff); discontinuation; the **educate / coordinate / refer, never prescribe** scope line (`[11, 6]`).
+- [concept-neuroplasticity-therapy](wiki/concept-neuroplasticity-therapy.md) — Hebb ("fire together, wire
+  together"); Kandel (therapy is biological); Baxter's OCD PET; Cozolino's social brain / neural integration;
+  **therapy changes the brain** — biology as a lever *for* therapy, not a verdict against it (`[11, 9]`).
+
+_Items:_ [unit11-neuroscience](items/unit11-neuroscience.md) — 57 items across 4 clusters
+(`psychotropic-classes` — the prime med differential, `neurotransmitters`, `autonomic-branches`,
+`stress-systems` — **each** with a dedicated compare) plus 10 unclustered neuroplasticity/"therapy changes
+the brain" throughline items; all 5 Bloom levels (R11/U9/Ap17/An9/E11, heavy on apply/analyze/evaluate);
+the which-mechanism/which-branch/which-structure/which-class discrimination mcqs, and stance probes
+throughout (biology-is-one-lens, educate-coordinate-refer-never-prescribe, chemical-imbalance-is-a-myth-but-
+meds-help, freeze-is-not-a-choice, therapy-is-biological-too). _Sources:_
+[unit11 sources](research/unit11-neuroscience-sources.md).
+
 - **Unit 12 — Research Methods & Program Evaluation** — _pending_
 
 ## Elective / ad-hoc modules

@@ -23,7 +23,7 @@ Against this he set a model grounded in **general systems theory**: biology, psy
 
 A biopsychosocial formulation of *this client's* problem asks across all three:
 
-- **Bio** — genetics, temperament, medical conditions, medication, sleep, substance use, the brain and nervous system (the eventual subject of Unit 11, neuroscience).
+- **Bio** — genetics, temperament, medical conditions, medication, sleep, substance use, the brain and nervous system (the subject of [[unit11-neuroscience | Unit 11]], neuroscience).
 - **Psycho** — thoughts, beliefs, coping style, emotion regulation, personality, **attachment history** ([[theory-attachment]]), the internal working models and Erikson-stage tasks this unit supplies.
 - **Social** — family, relationships, work, culture, socioeconomic conditions, discrimination, community and access to care (the terrain of [[unit04-multicultural]]).
 

@@ -14,7 +14,7 @@ This is a Tier 2 clinical-foundations unit and, per the syllabus, one of the thr
 
 - **← Unit 3 (the rules).** A suicidal or homicidal disclosure is exactly where confidentiality reaches its limits — danger to self, danger to others ([[concept-confidentiality-limits]], [[concept-duty-to-warn]]). You cannot do crisis work without the ethical map from Unit 3, and the **prediction critique** from [[study-tarasoff]] lands here too: we assess risk to *manage* it, not to prophesy who will act.
 - **← Unit 7 (the risk screen).** Every intake carries a risk screen, and item 9 of the PHQ-9 is a trip-wire that lands you here ([[concept-screening-tools]], [[concept-intake-interview]]). Unit 7 flags risk; Unit 8 is what you *do* about a positive flag.
-- **→ Unit 11 (the brain).** The neurobiology of trauma is a working-level preview of the stress-response and nervous-system material that Unit 11 develops in full.
+- **→ [[unit11-neuroscience | Unit 11]] (the brain).** The neurobiology of trauma is a working-level preview of the [[concept-stress-response | stress-response]] and [[concept-autonomic-nervous-system | nervous-system]] material that Unit 11 develops in full.
 
 It also borders the **[[aux-psychological-first-aid]]** elective (acute crisis support and grief) and the **[[aux-addiction]]** elective (overdose, means, and crisis in substance use) — both were written pointing forward to this unit, and are now wired into it.
 
@@ -62,7 +62,7 @@ This unit is emotionally heavy, and the syllabus says so plainly: *if any of it 
 - [[aux-psychological-first-aid]] — acute crisis support and grief; the don't-probe stance is shared.
 - [[aux-addiction]] — overdose, naloxone, and means safety in substance-use crises.
 - Unit 6 ([[concept-trauma-stressor-disorders]]) — PTSD/ASD as *diagnoses*; this unit adds the *neurobiology*, the *informed-care stance*, and *treatment* pointers those pages deferred here.
-- Unit 11 (neuroscience) — the stress response and autonomic nervous system, developed in full; pending.
+- [[unit11-neuroscience | Unit 11]] (neuroscience) — the [[concept-stress-response | stress response]] and [[concept-autonomic-nervous-system | autonomic nervous system]], developed in full.
 
 ## Sources
 

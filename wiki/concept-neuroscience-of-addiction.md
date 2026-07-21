@@ -42,7 +42,7 @@ These circuits are real and replicated, but see [[concept-addiction-models]]: th
 - [[concept-addiction-models]] — the models these circuits are evidence for (and contested by).
 - [[concept-relapse-prevention]] — cue reactivity → high-risk situations; craving is a wave that crests and passes.
 - [[concept-treatment-and-recovery]] — medications act directly on this circuitry (agonists, antagonists); behavioral methods retrain the learning.
-- **Unit 11 (planned)** — Neuroscience & Biological Bases; reward, stress response, and how meds work belong there too. Reconcile when built.
+- [[unit11-neuroscience | Unit 11]] (Neuroscience) — [[concept-neuron-neurotransmission | dopamine and the reward circuit]], the [[concept-stress-response | stress response]], and [[concept-psychotropic-classes | how medications work]] in full; this page is the addiction-specific slice of that same biology.
 
 ## Sources
 [S3] NIDA DrugFacts, *Understanding Drug Use and Addiction* — dopamine flood, tolerance, cue-driven craving. [S4] Koob & Volkow (2016), *Lancet Psychiatry* — three-stage cycle (basal ganglia / extended amygdala / prefrontal cortex) and the positive→negative reinforcement shift. Full notes in [`../research/aux-addiction-sources.md`](../research/aux-addiction-sources.md).

@@ -17,7 +17,7 @@ What's built vs. pending, and where the readings and practice have holes. Update
 | 8 Crisis & Trauma | 2 | ☑ (9) | ☑ (67) | all 5 levels | 5/5 ✓ (8 compares) |
 | 9 Modalities | 3 | ☑ (9) | ☑ (57) | all 5 levels | 6/6 ✓ (7 compares) |
 | 10 Group | 3 | ☑ (7) | ☑ (57) | all 5 levels | 6/6 ✓ (7 compares) |
-| 11 Neuroscience | 3 | ☐ | ☐ | — | — |
+| 11 Neuroscience | 3 | ☑ (6) | ☑ (57) | all 5 levels | 4/4 ✓ (6 compares) |
 | 12 Research | 3 | ☐ | ☐ | — | — |
 
 ☐ pending · ◐ partial · ☑ complete
@@ -404,3 +404,52 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
   handoff (Unit 10 is a leaf that depends on Unit 1, not one earlier units forward-referenced). All Unit 10
   outward links (Units 1/2/3/5/6/9) are live wikilinks. Verified clean build; every new page has inbound
   links (no orphans).
+- **Unit 11 page plan expansion (deliberate, 2026-07-20):** built **6** pages vs. the course-map's promised
+  5 — added `concept-neuron-neurotransmission` (the neuron/synapse/neurotransmitter substrate + the
+  agonist/antagonist/reuptake/PAM vocabulary), because the medication page fundamentally depends on it and
+  it's a distinct concept (one-concept-per-page). `concept-stress-response` carries `source_units: [11, 8]`
+  (it is the full home of Unit 8's working-level trauma-brain preview — endocrine/HPA half here, memory/fear
+  half there, not duplicated); `concept-psychotropic-classes` carries `[11, 6]`; `concept-neuroplasticity-therapy`
+  carries `[11, 9]`. Course-map + index updated to match.
+- **Unit 11 clusters added beyond course-map:** the course-map named `psychotropic-classes`; the build added
+  three genuinely confusable sets — `neurotransmitters` (glutamate/GABA/dopamine/serotonin/NE/ACh + the
+  agonist/antagonist/reuptake mechanisms), `autonomic-branches` (sympathetic vs. parasympathetic vs. freeze;
+  distinct from `stress-systems`, which is the fast-SAM vs. slow-HPA *neuroendocrine* cascade), and
+  `stress-systems`. **Neuroplasticity / "therapy changes the brain" items (10) are intentionally unclustered**
+  — the throughline is a synthesis/argument, not a confusable discrimination set (à la Unit 10's "why groups
+  heal differently"); it still carries a dedicated **unclustered** compare (therapy-vs-medication both change
+  the brain).
+- **Unit 11 Bloom spread:** R=11/U=9/Ap=17/An=9/E=11 across 57 items — heavy on apply/analyze/evaluate (37)
+  per generate rules. Types: 24 explain, 10 vignette, 6 compare (≥1 per cluster: `neurotransmitters`
+  GABA-vs-glutamate, `autonomic-branches` 2 [SNS-vs-PNS + freeze-vs-rest], `stress-systems` SAM-vs-HPA,
+  `psychotropic-classes` SSRI-vs-benzo, + 1 unclustered therapy-vs-medication), 6 mcq (reserved for
+  discrimination: reuptake-mechanism, which-ANS-branch, which-brain-structure, anxiety-first-line,
+  which-class-for-mania, which-class-for-psychosis), 6 cloze, 5 recall. No syllabus practice rep exists for
+  this unit (the Unit 11 syllabus entry lists none), so none was forced.
+- **Unit 11 stance thread is the spine:** the "resist the urge to fix" caution becomes **hold biology as one
+  lens, not the master lens.** Probes throughout: biology-is-one-leg-not-the-floor (resist neuro-reductionism),
+  educate-coordinate-refer-but-never-prescribe, don't-advise-a-client-to-stop-their-meds, don't-recommend-
+  supplements/OTC (scope), chemical-imbalance-is-a-myth-but-meds-still-help, stress-response-is-adaptive-not-
+  broken, freeze-is-not-a-choice, therapy-is-biological-too (destigmatize; restores agency).
+- **Unit 11 contested load (quizzed at evaluate):** the **serotonin/"chemical-imbalance" theory of depression
+  is not supported** (Moncrieff 2022 — and itself contested, taught both-sides) even though antidepressants
+  have **real but modest** effects (Cipriani 2018, SMD ≈ 0.3); the **dopamine hypothesis of schizophrenia** is
+  revised/partial (aberrant salience; glutamate too); **neuroplasticity is real but overhyped** and neural
+  correlates ≠ mechanism; **polyvagal theory / "adrenal fatigue"** are contested/non-diagnostic; there is **no
+  clean cortisol biomarker** for stress/trauma (carried from Unit 8). Antidepressant **discontinuation** is
+  real (Davies & Read ~half; conservative 2024 recalibration ~15% excess) — not "addictive," but not nothing.
+- **Unit 11 sourcing caveats baked in:** the anchor book **Cozolino** (*The Neuroscience of Psychotherapy*)
+  is offline and cited via reputable secondary reviews + the primary publication record, flagged; the
+  Kandel 1998 framework and Baxter 1992 OCD-PET primary were corroborated via secondary imaging reviews.
+  The Moncrieff umbrella review is anchored on the primary (Nature/PubMed) with its formal reply flagged.
+  NT/ANS/benzo/antipsychotic mechanisms anchored on **StatPearls**; the med-class map + "do not stop without
+  a provider" on **NIMH**; the counselor's non-prescribing scope on **CACREP 2016 + TPC**.
+- **Unit 11 forward handoffs WIRED (resolved 2026-07-20):** all previously by-name "Unit 11" references are now
+  live wikilinks (9 edits, 7 files) — **Unit 5** (`concept-biopsychosocial-model` — the biological domain),
+  **Unit 6** (`unit06-psychopathology` hub → `concept-psychotropic-classes`; `concept-psychotic-disorders` →
+  the revised `concept-neuron-neurotransmission` dopamine hypothesis + `concept-psychotropic-classes`
+  antipsychotics), **Unit 8** (`unit08-crisis-trauma` hub ×2 + `concept-neurobiology-of-trauma` "Connects to"
+  → `concept-stress-response` / `concept-autonomic-nervous-system`), **Unit 3**
+  (`concept-helping-professions-compared` ×2 → `concept-psychotropic-classes`), and the **addiction elective**
+  (`concept-neuroscience-of-addiction` "Unit 11 (planned)" → live). No `unit11-*` by-name refs remain in the
+  wiki. Clean build; every new page has inbound links (8–13 each), no orphans across 102 wiki pages.

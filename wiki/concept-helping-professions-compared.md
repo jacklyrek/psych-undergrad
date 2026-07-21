@@ -40,7 +40,7 @@ in the **military (DoD)**, the **U.S. Public Health Service**, and the **Indian 
 For everyone else, the answer to "can you give me something for this?" is a referral — typically to
 a psychiatrist, PMHNP, or the client's primary-care physician (who in fact write the majority of
 psychotropic prescriptions in the U.S.). Coordinating with prescribers is a core counselor skill
-(Unit 11 covers the medications themselves). [S7][S8]
+([[unit11-neuroscience | Unit 11]] covers the [[concept-psychotropic-classes | medications themselves]]). [S7][S8]
 
 ## Counselor professional identity (the CACREP angle)
 
@@ -71,7 +71,7 @@ the **humanistic tradition** ([[theory-person-centered]]), so its center of grav
   the personal level.
 - [[concept-duty-to-warn]] — the protective-steps menu (hospitalization, medication) routinely
   requires knowing who does what.
-- Unit 11 — psychotropic medication classes; what you're coordinating *about*.
+- [[concept-psychotropic-classes]] (Unit 11) — psychotropic medication classes; what you're coordinating *about*.
 
 ## Sources
 
