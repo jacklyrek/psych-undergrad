@@ -126,11 +126,18 @@ export function weakestClusters(log, { min = 4, limit = 6 } = {}) {
     .slice(0, limit);
 }
 
-/** Items coming due over the next `days` days, plus anything already overdue.
- *  Shows whether tomorrow is a wall or a trickle. */
+/** Items coming due over the next `days` days. Shows whether tomorrow is a wall or a trickle.
+ *
+ *  Today's row splits its count three ways, because "everything due" lumps together two very
+ *  different things. `fresh` is items never reviewed — they carry a due date of the day they entered
+ *  the bank, so a large backlog of them is just an unstarted bank, not a missed schedule. `overdue`
+ *  is the one that should sting: items already in rotation whose review date has passed. Reporting
+ *  the union as "overdue" turns an untouched bank into an alarming number. */
 export function dueForecast(items, state, today, days = 14) {
-  const out = [{ date: today, label: 'today', count: 0, overdue: 0 }];
-  for (let d = 1; d <= days; d++) out.push({ date: addDays(today, d), label: `+${d}`, count: 0, overdue: 0 });
+  const out = [{ date: today, label: 'today', count: 0, overdue: 0, fresh: 0 }];
+  for (let d = 1; d <= days; d++) {
+    out.push({ date: addDays(today, d), label: `+${d}`, count: 0, overdue: 0, fresh: 0 });
+  }
   const index = new Map(out.map((row, i) => [row.date, i]));
 
   for (const it of items) {
@@ -138,7 +145,8 @@ export function dueForecast(items, state, today, days = 14) {
     if (!st) continue;
     if (st.due <= today) {
       out[0].count += 1;
-      if (st.due < today) out[0].overdue += 1;
+      if (st.reps === 0) out[0].fresh += 1;
+      else if (st.due < today) out[0].overdue += 1;
     } else if (index.has(st.due)) {
       out[index.get(st.due)].count += 1;
     }

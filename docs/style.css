@@ -378,9 +378,12 @@ details.source .reading { padding: 0 .85rem .85rem; border-top: 1px solid var(--
 }
 .stat b { display: block; font-size: 1.5rem; font-weight: 650; font-variant-numeric: tabular-nums; }
 .stat span { font-size: .6875rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
-.stat[data-tone="good"] b { color: var(--good); }
-.stat[data-tone="warn"] b { color: var(--warn); }
-.stat[data-tone="bad"] b { color: var(--bad); }
+/* Stat tiles read good/bad, so they take the validated chart status scale rather than the UI's
+ * button/banner tokens — otherwise the Stats page shows a tile in one amber and the meter beside it
+ * in another, and the two look like they mean different things. */
+.stat[data-tone="good"] b { color: var(--chart-good); }
+.stat[data-tone="warn"] b { color: var(--chart-warn); }
+.stat[data-tone="bad"] b { color: var(--chart-bad); }
 
 /* ------------------------------------------------------------------ reader */
 
@@ -482,23 +485,126 @@ details.source .reading { padding: 0 .85rem .85rem; border-top: 1px solid var(--
 
 /* ------------------------------------------------------------------ charts */
 
-.bars { display: grid; gap: .3rem; }
-.bar-row { display: grid; grid-template-columns: 3.6rem 1fr 2.6rem; align-items: center; gap: .5rem; font-size: .8125rem; }
-.bar-track { height: 20px; border-radius: 6px; background: var(--surface-2); overflow: hidden; position: relative; }
-.bar-fill { height: 100%; border-radius: 6px; background: var(--accent); min-width: 2px; }
-.bar-fill[data-tone="good"] { background: var(--good); }
-.bar-fill[data-tone="warn"] { background: var(--warn); }
-.bar-fill[data-tone="bad"] { background: var(--bad); }
-.bar-row .num { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
-.bar-row .lbl { color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Chart colours are a separate, validated set — not the UI's --good/--warn/--bad, which were picked
+ * by eye for buttons and banners. Measured against the bar track they're actually drawn on
+ * (--surface-2), that UI trio collapsed under colour-blind simulation: green vs red came out at
+ * ΔE 3.8 in light mode and 1.8 in dark, i.e. the same colour to a deuteranope. These steps hold the
+ * same three hues and move only lightness/chroma until the gates clear:
+ *
+ *              light (on #f2f0ea)        dark (on #23282e)
+ *   good       #4d9965   3.04:1          #52a76d   5.02:1
+ *   warning    #976712   4.32:1          #c38824   4.86:1
+ *   critical   #8b2c27   7.41:1          #b0554d   3.01:1
+ *   worst pair CVD ΔE 8.9 / normal 15.2  CVD ΔE 8.1 / normal 15.1
+ *
+ * Both modes pass the lightness band, chroma floor, CVD separation, normal-vision floor and 3:1
+ * contrast checks. Re-run after any change:
+ *   python validate_palette.py "#4d9965,#976712,#8b2c27" --mode light --surface "#f2f0ea" --pairs all
+ *
+ * Colour is still never the only channel: every meter carries the value, a status word and an icon.
+ */
+:root {
+  --chart-good: #4d9965;
+  --chart-warn: #976712;
+  --chart-bad: #8b2c27;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --chart-good: #52a76d;
+    --chart-warn: #c38824;
+    --chart-bad: #b0554d;
+  }
+}
 
-/* The calibration row shows two things at once: how sure you felt (a marker) and how often you were
- * right (the fill). Their distance apart is the fluency illusion, made visible. */
-.bar-marker { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--text); opacity: .55; }
+/* A meter per row: name + value on top, the bar, then the status word and the sample size. Two
+ * lines rather than a cramped three-column grid, because on a phone the label column had to be so
+ * narrow that "the-helping-professions" became "the-hel…". */
+.meters { display: grid; gap: .9rem; }
+.meter-head { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; margin-bottom: .3rem; }
+.meter-name { font-size: .875rem; font-weight: 550; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.meter-val { font-size: .9375rem; font-weight: 650; font-variant-numeric: tabular-nums; flex: none; }
 
-.spark { display: flex; align-items: flex-end; gap: 2px; height: 40px; }
-.spark > i { flex: 1; background: var(--accent-soft); border-radius: 2px 2px 0 0; min-height: 2px; }
-.spark > i[data-on="1"] { background: var(--accent); }
+.meter-track {
+  position: relative;
+  height: 18px;                    /* mark spec: bars stay thin, well under the 24px cap */
+  border-radius: 3px;
+  background: var(--surface-2);
+}
+.meter-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  min-width: 3px;
+  background: var(--accent);
+  /* Square at the baseline, 4px rounded at the data end — the end that carries the value. */
+  border-radius: 0 4px 4px 0;
+}
+.meter-fill[data-s="good"] { background: var(--chart-good); }
+.meter-fill[data-s="warn"] { background: var(--chart-warn); }
+.meter-fill[data-s="bad"]  { background: var(--chart-bad); }
+
+/* Calibration shows two things at once: how often you were right (the fill) and how sure you felt
+ * (the marker). The distance between them is the fluency illusion, made visible. The marker gets a
+ * 2px track-coloured ring so it stays legible wherever it lands on the fill. */
+.meter-mark {
+  position: absolute;
+  top: -3px; bottom: -3px;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--text);
+  box-shadow: 0 0 0 2px var(--surface);
+  border-radius: 1px;
+}
+
+.meter-sub { display: flex; align-items: center; gap: .35rem; margin-top: .3rem; font-size: .75rem; color: var(--muted); }
+.meter-sub .sep { opacity: .5; }
+
+/* Status never rides on hue alone: an icon and a word travel with every colour. */
+.status { display: inline-flex; align-items: center; gap: .25rem; font-weight: 650; }
+.status-icon {
+  width: 13px; height: 13px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--surface);
+}
+.status[data-s="good"] { color: var(--chart-good); }
+.status[data-s="warn"] { color: var(--chart-warn); }
+.status[data-s="bad"]  { color: var(--chart-bad); }
+.status[data-s="good"] .status-icon { background: var(--chart-good); }
+.status[data-s="warn"] .status-icon { background: var(--chart-warn); }
+.status[data-s="bad"]  .status-icon { background: var(--chart-bad); }
+
+.legend { display: flex; flex-wrap: wrap; gap: .3rem .9rem; margin-bottom: .8rem; font-size: .75rem; color: var(--muted); }
+
+/* Column chart — a 15- or 30-day strip. Far more compact than one row per day, and it reads as a
+ * calendar, which is what a forecast is. */
+.cols { display: flex; align-items: flex-end; gap: 2px; height: 68px; }
+.col {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;                        /* the surface gap between stacked segments */
+}
+.col-seg { border-radius: 3px 3px 0 0; background: var(--accent); min-height: 2px; }
+.col-seg[data-s="empty"] { background: var(--surface-2); border-radius: 2px; }
+.col-seg[data-s="bad"] { background: var(--chart-bad); border-radius: 0 0 3px 3px; }
+.col[data-today="1"] .col-seg:first-child { border-radius: 3px 3px 0 0; }
+.cols-axis { display: flex; justify-content: space-between; margin-top: .35rem; font-size: .6875rem; color: var(--muted); }
+
+/* Hero figure — the one number the page leads with. Proportional figures, not tabular: at this size
+ * equal-width digits make a number like 669 look loose. */
+.hero { text-align: center; padding: .4rem 0 .2rem; }
+.hero b { display: block; font-size: 3rem; line-height: 1.05; font-weight: 650; letter-spacing: -.02em; }
+.hero span { display: block; margin-top: .15rem; font-size: .875rem; color: var(--muted); }
+.hero em { display: block; margin-top: .5rem; font-size: .75rem; font-style: normal; color: var(--muted); }
+.hero[data-s="bad"] b { color: var(--chart-bad); }
+.hero[data-s="warn"] b { color: var(--chart-warn); }
+.hero[data-s="good"] b { color: var(--chart-good); }
 
 /* ------------------------------------------------------------------ citation sheet */
 

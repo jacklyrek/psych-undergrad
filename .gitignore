@@ -15,3 +15,6 @@ venv/
 
 # Attempts graded on the laptop while offline, waiting to upload. Per-machine, transient.
 .supabase-outbox.jsonl
+
+# Local render of the Stats page for eyeballing chart changes (apps/preview_stats.py).
+docs/.preview/

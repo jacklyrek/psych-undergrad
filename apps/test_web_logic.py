@@ -230,14 +230,20 @@ def check_analytics(items: list[dict], state: dict, log: list[dict]) -> list[str
     py_forecast = {}
     for d in range(0, 15):
         py_forecast[(t + timedelta(days=d)).isoformat()] = 0
+    # "Overdue" means a review that slipped — never-reviewed items carry a due date of the day they
+    # entered the bank, so counting them as overdue would report an untouched bank as a missed
+    # schedule. They're `fresh` instead.
     overdue = 0
+    fresh = 0
     for it in items:
         st = state.get(it["id"])
         if not st:
             continue
         if st["due"] <= today:
             py_forecast[today] += 1
-            if st["due"] < today:
+            if st.get("reps", 0) == 0:
+                fresh += 1
+            elif st["due"] < today:
                 overdue += 1
         elif st["due"] in py_forecast:
             py_forecast[st["due"]] += 1
@@ -291,6 +297,10 @@ __emit({
             fails.append(f"forecast {row['date']}: js {row['count']} != py {py_forecast.get(row['date'])}")
     if got["forecast"][0]["overdue"] != overdue:
         fails.append(f"overdue: js {got['forecast'][0]['overdue']} != py {overdue}")
+    if got["forecast"][0]["fresh"] != fresh:
+        fails.append(f"fresh: js {got['forecast'][0]['fresh']} != py {fresh}")
+    if got["forecast"][0]["fresh"] + got["forecast"][0]["overdue"] > got["forecast"][0]["count"]:
+        fails.append("forecast: fresh + overdue exceeds today's total")
 
     # Bloom rows must cover every attempt and be ordered remember -> evaluate.
     if sum(r["n"] for r in got["blooms"]) != n:

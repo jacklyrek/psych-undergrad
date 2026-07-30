@@ -74,17 +74,83 @@ function promptHTML(item) {
   return item.type === 'cloze' ? clozePrompt(item) : esc(item.prompt);
 }
 
-function bars(rows) {
-  return `<div class="bars">${rows.map((r) => `
-    <div class="bar-row">
-      <span class="lbl">${esc(r.label)}</span>
-      <span class="bar-track">
-        <span class="bar-fill" style="width:${Math.max(0, Math.min(100, r.pct))}%"
-              ${r.tone ? `data-tone="${r.tone}"` : ''}></span>
-        ${r.marker !== undefined ? `<span class="bar-marker" style="left:${r.marker}%"></span>` : ''}
-      </span>
-      <span class="num">${esc(r.value)}</span>
+// --- chart components --------------------------------------------------------
+// Colour here answers one question: how am I doing on this row. That makes it a *status* encoding,
+// not series identity — so it is a small fixed scale with reserved meaning, and it never travels
+// alone: every meter also carries the number, a word, and an icon. The hexes behind these three
+// names are validated in style.css; see the note there before changing them.
+
+const STATUS_ICON = { good: '✓', warn: '!', bad: '✕' };
+
+const clampPct = (n) => Math.round(Math.max(0, Math.min(100, n)) * 10) / 10;
+
+/** Accuracy → how you're doing. Bands chosen to match the app's own vocabulary: at 80%+ an item is
+ *  genuinely retrieved, below 50% it isn't being recalled so much as recognised. */
+function accuracyStatus(acc) {
+  if (acc >= 0.8) return { s: 'good', word: 'solid' };
+  if (acc >= 0.5) return { s: 'warn', word: 'shaky' };
+  return { s: 'bad', word: 'weak' };
+}
+
+/** Calibration → the gap between how sure you felt and how often you were right. Underconfidence
+ *  costs you nothing, so it isn't flagged; overconfidence is the one that hides missing knowledge. */
+function calibrationStatus(gap) {
+  if (gap < -0.1) return { s: 'good', word: 'underconfident' };
+  if (gap <= 0.1) return { s: 'good', word: 'well judged' };
+  if (gap <= 0.25) return { s: 'warn', word: 'overconfident' };
+  return { s: 'bad', word: 'badly overconfident' };
+}
+
+function statusLegend() {
+  return `<div class="legend">${Object.entries(
+    { good: '80%+ solid', warn: '50–79% shaky', bad: 'under 50% weak' },
+  ).map(([s, text]) => `<span class="status" data-s="${s}">
+      <i class="status-icon" aria-hidden="true">${STATUS_ICON[s]}</i>${esc(text)}</span>`).join('')}</div>`;
+}
+
+/** One meter per row: name and value on top, the bar, then the status word and the sample size.
+ *  `marker` (0–100) draws the comparison line the calibration chart needs. */
+function meters(rows) {
+  return `<div class="meters">${rows.map((r) => `
+    <div class="meter">
+      <div class="meter-head">
+        <span class="meter-name">${esc(r.name)}</span>
+        <span class="meter-val">${esc(r.value)}</span>
+      </div>
+      <div class="meter-track">
+        <span class="meter-fill" data-s="${r.status.s}" style="width:${clampPct(r.pct)}%"></span>
+        ${r.marker === undefined ? ''
+          : `<span class="meter-mark" style="left:${clampPct(r.marker)}%"></span>`}
+      </div>
+      <div class="meter-sub">
+        <span class="status" data-s="${r.status.s}">
+          <i class="status-icon" aria-hidden="true">${STATUS_ICON[r.status.s]}</i>${esc(r.status.word)}
+        </span>
+        ${r.note ? `<span class="sep">·</span><span>${esc(r.note)}</span>` : ''}
+      </div>
     </div>`).join('')}</div>`;
+}
+
+/** A day-by-day column strip. Cells are { total, overdue?, today? }; `overdue` stacks at the base in
+ *  the critical colour so an overdue backlog is visible inside today's column rather than hidden in
+ *  its total. Far more compact than one row per day, and it reads as a calendar. */
+function columns(cells, axis) {
+  const max = Math.max(1, ...cells.map((c) => c.total));
+  const h = (v) => `${Math.max(2, Math.round((v / max) * 1000) / 10)}%`;
+  return `<div class="cols">${cells.map((c) => {
+    if (!c.total) return `<span class="col"><span class="col-seg" data-s="empty" style="height:2px"></span></span>`;
+    const overdue = c.overdue || 0;
+    return `<span class="col" ${c.today ? 'data-today="1"' : ''} title="${esc(c.title || '')}">
+      ${overdue < c.total ? `<span class="col-seg" style="height:${h(c.total - overdue)}"></span>` : ''}
+      ${overdue ? `<span class="col-seg" data-s="bad" style="height:${h(overdue)}"></span>` : ''}
+    </span>`;
+  }).join('')}</div>
+  <div class="cols-axis">${axis.map((a) => `<span>${esc(a)}</span>`).join('')}</div>`;
+}
+
+function hero(value, label, note, status) {
+  return `<div class="hero" ${status ? `data-s="${status}"` : ''}>
+    <b>${esc(value)}</b><span>${esc(label)}</span>${note ? `<em>${esc(note)}</em>` : ''}</div>`;
 }
 
 function statGrid(cells) {
@@ -241,7 +307,7 @@ function viewStudySetup() {
   <div class="card">
     ${statGrid([
       { value: counts.due, label: 'due today', tone: counts.due ? 'warn' : 'good' },
-      { value: pipe.new, label: 'never seen' },
+      { value: pipe.new, label: 'unseen' },
       { value: counts.total, label: 'in bank' },
     ])}
     ${filtering && !prefs.cram
@@ -611,79 +677,114 @@ function viewStats() {
   const weak = stats.weakestClusters(log);
   const act = stats.activity(log, today, 30);
   const stale = stats.daysSinceLast(log, today);
-  const maxAct = Math.max(1, ...act.map((a) => a.count));
-  const maxDue = Math.max(1, ...forecast.map((f) => f.count));
+  const due = forecast[0];
+  const inRotation = items.length - pipe.new;
 
   return `
+    <div class="card">
+      ${hero(
+        due.count,
+        due.count ? 'items due today' : 'nothing due today',
+        [due.fresh ? `${due.fresh} never seen` : null,
+         due.overdue ? `${due.overdue} overdue reviews` : null,
+         `${inRotation} in rotation`].filter(Boolean).join(' · '),
+        due.count ? null : 'good',
+      )}
+    </div>
+
     ${statGrid([
-      { value: forecast[0].count, label: 'due today', tone: forecast[0].count ? 'warn' : 'good' },
       { value: str.current, label: 'day streak' },
       { value: sum.attempts, label: 'attempts' },
-      { value: pct(sum.accuracy), label: 'got it', tone: sum.accuracy >= 0.7 ? 'good' : 'warn' },
-      { value: pipe.new, label: 'never seen' },
+      { value: pct(sum.accuracy), label: 'got it',
+        tone: accuracyStatus(sum.accuracy).s === 'good' ? 'good'
+            : accuracyStatus(sum.accuracy).s === 'warn' ? 'warn' : 'bad' },
+      { value: `${Math.round(sum.medianSeconds)}s`, label: 'median' },
+      { value: pipe.new, label: 'unseen' },
       { value: pipe.mature, label: 'mature' },
     ])}
     ${stale !== null && stale > 3
-      ? `<div class="banner banner-warn">Last attempt was ${plural(stale, 'day')} ago.
-         ${forecast[0].overdue ? `${forecast[0].overdue} of today's queue is overdue.` : ''}</div>` : ''}
+      ? `<div class="banner banner-warn">Last attempt was ${plural(stale, 'day')} ago.</div>` : ''}
 
-    <div class="section-title">Last 30 days</div>
+    <div class="section-title">Coming due</div>
     <div class="card card-tight">
-      <div class="spark">${act.map((a) => `<i data-on="${a.count ? 1 : 0}"
-        style="height:${Math.max(4, (a.count / maxAct) * 100)}%" title="${a.date}: ${a.count}"></i>`).join('')}</div>
-      <p class="meta" style="margin:.5rem 0 0">${plural(str.activeDays, 'active day')} ·
-        median ${Math.round(sum.medianSeconds)}s per item</p>
+      ${/* Today is deliberately not in this chart. With a backlog it dwarfs every scheduled day,
+            leaving one tall column and fourteen empty ones — a one-bar bar chart that says nothing
+            the hero above hasn't already said. This answers the different question: what's ahead. */
+        columns(
+          forecast.slice(1).map((f) => ({ total: f.count, title: `${f.date}: ${f.count}` })),
+          ['tomorrow', '+7', '+14'],
+        )}
+      <p class="meta" style="margin:.7rem 0 0">The next 14 days, not counting
+        ${due.count ? `today's ${due.count}` : 'today'}.
+        ${forecast.slice(1).some((f) => f.count)
+          ? `Heaviest day ahead: ${Math.max(...forecast.slice(1).map((f) => f.count))} items.`
+          : 'Nothing scheduled yet — intervals grow as you review.'}</p>
     </div>
 
     <div class="section-title">Calibration — did the confidence match?</div>
     <div class="card card-tight">
-      <p class="meta" style="margin-bottom:.7rem">Bar = how often you were actually right.
-        Line = how sure you felt. Bar well left of the line means overconfident.</p>
-      ${bars(cal.filter((b) => b.n).map((b) => ({
-        label: `${b.lo}–${b.hi}%`,
-        pct: (b.accuracy ?? 0) * 100,
-        marker: (b.lo + b.hi) / 2,
-        tone: b.gap > 0.2 ? 'bad' : b.gap > 0.08 ? 'warn' : 'good',
-        value: `${Math.round((b.accuracy ?? 0) * 100)}% (${b.n})`,
-      })))}
-      <p class="meta" style="margin:.7rem 0 0">Brier score ${brier === null ? '—' : brier.toFixed(3)}
+      <p class="meta" style="margin-bottom:.9rem">Bar = how often you were actually right.
+        The line = how sure you felt. Bar well short of the line is the fluency illusion:
+        material that felt known and wasn't.</p>
+      ${meters(cal.filter((b) => b.n).map((b) => {
+        const acc = b.accuracy ?? 0;
+        return {
+          name: `Felt ${b.lo}–${b.hi}% sure`,
+          value: pct(acc),
+          pct: acc * 100,
+          marker: (b.lo + b.hi) / 2,
+          status: calibrationStatus(b.gap ?? 0),
+          note: `${plural(b.n, 'attempt')} · ${b.correct} right`,
+        };
+      }))}
+      <p class="meta" style="margin:.9rem 0 0">Brier score ${brier === null ? '—' : brier.toFixed(3)}
         — lower is better; 0.25 is what pure guessing scores.</p>
-    </div>
-
-    <div class="section-title">Coming due</div>
-    <div class="card card-tight">
-      ${bars(forecast.map((f) => ({
-        label: f.label,
-        pct: (f.count / maxDue) * 100,
-        tone: f.overdue ? 'bad' : undefined,
-        value: f.count || '',
-      })))}
     </div>
 
     <div class="section-title">Accuracy by Bloom level</div>
     <div class="card card-tight">
-      ${bars(blooms.map((b) => ({
-        label: b.bloom,
-        pct: b.accuracy * 100,
-        tone: b.accuracy >= 0.75 ? 'good' : b.accuracy >= 0.5 ? 'warn' : 'bad',
-        value: `${pct(b.accuracy)} (${b.n})`,
-      })))}
-      <p class="meta" style="margin:.7rem 0 0">Apply and analyze sitting below remember is the normal
-        pattern — definitions are the easy 30%.</p>
+      ${statusLegend()}
+      ${/* The line is your own overall accuracy. The status colour answers "how am I doing" in
+            absolute terms, but real accuracy tends to cluster inside one band — the marker is what
+            separates the levels from each other, without recolouring anything by rank. */
+        meters(blooms.map((b) => ({
+          name: b.bloom,
+          value: pct(b.accuracy),
+          pct: b.accuracy * 100,
+          marker: sum.accuracy * 100,
+          status: accuracyStatus(b.accuracy),
+          note: `${plural(b.n, 'attempt')} · ${b.correct} right`,
+        })))}
+      <p class="meta" style="margin:.9rem 0 0">The line is your ${pct(sum.accuracy)} overall average.
+        Apply and analyze sitting below remember is the normal pattern — definitions are the
+        easy 30%.</p>
     </div>
 
     ${weak.length ? `
       <div class="section-title">Weakest clusters</div>
       <div class="card card-tight">
-        ${bars(weak.map((c) => ({
-          label: c.cluster.length > 16 ? `${c.cluster.slice(0, 15)}…` : c.cluster,
+        ${meters(weak.map((c) => ({
+          name: c.cluster.replace(/-/g, ' '),
+          value: pct(c.accuracy),
           pct: c.accuracy * 100,
-          tone: c.accuracy < 0.5 ? 'bad' : 'warn',
-          value: `${pct(c.accuracy)} (${c.n})`,
+          marker: sum.accuracy * 100,
+          status: accuracyStatus(c.accuracy),
+          note: `${plural(c.n, 'attempt')} · ${c.correct} right`,
         })))}
-        <p class="meta" style="margin:.7rem 0 0">Confusable groups you're still not separating.
-          Interleaving them is the fix, not more repetitions of each alone.</p>
-      </div>` : ''}`;
+        <p class="meta" style="margin:.9rem 0 0">Confusable groups you're still not separating${
+          weak.every((c) => c.accuracy < sum.accuracy) ? `, all below your ${pct(sum.accuracy)} average` : ''
+        }. Interleaving them is the fix, not more repetitions of each alone.</p>
+      </div>` : ''}
+
+    <div class="section-title">Last 30 days</div>
+    <div class="card card-tight">
+      ${columns(
+        act.map((a) => ({ total: a.count, title: `${a.date}: ${a.count}` })),
+        ['30 days ago', 'today'],
+      )}
+      <p class="meta" style="margin:.7rem 0 0">${plural(str.activeDays, 'active day')} in the log ·
+        current streak ${plural(str.current, 'day')}.</p>
+    </div>`;
 }
 
 // ---------------------------------------------------------------- you / settings

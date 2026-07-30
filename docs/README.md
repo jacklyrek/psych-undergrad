@@ -108,6 +108,16 @@ The confidence step is five buttons rather than the desktop slider — a slider 
 
 **Stats** — due forecast, streak, accuracy by Bloom level, weakest clusters, and the calibration chart: bar = how often you were actually right, line = how sure you felt. Distance between them is the fluency illusion, made visible.
 
+Bar colour is a **status** encoding — green solid / amber shaky / red weak — so it answers "how am I doing on this row" at a glance. It never carries meaning alone: every meter also shows the number, a status word, and an icon. On the accuracy charts a second line marks your own overall average, because real accuracy tends to cluster inside a single band and the line is what separates the rows from each other without recolouring anything by rank.
+
+Those three hexes are not eyeballed. Measured against the bar track they sit on, the UI's original green/amber/red collapsed under colour-blind simulation — green vs red came out at ΔE 3.8 in light mode and 1.8 in dark, i.e. the same colour to a deuteranope. The shipped steps hold the same hues and move only lightness until every gate clears. The values and how to re-check them are in the comment above `--chart-good` in [`style.css`](style.css); re-run the validator after any change.
+
+To look at the page without deploying — its data lives in Supabase, so a local browser shows an empty tab:
+
+```bash
+python apps/preview_stats.py     # renders the real Stats view to docs/.preview/stats.html and opens it
+```
+
 **You** — sign in, sync status, content version, home-screen hint.
 
 At the laptop, `1`–`5` sets confidence, `Enter` reveals, `1`/`2`/`3` grades.

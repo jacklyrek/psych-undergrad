@@ -799,3 +799,36 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   entering vs. narrowing a search, tab switch, grade-advances-item, back-restores, and
   forward-does-not-restore. It caught a wrong assumption of mine mid-write: *entering* search is a
   new list and should go to the top; only narrowing an existing one should hold position.
+
+## [2026-07-30] redesign-stats | docs/ Stats page | validated palette, 1 data-honesty fix
+- **Reported:** the Stats page didn't look good; bars should be coloured so you can see where you are.
+- **Colour is a status encoding here** (accuracy *means* good/bad), so it's a small fixed scale with
+  reserved meaning — and it never travels alone: every meter carries the number, a status word and
+  an icon, per the data-viz rule that status is always icon + label.
+- **The old trio was broken and nobody could have seen it by eye.** Measured against the bar track,
+  the UI's `--good/--warn/--bad` collapsed under colour-blind simulation: green↔red **ΔE 3.8 light,
+  1.8 dark** (deutan) — the same colour to a deuteranope — and red↔amber sat at 11.9/10.3
+  unsimulated, below the 15 floor for full-colour readers too. Held the hues, searched lightness and
+  chroma under the gates, and landed on:
+  `light #4d9965 / #976712 / #8b2c27` (CVD ΔE 8.9, normal 15.2) and
+  `dark #52a76d / #c38824 / #b0554d` (CVD ΔE 8.1, normal 15.1) — all ≥3:1 on the track, both modes
+  passing every check. Recorded with the re-run command above `--chart-good` in style.css.
+- **Form changes** (bars weren't the problem everywhere): hero figure for "due today"; meters became
+  two-line rows so a name like `the-helping-professions` isn't truncated to `the-hel…`; "Coming due"
+  and "Last 30 days" became column strips; mark specs applied (18px bars, square at the baseline,
+  4px rounded data end, 2px surface gaps, marker with a surface ring).
+- **The average line.** With real data every Bloom level and cluster sits at 59–77%, i.e. all one
+  status band, so colour alone discriminated nothing. Added a marker at your own overall accuracy —
+  keeps the absolute meaning of the colour while making the rows comparable, instead of the
+  recolour-by-rank anti-pattern.
+- **Data-honesty fix found by looking at it:** the hero read "669 of them overdue" when 541 of those
+  had simply never been reviewed. `dueForecast` now separates `fresh` (never reviewed — carries the
+  due date of the day it entered the bank) from `overdue` (a review that actually slipped). Reads
+  "541 never seen · 128 overdue reviews · 171 in rotation". Test updated to match.
+- **"Coming due" was a one-bar chart** — today's 671 dwarfed fourteen empty days. Today belongs to
+  the hero; the chart now shows the next 14 days and is legible.
+- **`apps/preview_stats.py` (new):** renders the real Stats view to an openable file. The page can't
+  be inspected any other way — its data is in Supabase, so a local browser shows an empty tab. Both
+  findings above came from this, not from the tests.
+- Stat tiles repointed to the chart status tokens, so the page no longer shows two different ambers.
+- Tests: all 6 web checks + SM-2 parity still pass.
