@@ -1,0 +1,536 @@
+/* Psych Wiki — mobile-first stylesheet.
+ *
+ * Built for one device first: an iPhone, held in one hand, often in a dark room. That drives most of
+ * what follows — a bottom tab bar within thumb reach, 44px minimum tap targets, 17px body text
+ * (below 16px iOS zooms the whole page when an input takes focus), safe-area insets so nothing hides
+ * under the notch or the home indicator, and a full dark theme rather than an inverted light one.
+ *
+ * Two themes, one variable block each. Everything downstream reads the variables.
+ */
+
+:root {
+  --bg: #faf9f6;
+  --surface: #ffffff;
+  --surface-2: #f2f0ea;
+  --text: #1b1a18;
+  --muted: #6d6b65;
+  --border: #e4e1d9;
+  --accent: #1f6f68;
+  --accent-text: #ffffff;
+  --accent-soft: #e2efed;
+  --accent-deep: #173d3a;
+  --good: #2c7148;
+  --good-soft: #e3f1e8;
+  --warn: #8a6210;
+  --warn-soft: #f8eed6;
+  --bad: #9d3630;
+  --bad-soft: #f8e6e4;
+  --shadow: 0 1px 2px rgba(24, 22, 18, .06), 0 6px 16px -8px rgba(24, 22, 18, .12);
+  --radius: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121417;
+    --surface: #1a1e22;
+    --surface-2: #23282e;
+    --text: #e9e7e2;
+    --muted: #9b988f;
+    --border: #2d3239;
+    --accent: #7ac7bd;
+    --accent-text: #0c1e1c;
+    --accent-soft: #1b2f2e;
+    --accent-deep: #0e1f1e;
+    --good: #74c691;
+    --good-soft: #17281d;
+    --warn: #d7ac5c;
+    --warn-soft: #2a2317;
+    --bad: #e39189;
+    --bad-soft: #2d1c1b;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 20px -10px rgba(0, 0, 0, .6);
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Must outrank the component rules below. `.cite-sheet` and `.topbar-back` set display:grid, which
+ * beats the user-agent's [hidden] { display: none } on specificity — without this, the citation
+ * sheet would sit open over the page from the moment it loads. */
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100dvh;              /* dvh, so the collapsing Safari toolbar doesn't clip the app */
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;     /* no rubber-band page bounce behind the fixed chrome */
+}
+
+h1, h2, h3, h4 { line-height: 1.25; margin: 0; font-weight: 650; letter-spacing: -.01em; }
+p { margin: 0 0 .85em; }
+a { color: var(--accent); text-decoration: none; }
+button { font: inherit; color: inherit; }
+
+/* ------------------------------------------------------------------ chrome */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: calc(env(safe-area-inset-top) + .55rem) 1rem .55rem;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar-title {
+  flex: 1;
+  font-size: 1.0625rem;
+  font-weight: 650;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar-back {
+  width: 30px; height: 34px;
+  margin-left: -.5rem;
+  display: grid; place-items: center;
+  font-size: 1.9rem; line-height: 1;
+  background: none; border: 0; padding: 0;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.sync-chip {
+  flex: none;
+  padding: .3rem .6rem;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+}
+.sync-chip[data-state="synced"] { color: var(--good); border-color: color-mix(in srgb, var(--good) 35%, var(--border)); }
+.sync-chip[data-state="syncing"] { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
+.sync-chip[data-state="queued"] { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 40%, var(--border)); background: var(--warn-soft); }
+.sync-chip[data-state="error"] { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 40%, var(--border)); background: var(--bad-soft); }
+
+.view {
+  flex: 1;
+  width: 100%;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem 1rem calc(5.5rem + env(safe-area-inset-bottom));
+}
+
+.tabbar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: env(safe-area-inset-bottom);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-top: 1px solid var(--border);
+}
+
+.tab {
+  display: grid;
+  justify-items: center;
+  gap: .1rem;
+  padding: .5rem 0 .55rem;
+  min-height: 44px;
+  color: var(--muted);
+  font-size: .6875rem;
+  font-weight: 600;
+}
+.tab-glyph { font-size: 1.15rem; line-height: 1; }
+.tab[aria-current="page"] { color: var(--accent); }
+
+/* ------------------------------------------------------------------ primitives */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: .85rem;
+}
+.card-tight { padding: .8rem .9rem; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  width: 100%;
+  min-height: 48px;
+  padding: .7rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;      /* kills the 300ms double-tap-to-zoom delay */
+}
+.btn:active { transform: scale(.985); }
+.btn[disabled] { opacity: .45; cursor: default; }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+.btn-ghost { background: transparent; }
+.btn-row { display: flex; gap: .5rem; }
+.btn-sm { min-height: 38px; padding: .35rem .7rem; font-size: .8125rem; width: auto; }
+
+.grades { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
+.grade {
+  flex-direction: column;
+  gap: .1rem;
+  min-height: 62px;
+  font-size: .875rem;
+}
+.grade small { font-weight: 500; font-size: .6875rem; color: var(--muted); }
+.grade[data-g="missed"]  { color: var(--bad);  border-color: color-mix(in srgb, var(--bad) 30%, var(--border)); }
+.grade[data-g="shaky"]   { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 32%, var(--border)); }
+.grade[data-g="correct"] { color: var(--good); border-color: color-mix(in srgb, var(--good) 30%, var(--border)); }
+.grade[data-suggested="1"] { box-shadow: inset 0 0 0 2px currentColor; }
+.grade[data-g="missed"][data-suggested="1"]  { background: var(--bad-soft); }
+.grade[data-g="correct"][data-suggested="1"] { background: var(--good-soft); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .35rem; }
+.chip {
+  padding: .25rem .55rem;
+  font-size: .75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.chip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.chip-static { cursor: default; }
+
+.meta { color: var(--muted); font-size: .8125rem; }
+.muted { color: var(--muted); }
+.mono { font-variant-numeric: tabular-nums; }
+
+.section-title {
+  margin: 1.4rem 0 .6rem;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.section-title:first-child { margin-top: 0; }
+
+.progress { height: 4px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.progress > i { display: block; height: 100%; background: var(--accent); border-radius: 999px; transition: width .25s ease; }
+
+.banner {
+  padding: .7rem .85rem;
+  border-radius: 12px;
+  font-size: .875rem;
+  margin-bottom: .85rem;
+  border: 1px solid;
+}
+.banner-info { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 30%, transparent); }
+.banner-warn { background: var(--warn-soft); border-color: color-mix(in srgb, var(--warn) 35%, transparent); }
+.banner-bad  { background: var(--bad-soft);  border-color: color-mix(in srgb, var(--bad) 35%, transparent); }
+.banner-good { background: var(--good-soft); border-color: color-mix(in srgb, var(--good) 30%, transparent); }
+
+.empty { text-align: center; padding: 2.5rem 1rem; color: var(--muted); }
+.empty-big { font-size: 2rem; margin-bottom: .4rem; }
+
+.field { display: block; margin-bottom: .75rem; }
+.field > span { display: block; font-size: .8125rem; font-weight: 600; margin-bottom: .3rem; color: var(--muted); }
+input[type="text"], input[type="email"], input[type="password"], input[type="search"], textarea {
+  width: 100%;
+  padding: .7rem .8rem;
+  font: inherit;                   /* 17px, so focusing never triggers iOS zoom */
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+textarea { min-height: 110px; resize: vertical; }
+input:focus-visible, textarea:focus-visible, .btn:focus-visible, .chip:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* ------------------------------------------------------------------ study loop */
+
+.item-meta { display: flex; align-items: center; gap: .45rem; margin: .8rem 0 .1rem; font-size: .75rem; color: var(--muted); }
+.item-meta .dot { opacity: .5; }
+
+.prompt { font-size: 1.25rem; line-height: 1.4; font-weight: 600; margin: .6rem 0 1.1rem; }
+.prompt .blank {
+  display: inline-block;
+  min-width: 4.5rem;
+  border-bottom: 2px solid var(--accent);
+  vertical-align: baseline;
+}
+
+/* Five taps rather than a drag: a slider is a poor target on a phone, and the prediction only needs
+ * to be honest, not precise. The values sit mid-band for the 20-point calibration buckets. */
+.confidence { display: grid; grid-template-columns: repeat(5, 1fr); gap: .35rem; }
+.conf {
+  display: grid;
+  place-items: center;
+  gap: .15rem;
+  min-height: 58px;
+  padding: .4rem .2rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  font-size: .625rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.conf b { font-size: .9375rem; color: var(--text); font-variant-numeric: tabular-nums; }
+.conf[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.conf[aria-pressed="true"] b { color: var(--accent); }
+
+.options { display: grid; gap: .5rem; }
+.option {
+  display: flex;
+  gap: .6rem;
+  align-items: flex-start;
+  width: 100%;
+  padding: .75rem .85rem;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  font-size: .9375rem;
+  line-height: 1.45;
+  font-weight: 500;
+  cursor: pointer;
+}
+.option .key {
+  flex: none;
+  width: 1.4rem; height: 1.4rem;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--surface-2);
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+.option[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.option[aria-pressed="true"] .key { background: var(--accent); color: var(--accent-text); }
+
+.answer-pair { display: grid; gap: .6rem; margin-bottom: .9rem; }
+.answer-box { padding: .75rem .85rem; border-radius: 12px; border: 1px solid var(--border); font-size: .9375rem; }
+.answer-box > b { display: block; font-size: .6875rem; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .3rem; color: var(--muted); }
+.answer-box.yours { background: var(--surface-2); }
+.answer-box.model { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 28%, transparent); }
+.answer-box .explain { margin: .45rem 0 0; font-size: .875rem; color: var(--muted); }
+
+details.source { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); margin-bottom: .9rem; }
+details.source > summary {
+  padding: .75rem .85rem;
+  font-size: .875rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+}
+details.source > summary::-webkit-details-marker { display: none; }
+details.source > summary::after { content: '⌄'; color: var(--muted); }
+details.source[open] > summary::after { content: '⌃'; }
+details.source .reading { padding: 0 .85rem .85rem; border-top: 1px solid var(--border); }
+
+.next-hint { text-align: center; font-size: .8125rem; color: var(--muted); margin-top: .6rem; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; margin-bottom: .85rem; }
+.stat {
+  padding: .7rem .5rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  text-align: center;
+}
+.stat b { display: block; font-size: 1.5rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+.stat span { font-size: .6875rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.stat[data-tone="good"] b { color: var(--good); }
+.stat[data-tone="warn"] b { color: var(--warn); }
+.stat[data-tone="bad"] b { color: var(--bad); }
+
+/* ------------------------------------------------------------------ reader */
+
+.search-wrap { position: relative; margin-bottom: .85rem; }
+
+.list { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--surface); margin-bottom: .85rem; }
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  padding: .8rem .9rem;
+  min-height: 52px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+.list-item:last-child { border-bottom: 0; }
+.list-item:active { background: var(--surface-2); }
+.list-item .grow { flex: 1; min-width: 0; }
+.list-item .title { font-weight: 550; font-size: .9375rem; }
+.list-item .sub { font-size: .75rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.list-item .arrow { color: var(--muted); flex: none; }
+.list-item .kind {
+  flex: none;
+  width: 2rem; height: 2rem;
+  display: grid; place-items: center;
+  border-radius: 8px;
+  background: var(--surface-2);
+  font-size: .625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Injected reading HTML from build_web.py. Measure and rhythm matter more here than anywhere else
+ * in the app — this is where actual reading happens. */
+.reading { font-size: 1.0625rem; line-height: 1.65; overflow-wrap: break-word; }
+.reading h1 { font-size: 1.5rem; margin: 1.4rem 0 .7rem; }
+.reading h2 { font-size: 1.1875rem; margin: 1.7rem 0 .6rem; padding-top: .2rem; }
+.reading h3 { font-size: 1.0625rem; margin: 1.3rem 0 .45rem; color: var(--muted); }
+.reading h1:first-child { margin-top: 0; }
+.reading > p:last-child { margin-bottom: 0; }
+.reading ul, .reading ol { margin: 0 0 .9em; padding-left: 1.35rem; }
+.reading li { margin-bottom: .35em; }
+.reading li > ul, .reading li > ol { margin: .35em 0 .1em; }
+.reading blockquote {
+  margin: 0 0 1em;
+  padding: .1rem 0 .1rem .9rem;
+  border-left: 3px solid var(--accent);
+  color: var(--text);
+  background: linear-gradient(90deg, var(--accent-soft), transparent 70%);
+  border-radius: 0 8px 8px 0;
+}
+.reading blockquote > p:last-child { margin-bottom: 0; }
+.reading hr { height: 1px; border: 0; background: var(--border); margin: 1.6rem 0; }
+.reading code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .875em;
+  padding: .1em .35em;
+  border-radius: 5px;
+  background: var(--surface-2);
+  overflow-wrap: anywhere;
+}
+.reading a.wl { border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+.reading a.ext::after { content: ' ↗'; font-size: .8em; opacity: .7; }
+.reading .wl-broken { color: var(--muted); border-bottom: 1px dotted var(--muted); }
+
+/* Citations are tap targets that open the source note as a sheet. Superscript-sized so 1,600 of
+ * them across the corpus don't shred the line rhythm. */
+.reading .cite {
+  display: inline-block;
+  margin: 0 .05em;
+  padding: 0 .3em;
+  border: 0;
+  border-radius: 5px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: .6875em;
+  font-weight: 700;
+  vertical-align: .35em;
+  line-height: 1.5;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.table-wrap { overflow-x: auto; margin: 0 0 1em; -webkit-overflow-scrolling: touch; }
+.reading table { border-collapse: collapse; font-size: .875rem; min-width: 100%; }
+.reading th, .reading td {
+  border: 1px solid var(--border);
+  padding: .45rem .6rem;
+  text-align: left;
+  vertical-align: top;
+}
+.reading th { background: var(--surface-2); font-weight: 650; white-space: nowrap; }
+
+.toc { margin-bottom: 1rem; }
+.toc a { display: block; padding: .3rem 0; font-size: .875rem; border-bottom: 1px solid var(--border); }
+.toc a:last-child { border-bottom: 0; }
+.toc a[data-level="3"] { padding-left: .9rem; color: var(--muted); font-size: .8125rem; }
+
+/* ------------------------------------------------------------------ charts */
+
+.bars { display: grid; gap: .3rem; }
+.bar-row { display: grid; grid-template-columns: 3.6rem 1fr 2.6rem; align-items: center; gap: .5rem; font-size: .8125rem; }
+.bar-track { height: 20px; border-radius: 6px; background: var(--surface-2); overflow: hidden; position: relative; }
+.bar-fill { height: 100%; border-radius: 6px; background: var(--accent); min-width: 2px; }
+.bar-fill[data-tone="good"] { background: var(--good); }
+.bar-fill[data-tone="warn"] { background: var(--warn); }
+.bar-fill[data-tone="bad"] { background: var(--bad); }
+.bar-row .num { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.bar-row .lbl { color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* The calibration row shows two things at once: how sure you felt (a marker) and how often you were
+ * right (the fill). Their distance apart is the fluency illusion, made visible. */
+.bar-marker { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--text); opacity: .55; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 40px; }
+.spark > i { flex: 1; background: var(--accent-soft); border-radius: 2px 2px 0 0; min-height: 2px; }
+.spark > i[data-on="1"] { background: var(--accent); }
+
+/* ------------------------------------------------------------------ citation sheet */
+
+.cite-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  align-items: end;
+  background: rgba(12, 14, 16, .45);
+}
+.cite-sheet-body {
+  background: var(--surface);
+  border-radius: 18px 18px 0 0;
+  padding: 1.1rem 1.1rem calc(1.1rem + env(safe-area-inset-bottom));
+  max-height: 70dvh;
+  overflow-y: auto;
+  animation: sheet-up .22s ease;
+}
+@keyframes sheet-up { from { transform: translateY(12%); opacity: .6; } }
+.cite-sheet-label { font-size: .6875rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin-bottom: .4rem; }
+.cite-sheet-text { font-size: .9375rem; line-height: 1.6; }
+
+.boot { text-align: center; padding: 3rem 1rem; color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  .btn:active { transform: none; }
+}
+
+/* Wider screens: the laptop browser gets the same app, just less cramped. */
+@media (min-width: 46rem) {
+  .view { padding-top: 1.5rem; }
+  .stat-grid { grid-template-columns: repeat(6, 1fr); }
+}

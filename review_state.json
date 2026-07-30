@@ -1,10 +1,10 @@
 {
   "u1-coreconditions-cloze-01": {
-    "due": "2026-07-23",
-    "reps": 3,
-    "last": "2026-07-07",
-    "ease": 2.8,
-    "interval": 16
+    "due": "2026-09-11",
+    "reps": 4,
+    "last": "2026-07-28",
+    "ease": 2.9,
+    "interval": 45
   },
   "u1-upr-understand-01": {
     "due": "2026-07-22",
@@ -35,11 +35,11 @@
     "interval": 16
   },
   "u1-attending-cloze-01": {
-    "due": "2026-07-22",
-    "reps": 3,
-    "last": "2026-07-06",
-    "ease": 2.8,
-    "interval": 16
+    "due": "2026-09-11",
+    "reps": 4,
+    "last": "2026-07-28",
+    "ease": 2.9,
+    "interval": 45
   },
   "u1-microskills-recall-01": {
     "due": "2026-07-22",
@@ -77,11 +77,11 @@
     "interval": 15
   },
   "u1-bordin-cloze-01": {
-    "due": "2026-07-22",
-    "reps": 3,
-    "last": "2026-07-06",
-    "ease": 2.7,
-    "interval": 16
+    "due": "2026-09-09",
+    "reps": 4,
+    "last": "2026-07-28",
+    "ease": 2.8,
+    "interval": 43
   },
   "u1-bordin-apply-01": {
     "due": "2026-07-23",
@@ -133,11 +133,11 @@
     "last": "2026-07-12"
   },
   "u2-psychodynamic-apply-01": {
-    "ease": 2.8,
-    "interval": 16,
-    "reps": 3,
-    "due": "2026-07-23",
-    "last": "2026-07-07"
+    "ease": 2.9,
+    "interval": 45,
+    "reps": 4,
+    "due": "2026-09-11",
+    "last": "2026-07-28"
   },
   "u2-personcentered-cloze-01": {
     "ease": 2.52,
@@ -175,11 +175,11 @@
     "last": "2026-07-08"
   },
   "u2-existential-apply-01": {
-    "ease": 2.34,
-    "interval": 13,
-    "reps": 3,
-    "due": "2026-07-21",
-    "last": "2026-07-08"
+    "ease": 2.44,
+    "interval": 30,
+    "reps": 4,
+    "due": "2026-08-27",
+    "last": "2026-07-28"
   },
   "u2-cbt-cloze-01": {
     "ease": 2.8,
@@ -343,11 +343,11 @@
     "last": "2026-07-12"
   },
   "u2-postmodern-evaluate-01": {
-    "ease": 2.16,
-    "interval": 12,
-    "reps": 3,
-    "due": "2026-07-20",
-    "last": "2026-07-08"
+    "ease": 2.26,
+    "interval": 26,
+    "reps": 4,
+    "due": "2026-08-23",
+    "last": "2026-07-28"
   },
   "u2-stance-evaluate-01": {
     "ease": 2.8,
@@ -357,11 +357,11 @@
     "last": "2026-07-06"
   },
   "u2-existential-vs-personcentered-apply-01": {
-    "ease": 2.8,
-    "interval": 16,
-    "reps": 3,
-    "due": "2026-07-22",
-    "last": "2026-07-06"
+    "ease": 2.9,
+    "interval": 45,
+    "reps": 4,
+    "due": "2026-09-11",
+    "last": "2026-07-28"
   },
   "u2-defense-apply-01": {
     "ease": 1.8,
@@ -546,18 +546,18 @@
     "last": "2026-07-18"
   },
   "u3-principles-recall-01": {
-    "ease": 2.24,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-21",
-    "last": "2026-07-15"
+    "ease": 2.34,
+    "interval": 13,
+    "reps": 3,
+    "due": "2026-08-10",
+    "last": "2026-07-28"
   },
   "u3-principles-compare-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-19",
-    "last": "2026-07-13"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-13",
+    "last": "2026-07-28"
   },
   "u3-principles-apply-01": {
     "ease": 2.38,
@@ -595,11 +595,11 @@
     "last": "2026-07-15"
   },
   "u3-consent-elements-recall-01": {
-    "ease": 2.38,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-19",
-    "last": "2026-07-13"
+    "ease": 2.48,
+    "interval": 14,
+    "reps": 3,
+    "due": "2026-08-11",
+    "last": "2026-07-28"
   },
   "u3-consent-trainee-apply-01": {
     "ease": 2.38,
@@ -616,11 +616,11 @@
     "last": "2026-07-13"
   },
   "u3-consent-ongoing-why-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-19",
-    "last": "2026-07-13"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-13",
+    "last": "2026-07-28"
   },
   "u3-consent-mandated-apply-01": {
     "ease": 2.24,
@@ -833,11 +833,11 @@
     "last": "2026-07-18"
   },
   "u3-values-referral-vignette-01": {
-    "ease": 2.38,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-20",
-    "last": "2026-07-14"
+    "ease": 2.48,
+    "interval": 14,
+    "reps": 3,
+    "due": "2026-08-11",
+    "last": "2026-07-28"
   },
   "u3-impairment-vignette-01": {
     "ease": 1.68,
@@ -882,11 +882,11 @@
     "last": "2026-07-18"
   },
   "u3-rxp-recall-01": {
-    "ease": 1.54,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-19",
-    "last": "2026-07-18"
+    "ease": 1.64,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-08-03",
+    "last": "2026-07-28"
   },
   "u4-tripartite-recall-01": {
     "ease": 2.6,
@@ -1036,11 +1036,11 @@
     "last": "2026-07-18"
   },
   "u4-accult-vignette-02": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-19",
-    "last": "2026-07-18"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-08-03",
+    "last": "2026-07-28"
   },
   "u4-accult-compare-01": {
     "ease": 2.6,
@@ -1113,11 +1113,11 @@
     "last": "2026-07-18"
   },
   "u4-privilege-stance-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-19",
-    "last": "2026-07-18"
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-08-03",
+    "last": "2026-07-28"
   },
   "u4-broach-recall-01": {
     "ease": 2.6,
@@ -1162,18 +1162,18 @@
     "last": "2026-07-18"
   },
   "u4-autobiography-production-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-19",
-    "last": "2026-07-18"
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-08-03",
+    "last": "2026-07-28"
   },
   "u4-microagg-recall-01": {
-    "ease": 2.18,
+    "ease": 1.86,
     "interval": 1,
     "reps": 0,
-    "due": "2026-07-19",
-    "last": "2026-07-18"
+    "due": "2026-07-29",
+    "last": "2026-07-28"
   },
   "u4-microagg-cloze-01": {
     "ease": 2.28,
@@ -1183,11 +1183,11 @@
     "last": "2026-07-18"
   },
   "u4-microagg-vignette-01": {
-    "ease": 2.7,
-    "interval": 6,
-    "reps": 2,
-    "due": "2026-07-24",
-    "last": "2026-07-18"
+    "ease": 2.8,
+    "interval": 16,
+    "reps": 3,
+    "due": "2026-08-13",
+    "last": "2026-07-28"
   },
   "u4-microagg-vignette-02": {
     "ease": 2.6,
@@ -1204,18 +1204,18 @@
     "last": "2026-07-18"
   },
   "u4-microagg-repair-01": {
-    "ease": 2.6,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-19",
-    "last": "2026-07-18"
+    "ease": 2.7,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-08-03",
+    "last": "2026-07-28"
   },
   "u4-microagg-critique-01": {
-    "ease": 2.28,
-    "interval": 1,
-    "reps": 1,
-    "due": "2026-07-19",
-    "last": "2026-07-18"
+    "ease": 2.38,
+    "interval": 6,
+    "reps": 2,
+    "due": "2026-08-03",
+    "last": "2026-07-28"
   },
   "u4-microagg-clinical-analyze-01": {
     "ease": 2.7,
@@ -1589,11 +1589,11 @@
     "last": null
   },
   "u5-style-resistant-vignette-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-18",
-    "last": null
+    "due": "2026-07-29",
+    "last": "2026-07-28"
   },
   "u5-style-disorganized-vignette-01": {
     "ease": 2.5,
@@ -1638,11 +1638,11 @@
     "last": null
   },
   "u5-style-disorg-risk-evaluate-01": {
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.18,
+    "interval": 1,
     "reps": 0,
-    "due": "2026-07-18",
-    "last": null
+    "due": "2026-07-29",
+    "last": "2026-07-28"
   },
   "u5-style-stance-01": {
     "ease": 2.5,
@@ -1729,11 +1729,11 @@
     "last": null
   },
   "u5-piaget-object-permanence-cloze-01": {
-    "ease": 2.5,
-    "interval": 0,
-    "reps": 0,
-    "due": "2026-07-18",
-    "last": null
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-29",
+    "last": "2026-07-28"
   },
   "u5-piaget-assim-accom-compare-01": {
     "ease": 2.5,
@@ -2720,6 +2720,2267 @@
     "interval": 0,
     "reps": 0,
     "due": "2026-07-18",
+    "last": null
+  },
+  "ax-pfa-frameworks-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-upr-conditionsofworth-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-upr-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-carkhuff-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-carkhuff-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-empathy-additive-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-congruence-selfdisclosure-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-congruence-tension-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-rogers-actualizing-understand-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-29",
+    "last": "2026-07-28"
+  },
+  "u1-rogers-wisconsin-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-soler-cloze-01": {
+    "ease": 2.18,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-29",
+    "last": "2026-07-28"
+  },
+  "u1-silence-apply-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-29",
+    "last": "2026-07-28"
+  },
+  "u1-attending-cultural-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-observation-vignette-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-29",
+    "last": "2026-07-28"
+  },
+  "u1-fivestage-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-reflecting-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-alliance-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-rupture-type-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-rupture-repair-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u1-commonfactors-compare-01": {
+    "ease": 2.6,
+    "interval": 1,
+    "reps": 1,
+    "due": "2026-07-29",
+    "last": "2026-07-28"
+  },
+  "u1-dodobird-understand-01": {
+    "ease": 2.18,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-29",
+    "last": "2026-07-28"
+  },
+  "u1-frank-recall-01": {
+    "ease": 2.18,
+    "interval": 1,
+    "reps": 0,
+    "due": "2026-07-29",
+    "last": "2026-07-28"
+  },
+  "u8-ask-directly-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-sra-rep-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-ideation-behavior-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-ideation-ladder-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-passive-active-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-warningsign-riskfactor-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-acute-chronic-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-ispathwarm-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-priorattempt-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-ideation-to-action-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-acquired-capability-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-predict-vs-manage-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-case-approach-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-reflected-intent-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-disposition-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-spi-steps-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-spi-order-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-spi-contract-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-nosuicide-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-spi-collaborative-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-spi-988-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-means-why-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-means-casefatality-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-means-substitution-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-means-firearm-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-means-gap-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-crisis-def-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-sixstep-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-safety-thread-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-sixstep-roberts-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-beta-domains-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-beta-onevoice-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-beta-agree-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-restraint-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-deescalate-calm-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-brain-three-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-hippocampus-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-hpa-axis-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-cortisol-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-explicit-implicit-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-freeze-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-window-tolerance-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-window-hypo-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-bodykeepsscore-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-body-remembers-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-tic-treatment-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-three-es-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-four-rs-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-six-principles-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-dont-dig-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-tic-disclosure-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-treatments-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-retraumatization-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-experience-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-vt-def-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-vt-schemas-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-vt-burnout-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-distress-types-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-countertransference-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-vt-normal-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-proqol-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-vt-ethical-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-selfcare-ethics-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-c2g-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-organizational-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-peer-supervision-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u8-selfcare-martyr-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-modalities-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-modality-ambivalence-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-modality-depression-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-modality-bpd-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-modality-chronicpain-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-three-waves-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-ebp-definition-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-ebp-common-factors-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-modality-styles-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-cognitive-model-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-hallway-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-thought-record-rep-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-three-levels-cognition-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-distortion-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-collaborative-empiricism-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-socratic-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-restructuring-vs-ba-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-ba-outside-in-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-trap-trac-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-ba-avoidance-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-ba-dismantling-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-ba-prescribe-stance-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-exposure-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-mi-definition-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-righting-reflex-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-righting-reflex-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-pace-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-four-processes-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-processes-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-change-sustain-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-darn-cat-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-discord-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-mi-planning-too-early-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-oars-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-oars-microskills-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-reflection-vs-question-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-affirmation-vs-approval-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-complex-reflection-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-oars-produces-change-talk-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-question-stacking-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-miracle-question-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-sfbt-assumptions-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-scaling-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-exception-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-sfbt-techniques-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-coping-question-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-sfbt-evidence-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-psych-flexibility-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-hexaflex-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-defusion-vs-restructuring-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-acceptance-not-resignation-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-dbt-modules-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-dbt-dialectic-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-act-vs-dbt-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-dbt-scope-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-opposite-action-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u9-act-when-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-eleven-factors-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-universality-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-altruism-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-social-microcosm-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-interpersonal-learning-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-cohesion-alliance-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-cohesion-vs-il-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-catharsis-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-which-factor-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-which-factor-mcq-02": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-member-clinician-rankings-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-factors-contested-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-tuckman-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-pregroup-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-corey-transition-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-storming-normal-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-tuckman-corey-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-which-stage-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-leader-by-stage-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-stages-recycle-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-final-stage-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-four-functions-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-linear-curvilinear-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-best-leader-profile-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-aggressive-stimulator-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-here-and-now-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-process-vs-content-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-process-illumination-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-styles-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-decenter-stance-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-asgw-four-types-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-task-group-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-counseling-vs-psychotherapy-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-which-type-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-psychoeducational-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-type-drives-screening-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-scope-type-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-prototypes-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-monopolist-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-silent-member-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-help-rejecting-complainer-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-which-member-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-monopolist-vs-silent-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-difficult-opportunity-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-difficult-is-leadership-signal-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-group-confidentiality-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-privilege-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-cant-guarantee-confidentiality-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-group-vs-individual-confidentiality-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-screening-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-preparation-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-mandated-member-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-protective-duty-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-why-group-heals-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-group-vs-individual-efficacy-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-audience-trap-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u10-cohesion-efficacy-caveat-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-six-nts-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-gaba-glutamate-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-gaba-glutamate-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-dopamine-roles-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-serotonin-modulator-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-norepinephrine-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-mechanism-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-antagonist-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-delayed-onset-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-nt-imbalance-oversimplified-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-benzo-target-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-ans-branches-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-adrenal-medulla-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-sns-pns-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-sympathetic-effects-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-vagus-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-which-branch-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-freeze-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-freeze-not-rest-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-polyvagal-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-homeostasis-understand-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-hpa-chain-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-sam-hpa-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-sam-hpa-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-negative-feedback-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-allostatic-load-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-allostatic-load-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-stress-adaptive-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-cortisol-biomarker-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-circuit-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-adrenal-fatigue-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-stress-selfcare-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-five-classes-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-ssri-onset-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-ssri-vs-benzo-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-anxiety-firstline-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-benzo-mechanism-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-antipsychotic-d2-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-lithium-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-which-class-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-which-class-mcq-02": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-chemical-imbalance-myth-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-antidepressant-efficacy-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-discontinuation-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-scope-dont-prescribe-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-scope-supplements-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-addictive-vs-discontinuation-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-neuroplasticity-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-hebbian-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-kandel-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-baxter-ocd-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-therapy-vs-med-brain-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-cozolino-social-brain-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-neuroplasticity-overhyped-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-reps-agency-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-whats-wrong-with-brain-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u11-biology-one-lens-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-designs-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-causation-three-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-quasi-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-corr-causation-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-rct-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-random-assignment-vs-sampling-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-which-design-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-which-design-mcq-02": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-quasi-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-abab-vs-multiple-baseline-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-single-case-vs-case-study-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-visual-inspection-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-designs-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-four-validities-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-construct-validity-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-internal-external-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-threat-regression-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-threat-history-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-which-threat-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-threat-attrition-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-control-group-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-validity-two-senses-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-uncontrolled-claim-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-three-questions-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-pvalue-definition-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-effect-size-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-significant-but-tiny-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-stat-vs-clinical-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-confidence-interval-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-reliable-change-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-clinical-sig-categories-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-nomothetic-idiographic-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-ebp-three-legs-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-pyramid-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-est-criteria-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-ebp-vs-est-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-which-evidence-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-ebp-integration-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-pyramid-caveat-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-est-not-best-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-allegiance-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-eval-types-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-formative-vs-summative-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-process-vs-outcome-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-which-eval-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-needs-assessment-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-eval-vs-research-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-accountability-loop-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-belmont-three-recall-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-respect-persons-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-beneficence-vs-justice-compare-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-belmont-apply-mcq-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-tuskegee-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-irb-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-section-g-dualrole-vignette-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-consent-throughline-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-replication-crisis-explain-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-phacking-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-replication-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-publication-bias-analyze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-mbc-not-on-track-apply-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-progress-monitoring-cloze-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
+    "last": null
+  },
+  "u12-unit-capstone-evaluate-01": {
+    "ease": 2.5,
+    "interval": 0,
+    "reps": 0,
+    "due": "2026-07-28",
     "last": null
   }
 }

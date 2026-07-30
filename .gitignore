@@ -7,3 +7,11 @@ venv/
 
 # Obsidian per-machine workspace state
 .obsidian/workspace.json
+
+# Supabase credentials for the local Python scripts. Contains a password — never commit.
+# (docs/config.js is a different thing and IS committed: the anon key is a public client key,
+# protected by the row-level-security policies in supabase/schema.sql.)
+.env
+
+# Attempts graded on the laptop while offline, waiting to upload. Per-machine, transient.
+.supabase-outbox.jsonl

@@ -93,7 +93,12 @@ def current_item(items):
 # ---------- sidebar: session setup ----------
 
 items = _load_items(_items_mtime())
-all_units = sorted({it.get("unit") for it in items if it.get("unit")})
+def _unit_sort_key(u: str):
+    """Numeric units in numeric order (1, 2, ... 10), then elective modules alphabetically."""
+    return (0, int(u), "") if u.isdigit() else (1, 0, u)
+
+
+all_units = sorted({it.get("unit") for it in items if it.get("unit")}, key=_unit_sort_key)
 all_blooms = ["remember", "understand", "apply", "analyze", "evaluate"]
 all_types = sorted({it["type"] for it in items})
 
@@ -101,6 +106,12 @@ all_types = sorted({it["type"] for it in items})
 def unit_label(u: str) -> str:
     """Friendly label for a unit value: numeric units -> 'Unit N', elective modules kept as-is."""
     return f"Unit {u}" if u.isdigit() else u
+
+# Reconcile with Supabase once per Streamlit session, before any due count is computed — otherwise
+# the sidebar would show yesterday's queue when the phone has already worked through part of it.
+# Guarded by session_state because Streamlit re-runs this whole file on every interaction.
+if "synced" not in st.session_state:
+    st.session_state.synced = sch.sync_down(items)
 
 state_now = sch.ensure_state(items, sch.load_state())
 due_now = sch.due_items(items, state_now, shuffle=False)
@@ -147,6 +158,20 @@ with st.sidebar:
     st.divider()
     if st.button("Start with these settings", type="primary", use_container_width=True):
         new_session(items, filters, length, cram)
+        st.rerun()
+
+    st.divider()
+    # The phone (docs/) writes to the same Supabase tables, so say plainly whether this instance is
+    # seeing that shared state or working from the local files alone.
+    sync = st.session_state.synced
+    st.caption(f"**Sync:** {sch.remote_report()}")
+    if sync.get("error"):
+        st.warning(f"Supabase said: {sync['error']}")
+    elif sync.get("online") and sync.get("changed"):
+        st.caption(f"Pulled {sync['pulled']} items from Supabase — "
+                   f"{sync['changed']} had newer progress (studied on the phone).")
+    if st.button("Sync now", use_container_width=True):
+        st.session_state.synced = sch.sync_down(items)
         st.rerun()
 
 st.title("🧠 Quiz Runner")
@@ -291,7 +316,7 @@ elif st.session_state.stage == "reveal":
         before, after = sch.update(state, item["id"], chosen)
         sch.save_state(state)
         st_item = state[item["id"]]
-        sch.log_attempt({
+        log_row = {
             "timestamp": datetime.now().isoformat(timespec="seconds"),
             "item_id": item["id"],
             "type": item["type"],
@@ -304,7 +329,10 @@ elif st.session_state.stage == "reveal":
             "ease": st_item["ease"],
             "reps": st_item["reps"],
             "time_taken_s": pending["time_taken"],
-        })
+        }
+        sch.log_attempt(log_row)
+        # Same event, sent to Supabase so the phone sees it. Queues locally if offline; never raises.
+        sch.push_attempt(sch.attempt_from_log_row(log_row, st_item))
         st.session_state.results.append({
             "item_id": item["id"], "outcome": chosen,
             "predicted_confidence": pending["confidence"],

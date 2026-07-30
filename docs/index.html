@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- viewport-fit=cover lets the layout reach under the notch and home indicator; the safe-area
+     insets in style.css put the padding back where it's actually needed. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Psych Wiki</title>
+<meta name="description" content="Counseling-foundations study wiki — spaced-repetition quizzing and readings.">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32">
+<link rel="stylesheet" href="style.css">
+
+<!-- Standalone mode when launched from the home screen, with the status bar drawn over our own
+     header colour rather than a white strip. -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Psych Wiki">
+<meta name="theme-color" content="#173d3a" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121417" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="topbar-back" id="backBtn" hidden aria-label="Back">‹</button>
+  <h1 class="topbar-title" id="topTitle">Study</h1>
+  <button class="sync-chip" id="syncChip" aria-live="polite">local</button>
+</header>
+
+<main class="view" id="view">
+  <div class="boot">Loading the bank…</div>
+</main>
+
+<nav class="tabbar" id="tabbar" aria-label="Sections">
+  <a class="tab" href="#/study" data-tab="study">
+    <span class="tab-glyph" aria-hidden="true">◧</span><span class="tab-label">Study</span>
+  </a>
+  <a class="tab" href="#/read" data-tab="read">
+    <span class="tab-glyph" aria-hidden="true">▤</span><span class="tab-label">Read</span>
+  </a>
+  <a class="tab" href="#/stats" data-tab="stats">
+    <span class="tab-glyph" aria-hidden="true">▚</span><span class="tab-label">Stats</span>
+  </a>
+  <a class="tab" href="#/you" data-tab="you">
+    <span class="tab-glyph" aria-hidden="true">◍</span><span class="tab-label">You</span>
+  </a>
+</nav>
+
+<div class="cite-sheet" id="citeSheet" hidden>
+  <div class="cite-sheet-body">
+    <div class="cite-sheet-label" id="citeLabel"></div>
+    <p class="cite-sheet-text" id="citeText"></p>
+    <button class="btn btn-ghost" id="citeClose">Close</button>
+  </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

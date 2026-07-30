@@ -228,7 +228,7 @@ and being a discerning consumer means resisting both credulity and cynicism.
   Report, and the **IRB/Common Rule** system requiring prospective review, informed consent, and
   protections for vulnerable populations.
 
-- **[S20] American Counseling Association (2014). *ACA Code of Ethics,* **Section G: Research and Publication.***
+- **[S20] American Counseling Association (2014). *ACA Code of Ethics,* Section G: Research and Publication.**
   https://www.counseling.org/resources/aca-code-of-ethics.pdf
   _The counseling profession's own research-ethics standards (primary; the same document anchoring Unit 3). Authority: very high._
   Section G governs research: **informed consent to research** (voluntary; the right to decline; the

@@ -202,10 +202,179 @@ def log_attempt(row: dict) -> None:
         w.writerow({k: row.get(k, "") for k in LOG_FIELDS})
 
 
+# ---------- Supabase: one shared queue with the phone ----------
+
+# The web app (docs/) and this module write to the same two Supabase tables, so grading an item on
+# the phone advances the same schedule the Streamlit runner reads. Supabase is the source of truth
+# *across devices*; review_state.json and review_log.csv keep being written as a git-tracked local
+# snapshot (and as the offline fallback), they're just no longer the only copy.
+#
+# All of it degrades to nothing: with no .env configured, every function below is a no-op and the
+# scheduler behaves exactly as it did before — stdlib-only, local-only, works on a plane.
+
+_client = None
+_client_failed = False
+
+
+def _supa():
+    """The supa module, or None when Supabase isn't configured. Imported lazily so this file has no
+    import-time dependency on it."""
+    try:
+        import supa
+    except ImportError:
+        return None
+    return supa if supa.configured() else None
+
+
+def remote_enabled() -> bool:
+    return _supa() is not None
+
+
+def _get_client(reset: bool = False):
+    """A signed-in client, cached for the process. One sign-in per run, not per attempt."""
+    global _client, _client_failed
+    if reset:
+        _client, _client_failed = None, False
+    if _client is not None or _client_failed:
+        return _client
+    supa = _supa()
+    if supa is None:
+        return None
+    try:
+        client = supa.Client()
+        client.sign_in()
+        _client = client
+    except supa.OfflineError:
+        _client_failed = True          # offline: queue locally, try again next run
+    except supa.SupabaseError:
+        _client_failed = True          # bad credentials: surfaced by remote_report()
+    return _client
+
+
+def sync_down(items: list[dict] | None = None, today: date | None = None) -> dict:
+    """Reconcile with Supabase: send anything queued offline, pull remote state, merge it into the
+    local file. Call once when an app starts, not per interaction.
+
+    Merge rule mirrors the web app's: remote wins per item, except for items with an unsent attempt
+    in the outbox — the server simply hasn't heard about those yet."""
+    supa = _supa()
+    if supa is None:
+        return {"enabled": False}
+    client = _get_client()
+    if client is None:
+        return {"enabled": True, "online": False, "queued": len(supa.outbox_read())}
+
+    result = {"enabled": True, "online": True, "pulled": 0, "changed": 0, "sent": 0, "queued": 0}
+    try:
+        result["sent"], result["queued"] = supa.flush_outbox(client)
+        remote = client.pull_state()
+    except supa.OfflineError:
+        return {"enabled": True, "online": False, "queued": len(supa.outbox_read())}
+    except supa.SupabaseError as err:
+        return {"enabled": True, "online": True, "error": str(err),
+                "queued": len(supa.outbox_read())}
+
+    local = load_state()
+    protected = {a["item_id"] for a in supa.outbox_read()}
+    changed = 0
+    for item_id, remote_st in remote.items():
+        if item_id in protected:
+            continue
+        merged = {k: remote_st[k] for k in ("ease", "interval", "reps", "due", "last")}
+        if local.get(item_id) != merged:
+            changed += 1
+        local[item_id] = merged
+    result["pulled"] = len(remote)
+    result["changed"] = changed
+
+    if items is not None:
+        ensure_state(items, local, today)
+    save_state(local)
+    return result
+
+
+def push_attempt(attempt: dict) -> bool:
+    """Send one graded attempt. Returns True if it reached Supabase, False if it was queued locally
+    (offline, or not configured). Never raises — a sync problem must not lose a review."""
+    supa = _supa()
+    if supa is None:
+        return False
+    client = _get_client()
+    if client is None:
+        supa.outbox_append(attempt)
+        return False
+    try:
+        client.record_attempt(attempt)
+        return True
+    except supa.OfflineError:
+        supa.outbox_append(attempt)
+        return False
+    except supa.SupabaseError as err:
+        # An hour-old access token is the likely cause in a long Streamlit session; re-auth once.
+        if "401" in str(err) or "JWT" in str(err):
+            client = _get_client(reset=True)
+            if client is not None:
+                try:
+                    client.record_attempt(attempt)
+                    return True
+                except (supa.OfflineError, supa.SupabaseError):
+                    pass
+        supa.outbox_append(attempt)
+        return False
+
+
+def attempt_from_log_row(row: dict, st: dict) -> dict:
+    """Build the Supabase payload from the review_log.csv row the app already assembles, plus the
+    item's post-update state. Keeps the two writes describing the same event."""
+    supa = _supa()
+    return {
+        "item_id": row["item_id"],
+        "outcome": row["outcome"],
+        "ease": st["ease"],
+        "interval_after": row["interval_after"],
+        "interval_before": row["interval_before"],
+        "reps": st["reps"],
+        "due": st["due"],
+        "last": st["last"],
+        "ts": supa.to_utc_iso(row["timestamp"]) if supa else row["timestamp"],
+        "type": row.get("type"),
+        "bloom_level": row.get("bloom_level"),
+        "cluster": row.get("cluster") or None,
+        "predicted_confidence": row.get("predicted_confidence"),
+        "time_taken_s": row.get("time_taken_s"),
+        "client": "streamlit",
+    }
+
+
+def remote_report() -> str:
+    """One-line sync status, for the Streamlit sidebar."""
+    supa = _supa()
+    if supa is None:
+        missing = []
+        try:
+            import supa as _s
+            missing = _s.missing_keys()
+        except ImportError:
+            pass
+        return ("local only — apps/supa.py not importable" if not missing
+                else f"local only — set {', '.join(missing)} in .env to sync")
+    queued = len(supa.outbox_read())
+    if _client_failed and _client is None:
+        return f"offline — {queued} attempt(s) queued locally" if queued else "offline"
+    if queued:
+        return f"synced, {queued} attempt(s) still queued"
+    return "synced with Supabase"
+
+
 # ---------- CLI sanity check ----------
 
 if __name__ == "__main__":
     items = load_items()
+    if remote_enabled():
+        info = sync_down(items)
+        print(f"Supabase: {remote_report()}"
+              + (f" (pulled {info.get('pulled', 0)}, {info.get('changed', 0)} changed locally)"
+                 if info.get("online") else ""))
     state = ensure_state(items, load_state())
     save_state(state)
     due = due_items(items, state)

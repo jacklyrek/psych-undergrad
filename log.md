@@ -722,3 +722,62 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   8 readings + item line), coverage.md (row 12 ☐→☑ + spine-complete note + Unit 7 handoff resolved), log.md.
 - **🏁 MILESTONE — the 12-unit spine is COMPLETE.** All 12 spine units built in-depth (Tiers 1–3), plus 2
   electives (PFA, addiction). Next natural passes: a full-bank `lint`, and optional depth/coverage sweeps.
+
+## [2026-07-29] build-webapp | docs/ phone app + Supabase sync | 123 readings, 712 items, 2 test suites
+- **Why:** the study loop and the readings were laptop-only. Goal: quiz and read on an iPhone, with
+  progress shared between devices rather than two diverging copies of `review_state.json`.
+- **Shape chosen:** a **static PWA** in `docs/` (no npm/bundler/framework — none is installed, and
+  Pages serves static files), deployed via GitHub Pages' `master → /docs` option so every push
+  redeploys with no CLI. Hash routing and all-relative paths, because Pages serves from a subpath
+  and has no SPA rewrites. Installable to the home screen; works with no signal.
+- **`apps/build_web.py` (new):** compiles `wiki/` + `research/` + the item bank →
+  `docs/content/{items,readings,version}.json`. Renders markdown to HTML **at build time** (so the
+  phone ships no parser, and the link graph is validated once): frontmatter, tables, lists,
+  blockquotes, `[[wikilinks]]` → in-app routes, `[S3]` citations → tappable source notes lifted from
+  each page's `## Sources`, plus backlinks across the corpus. Output: **123 pages** (109 wiki, 14
+  research), **955 wikilink edges, 0 broken links, 0 orphan wiki pages**.
+  - Renderer bugs found and fixed while validating: nested inline placeholders leaking NUL bytes
+    (every page's Sources line is `[`code`](link)`, which triggered it); `_underscore italics_` in
+    the research files; a piped wikilink inside a table cell being split as a cell boundary; and
+    anchor-only `[[#Heading | text]]` links.
+  - Content bug found: **`research/unit12-research-sources.md:231`** had unbalanced `**` on the
+    [S20] ACA entry (a stray `***`). Fixed — it was the only such paragraph in 123 files.
+- **`docs/sm2.js`:** SM-2 ported from `scheduler.py`. **`apps/test_sm2_parity.py` (new)** proves they
+  agree — 11,077 rounding values, 45,000 transitions, 5,713 normalize strings, 407 autogrades,
+  migration + due-boundary. All pass. The trap it caught: **Python's `round()` breaks ties to even,
+  JS's `Math.round()` breaks them upward**, and a 'shaky' grade computes `round(interval/2)` — so a
+  5-day interval → 2 days in Python, 3 in a naive port. **500 of 2,492 reachable values differ.**
+  JS now implements half-to-even to match the incumbent that produced the existing 554 attempts.
+- **Supabase (`supabase/schema.sql`, new):** `review_state` + `review_log`, RLS policies (the real
+  boundary — the anon key is public by design), and a `record_attempt` RPC that advances state and
+  appends the attempt atomically in one round trip. Log is append-only: no update/delete policy.
+- **Python side:** `apps/supa.py` (stdlib `urllib` client, offline outbox), `apps/sync_supabase.py`
+  (`status`/`push`/`pull`/`flush` — `push` idempotent via a `(user_id, item_id, ts)` unique
+  constraint), and `scheduler.py` gained `sync_down` / `push_attempt` / `remote_report`.
+  `quiz_runner.py` syncs once per session and pushes each grade. **All of it no-ops without a
+  `.env`** — the scheduler stays stdlib-only and fully local, exactly as before.
+  Deliberately **no `service_role` key anywhere**: the local scripts sign in as the ordinary user, so
+  RLS applies to them exactly as it does to the phone.
+- **App:** Study (the loop unchanged in substance — confidence prediction still first and still
+  mandatory), Read (all 123 pages, search, backlinks, citation sheets, "Quiz me on this page"),
+  Stats (**the calibration dashboard from the build order** — accuracy, Bloom split, weakest
+  clusters, due forecast, streak, Brier score, and confidence-vs-outcome bars), You (sync/auth).
+  Offline-first: grading writes locally and queues; the queue drains when there's a network.
+- **`apps/test_web_logic.py` (new):** 5 checks — every module parses, `session.js` and `analytics.js`
+  agree with independent Python computations over the real data, every referenced asset path resolves
+  (an absolute path would 404 on a Pages subpath), and 31 view renders + **three real grades driven
+  through the loop** (state advanced, log written, queue filled, answer never shown during prompt).
+  Both suites run the JS under **JavaScriptCore via `osascript -l JavaScript`** — no node installed.
+- **Bugs caught in review, not by tests:** `[hidden]` was dead — `.cite-sheet{display:grid}` outranks
+  the UA `[hidden]{display:none}`, so the citation sheet would have covered the app on load; and
+  `analytics.js` was slicing dates off Supabase's UTC timestamps, which would credit an evening
+  session to the wrong day and break the streak (now via a `localDay` helper).
+- **State of the bank at build time:** 712 items, **669 due** (541 never reviewed), 554 logged
+  attempts, ease min 1.32 / mean 2.50 / max 2.90.
+- **Docs:** `docs/README.md` (setup, Supabase steps, deploy, sync model, on-device checklist),
+  `apps/README.md`, and CLAUDE.md (directory layout, storage-decision amendment, apps rule + the
+  standing requirement to run the parity test after touching either scheduler).
+- **Not done / for the human:** create the Supabase project and fill in `docs/config.js` + `.env`
+  (steps 2–4 of `docs/README.md`), then `sync_supabase.py push` to seed. Pages on a private repo
+  needs GitHub Pro, and **a Pages site is public** — the readings/items bundle becomes world-readable
+  at that URL, though progress stays private behind RLS.
