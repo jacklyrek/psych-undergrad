@@ -404,9 +404,19 @@ globalThis.localStorage = (() => {
 })();
 globalThis.navigator = { onLine: true };
 globalThis.location = { hash: '#/study', reload() {} };
-globalThis.history = { back() {} };
-globalThis.window = { addEventListener() {}, matchMedia: () => ({ matches: false }),
-                      navigator: globalThis.navigator };
+globalThis.history = { back() { (globalThis.__fire || (() => {}))('popstate'); } };
+// Handlers are kept so the scroll test can fire popstate; scrollTo calls are recorded so it can
+// assert what the router did with the scroll position.
+globalThis.__handlers = {};
+globalThis.__scrolls = [];
+globalThis.__fire = (type) => (__handlers[type] || []).forEach((fn) => fn({ type }));
+globalThis.window = {
+  addEventListener(type, fn) { (__handlers[type] = __handlers[type] || []).push(fn); },
+  matchMedia: () => ({ matches: false }),
+  navigator: globalThis.navigator,
+  scrollY: 0,
+  scrollTo(x, y) { globalThis.window.scrollY = y; __scrolls.push(y); },
+};
 globalThis.CSS = { escape: (s) => s };
 globalThis.setTimeout = (fn) => 0;
 globalThis.clearTimeout = () => {};
@@ -624,6 +634,109 @@ __emit(out);
     return fails
 
 
+# ---------------------------------------------------------------- 6. scroll position
+
+def check_scroll(items: list[dict], pages: list[dict]) -> list[str]:
+    """The router's scroll handling.
+
+    #view has no overflow of its own, so the document is what scrolls — which made the obvious
+    `view.scrollTop = 0` a silent no-op and left every new page inheriting the last one's scroll
+    position. The fix can't be an unconditional scrollTo(0, 0) either, since render() also runs for
+    in-place re-renders. This pins down both halves, plus back/forward restoring where you were."""
+    sources = [DOM_STUB] + [(DOCS / n).read_text(encoding="utf-8")
+                            for n in ("config.js", "sm2.js", "session.js", "analytics.js",
+                                      "supabase.js", "store.js")]
+    sources.append(BOOT_CALL.sub("", (DOCS / "app.js").read_text(encoding="utf-8")))
+
+    driver = """
+content.items = PAYLOAD.items;
+content.itemsById = new Map(PAYLOAD.items.map(i => [i.id, i]));
+content.version = 'testbundle';
+content.pages = PAYLOAD.pages;
+content.pagesBySlug = new Map(PAYLOAD.pages.map(p => [p.slug, p]));
+content.readingsLoaded = true;
+ensureState(content.items, getState(), PAYLOAD.today);
+
+const steps = {};
+function go(hash, scrolledTo) {
+  if (scrolledTo !== undefined) globalThis.window.scrollY = scrolledTo;
+  location.hash = hash;
+  __scrolls.length = 0;
+  render();
+  return __scrolls.slice();
+}
+
+const slugA = PAYLOAD.pages[0].slug, slugB = PAYLOAD.pages[1].slug;
+
+steps.firstRender   = go('#/read');
+steps.sameViewAgain = (globalThis.window.scrollY = 900, __scrolls.length = 0, render(), __scrolls.slice());
+steps.toPage        = go(`#/read/${slugA}`, 900);        // leaving the index at y=900
+steps.toOtherPage   = go(`#/read/${slugB}`, 640);
+steps.toStats       = go('#/stats', 300);
+
+// Back to the index: popstate marks it a traversal, so the remembered 900 should come back.
+location.hash = '#/read';
+__scrolls.length = 0;
+__fire('popstate');
+render();
+steps.backToIndex = __scrolls.slice();
+
+// A fresh (non-traversal) visit to the same view must NOT restore.
+steps.forwardToIndex = go('#/stats', 120).concat(go('#/read', 120));
+
+// Search: the switch from the full index to a result list is new content and should go to the top,
+// but every keystroke after that is the same list being narrowed and must hold position.
+searchQuery = 'em';
+globalThis.window.scrollY = 450; __scrolls.length = 0; render();
+steps.searchStart = __scrolls.slice();
+searchQuery = 'empathy';
+globalThis.window.scrollY = 300; __scrolls.length = 0; render();
+steps.searchTyping = __scrolls.slice();
+searchQuery = '';
+
+// Grading advances to a new item — new content, so back to the top.
+const three = PAYLOAD.items.slice(0, 3).map(i => i.id);
+saveSession({ queue: three, idx: 0, stage: 'reveal', results: [], startedAt: Date.now(),
+              itemStartAt: Date.now(), draft: { confidence: 70, response: 'x' } });
+location.hash = '#/study/run';
+render();
+globalThis.window.scrollY = 700;
+__scrolls.length = 0;
+submitGrade('correct');
+steps.afterGrade = __scrolls.slice();
+
+__emit({ steps, memoryKeys: [...scrollMemory.keys()] });
+"""
+    got = run_js(sources, driver, {"items": items, "pages": pages, "today": "2026-07-29"})
+    if got.get("__error"):
+        return [f"scroll harness error — {got['__error']}"]
+
+    s = got["steps"]
+    fails: list[str] = []
+
+    def expect(name, want, why):
+        if s.get(name) != want:
+            fails.append(f"{name}: expected scrollTo {want}, got {s.get(name)} — {why}")
+
+    expect("firstRender", [0], "arriving at a view should start at the top")
+    expect("sameViewAgain", [], "re-rendering the same view must not move the scroll")
+    expect("toPage", [0], "opening a reading should start at its top, not inherit the index's scroll")
+    expect("toOtherPage", [0], "each new reading starts at the top")
+    expect("toStats", [0], "switching tabs starts at the top")
+    expect("backToIndex", [900], "back should restore where you left the index")
+    expect("searchStart", [0], "switching from the index to search results is a new list")
+    expect("searchTyping", [], "narrowing an existing search must not scroll the results away")
+    expect("afterGrade", [0], "the next item is new content and should start at the top")
+
+    # The forward (non-traversal) visit is the second half of that concatenation.
+    if s.get("forwardToIndex", [])[-1:] != [0]:
+        fails.append(f"forwardToIndex: a fresh visit must not restore an old position, "
+                     f"got {s.get('forwardToIndex')}")
+
+    print(f"  6. scroll        {len(s):>4} routes  {'ok' if not fails else f'{len(fails)} FAILED'}")
+    return fails
+
+
 # ---------------------------------------------------------------- main
 
 def main() -> None:
@@ -649,6 +762,7 @@ def main() -> None:
         # A handful of pages is enough to exercise the reader, and keeps the payload small.
         sample = [p for p in pages if p["type"] == "concept"][:3] + [p for p in pages if p["type"] == "unit"][:1]
         fails += check_views(items, sample)
+        fails += check_scroll(items, sample)
     else:
         fails.append("docs/content/readings.json missing — run `python apps/build_web.py`")
 

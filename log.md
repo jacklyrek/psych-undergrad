@@ -781,3 +781,21 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   (steps 2–4 of `docs/README.md`), then `sync_supabase.py push` to seed. Pages on a private repo
   needs GitHub Pro, and **a Pages site is public** — the readings/items bundle becomes world-readable
   at that URL, though progress stays private behind RLS.
+
+## [2026-07-30] fix-webapp | docs/ scroll position | 1 bug, +1 test check
+- **Reported:** opening a new page left it scrolled to wherever the previous page was.
+- **Cause:** `render()` reset `view.scrollTop`, but `#view` has no `overflow` of its own — the
+  *document* scrolls, so that line was a silent no-op and scroll position simply persisted.
+- **Not a one-line fix:** `render()` runs both for route changes *and* for in-place re-renders
+  (filter chips, search keystrokes, sync events landing), so an unconditional `scrollTo(0, 0)` would
+  have yanked the page to the top mid-interaction. Added `viewKey()` to tell the two apart — a new
+  key scrolls to top, the same key leaves the scroll alone. Item and stage are part of the study
+  key, so grading through to the next item now starts at the top too (it didn't before).
+- **Also:** back/forward now restores where you were (`popstate` only fires on real traversals, never
+  on the app's `location.hash = …` navigations — exactly the needed distinction; handled for either
+  popstate/hashchange ordering). And `[[page#heading]]` jumps now clear the sticky top bar instead of
+  landing underneath it.
+- **Test:** `test_web_logic.py` check 6 "scroll" — 10 routes covering new view, same-view re-render,
+  entering vs. narrowing a search, tab switch, grade-advances-item, back-restores, and
+  forward-does-not-restore. It caught a wrong assumption of mine mid-write: *entering* search is a
+  new list and should go to the top; only narrowing an existing one should hold position.

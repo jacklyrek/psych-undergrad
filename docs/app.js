@@ -107,9 +107,51 @@ function parseHash() {
 
 const TITLES = { study: 'Study', read: 'Readings', stats: 'Stats', you: 'You' };
 
+// --- scroll position ---------------------------------------------------------
+// The document scrolls, not #view (which has no overflow of its own), so resetting the container's
+// scrollTop does nothing — arriving at a new page left you wherever the last one was scrolled to.
+//
+// It can't be an unconditional window.scrollTo(0, 0) either, because render() runs for two quite
+// different reasons: moving to a new view, and re-rendering the one you're on (tapping a filter
+// chip, typing in search, a sync event landing). Resetting on the second kind would yank the page to
+// the top mid-interaction. viewKey() is what separates them: same key means same view, leave the
+// scroll alone.
+const scrollMemory = new Map();
+let lastViewKey = null;
+let restoreScrollNext = false;
+
+function viewKey(parts) {
+  if (parts[0] === 'study' && parts[1] === 'run') {
+    // Each item, and each stage within an item, is new content that should start at the top.
+    const s = store.loadSession();
+    return s ? `study/run/${s.idx}/${s.stage}` : 'study/run';
+  }
+  if (parts[0] === 'read') {
+    if (parts[1]) return `read/${parts[1]}`;
+    // Search results are a different list from the full index, but keystrokes within a search
+    // aren't — otherwise every character typed would scroll you back to the top.
+    return searchQuery.trim().length >= 2 ? 'read:search' : 'read';
+  }
+  return parts[0] || 'study';
+}
+
+/** Scroll a heading clear of the sticky top bar rather than under it. */
+function scrollToHeading(id) {
+  const target = view.querySelector(`#${CSS.escape(id)}`);
+  if (!target) return;
+  const bar = document.querySelector('.topbar');
+  const clearance = (bar ? bar.offsetHeight : 0) + 8;
+  const top = target.getBoundingClientRect().top + window.scrollY - clearance;
+  window.scrollTo(0, Math.max(0, top));
+}
+
 function render() {
   const { parts, params } = parseHash();
   const tab = parts[0] || 'study';
+  const key = viewKey(parts);
+  const sameView = key === lastViewKey;
+  // Remember where the outgoing view was, read before innerHTML changes the page height.
+  if (lastViewKey && !sameView) scrollMemory.set(lastViewKey, window.scrollY);
 
   for (const a of tabbar.querySelectorAll('.tab')) {
     if (a.dataset.tab === tab) a.setAttribute('aria-current', 'page');
@@ -150,14 +192,19 @@ function render() {
   topTitle.textContent = title;
   backBtn.hidden = !showBack;
   view.innerHTML = html;
-  view.scrollTop = 0;
 
-  // Jump to a heading when arriving via [[page#heading]].
   const anchor = params.get('h');
   if (anchor) {
-    const target = view.querySelector(`#${CSS.escape(anchor)}`);
-    if (target) target.scrollIntoView({ block: 'start' });
+    // Arrived via [[page#heading]] or a contents link — the heading is the destination.
+    scrollToHeading(anchor);
+  } else if (!sameView) {
+    // Back/forward returns you to where you were; anything else is a new page, so start at the top.
+    const remembered = restoreScrollNext ? scrollMemory.get(key) : undefined;
+    window.scrollTo(0, remembered ?? 0);
   }
+  lastViewKey = key;
+  restoreScrollNext = false;
+
   if (tab === 'read' && !store.content.readingsLoaded) store.loadReadings();
 }
 
@@ -881,6 +928,22 @@ document.getElementById('citeClose').addEventListener('click', () => { citeSheet
 citeSheet.addEventListener('click', (ev) => { if (ev.target === citeSheet) citeSheet.hidden = true; });
 
 window.addEventListener('hashchange', () => { citeSheet.hidden = true; render(); });
+
+// Going back should land you where you left, not at the top — leaving a reading to follow a
+// wikilink and returning to the top of it is the same annoyance in reverse. popstate only fires on
+// an actual history traversal, never on the programmatic `location.hash = …` navigations, which is
+// exactly the distinction needed. Both popstate and hashchange fire here and the spec's ordering
+// between them isn't worth depending on, so handle either: flag it for a render still to come, and
+// apply it directly if render already ran.
+window.addEventListener('popstate', () => {
+  restoreScrollNext = true;
+  const { parts, params } = parseHash();
+  const key = viewKey(parts);
+  if (key === lastViewKey) {
+    if (!params.get('h') && scrollMemory.has(key)) window.scrollTo(0, scrollMemory.get(key));
+    restoreScrollNext = false;
+  }
+});
 
 store.subscribe((what) => {
   updateChip();
