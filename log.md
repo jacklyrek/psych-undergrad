@@ -832,3 +832,30 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   findings above came from this, not from the tests.
 - Stat tiles repointed to the chart status tokens, so the page no longer shows two different ambers.
 - Tests: all 6 web checks + SM-2 parity still pass.
+
+## [2026-07-30] fix-updates | docs/ deploys were invisible | 3 causes, +1 test check
+- **Reported:** the page was built and deployed, but neither the laptop nor the phone noticed.
+- **Ruled out first:** the deploy itself was fine — every live file on Pages hashed identical to the
+  local one, and nothing was unpushed. So: client-side caching, three causes compounding.
+- **1. The update check couldn't see code changes (the real bug).** `content/version.json` hashed
+  only readings + items. The Stats redesign changed `app.js`, `style.css`, `analytics.js` and *no*
+  content, so the hash stayed byte-identical at `29bf71fdd320`, "Check for new content" honestly
+  reported "already current", and nothing in the app had any way to notice new JavaScript.
+  `build_web.py` now also emits a **`build`** id hashing the shell (`SHELL_FILES`), and the app
+  compares against that.
+- **2. The service worker revalidated through the HTTP cache.** Pages sends
+  `Cache-Control: max-age=600` on everything, and a plain `fetch()` in a worker still consults the
+  browser cache — so the worker would refresh its cache with the same stale bytes it already held.
+  Now fetches with `cache: 'no-cache'` (ETag round-trip; a 304 costs nothing).
+- **3. The worker script was itself cacheable.** Registered with `updateViaCache: 'none'`.
+- **Behaviour now:** on boot the app fetches version.json (no-store, and the worker never caches it),
+  and on a changed `build` purges every cache and reloads once — the stored id is written *before*
+  the reload so a still-stale load can't become a reload loop. Added **You → Force refresh** as a
+  manual escape hatch (drops caches *and* unregisters the worker); the reset button now does the
+  same. Cache name bumped to `psych-wiki-v2` so `activate` purges the old one.
+- **`test_web_logic.py` check 7 (new):** version.json carries a `build`; the committed id matches
+  what the tree hashes to (so a forgotten `build_web.py` fails the tests rather than shipping a
+  silent no-op deploy); every shell file is inside the hash; mutating `app.js` provably changes the
+  id; app.js reads `.build` and checks on boot; sw.js has no plain `fetch(request)`.
+- **One-time manual clear needed** on both devices, since the fix ships inside the code that's stuck.
+  After that, updates are automatic.

@@ -831,16 +831,19 @@ function viewYou() {
   return `
     ${syncCard}
 
-    <div class="section-title">Content</div>
+    <div class="section-title">Version</div>
     <div class="card card-tight">
-      <p class="meta" style="margin:0">Bundle <code>${esc(store.content.version || '—')}</code> ·
+      <p class="meta" style="margin:0">Build <code>${esc(localStorage.getItem(BUILD_KEY) || '—')}</code> ·
+        content <code>${esc(store.content.version || '—')}</code><br>
         ${store.content.items.length} items ·
         ${store.content.readingsLoaded ? `${store.content.pages.length} readings` : 'readings not loaded'}</p>
       <div class="btn-row" style="margin-top:.7rem">
-        <button class="btn btn-ghost btn-sm" data-action="checkcontent">Check for new content</button>
+        <button class="btn btn-ghost btn-sm" data-action="checkcontent">Check for updates</button>
+        <button class="btn btn-ghost btn-sm" data-action="forceupdate">Force refresh</button>
       </div>
-      <p class="meta" style="margin:.7rem 0 0">Rebuilt on the laptop with
-        <code>python apps/build_web.py</code> and pushed; this pulls the new bundle in.</p>
+      <p class="meta" style="margin:.7rem 0 0">Updates are picked up automatically on the next open.
+        <b>Force refresh</b> is the escape hatch — it throws away every cache and the service worker
+        and reloads from the network.</p>
     </div>
 
     ${!standalone ? `
@@ -955,18 +958,30 @@ view.addEventListener('click', async (ev) => {
     render();
   } else if (action === 'checkcontent') {
     el.textContent = 'Checking…';
-    const verdict = await checkContentVersion();
-    if (verdict === 'current') { el.textContent = 'Already current'; return; }
-    if (verdict === 'unreachable') { el.textContent = "Couldn't check — offline?"; return; }
+    const build = await fetchBuild();
+    if (!build) { el.textContent = "Couldn't check — offline?"; return; }
+    if (build === localStorage.getItem(BUILD_KEY)) { el.textContent = 'Already up to date'; return; }
     el.textContent = 'Updating…';
-    // A plain reload would be served the old bundle out of the service worker cache, so clear the
+    localStorage.setItem(BUILD_KEY, build);
+    // A plain reload would be served the old files out of the service worker cache, so clear the
     // caches first and let the worker repopulate them from the network.
-    if ('caches' in window) {
-      for (const name of await caches.keys()) await caches.delete(name);
+    await purgeCaches();
+    location.reload();
+  } else if (action === 'forceupdate') {
+    // The escape hatch: throw away every cache and the worker itself, then reload from the network.
+    el.textContent = 'Clearing…';
+    await purgeCaches();
+    if ('serviceWorker' in navigator) {
+      for (const reg of await navigator.serviceWorker.getRegistrations()) await reg.unregister();
     }
+    localStorage.removeItem(BUILD_KEY);
     location.reload();
   } else if (action === 'reset') {
     if (confirm('Clear this device\'s cached progress, session, and sign-in?')) {
+      await purgeCaches();
+      if ('serviceWorker' in navigator) {
+        for (const reg of await navigator.serviceWorker.getRegistrations()) await reg.unregister();
+      }
       localStorage.clear();
       location.reload();
     }
@@ -1061,21 +1076,57 @@ store.subscribe((what) => {
 
 // ---------------------------------------------------------------- boot
 
-/** 'stale' | 'current' | 'unreachable' — distinguished so the You tab doesn't claim the content is
- *  up to date when it simply couldn't ask. */
-async function checkContentVersion() {
+const BUILD_KEY = 'psych.build.v1';
+
+/** The deployed build id, or null if the network couldn't answer.
+ *
+ *  Deliberately compared against a *stored* id rather than anything baked into this file: the whole
+ *  problem is that running code can't tell it's old. `build` in version.json covers the shell as
+ *  well as the content (see build_hash in apps/build_web.py), so a restyled chart bumps it just as a
+ *  new unit does. The earlier check only compared the *content* hash, which meant a code-only deploy
+ *  reported "already current" forever. */
+async function fetchBuild(timeoutMs = 4000) {
+  const abort = new AbortController();
+  const timer = setTimeout(() => abort.abort(), timeoutMs);
   try {
-    const res = await fetch(new URL('content/version.json', import.meta.url).href, { cache: 'no-store' });
-    if (!res.ok) return 'unreachable';
-    const remote = await res.json();
-    return remote.version && remote.version !== store.content.version ? 'stale' : 'current';
+    const res = await fetch(new URL('content/version.json', import.meta.url).href,
+                            { cache: 'no-store', signal: abort.signal });
+    if (!res.ok) return null;
+    return (await res.json()).build || null;
   } catch {
-    return 'unreachable';
+    return null;                        // offline, or slow — carry on with what's cached
+  } finally {
+    clearTimeout(timer);
   }
+}
+
+async function purgeCaches() {
+  if (!('caches' in window)) return;
+  for (const name of await caches.keys()) await caches.delete(name);
+}
+
+/** Adopt a newly deployed build: drop the caches and reload, once. Returns true if a reload is
+ *  under way, so the caller can stop rather than render a page that's about to be replaced. */
+async function adoptNewBuild() {
+  const build = await fetchBuild();
+  if (!build) return false;
+  const seen = localStorage.getItem(BUILD_KEY);
+  if (seen === build) return false;
+  // Record before reloading. If the reload somehow still lands on stale code, this is what stops it
+  // becoming a reload loop — the app stays stale until the next deploy instead of thrashing.
+  localStorage.setItem(BUILD_KEY, build);
+  if (seen === null) return false;      // first run on this device; nothing to replace
+  await purgeCaches();
+  location.reload();
+  return true;
 }
 
 async function boot() {
   updateChip();
+  // Before anything renders: if a newer build is deployed, drop the caches and reload into it.
+  // Bounded by a timeout inside fetchBuild, so a slow connection delays the app by seconds at worst
+  // and an absent one not at all.
+  if (await adoptNewBuild()) return;
   try {
     await store.loadItems();
   } catch (err) {
@@ -1094,7 +1145,10 @@ async function boot() {
 
   if ('serviceWorker' in navigator) {
     try {
-      await navigator.serviceWorker.register(new URL('sw.js', import.meta.url).href);
+      // updateViaCache: 'none' keeps the worker script itself out of the HTTP cache, so a deploy is
+      // noticed on the next visit rather than up to ten minutes later.
+      await navigator.serviceWorker.register(new URL('sw.js', import.meta.url).href,
+                                             { updateViaCache: 'none' });
     } catch { /* offline support is a bonus, never a requirement */ }
   }
 }

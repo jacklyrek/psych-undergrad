@@ -747,6 +747,72 @@ __emit({ steps, memoryKeys: [...scrollMemory.keys()] });
     return fails
 
 
+# ---------------------------------------------------------------- 7. version / update path
+
+def check_version() -> list[str]:
+    """A deployed app must be able to tell it is out of date.
+
+    This is the check that would have caught the deploys-go-unnoticed bug. version.json originally
+    carried only a *content* hash, so a code-only release — a restyled chart, a bug fix — left it
+    byte-identical and every device reported "already current" while running last week's JavaScript.
+    `build` has to cover the shell too, and the app has to compare against `build`."""
+    fails: list[str] = []
+    sys.path.insert(0, str(ROOT / "apps"))
+    import build_web  # noqa: E402
+
+    path = DOCS / "content" / "version.json"
+    if not path.exists():
+        return ["docs/content/version.json missing — run `python apps/build_web.py`"]
+    payload = json.loads(path.read_text(encoding="utf-8"))
+
+    for field in ("version", "build"):
+        if not payload.get(field):
+            fails.append(f"version.json has no '{field}'")
+    if fails:
+        return fails
+
+    # The published build id must match what the current tree hashes to — i.e. the bundle was
+    # rebuilt after the last edit. A stale one here means a deploy would ship mismatched files.
+    expected = build_web.build_hash(payload["version"])
+    if expected != payload["build"]:
+        fails.append(f"version.json build is {payload['build']} but the tree hashes to {expected} "
+                     f"— run `python apps/build_web.py` before committing")
+
+    # Every shell file must actually be in the hash, or changing it wouldn't bump the build.
+    for name in ("app.js", "style.css", "sw.js", "index.html", "analytics.js", "store.js"):
+        if name not in build_web.SHELL_FILES:
+            fails.append(f"build_hash ignores {name} — a change to it would deploy unnoticed")
+
+    # Changing a shell file has to change the id. Verified by hashing a mutated copy rather than by
+    # reading the code, so the check survives a refactor of how the hash is computed.
+    original = (DOCS / "app.js").read_bytes()
+    try:
+        (DOCS / "app.js").write_bytes(original + b"\n// version-check probe\n")
+        mutated = build_web.build_hash(payload["version"])
+    finally:
+        (DOCS / "app.js").write_bytes(original)
+    if mutated == payload["build"]:
+        fails.append("editing app.js does not change the build id — updates would go unnoticed")
+
+    # The app must compare the build, not the content hash.
+    app_src = (DOCS / "app.js").read_text(encoding="utf-8")
+    if ".build" not in app_src:
+        fails.append("app.js never reads version.json's `build` field")
+    if "adoptNewBuild" not in app_src or "adoptNewBuild()" not in app_src:
+        fails.append("app.js does not check for a new build on boot")
+
+    # The worker must not revalidate through the HTTP cache, or GitHub Pages' max-age=600 lets it
+    # refresh its cache with the same stale bytes it already had.
+    sw_src = (DOCS / "sw.js").read_text(encoding="utf-8")
+    if "no-cache" not in sw_src:
+        fails.append("sw.js fetches without cache:'no-cache' — it can revalidate against stale bytes")
+    if re.search(r"(?<!fetchFresh\()\bfetch\(request\)", sw_src):
+        fails.append("sw.js has a plain fetch(request) that goes through the HTTP cache")
+
+    print(f"  7. version     build {payload['build']}  {'ok' if not fails else f'{len(fails)} FAILED'}")
+    return fails
+
+
 # ---------------------------------------------------------------- main
 
 def main() -> None:
@@ -775,6 +841,7 @@ def main() -> None:
         fails += check_scroll(items, sample)
     else:
         fails.append("docs/content/readings.json missing — run `python apps/build_web.py`")
+    fails += check_version()
 
     if fails:
         print("\nFAILED:")

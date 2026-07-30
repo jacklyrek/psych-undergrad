@@ -12,7 +12,20 @@
 //
 // All paths are relative — GitHub Pages serves this from /psych-undergrad/, not the domain root.
 
-const CACHE = 'psych-wiki-v1';
+// Bumping this name is what purges everything the previous version cached — `activate` deletes any
+// cache whose name isn't this one. Bump it whenever the caching behaviour below changes.
+const CACHE = 'psych-wiki-v2';
+
+// GitHub Pages serves every file with `Cache-Control: max-age=600`, and a plain fetch() inside a
+// service worker still goes through the browser's HTTP cache. That combination is what made deploys
+// invisible: the worker would dutifully "revalidate" its cache and be handed back the same ten-
+// minute-old bytes it already had. `no-cache` forces a conditional request to the origin — an ETag
+// round-trip, so a 304 costs almost nothing — which means the worker always sees what is actually
+// deployed. Requests by URL rather than by Request object because a 'navigate' Request cannot be
+// reconstructed with a different cache mode.
+function fetchFresh(request) {
+  return fetch(request.url, { cache: 'no-cache', credentials: 'same-origin' });
+}
 
 const SHELL = [
   './',
@@ -77,7 +90,7 @@ self.addEventListener('fetch', (event) => {
     event.respondWith((async () => {
       const cache = await caches.open(CACHE);
       try {
-        const fresh = await fetch(request);
+        const fresh = await fetchFresh(request);
         if (fresh.ok) cache.put('index.html', fresh.clone());
         return fresh;
       } catch {
@@ -90,26 +103,24 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (ALWAYS_NETWORK.some((path) => url.pathname.endsWith(path))) {
-    event.respondWith(fetch(request).catch(async () =>
+    event.respondWith(fetchFresh(request).catch(async () =>
       (await caches.open(CACHE)).match(request)
       || new Response('{}', { status: 503, headers: { 'Content-Type': 'application/json' } })));
     return;
   }
 
+  const opened = caches.open(CACHE);
+  const revalidate = fetchFresh(request).then(async (res) => {
+    if (res.ok) (await opened).put(request, res.clone());
+    return res;
+  });
+  // Synchronously, while the event is still dispatching — calling waitUntil after an await is only
+  // conditionally legal and throws once the event is no longer active.
+  event.waitUntil(revalidate.catch(() => {}));
+
   event.respondWith((async () => {
-    const cache = await caches.open(CACHE);
-    const cached = await cache.match(request);
-
-    const revalidate = fetch(request).then((res) => {
-      if (res.ok) cache.put(request, res.clone());
-      return res;
-    });
-
-    if (cached) {
-      // Don't await the refresh — the point is that the cached copy is served immediately.
-      event.waitUntil(revalidate.catch(() => {}));
-      return cached;
-    }
-    return revalidate;
+    // Serve the cached copy immediately if there is one; the refresh above lands for next time.
+    const cached = await (await opened).match(request);
+    return cached || revalidate;
   })());
 });

@@ -144,7 +144,21 @@ python apps/build_items.py && python apps/build_web.py
 git add -A && git commit -m "..." && git push
 ```
 
-Then on the phone: **You → Check for new content**. That clears the service-worker caches and reloads, because a plain refresh would be served the old bundle.
+**Always run `build_web.py` before committing, even for a pure code change.** It writes the `build` id in `content/version.json`, and that id is the only way a deployed app can tell it's out of date. `test_web_logic.py` check 7 fails if the committed id doesn't match the tree.
+
+Devices then pick the update up by themselves on the next open: the app fetches `version.json`, sees a new `build`, drops its caches and reloads once. **You → Force refresh** is the manual escape hatch — it throws away every cache and the service worker itself.
+
+<details>
+<summary>Why this needed three fixes (worth knowing if updates ever go missing again)</summary>
+
+Deploys were invisible for three compounding reasons:
+
+1. **`version.json` only hashed content.** A code-only release — a restyled chart, a bug fix — left the hash byte-identical, so the update check correctly reported "already current" while the phone ran week-old JavaScript. `build` now covers the shell files too, so any deploy bumps it.
+2. **GitHub Pages sends `Cache-Control: max-age=600` on everything**, and a plain `fetch()` inside a service worker still goes through the browser's HTTP cache. The worker would "revalidate" and be handed back the same ten-minute-old bytes it already had. It now fetches with `cache: 'no-cache'`, which forces an ETag round-trip to the origin.
+3. **The worker script itself** was subject to that same cache. It's now registered with `updateViaCache: 'none'`.
+
+Stale-while-revalidate is still the strategy — the 3 MB content bundle must never block a launch — but the build check means a new deploy is adopted immediately rather than on the second visit.
+</details>
 
 ## Tests
 

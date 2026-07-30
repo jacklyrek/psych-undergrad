@@ -31,7 +31,8 @@ ROOT = Path(__file__).resolve().parent.parent
 WIKI_DIR = ROOT / "wiki"
 RESEARCH_DIR = ROOT / "research"
 ITEMS_JSON = ROOT / "items" / "build" / "items.json"
-OUT_DIR = ROOT / "docs" / "content"
+DOCS_DIR = ROOT / "docs"
+OUT_DIR = DOCS_DIR / "content"
 
 # Bumped when the renderer changes so the content hash (and thus the app's cache) turns over even
 # if no markdown edited. Keep in step with meaningful changes to the rendering below.
@@ -453,6 +454,27 @@ def content_hash(pages: list[dict], items: list[dict]) -> str:
     return h.hexdigest()[:12]
 
 
+# The app shell — everything a browser has to re-download for a code change to take effect.
+SHELL_FILES = ("index.html", "style.css", "app.js", "sm2.js", "session.js", "analytics.js",
+               "store.js", "supabase.js", "config.js", "sw.js", "manifest.webmanifest")
+
+
+def build_hash(content_version: str) -> str:
+    """A version covering the *code* as well as the content.
+
+    Without this there is no way for a deployed app to notice that it is out of date after a
+    code-only change: the content hash stays byte-identical, so an update check against it says
+    "already current" while the phone keeps running last week's JavaScript. Hashing the shell too
+    means any deploy — new readings, new items, or just a restyled chart — produces a new id, which
+    is what the app compares against on boot."""
+    h = hashlib.sha1(content_version.encode())
+    for name in SHELL_FILES:
+        path = DOCS_DIR / name
+        h.update(name.encode())
+        h.update(path.read_bytes() if path.exists() else b"")
+    return h.hexdigest()[:12]
+
+
 def main() -> None:
     if not ITEMS_JSON.exists():
         sys.exit(f"{ITEMS_JSON.relative_to(ROOT)} not found — run `python apps/build_items.py` first.")
@@ -486,13 +508,15 @@ def main() -> None:
     generated = date.today().isoformat()
     n_read = write("readings.json", {"version": version, "generated": generated, "pages": pages})
     n_item = write("items.json", {"version": version, "generated": generated, "items": items})
-    write("version.json", {"version": version, "generated": generated,
+    # `build` covers the shell as well, so a code-only deploy still produces a new id and the
+    # app can tell it is stale. Written last, after the content files exist.
+    write("version.json", {"version": version, "build": build_hash(version), "generated": generated,
                            "pages": len(pages), "items": len(items)})
 
     by_collection: dict[str, int] = {}
     for p in pages:
         by_collection[p["collection"]] = by_collection.get(p["collection"], 0) + 1
-    print(f"Built docs/content/ — version {version}")
+    print(f"Built docs/content/ — content {version} · build {build_hash(version)}")
     print(f"  readings.json: {len(pages)} pages ({', '.join(f'{k}={v}' for k, v in by_collection.items())}) "
           f"— {n_read / 1024:.0f} KB")
     print(f"  items.json:    {len(items)} items — {n_item / 1024:.0f} KB")
