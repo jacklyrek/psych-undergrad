@@ -8,5 +8,5 @@
 // Left blank, the app still works: it keeps progress in this browser's localStorage and shows
 // "local only" in the You tab. Filling them in turns on sync with the laptop.
 
-export const SUPABASE_URL = '';
-export const SUPABASE_ANON_KEY = '';
+export const SUPABASE_URL = 'https://kexplosmhqtrekzdqrvy.supabase.co';
+export const SUPABASE_ANON_KEY = 'sb_publishable_ORzhLnR2rQDzwvTVZTTqng_rZykprPU';
