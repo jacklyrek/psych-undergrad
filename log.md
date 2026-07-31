@@ -859,3 +859,59 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   id; app.js reads `.build` and checks on boot; sw.js has no plain `fetch(request)`.
 - **One-time manual clear needed** on both devices, since the fix ships inside the code that's stuck.
   After that, updates are automatic.
+
+---
+
+## [2026-07-30] fix-reading | Unit 7 SMART section stated the acronym twice | 1 reading
+- **Reported:** the SMART goals section gives two definitions for the letters.
+- **Cause:** the lead-in sentence in `wiki/concept-treatment-planning.md` carried Doran's 1981
+  *management* original (Specific, Measurable, **Assignable**, **Realistic**, Time-related) inline,
+  immediately followed by the bullet list of the *clinical* adaptation (… **Achievable**,
+  **Relevant**, Time-bound). Both are correct, but adjacent like that they read as rival definitions
+  of the thing being learned — and the item bank only tests the clinical five
+  (`u7-smart-*`, topic `smart-objectives`).
+- **Fix:** clinical five now stand alone as the definition; the Doran original moved *below* the
+  list, explicitly labelled origin trivia and narrowed to just the two letters that differ. Citation
+  [S13] kept on both the definition and the history.
+- **Rebuilt:** `python apps/build_web.py` (readings only — `items.json` content unchanged, version
+  hash bumped). No item edits needed.
+
+---
+
+## [2026-07-30] fix-webapp | docs/ navigation — tab bar + swipe back | +1 test check
+- **Reported:** the bottom buttons should behave like a social app's — tapping **Read** while on Read
+  goes back to home, tapping it from elsewhere returns to the last page you were on.
+- **Cause:** the tabs were four plain `<a href="#/read">` links, so every tap was the same
+  unconditional jump to the section root. A tab could neither remember where you'd been (leaving a
+  reading to glance at Stats and coming back dumped you at the top of the index) nor pop you out of a
+  reading (only the header's `‹` did that, and it's a history step, not a "go up").
+- **Fix:** `tabMemory` (in-memory, one entry per tab, recorded in `render()` after any redirect) plus
+  a delegated handler on `#tabbar`. Inactive tab → its remembered route, with `restoreScrollNext` so
+  the scroll position comes back too; active tab → that tab's home; already at home → `scrollTo(0,0)`.
+  Modifier-clicks fall through to the anchors' real hrefs. Not persisted: a cold start should open
+  each tab at its home, not resume last week's page.
+- **Follow-on the rule forced:** popping **Study** to its home mid-session would have stranded the
+  session — the queue lives in `localStorage` but nothing on the setup screen linked back to it. Added
+  a *Session in progress* card there with **Resume** / **Discard**. (This hole predates the change;
+  the new rule just made it reachable by a plain tap.)
+- **Also asked for:** swiping right in a reading goes back — the `‹` button is a small target at the
+  top of a page you're usually scrolled well down. touchstart/touchend on `#view`, deliberately
+  narrow because a false positive hijacks the page: only where the back button shows, ≥64px of
+  travel, ≤48px of drift, horizontal by 2:1, ≤700ms, never inside a `.table-wrap`/`pre` that actually
+  overflows sideways, and never from the left 24px — that strip is iOS's own back gesture, and
+  leaving it alone is what stops one swipe popping two entries.
+- **Both routes share `goBack()`,** which needed a guard the `‹` button never had: a bare
+  `history.back()` walks *out of the app* when the current page is the first one it drew (a deep
+  link, a relaunch that restored the URL). Each entry now carries a `{depth}` stamp via
+  `replaceState`, and depth 0 falls back to the section's home instead.
+- **Test:** `test_web_logic.py` check 7 "nav" — 19 gestures. Taps: away-and-back restores route *and*
+  scroll, same-tab pops home, second tap scrolls to top, an unvisited tab opens at its home, stepping
+  off mid-session and returning resumes the run, Resume shows only when a session exists. Swipes: one
+  case that must navigate, seven that must not (index, vertical scroll, too short, diagonal,
+  leftward, from the edge, inside a wide table) plus the deep-link fallback. Stub upgrades: elements
+  record listeners, `__tap()`/`__swipe()` fire events, and `location.hash =` now nulls `history.state`
+  the way a real push does, so the depth stamping is exercised rather than stubbed past.
+- **Mutation-checked the two thresholds** that a passing suite can hide — zeroing the edge guard and
+  dropping the 2:1 ratio each fail exactly one named case (the ratio one caught a hole: the vertical
+  case was already blocked by the distance floor, so `swipeDiagonal` was added to pin the rule).
+- **Rebuilt:** `python apps/build_web.py` (shell change — build hash bumped to `2228137a6ef6`).

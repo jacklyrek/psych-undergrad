@@ -393,12 +393,31 @@ const __els = {};
 function __el(id) {
   if (!__els[id]) __els[id] = {
     id, innerHTML: '', textContent: '', hidden: false, dataset: {}, value: '', scrollTop: 0,
-    addEventListener() {}, removeEventListener() {},
+    _h: {},
+    addEventListener(type, fn) { (this._h[type] = this._h[type] || []).push(fn); },
+    removeEventListener() {},
     querySelector() { return null; }, querySelectorAll() { return []; },
     closest() { return null; }, focus() {}, setSelectionRange() {},
   };
   return __els[id];
 }
+// Tap a bottom-bar tab: builds just enough of a click event for the delegating handler, which
+// reaches the anchor through ev.target.closest('.tab') and reads its data-tab.
+globalThis.__tap = (tab) => {
+  const link = { dataset: { tab }, closest: (sel) => (sel === '.tab' ? link : null) };
+  const ev = { target: link, preventDefault() {} };
+  (__el('tabbar')._h.click || []).forEach((fn) => fn(ev));
+};
+// Drag a finger across the view: touchstart at (x0,y0), touchend at (x1,y1). `target` stands in for
+// whatever the finger landed on, since the gesture defers to sideways-scrolling elements.
+globalThis.__swipe = (o) => {
+  const v = __el('view');
+  const target = o.target || { closest: () => null };
+  (v._h.touchstart || []).forEach((fn) => fn({ touches: [{ clientX: o.x0, clientY: o.y0 }], target }));
+  (v._h.touchend || []).forEach((fn) => fn({
+    changedTouches: [{ clientX: o.x1, clientY: o.y1 }], target,
+  }));
+};
 globalThis.document = {
   getElementById: __el, addEventListener() {}, activeElement: null,
   querySelector() { return null; }, querySelectorAll() { return []; },
@@ -413,8 +432,21 @@ globalThis.localStorage = (() => {
   };
 })();
 globalThis.navigator = { onLine: true };
-globalThis.location = { hash: '#/study', reload() {} };
-globalThis.history = { back() { (globalThis.__fire || (() => {}))('popstate'); } };
+// Enough of the history stack for the router: assigning a hash pushes a *new* entry, so its state
+// starts out null — which is how the router tells a fresh entry from one it has already stamped with
+// its depth. back() is counted so the swipe tests can see it fire.
+globalThis.__backs = 0;
+globalThis.location = {
+  _hash: '#/study',
+  get hash() { return this._hash; },
+  set hash(v) { this._hash = v; globalThis.history.state = null; },
+  reload() {},
+};
+globalThis.history = {
+  state: null,
+  back() { globalThis.__backs++; (globalThis.__fire || (() => {}))('popstate'); },
+  replaceState(s) { globalThis.history.state = s; },
+};
 // Handlers are kept so the scroll test can fire popstate; scrollTo calls are recorded so it can
 // assert what the router did with the scroll position.
 globalThis.__handlers = {};
@@ -617,6 +649,14 @@ __emit(out);
     if "No reading called" not in got["views"].get("pageMissing", ""):
         fails.append("viewPage: a missing slug should say so, not render blank")
 
+    # The quiz offer sits both above and below the reading, so finishing a long page doesn't mean
+    # scrolling back to the top to act on it.
+    first = pages[0]["slug"]
+    if any(re.sub(r"\.md$", "", Path(it["source_page"]).name) == first for it in items):
+        offers = got["views"].get("page", "").count('data-action="quizpage"')
+        if offers != 2:
+            fails.append(f"viewPage: expected the quiz button above and below the reading, found {offers}")
+
     # The loop itself
     loop = got["loop"]
     if loop["idx"] != 3 or loop["stage"] != "summary":
@@ -747,7 +787,153 @@ __emit({ steps, memoryKeys: [...scrollMemory.keys()] });
     return fails
 
 
-# ---------------------------------------------------------------- 7. version / update path
+# ---------------------------------------------------------------- 7. navigation gestures
+
+def check_nav(items: list[dict], pages: list[dict]) -> list[str]:
+    """The bottom bar's two rules, and the swipe-back gesture.
+
+    Plain <a href="#/read"> links make the tab bar forget: every tap dumps you at the top of the
+    section, and there is no way to pop back out of a reading without the header's back button. The
+    handler gives the bar phone-app behaviour instead — a tab you are not on resumes where you left
+    it, a tab you are on pops to its home, and a second tap at home goes to the top.
+
+    The swipe is the same "go back" the ‹ button runs, and the risk is all in false positives: a
+    gesture that fires while you meant to scroll, or inside a table that scrolls itself, hijacks the
+    page. Most of what follows is the gestures that must *not* navigate."""
+    sources = [DOM_STUB] + [(DOCS / n).read_text(encoding="utf-8")
+                            for n in ("config.js", "sm2.js", "session.js", "analytics.js",
+                                      "supabase.js", "store.js")]
+    sources.append(BOOT_CALL.sub("", (DOCS / "app.js").read_text(encoding="utf-8")))
+
+    driver = """
+content.items = PAYLOAD.items;
+content.itemsById = new Map(PAYLOAD.items.map(i => [i.id, i]));
+content.version = 'testbundle';
+content.pages = PAYLOAD.pages;
+content.pagesBySlug = new Map(PAYLOAD.pages.map(p => [p.slug, p]));
+content.readingsLoaded = true;
+ensureState(content.items, getState(), PAYLOAD.today);
+
+const steps = {};
+function go(hash, scrolledTo) {
+  if (scrolledTo !== undefined) globalThis.window.scrollY = scrolledTo;
+  location.hash = hash;
+  render();
+}
+// The stub's location doesn't fire hashchange, so each tap is followed by the render the browser
+// would have done for it.
+function tap(tab, scrolledTo) {
+  if (scrolledTo !== undefined) globalThis.window.scrollY = scrolledTo;
+  __scrolls.length = 0;
+  __tap(tab);
+  render();
+  return { hash: location.hash, scrolls: __scrolls.slice() };
+}
+
+// A swipe, reported as what it did: how many history pops it caused, and where it left us.
+function swipe(o) {
+  const backs = __backs;
+  __swipe(o);
+  const out = { backs: __backs - backs, hash: location.hash };
+  render();
+  return out;
+}
+const across = { x0: 120, y0: 400, x1: 300, y1: 410 };   // a clean rightward drag
+
+const slugA = PAYLOAD.pages[0].slug;
+
+// The very first render is the entry the app opened on — a reading here, standing in for a deep
+// link or a relaunch that restored the URL. There is nothing behind it to pop.
+go(`#/read/${slugA}`);
+steps.swipeAtRoot = swipe(across);
+
+go('#/read');
+steps.swipeOnIndex = swipe(across);      // no back button showing: not a back gesture
+go(`#/read/${slugA}`, 0);
+steps.swipeBack    = swipe(across);      // reached by navigation: pops
+steps.swipeDown    = swipe({ x0: 120, y0: 200, x1: 150, y1: 560 });   // a scroll, not a swipe
+steps.swipeShort   = swipe({ x0: 120, y0: 400, x1: 160, y1: 400 });   // under the distance floor
+steps.swipeDiagonal = swipe({ x0: 120, y0: 400, x1: 190, y1: 440 });  // far enough, but not horizontal
+steps.swipeLeft    = swipe({ x0: 300, y0: 400, x1: 120, y1: 400 });   // leftward is not "back"
+steps.swipeFromEdge = swipe({ ...across, x0: 8, x1: 220 });           // iOS's own gesture zone
+steps.swipeInTable = swipe({ ...across,
+  target: { closest: () => ({ scrollWidth: 900, clientWidth: 320 }) } });
+
+steps.awayToStats = tap('stats', 520);   // leaving the reading part-way down
+steps.backToRead  = tap('read', 40);     // -> the reading again, at 520
+steps.popToHome   = tap('read', 300);    // same tab -> the readings index
+steps.tapAtHome   = tap('read', 700);    // already home -> the top
+steps.freshTab    = tap('you');          // never visited: its home
+
+// A session left mid-run: the tab still pops to the setup screen, but the session has to be
+// reachable from there or popping the tab would silently strand it.
+const three = PAYLOAD.items.slice(0, 3).map(i => i.id);
+saveSession({ queue: three, idx: 1, stage: 'prompt', results: [], startedAt: Date.now(),
+              itemStartAt: Date.now(), draft: { confidence: null, response: '' } });
+go('#/study/run');
+steps.leaveRun    = tap('read');         // step off mid-session
+steps.resumeRun   = tap('study');        // -> back into the running session
+steps.runToHome   = tap('study', 200);   // same tab -> the setup screen
+steps.setupResume = viewStudySetup().includes('data-action="resume"');
+clearSession();
+steps.setupNoResume = !viewStudySetup().includes('data-action="resume"');
+
+__emit({ steps, slugA });
+"""
+    got = run_js(sources, driver, {"items": items, "pages": pages, "today": "2026-07-29"})
+    if got.get("__error"):
+        return [f"tabs harness error — {got['__error']}"]
+
+    s = got["steps"]
+    fails: list[str] = []
+
+    def expect(name, hash_, scrolls, why):
+        step = s.get(name, {})
+        if step.get("hash") != hash_ or step.get("scrolls") != scrolls:
+            fails.append(f"{name}: expected {hash_} / scrollTo {scrolls}, "
+                         f"got {step.get('hash')} / {step.get('scrolls')} — {why}")
+
+    expect("awayToStats", "#/stats", [0], "a different tab opens at its own home")
+    expect("backToRead", f"#/read/{got['slugA']}", [520],
+           "returning to a tab resumes the page it was left on, where it was left")
+    expect("popToHome", "#/read", [0], "tapping the tab you are on pops to that tab's home")
+    expect("tapAtHome", "#/read", [0], "tapping again at home scrolls to the top")
+    expect("freshTab", "#/you", [0], "a tab with no history opens at its home")
+    expect("leaveRun", "#/read", [0], "stepping off mid-session leaves the session running")
+    expect("resumeRun", "#/study/run", [0], "returning to Study resumes the running session")
+    expect("runToHome", "#/study", [0], "tapping Study during a session pops to the setup screen")
+
+    if not s.get("setupResume"):
+        fails.append("study setup offers no way back into a session in progress — popping the tab "
+                     "would strand it")
+    if not s.get("setupNoResume"):
+        fails.append("study setup offers 'resume' with no session saved")
+
+    # The swipe. One gesture must go back; the rest must leave the page exactly where it was.
+    if s.get("swipeBack", {}).get("backs") != 1:
+        fails.append(f"swipeBack: a rightward swipe on a reading should pop one history entry, "
+                     f"got {s.get('swipeBack')}")
+    if s.get("swipeAtRoot") != {"backs": 0, "hash": "#/read"}:
+        fails.append(f"swipeAtRoot: swiping on the first page the app drew must fall back to the "
+                     f"section home, not walk out of the app — got {s.get('swipeAtRoot')}")
+    reading, index = f"#/read/{got['slugA']}", "#/read"
+    for name, stays_on, why in [
+        ("swipeOnIndex", index, "a tab's home has no back to go to"),
+        ("swipeDown", reading, "a vertical drag is a scroll"),
+        ("swipeShort", reading, "a short drag is under the distance floor"),
+        ("swipeDiagonal", reading, "a drag that is only half horizontal is ambiguous, so it waits"),
+        ("swipeLeft", reading, "leftward is not back"),
+        ("swipeFromEdge", reading, "the left edge belongs to iOS's own gesture — two pops otherwise"),
+        ("swipeInTable", reading, "a sideways-scrolling table owns the gesture"),
+    ]:
+        if s.get(name) != {"backs": 0, "hash": stays_on}:
+            fails.append(f"{name}: expected no navigation ({why}), got {s.get(name)}")
+
+    print(f"  7. nav           {len(s):>4} gestures {'ok' if not fails else f'{len(fails)} FAILED'}")
+    return fails
+
+
+# ---------------------------------------------------------------- 8. version / update path
 
 def check_version() -> list[str]:
     """A deployed app must be able to tell it is out of date.
@@ -809,7 +995,7 @@ def check_version() -> list[str]:
     if re.search(r"(?<!fetchFresh\()\bfetch\(request\)", sw_src):
         fails.append("sw.js has a plain fetch(request) that goes through the HTTP cache")
 
-    print(f"  7. version     build {payload['build']}  {'ok' if not fails else f'{len(fails)} FAILED'}")
+    print(f"  8. version     build {payload['build']}  {'ok' if not fails else f'{len(fails)} FAILED'}")
     return fails
 
 
@@ -839,6 +1025,7 @@ def main() -> None:
         sample = [p for p in pages if p["type"] == "concept"][:3] + [p for p in pages if p["type"] == "unit"][:1]
         fails += check_views(items, sample)
         fails += check_scroll(items, sample)
+        fails += check_nav(items, sample)
     else:
         fails.append("docs/content/readings.json missing — run `python apps/build_web.py`")
     fails += check_version()

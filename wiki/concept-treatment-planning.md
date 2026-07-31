@@ -35,13 +35,15 @@ One goal usually has several objectives; each objective has interventions. Confu
 
 ## SMART: making an objective actually measurable
 
-The objective is only useful if you can tell whether it was met. The **SMART** format forces that — worth knowing that it comes from *management* (Doran, 1981: originally **S**pecific, **M**easurable, **A**ssignable, **R**ealistic, **T**ime-related), adapted for clinical use as [S13]:
+The objective is only useful if you can tell whether it was met. The **SMART** format forces that. In clinical use the letters stand for [S13]:
 
 - **Specific** — a named behavior or target, not a mood word.
 - **Measurable** — an observable behavior *or a validated score* with a criterion. This is where the screens earn their keep: *"GAD-7 from 16 to ≤7"* is measurable; *"less anxious"* is not.
 - **Achievable** — realistic for this client, this timeframe.
 - **Relevant** — tied to the presenting problem, the diagnosis, and the client's own goals (not the counselor's agenda).
 - **Time-bound** — a review date, so "not met" is a signal, not a surprise.
+
+Learn that clinical version — it's the one counseling programs and documentation audits use. (Origin trivia, not a competing definition: SMART comes from *management*, where Doran's 1981 original letters were **A**ssignable and **R**ealistic rather than Achievable and Relevant. The helping professions swapped in the client-centered readings; the acronym stuck. [S13])
 
 > **Vague:** "Client will manage anxiety better."
 > **SMART:** "Within 8 weeks, client will reduce GAD-7 from 15 to ≤9 and use a paced-breathing skill

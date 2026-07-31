@@ -186,6 +186,44 @@ const scrollMemory = new Map();
 let lastViewKey = null;
 let restoreScrollNext = false;
 
+// --- tab memory --------------------------------------------------------------
+// The tab bar behaves the way a phone app's does, not the way four plain links do. Two rules:
+//
+//   * tapping a tab you are *not* on returns you to wherever you last were inside it — stepping off
+//     a reading to check Stats and coming back lands on the reading, at the place you left it, not
+//     at the top of the index;
+//   * tapping the tab you *are* on pops back to that tab's own home (the readings index, the study
+//     setup), and tapping it again at home scrolls to the top.
+//
+// Deliberately in memory only, not localStorage: a cold start should open each tab at its home
+// rather than resuming a page from last week.
+const tabMemory = new Map();
+
+/** The current route with any ?h=<heading> stripped — the identity a tab remembers. */
+function currentPath(parts) {
+  return `#/${parts.join('/') || 'study'}`;
+}
+
+// --- going back --------------------------------------------------------------
+// Both the ‹ button and the swipe route through goBack(). A bare history.back() walks off the end of
+// the app when the current page is the first one it drew — a deep link into a reading, or a relaunch
+// that restored the URL — and lands you on whatever was in the tab beforehand. Easy to do by
+// accident once a gesture can trigger it, so each entry is stamped with how deep into the app it is
+// and the bottom of the stack falls back to the section's own home instead.
+let navDepth = 0;
+
+function trackDepth() {
+  const stamped = history.state?.depth;
+  if (typeof stamped === 'number') { navDepth = stamped; return; }  // returning to a stamped entry
+  navDepth = lastViewKey === null ? 0 : navDepth + 1;               // a new one; the first is the root
+  history.replaceState({ depth: navDepth }, '');
+}
+
+function goBack() {
+  if (navDepth > 0) history.back();
+  else location.hash = `#/${parseHash().parts[0] || 'study'}`;
+}
+
 function viewKey(parts) {
   if (parts[0] === 'study' && parts[1] === 'run') {
     // Each item, and each stage within an item, is new content that should start at the top.
@@ -214,6 +252,7 @@ function scrollToHeading(id) {
 function render() {
   const { parts, params } = parseHash();
   const tab = parts[0] || 'study';
+  trackDepth();
   const key = viewKey(parts);
   const sameView = key === lastViewKey;
   // Remember where the outgoing view was, read before innerHTML changes the page height.
@@ -270,6 +309,8 @@ function render() {
   }
   lastViewKey = key;
   restoreScrollNext = false;
+  // Recorded after the redirects above, so a tab never remembers a route that bounced.
+  tabMemory.set(tab, currentPath(parts));
 
   if (tab === 'read' && !store.content.readingsLoaded) store.loadReadings();
 }
@@ -299,7 +340,23 @@ function viewStudySetup() {
       data-kind="${kind}" data-value="${esc(value)}"
       aria-pressed="${prefs.filters[kind].includes(value)}">${esc(label)}</button>`;
 
+  // A session outlives leaving the tab (and the app being killed), so this is where you pick it back
+  // up. Without it, tapping Study to pop back here would strand a half-finished session with no
+  // route to it — and the queue, not just the position, would be gone.
+  const saved = store.loadSession();
+  const resume = saved && saved.stage !== 'summary' && saved.idx < saved.queue.length ? `
+    <div class="card">
+      <b>Session in progress</b>
+      <p class="meta" style="margin:.3rem 0 .8rem">Left at item ${saved.idx + 1} of
+        ${saved.queue.length}.</p>
+      <div class="btn-row">
+        <button class="btn btn-ghost" data-action="discard">Discard</button>
+        <button class="btn btn-primary" data-action="resume">Resume</button>
+      </div>
+    </div>` : '';
+
   return `
+  ${resume}
   ${counts.due === 0 && !prefs.cram ? `
     <div class="banner banner-good">Nothing is due today — the schedule has you covered.
     You can still cram below, but spacing is what makes it stick.</div>` : ''}
@@ -625,14 +682,21 @@ function viewPage(slug) {
            data-level="${h.level}">${esc(h.text)}</a>`).join('')}
       </div></details>` : '';
 
+  // Offered twice — before the reading and again at the end, so finishing a long page doesn't
+  // mean scrolling back up to quiz on it.
+  const quizBtn = (margin) => items.length
+    ? `<button class="btn btn-primary" data-action="quizpage" data-slug="${esc(slug)}"
+         style="${margin}">Quiz me on this — ${plural(items.length, 'item')}</button>`
+    : '';
+
   return `
     <div class="chips" style="margin-bottom:.8rem">
       ${chips.map((c) => `<span class="chip chip-static">${esc(c)}</span>`).join('')}
     </div>
-    ${items.length ? `<button class="btn btn-primary" data-action="quizpage" data-slug="${esc(slug)}"
-        style="margin-bottom:1rem">Quiz me on this — ${plural(items.length, 'item')}</button>` : ''}
+    ${quizBtn('margin-bottom:1rem')}
     ${toc}
     <article class="reading" data-slug="${esc(slug)}">${page.html}</article>
+    ${quizBtn('margin:1.4rem 0 .4rem')}
 
     ${page.backlinks.length ? `
       <div class="section-title">Linked from</div>
@@ -903,6 +967,8 @@ view.addEventListener('click', async (ev) => {
     render();
   } else if (action === 'clearfilters') { prefs.filters = { units: [], blooms: [], types: [] }; render(); }
   else if (action === 'start') { startSession(); }
+  else if (action === 'resume') { location.hash = '#/study/run'; render(); }
+  else if (action === 'discard') { store.clearSession(); render(); }
   else if (action === 'again') { store.clearSession(); location.hash = '#/study'; render(); }
   else if (action === 'donesession') { store.clearSession(); location.hash = '#/stats'; render(); }
 
@@ -1038,7 +1104,70 @@ view.addEventListener('input', (ev) => {
   }
 });
 
-backBtn.addEventListener('click', () => history.back());
+// The tab bar's two rules (see tabMemory): same tab pops to its home, a different tab resumes where
+// it was left. The anchors keep their hrefs so they still read as links and open in a new tab on a
+// modifier-click; this only takes over the plain tap.
+tabbar.addEventListener('click', (ev) => {
+  if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+  const link = ev.target.closest('.tab');
+  if (!link) return;
+  ev.preventDefault();
+
+  const tab = link.dataset.tab;
+  const { parts } = parseHash();
+  const here = parts[0] || 'study';
+  const target = tab === here ? `#/${tab}` : (tabMemory.get(tab) || `#/${tab}`);
+
+  if (target === currentPath(parts)) {
+    // Already at that tab's home: the second tap is "take me back to the top".
+    window.scrollTo(0, 0);
+    return;
+  }
+  // Returning to a tab restores its scroll position, the same as a back-navigation would.
+  if (tab !== here) restoreScrollNext = true;
+  location.hash = target;
+});
+
+// --- swipe back --------------------------------------------------------------
+// A rightward swipe on a reading goes back, the way it does in a native app — the ‹ button is a
+// small target at the top of a page you're usually scrolled well down.
+//
+// Deliberately narrow, because a false positive hijacks the page:
+//   * only where the back button is showing, so it can never fire on a tab's home;
+//   * only for a gesture that is clearly horizontal, so it doesn't trip while scrolling;
+//   * never one that starts inside something that scrolls sideways itself (a wide table in a
+//     reading) — there the swipe belongs to that element;
+//   * never from the left edge strip, which is where iOS runs its own back gesture. Leaving it
+//     alone is what stops one swipe popping two entries.
+const SWIPE = { minX: 64, maxY: 48, maxMs: 700, edge: 24 };
+let swipeStart = null;
+
+/** True if the touch landed in something that scrolls sideways on its own and actually overflows. */
+function inSideScroller(target) {
+  const box = target?.closest ? target.closest('.table-wrap, pre') : null;
+  return !!box && box.scrollWidth > box.clientWidth + 1;
+}
+
+view.addEventListener('touchstart', (ev) => {
+  // Reset first: a second finger arriving (a pinch) cancels whatever was in progress.
+  const t = ev.touches.length === 1 ? ev.touches[0] : null;
+  swipeStart = !backBtn.hidden && t && t.clientX >= SWIPE.edge && !inSideScroller(ev.target)
+    ? { x: t.clientX, y: t.clientY, at: Date.now() }
+    : null;
+}, { passive: true });
+
+view.addEventListener('touchend', (ev) => {
+  const start = swipeStart;
+  swipeStart = null;
+  if (!start || ev.changedTouches.length !== 1) return;
+  const dx = ev.changedTouches[0].clientX - start.x;
+  const dy = Math.abs(ev.changedTouches[0].clientY - start.y);
+  if (dx >= SWIPE.minX && dy <= SWIPE.maxY && dx > dy * 2 && Date.now() - start.at <= SWIPE.maxMs) {
+    goBack();
+  }
+}, { passive: true });
+
+backBtn.addEventListener('click', goBack);
 syncChip.addEventListener('click', () => { location.hash = '#/you'; });
 document.getElementById('citeClose').addEventListener('click', () => { citeSheet.hidden = true; });
 citeSheet.addEventListener('click', (ev) => { if (ev.target === citeSheet) citeSheet.hidden = true; });

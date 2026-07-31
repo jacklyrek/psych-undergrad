@@ -182,6 +182,8 @@ What tests can't reach is layout and touch. Worth a look the first time:
 - [ ] A wide table in a reading scrolls inside itself; the page never scrolls sideways
 - [ ] A `[S3]` citation opens the source sheet
 - [ ] Scroll a long reading, tap a wikilink — the new page starts at its top; back returns you to where you were
+- [ ] Half-way down a reading, tap **Stats** then **Read** — you land back on that reading, where you left it; tapping **Read** again pops to the index, and once more goes to the top
+- [ ] Swipe right across a reading — it goes back. Swiping a wide table sideways scrolls the table and does *not* navigate
 - [ ] Dark mode looks right — set iOS Appearance to Dark
 - [ ] Airplane mode: the app still opens, a session still runs, the chip shows `offline`, and the attempts upload when the signal returns
 - [ ] Grade something on the phone, then launch the Streamlit runner — the sidebar should report the pulled change
