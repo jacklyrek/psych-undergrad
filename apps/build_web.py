@@ -383,6 +383,10 @@ def infer_unit(slug: str, meta: dict) -> str:
     matching the convention build_items.py already uses (unitNN -> "NN", aux-<slug> kept whole)."""
     if meta.get("unit") not in (None, ""):
         return str(meta["unit"])
+    # Elective concept pages carry `module:` instead of `unit:` (CLAUDE.md's aux- namespace). Without
+    # this they group under no unit at all, which in the reader means they are not listed anywhere.
+    if meta.get("module"):
+        return f"aux-{meta['module']}"
     m = UNIT_FROM_SLUG.match(slug)
     if m:
         return str(int(m.group(1)))

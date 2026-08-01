@@ -239,6 +239,16 @@ function viewKey(parts) {
   return parts[0] || 'study';
 }
 
+/** Opening a section low on the screen would reveal its readings below the fold. Bring its header up
+ *  under the top bar instead, so the list you just opened is the list you are looking at. */
+function scrollUnitIntoView(key) {
+  const head = [...view.querySelectorAll('.unit-head')].find((b) => b.dataset.value === key);
+  if (!head) return;
+  const bar = document.querySelector('.topbar');
+  const top = head.getBoundingClientRect().top + window.scrollY - ((bar ? bar.offsetHeight : 0) + 8);
+  window.scrollTo(0, Math.max(0, top));
+}
+
 /** Scroll a heading clear of the sticky top bar rather than under it. */
 function scrollToHeading(id) {
   const target = view.querySelector(`#${CSS.escape(id)}`);
@@ -592,6 +602,14 @@ function submitGrade(outcome) {
 
 let searchQuery = '';
 
+// Which unit section the index has open. ~100 wiki pages across 14 units is a long scroll if they
+// are all listed at once — Unit 8 sits below sixty rows. Collapsed, every unit is one tap away, and
+// only one opens at a time so the list never grows past a screen or two again.
+//
+// In memory, deliberately, like tabMemory: stepping into a reading and coming back should find the
+// section still open, but a cold start should open the index closed.
+let openUnit = null;
+
 function viewReadIndex() {
   if (!store.content.readingsLoaded) {
     return store.content.readingsError
@@ -627,7 +645,8 @@ function viewReadIndex() {
       : `<div class="empty"><div class="empty-big">∅</div>No reading mentions “${esc(searchQuery)}”.</div>`);
   }
 
-  // Grouped by unit, spine first, then electives, then the sources files.
+  // Grouped by unit, spine first, then electives, then the sources files. One collapsible section
+  // per group, so the whole syllabus fits on screen and any unit is a tap rather than a scroll.
   const wiki = pages.filter((p) => p.collection === 'wiki');
   const research = pages.filter((p) => p.collection === 'research');
   const units = [...new Set(wiki.map((p) => p.unit).filter(Boolean))].sort(sess.compareUnits);
@@ -637,15 +656,38 @@ function viewReadIndex() {
     const group = wiki.filter((p) => p.unit === unit);
     // The unit overview page leads; concepts and theories follow alphabetically.
     group.sort((a, b) => (a.type === 'unit' ? -1 : b.type === 'unit' ? 1 : a.title.localeCompare(b.title)));
-    html += `<div class="section-title">${esc(sess.unitLabel(unit))}</div>
-             <div class="list">${group.map((p) => rowFor(p)).join('')}</div>`;
+    const spine = /^\d+$/.test(unit);
+    html += unitSection(unit, spine ? unit : 'elec', unitTopic(unit, group),
+                        plural(group.length, 'reading'), group);
   }
   if (research.length) {
-    html += `<div class="section-title">Sources &amp; evidence base</div>
-             <div class="list">${research.sort((a, b) => sess.compareUnits(a.unit, b.unit))
-               .map((p) => rowFor(p)).join('')}</div>`;
+    html += unitSection('sources', 'src', 'Sources & evidence base',
+                        plural(research.length, 'source file'),
+                        research.slice().sort((a, b) => sess.compareUnits(a.unit, b.unit)));
   }
   return html;
+}
+
+/** "Unit 8 — Crisis, Risk Assessment & Trauma-Informed Care" → "Crisis, Risk Assessment &
+ *  Trauma-Informed Care". The number is already in the badge; the topic is what you scan for. */
+function unitTopic(unit, group) {
+  const overview = group.find((p) => p.type === 'unit');
+  const title = overview ? overview.title : sess.unitLabel(unit);
+  return title.replace(/^(unit\s*\d+|elective)\s*[—–-]\s*/i, '');
+}
+
+/** A collapsed unit shows only its header row; opening one closes whichever was open. */
+function unitSection(key, badge, title, sub, pages) {
+  const open = openUnit === key;
+  return `<div class="list unit-group">
+    <button class="list-item unit-head" data-action="toggleunit" data-value="${esc(key)}"
+            aria-expanded="${open}">
+      <span class="kind${badge.length > 2 ? ' kind-word' : ''}">${esc(badge)}</span>
+      <span class="grow"><span class="title">${esc(title)}</span><span class="sub">${esc(sub)}</span></span>
+      <span class="arrow chevron">›</span>
+    </button>
+    ${open ? pages.map((p) => rowFor(p)).join('') : ''}
+  </div>`;
 }
 
 function rowFor(page, snippet) {
@@ -997,6 +1039,13 @@ view.addEventListener('click', async (ev) => {
       .filter((it) => String(it.source_page).replace(/^.*\//, '').replace(/\.md$/, '') === el.dataset.slug)
       .map((it) => it.id);
     startSession(ids);
+  }
+
+  // --- reader
+  else if (action === 'toggleunit') {
+    openUnit = openUnit === value ? null : value;
+    render();
+    if (openUnit) scrollUnitIntoView(openUnit);
   }
 
   // --- account

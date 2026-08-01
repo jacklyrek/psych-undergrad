@@ -528,6 +528,14 @@ function capture(name, fn) {
 
 capture('studySetup', () => viewStudySetup());
 capture('readIndex', () => viewReadIndex());
+
+// The index collapsed, then with one unit opened — the two states of the unit accordion.
+const firstUnit = PAYLOAD.pages.find(p => p.collection === 'wiki' && p.unit);
+out.openUnit = firstUnit ? firstUnit.unit : null;
+openUnit = out.openUnit;
+capture('readIndexOpen', () => viewReadIndex());
+openUnit = null;
+
 capture('page', () => viewPage(PAYLOAD.pages[0].slug));
 capture('pageMissing', () => viewPage('no-such-page'));
 capture('stats', () => viewStats());
@@ -648,6 +656,24 @@ __emit(out);
 
     if "No reading called" not in got["views"].get("pageMissing", ""):
         fails.append("viewPage: a missing slug should say so, not render blank")
+
+    # The index opens collapsed — one header per unit and no reading rows — which is what keeps the
+    # later units a tap away instead of sixty rows down. Opening one reveals exactly that unit.
+    collapsed = got["views"].get("readIndex", "")
+    heads = collapsed.count('data-action="toggleunit"')
+    expected_heads = len({p["unit"] for p in pages if p["collection"] == "wiki" and p["unit"]})
+    if heads != expected_heads:
+        fails.append(f"viewReadIndex: expected {expected_heads} unit headers, found {heads}")
+    if 'href="#/read/' in collapsed:
+        fails.append("viewReadIndex: collapsed sections should list no readings until one is opened")
+    opened = got["views"].get("readIndexOpen", "")
+    revealed = [p["slug"] for p in pages
+                if p["collection"] == "wiki" and p["unit"] == got.get("openUnit")]
+    absent = [s for s in revealed if f'href="#/read/{s}"' not in opened]
+    if absent:
+        fails.append(f"viewReadIndex: opening a unit did not list {absent}")
+    if opened.count('href="#/read/') != len(revealed):
+        fails.append("viewReadIndex: only the open unit's readings should be listed")
 
     # The quiz offer sits both above and below the reading, so finishing a long page doesn't mean
     # scrolling back to the top to act on it.

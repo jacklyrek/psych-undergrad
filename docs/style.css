@@ -417,6 +417,27 @@ details.source .reading { padding: 0 .85rem .85rem; border-top: 1px solid var(--
   color: var(--muted);
 }
 
+/* Collapsible unit sections. The index holds ~100 readings; listed flat, the later units are a long
+ * scroll away. Collapsed, all fourteen headers fit within a screen of each other, and the number
+ * badge is what you aim at. */
+.unit-group { margin-bottom: .5rem; }
+.unit-head {
+  width: 100%;
+  background: none;
+  border-top: 0; border-left: 0; border-right: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.unit-head[aria-expanded="true"] { background: var(--surface-2); }
+.unit-head .title, .unit-head .sub { display: block; }
+/* The number is the thing you aim at, so it gets the room; the word badges stay small to fit. */
+.unit-head .kind { background: var(--accent-soft); color: var(--accent); font-size: .875rem; }
+.unit-head .kind-word { font-size: .625rem; }
+.chevron { transition: transform .15s ease; }
+.unit-head[aria-expanded="true"] .chevron { transform: rotate(90deg); }
+
 /* Injected reading HTML from build_web.py. Measure and rhythm matter more here than anywhere else
  * in the app — this is where actual reading happens. */
 .reading { font-size: 1.0625rem; line-height: 1.65; overflow-wrap: break-word; }
