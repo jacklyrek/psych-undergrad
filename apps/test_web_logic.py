@@ -418,6 +418,8 @@ globalThis.__swipe = (o) => {
     changedTouches: [{ clientX: o.x1, clientY: o.y1 }], target,
   }));
 };
+// The header's ‹ button — the other half of "go back", and the half that is always available.
+globalThis.__back = () => (__el('backBtn')._h.click || []).forEach((fn) => fn({}));
 globalThis.document = {
   getElementById: __el, addEventListener() {}, activeElement: null,
   querySelector() { return null; }, querySelectorAll() { return []; },
@@ -432,20 +434,34 @@ globalThis.localStorage = (() => {
   };
 })();
 globalThis.navigator = { onLine: true };
-// Enough of the history stack for the router: assigning a hash pushes a *new* entry, so its state
-// starts out null — which is how the router tells a fresh entry from one it has already stamped with
-// its depth. back() is counted so the swipe tests can see it fire.
+// Enough of the history stack for the router: a real list of entries, since going back is now
+// tab-aware and traverses to a chosen entry rather than always popping the last one. Assigning a
+// hash pushes a *new* entry, so its state starts out null — which is how the router tells a fresh
+// entry from one it has already stamped with its depth. Traversals are counted so the swipe tests
+// can see them fire.
 globalThis.__backs = 0;
+globalThis.__hist = { entries: [{ hash: '#/study', state: null }], at: 0 };
 globalThis.location = {
-  _hash: '#/study',
-  get hash() { return this._hash; },
-  set hash(v) { this._hash = v; globalThis.history.state = null; },
+  get hash() { return __hist.entries[__hist.at].hash; },
+  set hash(v) {
+    if (v === this.hash) return;             // browsers ignore an assignment that changes nothing
+    __hist.entries.length = __hist.at + 1;   // navigating away drops whatever was ahead
+    __hist.entries.push({ hash: v, state: null });
+    __hist.at++;
+  },
   reload() {},
 };
 globalThis.history = {
-  state: null,
-  back() { globalThis.__backs++; (globalThis.__fire || (() => {}))('popstate'); },
-  replaceState(s) { globalThis.history.state = s; },
+  get state() { return __hist.entries[__hist.at].state; },
+  replaceState(s) { __hist.entries[__hist.at].state = s; },
+  back() { globalThis.history.go(-1); },
+  go(delta) {
+    const to = Math.max(0, Math.min(__hist.entries.length - 1, __hist.at + delta));
+    if (to === __hist.at) return;
+    globalThis.__backs += Math.abs(to - __hist.at);
+    __hist.at = to;
+    (globalThis.__fire || (() => {}))('popstate');
+  },
 };
 // Handlers are kept so the scroll test can fire popstate; scrollTo calls are recorded so it can
 // assert what the router did with the scroll position.
@@ -856,7 +872,7 @@ function tap(tab, scrolledTo) {
   return { hash: location.hash, scrolls: __scrolls.slice() };
 }
 
-// A swipe, reported as what it did: how many history pops it caused, and where it left us.
+// A swipe, reported as what it did: how many history entries it traversed, and where it left us.
 function swipe(o) {
   const backs = __backs;
   __swipe(o);
@@ -864,9 +880,17 @@ function swipe(o) {
   render();
   return out;
 }
+// The ‹ button, reported the same way, so both routes into goBack() are held to the same answer.
+function back() {
+  const backs = __backs;
+  __back();
+  const out = { backs: __backs - backs, hash: location.hash };
+  render();
+  return out;
+}
 const across = { x0: 120, y0: 400, x1: 300, y1: 410 };   // a clean rightward drag
 
-const slugA = PAYLOAD.pages[0].slug;
+const slugA = PAYLOAD.pages[0].slug, slugB = PAYLOAD.pages[1].slug;
 
 // The very first render is the entry the app opened on — a reading here, standing in for a deep
 // link or a relaunch that restored the URL. There is nothing behind it to pop.
@@ -877,6 +901,7 @@ go('#/read');
 steps.swipeOnIndex = swipe(across);      // no back button showing: not a back gesture
 go(`#/read/${slugA}`, 0);
 steps.swipeBack    = swipe(across);      // reached by navigation: pops
+go(`#/read/${slugA}`, 0);                // back onto a reading for the false-positive cases
 steps.swipeDown    = swipe({ x0: 120, y0: 200, x1: 150, y1: 560 });   // a scroll, not a swipe
 steps.swipeShort   = swipe({ x0: 120, y0: 400, x1: 160, y1: 400 });   // under the distance floor
 steps.swipeDiagonal = swipe({ x0: 120, y0: 400, x1: 190, y1: 440 });  // far enough, but not horizontal
@@ -891,6 +916,18 @@ steps.popToHome   = tap('read', 300);    // same tab -> the readings index
 steps.tapAtHome   = tap('read', 700);    // already home -> the top
 steps.freshTab    = tap('you');          // never visited: its home
 
+// Back means back *within the tab*. The browser keeps one stack with every tab's pages interleaved,
+// so stepping off a reading to check Stats and tapping Read again leaves Stats sitting directly
+// behind you — and a plain history.back() there drops you out of the tab you are reading in.
+go('#/read');
+go(`#/read/${slugA}`);
+go(`#/read/${slugB}`);
+tap('stats');
+tap('read');                             // resumes slugB, with #/stats now behind it
+steps.backAfterTabHop = back();          // -> slugA: the last page in *this* tab
+steps.backToIndex     = back();          // -> the readings index
+steps.backAtHome      = back();          // nothing behind a tab's home
+
 // A session left mid-run: the tab still pops to the setup screen, but the session has to be
 // reachable from there or popping the tab would silently strand it.
 const three = PAYLOAD.items.slice(0, 3).map(i => i.id);
@@ -904,7 +941,7 @@ steps.setupResume = viewStudySetup().includes('data-action="resume"');
 clearSession();
 steps.setupNoResume = !viewStudySetup().includes('data-action="resume"');
 
-__emit({ steps, slugA });
+__emit({ steps, slugA, slugB });
 """
     got = run_js(sources, driver, {"items": items, "pages": pages, "today": "2026-07-29"})
     if got.get("__error"):
@@ -934,6 +971,20 @@ __emit({ steps, slugA });
                      "would strand it")
     if not s.get("setupNoResume"):
         fails.append("study setup offers 'resume' with no session saved")
+
+    # Going back, from either the ‹ button or the swipe, walks *this tab's* history. Traversing
+    # (backs > 0) rather than pushing the old route again is what keeps the browser's own
+    # back/forward and the scroll restoration honest.
+    for name, want, why in [
+        ("backAfterTabHop", {"backs": 3, "hash": f"#/read/{got['slugA']}"},
+         "back should return to the last reading in this tab, not to the tab visited in between"),
+        ("backToIndex", {"backs": 1, "hash": "#/read"},
+         "and should keep walking that tab back to its index"),
+        ("backAtHome", {"backs": 0, "hash": "#/read"},
+         "a tab's home has nothing behind it — back must not walk out of the app"),
+    ]:
+        if s.get(name) != want:
+            fails.append(f"{name}: expected {want}, got {s.get(name)} — {why}")
 
     # The swipe. One gesture must go back; the rest must leave the page exactly where it was.
     if s.get("swipeBack", {}).get("backs") != 1:

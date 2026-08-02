@@ -205,23 +205,52 @@ function currentPath(parts) {
 }
 
 // --- going back --------------------------------------------------------------
-// Both the ‹ button and the swipe route through goBack(). A bare history.back() walks off the end of
-// the app when the current page is the first one it drew — a deep link into a reading, or a relaunch
-// that restored the URL — and lands you on whatever was in the tab beforehand. Easy to do by
-// accident once a gesture can trigger it, so each entry is stamped with how deep into the app it is
-// and the bottom of the stack falls back to the section's own home instead.
+// Both the ‹ button and the swipe route through goBack(), and both mean *back within this tab* —
+// which is not the same as back through the browser's history. The browser keeps one stack with
+// every tab's pages interleaved, so stepping off a reading to check Stats and tapping Read again
+// leaves Stats as the entry behind you, when the page you expect to return to is the reading you
+// were on before this one.
+//
+// So each entry is stamped with how deep into the app it is, and remembered here alongside the tab
+// and route it drew. Going back scans this tab's own entries for the nearest one showing a different
+// *page* and traverses straight to it. Entries for the page already on screen don't count as
+// somewhere to go back to — returning to a tab re-pushes the page it was left on, and a [[page#head]]
+// or contents tap pushes the same page again with a ?h= on it. Both would otherwise eat a back press
+// and appear to do nothing. Traversing, rather than pushing the old route again, is what keeps the
+// scroll restoration and the browser's own back/forward honest.
+//
+// The tab's own home is the floor: below it the stack is another tab's, and with nothing behind the
+// page at all — a deep link into a reading, or a relaunch that restored the URL — back goes to that
+// home rather than walking off the end of the app. Easy to hit by accident once a gesture triggers it.
 let navDepth = 0;
+const navEntries = [];   // depth → { tab, path } for the entries this session drew
 
 function trackDepth() {
   const stamped = history.state?.depth;
-  if (typeof stamped === 'number') { navDepth = stamped; return; }  // returning to a stamped entry
-  navDepth = lastViewKey === null ? 0 : navDepth + 1;               // a new one; the first is the root
-  history.replaceState({ depth: navDepth }, '');
+  if (typeof stamped === 'number') navDepth = stamped;   // returning to a stamped entry
+  else {
+    navDepth = lastViewKey === null ? 0 : navDepth + 1;  // a new one; the first is the root
+    history.replaceState({ depth: navDepth }, '');
+  }
+  // Cleared here and filled in at the end of render(), once the redirects have settled: a route that
+  // bounces must not be left behind as somewhere back could return to.
+  navEntries[navDepth] = null;
 }
 
 function goBack() {
-  if (navDepth > 0) history.back();
-  else location.hash = `#/${parseHash().parts[0] || 'study'}`;
+  const { parts } = parseHash();
+  const tab = parts[0] || 'study';
+  const here = currentPath(parts);
+  const home = `#/${tab}`;
+  if (here === home) return;   // the bottom of a tab's stack: nothing below it to return to
+  for (let d = navDepth - 1; d >= 0; d--) {
+    const entry = navEntries[d];
+    if (!entry || entry.tab !== tab || entry.path === here) continue;
+    history.go(d - navDepth);
+    return;
+  }
+  restoreScrollNext = true;   // the tab's home, where you last left it
+  location.hash = home;
 }
 
 function viewKey(parts) {
@@ -319,8 +348,10 @@ function render() {
   }
   lastViewKey = key;
   restoreScrollNext = false;
-  // Recorded after the redirects above, so a tab never remembers a route that bounced.
+  // Recorded after the redirects above, so neither a tab nor the back stack remembers a route that
+  // bounced.
   tabMemory.set(tab, currentPath(parts));
+  navEntries[navDepth] = { tab, path: currentPath(parts) };
 
   if (tab === 'read' && !store.content.readingsLoaded) store.loadReadings();
 }
