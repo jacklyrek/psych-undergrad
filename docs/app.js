@@ -412,6 +412,14 @@ function viewStudySetup() {
   </div>`;
 }
 
+/** Where a session was launched from, so finishing it returns you there. Quizzing a reading and
+ *  being dumped on Stats loses your place in the reading; the anchor is dropped so returning
+ *  restores the scroll position you left rather than re-jumping to a heading. */
+function sessionOrigin() {
+  const path = currentPath(parseHash().parts);
+  return path === '#/study/run' ? '#/study' : path;
+}
+
 function startSession(ids) {
   const items = store.content.items;
   const queue = ids || sess.buildQueue(items, store.getState(), {
@@ -429,6 +437,7 @@ function startSession(ids) {
     startedAt: Date.now(),
     itemStartAt: Date.now(),
     draft: { confidence: null, response: '' },
+    origin: sessionOrigin(),
   });
   location.hash = '#/study/run';
   render();
@@ -571,7 +580,8 @@ function viewSummary(s) {
       }).join('')}</div>` : ''}
 
     <div class="btn-row" style="margin-top:1rem">
-      <button class="btn btn-ghost" data-action="donesession">Done</button>
+      <button class="btn btn-ghost" data-action="donesession">${
+        String(s.origin || '').startsWith('#/read/') ? 'Back to reading' : 'Done'}</button>
       <button class="btn btn-primary" data-action="again">Another session</button>
     </div>`;
 }
@@ -1012,7 +1022,15 @@ view.addEventListener('click', async (ev) => {
   else if (action === 'resume') { location.hash = '#/study/run'; render(); }
   else if (action === 'discard') { store.clearSession(); render(); }
   else if (action === 'again') { store.clearSession(); location.hash = '#/study'; render(); }
-  else if (action === 'donesession') { store.clearSession(); location.hash = '#/stats'; render(); }
+  else if (action === 'donesession') {
+    // Back to where the session started — the reading you were quizzing, or the study setup.
+    // Sessions saved before origin was recorded have none, so fall back to the setup page.
+    const back = store.loadSession()?.origin || '#/study';
+    store.clearSession();
+    restoreScrollNext = true;   // land at the place you left, not the top of the page
+    location.hash = back;
+    render();
+  }
 
   // --- the loop
   else if (action === 'conf') {
