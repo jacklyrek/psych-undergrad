@@ -978,6 +978,12 @@ function viewYou() {
   return `
     ${syncCard}
 
+    <div class="section-title">Other wikis</div>
+    <div class="card card-tight">
+      <p class="meta" style="margin:0 0 .6rem">Same study system, different curriculum.</p>
+      <a class="btn btn-ghost btn-sm" href="https://jacklyrek.github.io/Statecraft-undergrad/">Open Statecraft Wiki →</a>
+    </div>
+
     <div class="section-title">Version</div>
     <div class="card card-tight">
       <p class="meta" style="margin:0">Build <code>${esc(localStorage.getItem(BUILD_KEY) || '—')}</code> ·

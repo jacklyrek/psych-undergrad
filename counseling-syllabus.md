@@ -272,18 +272,18 @@ Most U.S. counseling programs follow **CACREP** standards, which organize the fi
 
 ## Suggested 12-week pre-program plan
 
-| Weeks | Focus |
-|---|---|
-| 1–2 | Unit 1 (helping skills) — start here, practice daily |
-| 3 | Unit 2 (theories overview) |
-| 4 | Unit 3 (ethics & law) |
-| 5 | Unit 4 (multicultural competence) |
-| 6 | Unit 5 (development & attachment) |
-| 7–8 | Unit 6 (psychopathology & DSM) |
-| 9 | Unit 7 (assessment & conceptualization) |
-| 10 | Unit 8 (crisis & trauma) |
-| 11 | Unit 9 (CBT & MI) |
-| 12 | Units 10–12 skim; revisit Unit 1 |
+| Weeks | Focus                                                |
+| ----- | ---------------------------------------------------- |
+| 1–2   | Unit 1 (helping skills) — start here, practice daily |
+| 3     | Unit 2 (theories overview)                           |
+| 4     | Unit 3 (ethics & law)                                |
+| 5     | Unit 4 (multicultural competence)                    |
+| 6     | Unit 5 (development & attachment)                    |
+| 7–8   | Unit 6 (psychopathology & DSM)                       |
+| 9     | Unit 7 (assessment & conceptualization)              |
+| 10    | Unit 8 (crisis & trauma)                             |
+| 11    | Unit 9 (CBT & MI)                                    |
+| 12    | Units 10–12 skim; revisit Unit 1                     |
 
 If you only have a month, do Units 1, 3, and 8 — skills, ethics, and crisis. Those three carry the most weight for keeping you and a client safe and oriented from day one.
 
