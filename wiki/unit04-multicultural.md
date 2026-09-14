@@ -101,6 +101,10 @@ culture. Those are the load-bearing blind spots.
 - [[unit03-ethics-law]] — C.2.a makes this unit an ethical requirement, not an elective
   ([[concept-scope-of-practice]]); informed consent must be culturally and developmentally
   appropriate (A.2.c, [[concept-informed-consent]]). [S16]
+- [[aux-trauma-informed-care]] — [[concept-historical-trauma]] is where this unit and the trauma
+  framework meet: Brave Heart's historical trauma, Carter's **race-based traumatic stress**
+  (published in *The Counseling Psychologist*), and the contested status of epigenetic transmission.
+  It is SAMHSA's otherwise-thin sixth principle given real content.
 - [[unit02-theories]] — every theory family carries cultural assumptions (individuation,
   self-actualization, direct emotional disclosure); the postmodern family
   ([[theory-postmodern]]) is the most explicitly culture-aware.

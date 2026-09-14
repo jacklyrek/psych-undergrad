@@ -61,6 +61,8 @@ This unit is emotionally heavy, and the syllabus says so plainly: *if any of it 
 - [[unit07-assessment]] — the intake risk screen and PHQ-9 item 9 hand forward to this unit's assessment protocol.
 - [[aux-psychological-first-aid]] — acute crisis support and grief; the don't-probe stance is shared.
 - [[aux-addiction]] — overdose, naloxone, and means safety in substance-use crises.
+- [[aux-trauma-informed-care]] — the elective module that expands [[concept-trauma-informed-care]]: retraumatization, the ACE study and the screening problem, SAMHSA's ten implementation domains, historical and racial trauma, and an honest appraisal of the outcome evidence (AHRQ 2025: insufficient for every outcome examined).
+- [[aux-sexual-abuse-support]] — the sexual-violence elective. Applies this unit's trauma-informed stance to one population and adds what it doesn't carry: disclosure response, tonic immobility, the medical-forensic and reporting systems, and the treatments built for that trauma.
 - Unit 6 ([[concept-trauma-stressor-disorders]]) — PTSD/ASD as *diagnoses*; this unit adds the *neurobiology*, the *informed-care stance*, and *treatment* pointers those pages deferred here.
 - [[unit11-neuroscience | Unit 11]] (neuroscience) — the [[concept-stress-response | stress response]] and [[concept-autonomic-nervous-system | autonomic nervous system]], developed in full.
 

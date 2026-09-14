@@ -30,6 +30,8 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
 |---|---|---|---|---|---|
 | PFA & Acute Grief Support (`aux-psychological-first-aid`) | Unit 8 | ☑ (5) | ☑ (32) | all 5 levels | 3/3 ✓ (`pfa-frameworks`, `grief-models`, `bereavement-support` each have a compare) |
 | Understanding & Changing Addictive Behavior (`aux-addiction`) | Units 6, 9 | ☑ (6) | ☑ (35) | all 5 levels | 4/4 ✓ (`addiction-models`, `change-stages`, `relapse-concepts`, `addiction-treatments` each have a compare) |
+| Supporting Survivors of Sexual Abuse & Assault (`aux-sexual-abuse-support`) | Units 3, 6, 8 | ☑ (8) | ☑ (61) | all 5 levels | 7/7 ✓ (9 compares — `disclosure-response` and `reporting-pathways` have 2 each) |
+| Trauma-Informed Care (`aux-trauma-informed-care`) | Units 4, 6, 8 | ☑ (7) | ☑ (46) | all 5 levels | 6/6 ✓ (7 compares — `trauma-screening` has 2) |
 
 ## Coverage rules the lint pass enforces
 - Every major concept has at least one **Apply** or **Analyze** item, not only "define"-level.
@@ -38,6 +40,80 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
 - No orphan readings (a page nothing links to) and no missing concept pages the course-map promised.
 
 ## Known holes
+- **Trauma-informed care boundary — RESOLVED 2026-09-14 (same day), and not the way the note predicted.**
+  The `aux-sexual-abuse-support` module was built carrying **zero** general TIC content on the stated
+  expectation that TIC would become its own unit, and this file listed a rewiring plan premised on
+  `concept-trauma-informed-care` **moving** off the spine. **It did not move.** When
+  `aux-trauma-informed-care` was built hours later, the page was **retained in Unit 8** instead:
+  trauma-informed care is a core concept the syllabus names in Unit 8's own title, so stripping it
+  from the spine would have left a syllabus-named concept uncovered. It is now an **overview /
+  synthesis hub** (three E's, four R's, six principles, informed-vs-treatment) over the module's
+  depth — exactly the `concept-core-conditions` precedent, and the reason that precedent is worth
+  having. **Consequences:** no wikilink broke, no item `source_page` needed repointing, and the
+  original no-duplication discipline paid off anyway — the two modules share no content. The links
+  promised in the old plan were updated to *add* module pointers rather than redirect: the
+  sexual-abuse hub (boundary note + "Connects to"), `concept-sexual-trauma-treatment`,
+  `concept-disclosure-response`, plus new backlinks from `unit08-crisis-trauma`,
+  `concept-vicarious-trauma`, `unit04-multicultural`, and `concept-trauma-informed-care` itself
+  (whose "this page is the one that moves" line has been corrected to record what happened).
+- **Elective `aux-trauma-informed-care` is the repo's evidence-appraisal exemplar (2026-09-14).**
+  Built at the human's direction to put the weak-evidence finding **front and centre** rather than in
+  a back-page caveat. The organizing fact: **AHRQ (2025)** screened 1,326 publications, found **12
+  eligible studies**, and reported **insufficient evidence for every outcome category examined** —
+  while TIC is mandated policy across U.S. health, education, child welfare, and justice. The module
+  teaches holding three things at once (insufficient ≠ ineffective; still defensible on low-risk and
+  ethical grounds; implementation outpacing evidence is itself a competency to notice). Bloom spread
+  R=5 / U=9 / Ap=7 / An=13 / **E=12** across 46 items — **the highest evaluate proportion in the
+  repo (26%)**, which is intended: the characteristic failure this material guards against is
+  reciting the six principles as though they were findings.
+- **Elective `aux-trauma-informed-care` perishable / contested notes:** (a) the **ACE score is not a
+  screening instrument** per its own co-PI (Anda) — if a future build meets an agency using it as
+  one, the module's position is already stated and sourced; (b) **epigenetic** transmission of trauma
+  in humans is contested (Yehuda's own title says "putative") — re-check if the evidence firms up;
+  (c) **historical trauma** is contested *within* Indigenous mental health scholarship, cited from
+  inside the field; (d) the **continuum terminology** (aware/sensitive/responsive/informed/specific)
+  is **not standardized** across sources and the module says so rather than picking a canon;
+  (e) AHRQ's review will be superseded — re-verify before quoting the 12-studies figure.
+- **Elective `aux-trauma-informed-care` sourcing caveat:** this topic's literature is overwhelmingly
+  **advocacy and implementation guidance rather than outcome evidence**, so the sources file is
+  explicitly tiered — framework sources (SAMHSA) are authoritative for *content* and carry **no
+  weight as efficacy evidence**; AHRQ and peer-reviewed critique carry every outcome claim. A
+  widely-repeated "~70% of restrained inpatients had childhood abuse histories" figure was
+  **excluded** (primary source unretrievable — PubMed cookie wall) and the association stated
+  qualitatively instead. Anda's much-quoted line [S9] was consulted at **abstract/summary level** and
+  is flagged as such, as were [S5] and [S26].
+- **Elective `aux-sexual-abuse-support` Bloom/type spread (2026-09-14):** R=7 / U=12 / Ap=13 / An=18 /
+  E=11 across 61 items — **42 of 61 at apply/analyze/evaluate**, the highest proportion in the repo.
+  Types: 22 explain, 14 vignette, 9 compare, 7 cloze, 6 recall, **3 mcq** (reserved for the three
+  genuine discrimination tasks: which CSAAS component survived *J.L.G.*, the RTS correction, and MST
+  eligibility). Deliberately heavy on **negative-space items** — what *not* to say, ask, or do —
+  because the documented harms in this material come from well-meant action, not from missing facts.
+- **Elective `aux-sexual-abuse-support` contested-material load is deliberately high**, matching the
+  Unit 4 precedent, and is quizzed at evaluate level rather than smoothed: CSAAS's falsifiability
+  problem and its court exclusion, Janoff-Bulman's failed adaptive-self-blame claim, the
+  Brewin-vs-Rubin memory-fragmentation dispute, the recovered-memory wars (disputed premise, agreed
+  practice rule), and Title IX's vacated 2024 rule. If study sessions surface confusion between "what
+  the framework claims" and "what the evidence supports," that is the intended discrimination.
+- **Elective `aux-sexual-abuse-support` perishable facts — re-verify before relying on these:**
+  (a) **Title IX** — the 2024 Final Rule was vacated 2025-01-09 and enforcement reverted to the 2020
+  regulations; the module teaches the *structure* (confidential vs. responsible employee) rather than
+  the rule, but the vacatur reference will date. (b) **Forensic-exam windows** — ~120 hours is a rule
+  of thumb; jurisdictions vary and several have widened, and the page says so inline. (c) **CSAAS
+  admissibility** — state law varies; the module cites the direction of the case law, anchored on
+  *State v. J.L.G.* (N.J. 2018), not a nationwide rule. (d) **Mandated-reporting duties for an adult
+  disclosing childhood abuse** — state statutes differ substantially and some impose broader duties
+  than the general rule the page states; flagged inline as consult-and-document.
+- **Elective `aux-sexual-abuse-support` sourcing caveats:** **RAINN's pages returned HTTP 403 and were
+  not read directly** — RAINN is cited only as a hotline/service resource [S16], and no statistic or
+  guidance claim rests on it (CDC, BJS, and peer-reviewed work carry those instead). Four further
+  sources were consulted at **abstract or summary level only** and are marked as such in the sources
+  file ([S9] Shelton on CSAAS admissibility, [S18] Tener et al. on therapist responses, [S22] de la
+  Torre Laso on tonic immobility, [S34]'s STAIR review). [S38] (CAASE/HelpGuide, partner support) is
+  the lowest-tier source in the module and carries framing only, never a clinical or efficacy claim.
+- **Male-CSA prevalence discrepancy left visible, not resolved (2026-09-14):** CDC's current page says
+  **1 in 20 boys**; the widely-circulated **1 in 13** comes from 2013–2014 self-report data. Both are
+  stated in `concept-child-sexual-abuse` with the note that male estimates are especially
+  definition-sensitive and especially depressed by non-disclosure. Revisit if CDC updates.
 - **Unit 1 upgraded concise → in-depth (2026-07-19):** the only spine unit built concise (2026-06-27)
   was brought to the Units 2–8 standard. **5 → 10 readings, 19 → 38 items, ~9 → 17 sources.** Both
   concise-build shortcuts are now **RESOLVED**:

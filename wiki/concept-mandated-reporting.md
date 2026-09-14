@@ -81,6 +81,9 @@ often survives a well-handled report — it rarely survives a concealed one. [S4
 - [[concept-confidentiality-limits]] — this is the "legal requirements" arm of B.2.a; it belongs in
   the confidentiality speech verbatim.
 - [[concept-duty-to-warn]] — the confusable sibling; table above.
+- [[concept-reporting-and-advocacy]] ([[aux-sexual-abuse-support]] elective) — the sexual-abuse hard cases
+  against this rule, including the adult client who discloses childhood abuse by someone who still has
+  access to children, and the don't-develop-the-account constraint that governs what you do first.
 - [[unit08-crisis-trauma | Unit 8]] — abuse discovery often co-presents with crisis; the reporting conversation is itself a
   crisis-communication skill.
 

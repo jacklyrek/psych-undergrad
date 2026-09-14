@@ -433,3 +433,93 @@ _Items:_ [aux-addiction](items/aux-addiction.md) — 35 items across 4 clusters 
 `change-stages`, `relapse-concepts`, `addiction-treatments`), all 5 Bloom levels; heavy on
 application/stance + 5 compare items and 4 discrimination mcqs. _Sources:_
 [aux addiction sources](research/aux-addiction-sources.md).
+
+### Supporting Survivors of Sexual Abuse & Assault  ☑ readings + items  · borders Units 3, 6 & 8
+_Readings:_
+- [aux-sexual-abuse-support](wiki/aux-sexual-abuse-support.md) — hub: the first response as a
+  **clinical act** (Ullman — reactions to disclosure predict PTSD; perceived control is the mediator),
+  the **believe-don't-investigate** stance, and the map. Carries an explicit **"this is not
+  trauma-informed care"** boundary: TIC stays in Unit 8's
+  [concept-trauma-informed-care](wiki/concept-trauma-informed-care.md) so a future TIC unit can absorb
+  that page cleanly.
+- [concept-sexual-violence-scope](wiki/concept-sexual-violence-scope.md) — CDC definition ("consent
+  not obtained or **freely given**"), the category structure incl. **made to penetrate**, consent /
+  coercion / incapacity, NISVS vs. NCVS and **which survey produced which number**, disparities and
+  the transgender **measurement gap**, ~90% known perpetrator, "victim" vs. "survivor."
+- [concept-child-sexual-abuse](wiki/concept-child-sexual-abuse.md) — the **five grooming stages**
+  (incl. grooming the *protective adults*), disclosure as a **process**, **CSAAS** split into the
+  supported half (delay) and the failed half (routine recantation) plus the **falsifiability**
+  objection, why there's no warning-sign checklist, and the **contamination** rule (you are not the
+  forensic interviewer).
+- [concept-disclosure-response](wiki/concept-disclosure-response.md) — **the core skill.** The three
+  sentences, the do-not-say list and why each harms, **Turning Against vs. Unsupportive
+  Acknowledgment** (taking control is a *negative* reaction), believe-vs-neutrality resolved, and how
+  a child disclosure differs.
+- [concept-sexual-trauma-effects](wiki/concept-sexual-trauma-effects.md) — **tonic immobility**
+  (70%/48%, Möller et al.) as the answer to "why didn't you fight?", behavioral vs. characterological
+  self-blame **and why Janoff-Bulman's adaptive claim failed**, shame and arousal, PTSD rates,
+  revictimization, **RTS as history**, and the contested **memory-fragmentation** debate.
+- [concept-reporting-and-advocacy](wiki/concept-reporting-and-advocacy.md) — the medical forensic exam
+  (dual purpose; **survivor-directed**; exam ≠ reporting; ~120h is jurisdiction-dependent), SANE/SART,
+  military **restricted vs. unrestricted**, **MST** access rules, Title IX's **vacated 2024 rule** and
+  the durable confidential-vs-responsible-employee structure, the **adult-discloses-childhood-abuse**
+  mandated-reporting case, advocates, and **secondary victimization**.
+- [concept-sexual-trauma-treatment](wiki/concept-sexual-trauma-treatment.md) — Herman's **three
+  stages** (non-linear), **STAIR**'s skills-before-narrative, **CPT** (built for this population) vs.
+  **PE** (tied in the landmark trial → offer choice), durability at 5–10 years, what you actually do
+  before referring, and the **memory wars** → never work to recover a memory.
+- [concept-supporting-a-survivor](wiki/concept-supporting-a-survivor.md) — the non-clinical half and
+  the deliberate sibling of [concept-supporting-the-bereaved](wiki/concept-supporting-the-bereaved.md):
+  "I'll kill him" as an egocentric response, not treating them as fragile, intimacy and triggers for
+  partners, **secondary survivors**, the long haul, and why support is not therapy.
+
+_Items:_ [aux-sexual-abuse-support](items/aux-sexual-abuse-support.md) — 61 items across 7 clusters
+(`sexual-violence-definitions`, `csa-dynamics`, `disclosure-response`, `sexual-trauma-effects`,
+`reporting-pathways`, `sexual-trauma-treatments`, `survivor-support`), all 5 Bloom levels, **42 of 61
+at apply/analyze/evaluate**; production-heavy (22 explain, 14 vignette, 9 compare, 7 cloze, 6 recall,
+3 mcq reserved for genuine discrimination). Deliberately loaded with **negative-space items** (what
+*not* to say/ask/do) and **evaluate-level items on the contested material** (CSAAS, self-blame
+taxonomy, memory fragmentation, recovered memory, Title IX status). _Sources:_
+[aux sexual-abuse-support sources](research/aux-sexual-abuse-support-sources.md).
+
+### Trauma-Informed Care  ☑ readings + items  · borders Units 4, 6 & 8
+Expands Unit 8's [concept-trauma-informed-care](wiki/concept-trauma-informed-care.md), which is
+**retained on the spine** as the overview for a syllabus-named core concept (the
+`concept-core-conditions` precedent). Read that page first — this module starts where it stops.
+
+_Readings:_
+- [aux-trauma-informed-care](wiki/aux-trauma-informed-care.md) — hub. Leads with the finding most
+  training omits: **AHRQ (2025) screened 1,326 publications, found 12 eligible studies, and reported
+  insufficient evidence for every outcome examined** — while TIC is mandated policy nationwide. Teaches
+  holding three things at once (insufficient ≠ ineffective; still defensible; implementation outpacing
+  evidence is itself worth noticing).
+- [concept-retraumatization](wiki/concept-retraumatization.md) — the harm the framework exists to
+  prevent, and its **best-supported** part. Retraumatization as **structural re-enactment** (not "a
+  reminder"); the restraint/seclusion evidence; the quiet counseling-room version in a table;
+  **universal precautions**; and the two over-corrections (**fragility theater**, concept inflation).
+- [study-ace](wiki/study-ace.md) — Felitti & Anda 1998: 17,000+ Kaiser members, the **ten categories**,
+  the **dose-response** finding and why its *shape* mattered — then the critiques, ending with **Anda
+  disowning clinical use of his own instrument**.
+- [concept-trauma-screening](wiki/concept-trauma-screening.md) — screening vs. assessment vs.
+  treatment; **why individual ACE screening is a measurement error, not a preference**; what a
+  validated screen looks like by contrast (**PC-PTSD-5** 3+/4+, **LEC-5**'s deliberate lack of
+  scoring); and the governing rule: **don't screen for what you can't respond to.**
+- [concept-tic-implementation](wiki/concept-tic-implementation.md) — SAMHSA's **ten implementation
+  domains** (a counselor controls ~2 of 10), the **aware→sensitive→responsive→informed/specific**
+  continuum and its non-standard terminology, workforce as an **organizational** obligation, and what
+  you can still do inside a system that isn't trauma-informed.
+- [concept-historical-trauma](wiki/concept-historical-trauma.md) — principle six with actual content:
+  **Brave Heart** (historical trauma, unresolved grief, "soul wound"), **Carter's race-based traumatic
+  stress** (in *The Counseling Psychologist*), the **Criterion A mismatch**, epigenetics as
+  **contested** ("putative"), and the critique from *within* Indigenous scholarship.
+- [concept-tic-evidence](wiki/concept-tic-evidence.md) — the appraisal in full: AHRQ's numbers and
+  wording, what "insufficient evidence" does and doesn't mean, why TIC is **structurally** hard to
+  study, the **"is it just good care?"** objection recorded by AHRQ's own informants, and the
+  four-part practice position.
+
+_Items:_ [aux-trauma-informed-care](items/aux-trauma-informed-care.md) — 46 items across 6 clusters
+(`retraumatization`, `ace-research`, `trauma-screening`, `tic-implementation`, `historical-trauma`,
+`tic-evidence`), all 5 Bloom levels, **32 of 46 at apply/analyze/evaluate** and **12 at evaluate — the
+highest evaluate proportion in the repo**, by design: the failure this material guards against is
+reciting the six principles as though they were findings. _Sources:_
+[aux trauma-informed-care sources](research/aux-trauma-informed-care-sources.md).

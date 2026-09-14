@@ -54,6 +54,7 @@ The move here is the same one you make for clients: **normalize without minimizi
 
 - [[concept-counselor-self-care]] — the response to VT and why it's an ethical duty (ACA C.2.g).
 - [[concept-trauma-informed-care]] — VT makes the don't-probe stance harder to hold; being trauma-informed toward yourself protects your clients.
+- [[concept-tic-implementation]] ([[aux-trauma-informed-care]]) — VT reframed as an **organizational** obligation rather than a personal one: training and workforce development is one of SAMHSA's ten implementation domains, and an agency that prescribes self-care while assigning unmanageable trauma caseloads has located a structural problem in the individual.
 - [[concept-neurobiology-of-trauma]] — intrusive imagery in the counselor is the same implicit-memory machinery, one step removed.
 - [[unit01-helping-skills]] — empathy is the mechanism of the work *and* the channel of the cost; you can't opt out of the exposure without opting out of the help.
 

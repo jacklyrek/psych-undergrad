@@ -36,6 +36,7 @@ You cannot fix this and trying to will hurt. A bereaved parent does not need you
 
 ## Connects to
 - **[[unit08-crisis-trauma | Unit 8]]** — Crisis, Risk Assessment & Trauma-Informed Care. PFA is the acute-response half; safety planning, suicide-risk screening, and the neurobiology of trauma live there. If a bereaved person shows risk to self, this module hands off to [[concept-suicide-risk-assessment | Unit 8's risk assessment]].
+- **[[aux-sexual-abuse-support]]** — the sibling elective. Same don't-probe restraint, extended to sexual violence; its [[concept-supporting-a-survivor]] is the deliberate counterpart of this module's [[concept-supporting-the-bereaved]].
 - **[[unit01-helping-skills]]** — the listening and core-conditions work underneath PFA's "Listen." PFA *uses* those microskills but adds the crisis-specific rule: don't probe.
 
 ## Sources

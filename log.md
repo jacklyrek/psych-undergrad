@@ -915,3 +915,162 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   dropping the 2:1 ratio each fail exactly one named case (the ratio one caught a hole: the vertical
   case was already blocked by the distance floor, so `swipeDiagonal` was added to pin the rule).
 - **Rebuilt:** `python apps/build_web.py` (shell change — build hash bumped to `2228137a6ef6`).
+
+---
+
+## [2026-09-14] create-module | sexual-abuse-support | 8 readings, 61 items, 40 sources
+- **Asked for:** an auxiliary unit on helping victims of sexual abuse, with the explicit instruction
+  that **trauma-informed care will likely become its own unit later** — so build with that in mind.
+- **Scope confirmed before deep research** (per the `create chapter` step-1 rule, which `create module`
+  inherits — an ad-hoc module has no course-map entry, so its scope is thin by definition). Three
+  decisions came back: write for **both a clinical and a personal-support reader**; cover **both CSA and
+  adult assault** with the adult-survivor-of-childhood-abuse bridge; carry the **full contested load**,
+  flagged. The dual-audience answer added an eighth reading, `concept-supporting-a-survivor`, as the
+  deliberate sibling of the PFA module's `concept-supporting-the-bereaved`.
+- **The TIC boundary is the module's organizing constraint, not a footnote.** The module carries **zero**
+  general trauma-informed-care content — no three E's, four R's, six principles, re-traumatization
+  theory, or informed-vs-focused table. All of it stays in Unit 8's `concept-trauma-informed-care`,
+  which the hub names as a **prerequisite** and which four pages link to instead of restating. That page
+  now carries a note in its own "Connects to" saying it is **the page that would move** if TIC is built
+  out. `coverage.md` holds the full rewiring list (which links to update, in which files) so the future
+  split is mechanical rather than archaeological. The items file states the same exclusion, so the item
+  bank needs no repointing either.
+- **Readings (8):** hub `aux-sexual-abuse-support`; `concept-sexual-violence-scope` (definitions,
+  consent/coercion/incapacity, NISVS-vs-NCVS, **made to penetrate**, victim-vs-survivor);
+  `concept-child-sexual-abuse` (five grooming stages incl. grooming the *protective adults*, disclosure
+  as process, **CSAAS**, the contamination rule); `concept-disclosure-response` (**the core skill**);
+  `concept-sexual-trauma-effects` (**tonic immobility**, self-blame, shame, RTS, memory debate);
+  `concept-reporting-and-advocacy` (forensic exam, SANE/SART, military two-track, MST, Title IX,
+  mandated-reporting hard cases, secondary victimization); `concept-sexual-trauma-treatment` (Herman's
+  stages, STAIR, CPT/PE, **memory wars**); `concept-supporting-a-survivor` (non-clinical).
+- **The empirical spine is one finding.** Ullman: social reactions to disclosure predict PTSD symptoms,
+  and **perceived control over recovery is the mediator** — positive reactions predict control, control
+  predicts fewer symptoms. That mechanism generates nearly every practice rule in the module, including
+  the counterintuitive one: **"taking control and making decisions for them" is classified as a negative
+  reaction**, so the competent, decisive helper who calls the police and books the appointment is
+  delivering measured harm while feeling useful. Relyea & Ullman's split (**Turning Against** vs.
+  **Unsupportive Acknowledgment**) is what makes it teachable rather than a slogan.
+- **Highest-yield single fact:** tonic immobility. Möller et al. (n=298): **70% significant, 48% extreme**
+  involuntary motor inhibition during assault; 38.1% PTSD and 22.2% severe depression at six months.
+  It is the empirical answer to "why didn't you fight back?", it means absence of resistance is not
+  evidence an assault didn't occur, and naming it is frequently the intervention that loosens self-blame
+  — deliverable by a foundations-level counselor with no trauma-treatment training.
+- **Contested material carried, not smoothed** (Unit 4 precedent), all quizzed at evaluate level:
+  **CSAAS** split into the supported half (delay — carved out by *State v. J.L.G.*) and the failed half
+  (routine recantation — London et al.), plus the **falsifiability** objection that survives both;
+  **Janoff-Bulman's** adaptive-behavioral-self-blame claim, which **failed** replication (Frazier: both
+  forms → greater distress) while the taxonomy remains useful; **Brewin vs. Rubin** on memory
+  fragmentation, where the clinically usable consequence is independent of who wins (inconsistency is
+  neither proof nor disproof, and you're not equipped to adjudicate); the **memory wars**, where the
+  disputed premise (repression) is separated from the agreed practice rule (never work to recover a
+  memory — suggestive techniques produce confident false memories and have produced de-licensure);
+  **RTS** as history absorbed by PTSD; and **Title IX**, whose 2024 rule was vacated 2025-01-09.
+- **Sourcing was the hard part and is documented as such.** Three hazards drove an explicit tiering note
+  at the top of the sources file: advocacy numbers circulate detached from their instruments; parts of
+  the field are actively litigated; and some primary sources block retrieval. **RAINN returned HTTP 403
+  and was not read** — it is cited only as a hotline/service resource, and every statistic it would have
+  carried was re-sourced to CDC, BJS, or peer-reviewed work. Four sources are marked
+  abstract/summary-level only; [S38] (partner-support consumer guidance) is marked lowest-tier and
+  carries framing only. A commonly-cited reporting figure that couldn't be traced to a primary source
+  was **excluded rather than repeated**, and the CDC **1-in-20 vs. 1-in-13 boys** discrepancy is left
+  visible with its explanation rather than silently picked.
+- **Items (61) across 7 clusters,** every cluster with a compare (9 total). **42 of 61 at
+  apply/analyze/evaluate** — the highest proportion in the repo. Production-heavy: 22 explain, 14
+  vignette, 9 compare, 7 cloze, 6 recall, **3 mcq** (reserved for genuine discrimination: the *J.L.G.*
+  carve-out, the RTS correction, MST eligibility). Deliberately loaded with **negative-space items** —
+  what *not* to say, ask, or do — because the documented harms here come from well-meant action rather
+  than missing facts.
+- **Cross-linked into the spine, not merged into it:** backlinks added from `unit08-crisis-trauma`,
+  `concept-trauma-informed-care` (with the moves-later note), `concept-mandated-reporting`, and the
+  `aux-psychological-first-aid` hub (sibling elective). `course-map.md`'s Unit 8 entry records the TIC
+  boundary. The 12-unit count is untouched; electives stay under their own heading in `index.md` and
+  `coverage.md`.
+- **Fixed a latent test bug this module surfaced.** `test_web_logic.py` check 2 failed on first run
+  (`dueCounts.due: js 669 != py 730`, delta = exactly the 61 new items). Not a content problem: both
+  `scheduler.ensure_state` and `sm2.ensureState` **seed never-studied items as due today**, and
+  `store.js` calls `ensureState` on every load (lines 94, 242) before anything reads a due date — but
+  the test's JS driver went straight to `dueCounts` against a raw `review_state.json`, where
+  `dueItems` skips any item with no state entry. The test's inline Python model (`state.get(id, {})
+  .get("due", today)`) modelled unseeded-as-due and was right; the JS side was simply never seeded.
+  Latent until now only because `review_state.json` happened to cover every item in the bank —
+  **any** new unit or module would have tripped it. Fix: the driver now calls
+  `ensureState(items, state, PAYLOAD.today)` first, mirroring `store.js`. Suite green; assertions
+  unchanged (not weakened).
+- **Rebuilt:** `python apps/build_items.py` and `python apps/build_web.py`. Verified: both suites pass
+  (`test_web_logic.py` 8/8, `test_sm2_parity.py` 45k transitions), 0 orphan wiki pages, and 0 dangling
+  wikilinks across the 8 new readings.
+
+---
+
+## [2026-09-14] create-module | trauma-informed-care | 7 readings, 46 items, 26 sources
+- **Asked for:** "create the trauma informed care unit as well," following the sexual-abuse module that
+  was deliberately built to leave room for it.
+- **Two structural calls made rather than asked, both settled by existing rules:**
+  - **Elective module, not Unit 13.** `CLAUDE.md` locks the 12-unit spine and says a module "never
+    renumbers or pretends to be a unit." The human's own vocabulary for the previous build was
+    "auxiliary unit," so `aux-trauma-informed-care` matches intent as well as the manual.
+  - **`concept-trauma-informed-care` stays in Unit 8.** This **contradicts the prediction logged
+    hours earlier**, and the correction is the interesting part. The old note said that page was "the
+    one that moves." It shouldn't: trauma-informed care is a core concept named in **Unit 8's own
+    title**, so moving it would strip a syllabus-named concept off the spine. Instead it was re-scoped
+    as an **overview/synthesis hub** (three E's, four R's, six principles, informed-vs-treatment) over
+    the module's depth — the **`concept-core-conditions` precedent**, which exists for exactly this.
+    Result: **no wikilink broke and no item `source_page` was repointed.** The no-duplication
+    discipline from the previous build paid off regardless — the two modules share no content.
+    `coverage.md`, `course-map.md`, and the page's own "Connects to" were corrected to record what
+    actually happened rather than what was predicted.
+- **Scope confirmed before deep research** (step-1 rule). Two answers: **balanced, clinical-first** on
+  the org-vs-clinical fork; **evidence critique front and centre** rather than buried on a back page.
+  Both shaped the build — the hub now opens with the AHRQ finding, and `concept-tic-evidence` is
+  cross-referenced from every other page.
+- **The organizing fact, and the reason this module exists as more than a summary:** AHRQ's **2025
+  systematic review** screened **1,326 publications**, found **12 eligible studies**, and concluded
+  there was **"insufficient evidence on the effectiveness of current TIC approaches"** for *every*
+  outcome category examined — while TIC is mandated policy across U.S. health care, education, child
+  welfare, and justice. It also found **"little consistency"** in what organizations mean by the term,
+  and recorded that its own Key Informants **"acknowledged debate around what TIC contributes beyond
+  what many generally recognize as 'good care.'"** The module teaches holding three things at once:
+  insufficient ≠ ineffective; the framework is still defensible on low-risk/ethical grounds; and
+  *implementation outpacing evidence is itself a competency to notice*. Direct parallel drawn to the
+  PFA elective's evidence-informed-not-proven caveat — same pattern, second instance.
+- **Readings (7):** hub `aux-trauma-informed-care`; `concept-retraumatization` (re-enactment as
+  *structure* not topic; the restraint/coercion evidence — the framework's **best-supported** part;
+  the quiet counseling-room version; universal precautions; and the two over-corrections, **fragility
+  theater** and concept inflation); `study-ace` (17,000+ Kaiser members, ten categories, dose-response,
+  then the critiques); `concept-trauma-screening`; `concept-tic-implementation` (ten domains, the
+  continuum, workforce as an *organizational* obligation); `concept-historical-trauma` (Brave Heart,
+  Carter, epigenetics); `concept-tic-evidence`.
+- **The sharpest single item in the module:** **Robert Anda, the ACE study's own co-PI, disowned the
+  clinical use of his instrument** — it was designed to *research, not screen*, and the score "is
+  neither a diagnostic tool nor is it predictive at the individual level." Corroborated by
+  psychometric work showing ACE scores predict group means but classify individuals poorly, by NCTSN
+  (insufficient for treatment decision-making), and by a specialty-society position statement. So
+  universal individual ACE screening is framed here as a **measurement error with a policy behind it**,
+  not a matter of preference — and the module gives the realistic instruction for being *required* to
+  administer it, rather than a refusal it would be useless to recommend.
+- **Contested material carried throughout:** epigenetic transmission (Yehuda's own title says
+  **"putative"**; biological vs. social transmission is the hard part, and social is usually more
+  parsimonious); historical trauma critiqued **from within Indigenous scholarship** (deficit narrative
+  vs. structural/political explanation); race-based traumatic stress vs. **DSM-5-TR Criterion A**,
+  which doesn't straightforwardly cover discrimination; ACEs as **deterministic labelling** and as
+  poverty measured indirectly; and the non-standardized aware/sensitive/responsive/informed/specific
+  terminology, which the module refuses to pick a canon for.
+- **Sourcing: the tiering is the methodology.** This topic's literature is overwhelmingly advocacy and
+  implementation guidance rather than outcome evidence — which is itself one of the findings — so the
+  sources file separates **framework sources** (SAMHSA: authoritative for content, **zero weight as
+  efficacy evidence**) from **evidence sources** (AHRQ and peer-reviewed critique, carrying every
+  outcome claim) from **critique sources** (at the same tier as the framework, deliberately). A
+  widely-repeated "~70% of restrained inpatients had childhood abuse histories" figure was
+  **excluded** — the primary source hit a PubMed cookie wall — and the association is stated
+  qualitatively instead. Anda's quotation [S9] and three others are flagged as abstract/summary-level.
+- **Items (46) across 6 clusters,** every cluster with a compare (7 total). Bloom R=5 / U=9 / Ap=7 /
+  An=13 / **E=12** — **26% at evaluate, the highest proportion in the repo**, which is the point: the
+  characteristic failure here is reciting the six principles as though they were findings, so the
+  items drill *appraisal* rather than recall. Only **2 mcq** (Anda's position; why AHRQ's "and
+  potential harms" phrase matters).
+- **Cross-linked into the spine:** backlinks from `unit08-crisis-trauma`, `concept-trauma-informed-care`
+  (re-scoped, with the corrected note), `concept-vicarious-trauma` (domain 7 reframes VT as an
+  organizational obligation), and `unit04-multicultural` (where `concept-historical-trauma` joins the
+  two frameworks). The promised `aux-sexual-abuse-support` rewiring was executed — as *additions*
+  rather than redirects, since the target page never moved. 12-unit count untouched.
+- **Rebuilt:** `python apps/build_items.py` and `python apps/build_web.py`.

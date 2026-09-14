@@ -9,6 +9,8 @@ cluster: trauma-informed-vs-treatment
 
 # Trauma-Informed Care (vs. Trauma Treatment)
 
+> **This page is Unit 8's overview of a syllabus-named core concept — the three E's, four R's, six principles, and the informed-vs-treatment distinction.** The depth lives in the **[[aux-trauma-informed-care]]** elective module, which starts where this page stops: [[concept-retraumatization]] (the mechanism and the documented harm), [[study-ace]] and [[concept-trauma-screening]] (the epidemiology, and why the ACE score must not be used as an individual screening tool), [[concept-tic-implementation]] (SAMHSA's ten organizational domains), [[concept-historical-trauma]] (principle six, filled in), and [[concept-tic-evidence]] (**what the outcome evidence actually shows — read this one**). Nothing on this page is duplicated there.
+
 The single most important distinction in this half of the unit — and the one the syllabus names directly — is between **trauma-*informed* care** and **trauma *treatment***. Get this wrong and you become the beginner who, meaning well, "digs for the trauma" and re-harms the client. **Trauma-informed care is a universal *stance*** any counselor adopts, in any setting, to **create safety and avoid re-traumatizing** — it assumes any client *might* be a trauma survivor and does **not** require them to disclose or process anything. **Trauma treatment** is a **specific, trained modality** (PE, CPT, TF-CBT, EMDR) that directly reduces trauma symptoms. One is "first, do no harm"; the other is "here is the surgery." You do the first from day one; the second requires specialized training and a client who is ready [S12][S13].
 
 ## SAMHSA's definition: the "three E's"
@@ -37,6 +39,8 @@ The approach is operationalized through **six principles** [S12] — and it's wo
 5. **Empowerment, voice, and choice** — restoring agency the trauma took away; the client chooses.
 6. **Cultural, historical, and gender issues** — accounting for historical/intergenerational trauma and cultural context; responsive, not stereotyping ([[unit04-multicultural]]).
 
+Each principle is the **inverse of a re-enactment** — predictability negates unpredictability, choice negates powerlessness — which is the argument [[concept-retraumatization]] develops in full. Operationalizing them across an organization takes SAMHSA's **ten implementation domains**, in [[concept-tic-implementation]]; principle six has real content behind it in [[concept-historical-trauma]].
+
 Notice the through-line to the [[concept-neurobiology-of-trauma | neurobiology]]: a nervous system stuck in threat calms only when the environment is **safe, predictable, and controllable** — which is exactly what these six principles engineer. The principles are not soft niceties; they are what a dysregulated stress system needs to settle.
 
 ## Trauma-informed vs. trauma-focused — the discrimination
@@ -61,6 +65,8 @@ The **first-line trauma treatments** (APA and VA/DoD guidelines): **Prolonged Ex
 - [[concept-trauma-stressor-disorders]] (Unit 6) — the diagnoses; this page is the *stance* those pages deferred here, and the treatment pointers.
 - [[aux-psychological-first-aid]] — the acute-crisis version of the same don't-probe restraint.
 - [[unit04-multicultural]] — principle six (cultural/historical) is multicultural competence inside the trauma frame.
+- [[aux-trauma-informed-care]] — **the elective module that expands this page.** Built 2026-09-14. This page was *retained on the spine* rather than moved into it: trauma-informed care is a Unit 8 core concept named by the syllabus, so the overview stays here and the depth lives there — the same arrangement as [[concept-core-conditions]] over its three condition pages. No inbound wikilink changed.
+- [[aux-sexual-abuse-support]] — the elective that **applies** this stance to survivors of sexual abuse and assault. It deliberately does **not** restate the three E's, four R's, six principles, or the informed-vs-treatment distinction; it assumes them and adds the population-specific material.
 - [[concept-vicarious-trauma]] — being trauma-informed toward *clients* has a mirror: being trauma-aware about what the work does to *you*.
 
 ## Sources

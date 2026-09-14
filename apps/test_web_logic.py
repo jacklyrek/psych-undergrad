@@ -134,6 +134,9 @@ def check_session(items: list[dict], state: dict) -> list[str]:
     driver = """
 const state = PAYLOAD.state;
 const items = PAYLOAD.items;
+// store.js seeds state on every load before anything reads due dates; without this an item that
+// has never been studied is missing from state entirely, and dueItems skips it. Mirror the app.
+ensureState(items, state, PAYLOAD.today);
 const counts = dueCounts(items, state, NO_FILTERS, PAYLOAD.today);
 const unit1 = dueCounts(items, state, {units:['1'],blooms:[],types:[]}, PAYLOAD.today);
 const q = buildQueue(items, state, {length: 10, today: PAYLOAD.today, shuffle: false});
