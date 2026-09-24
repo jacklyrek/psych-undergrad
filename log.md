@@ -1074,3 +1074,46 @@ Append-only, chronological, greppable. Prefix: `## [YYYY-MM-DD] <op> | Unit N <n
   two frameworks). The promised `aux-sexual-abuse-support` rewiring was executed — as *additions*
   rather than redirects, since the target page never moved. 12-unit count untouched.
 - **Rebuilt:** `python apps/build_items.py` and `python apps/build_web.py`.
+
+## [2026-09-23] create-module | existentialism | 10 readings, 60 items, 34 sources
+- **Asked for:** "an auxiliary unit that goes deep into existentialism." Built as an elective in the
+  `aux-` namespace (the spine stays at 12 units); borders Units 2, 8, 10.
+- **Scope confirmed before deep research:** the human chose **balanced**: philosophy only as far as it
+  explains the therapy, with most weight on the givens, the schools, the evidence, and practice.
+- **Coordinated with a parallel session** building `aux-phenomenology`. Split agreed up front:
+  Heidegger's Dasein, Daseinsanalysis (Binswanger/Boss, Umwelt/Mitwelt/Eigenwelt), and the
+  phenomenological method live there, and this module gives each a short paragraph plus a wikilink
+  (`concept-being-in-the-world`, `theory-daseinsanalysis`, `concept-phenomenological-stance`).
+- **Readings (10):** hub `aux-existentialism`; `concept-existential-philosophy-roots`; one page per
+  given (`concept-death-anxiety`, `concept-existential-freedom`, `concept-existential-isolation`,
+  `concept-meaning-in-life`); `theory-logotherapy`; `theory-existential-therapy-schools`;
+  `study-terror-management-theory`; `study-existential-therapy-outcomes`; `concept-existential-practice`.
+- **Findings that changed the picture Unit 2 gave:** (1) TMT's classic mortality-salience effect
+  **did not replicate** (Many Labs 4, 2022, with and without the original authors), and a 2023
+  bias-adjusted meta-analysis, co-authored by one of the 2010 meta-analysts, shrank it toward zero.
+  (2) The best-evidenced treatment for **death anxiety** is **exposure-based CBT** (g ≈ 1.7), not
+  existential therapy. (3) Existential-therapy outcome support is **real but narrow**: meaning therapies
+  with physically ill patients (Vos et al. 2015; MCGP beat an *active* control), while open-ended
+  existential therapy is essentially untested. (4) Frankl's paradoxical intention now has
+  meta-analytic support, from sleep medicine.
+- **Edited earlier page:** `theory-existential` (Unit 2) now flags the uneven evidence and the TMT
+  non-replication, noting that this elective is the source of the change, and links forward to all 10 pages.
+- **Sourcing:** philosophy from the *Stanford Encyclopedia of Philosophy*; psychology from
+  peer-reviewed journals (JCCP, JCO, Lancet Oncology, PSPR, Collabra, Clin Psych Review, Psych
+  Bulletin, J Counseling Psych); volume/page numbers checked against Crossref. **Honest gap:** Yalom's
+  1980 text and May's 1958 essays were used through secondary summaries plus general knowledge. The
+  specific points drawn this way are flagged for spot-checking in the sources file (S10, S13) and in
+  `coverage.md`.
+- **Items (60):** 5 clusters, all 5 Bloom levels (R 15 / U 13 / Ap 12 / An 12 / Ev 8), 8 compares, 15
+  vignettes; heavy on stance ("don't deliver philosophy at the client," risk-first with existential
+  despair) and evidence appraisal.
+- **Rebuilt:** `python apps/build_items.py` and `python apps/build_web.py`.
+
+## [2026-09-23] create-module | phenomenology | 25 readings (hub + 14 concept + 3 theory + 2 study + 5 person), 114 items, 51 sources
+- **Prompt:** the human asked which psychologists in Jordan Peterson's personality lectures held that "your environment is part of you and your mental health." Answer: the phenomenological psychiatrists **Binswanger and Boss**, building on Heidegger (Peterson's 2017 lecture 12), not the behaviorists. The human asked for "everything" on phenomenology.
+- **Coordinated build:** built in parallel with `aux-existentialism` by another session. File ownership was agreed up front: Heidegger, Daseinsanalysis, and the phenomenological stance live here; existential themes and therapies live there. The three cross-module slugs were fixed early so both sides could link before either finished. This session finished second and ran the final rebuild.
+- **Readings (25):** hub `aux-phenomenology`. Philosophy: `concept-husserl-phenomenology`, `concept-intentionality`, `concept-lifeworld`, `concept-lived-time`, `concept-being-in-the-world`, `concept-mood-attunement`, `concept-embodiment`. Ecology: `concept-affordances`, `concept-4e-cognition`, `concept-lewin-field-theory`. Clinic: `theory-daseinsanalysis`, `study-ellen-west`, `theory-phenomenological-psychopathology`, `concept-understanding-vs-explanation`, `study-ipseity-disturbance`, `concept-phenomenology-of-depression`. Room and research: `concept-phenomenology-of-empathy`, `concept-phenomenological-stance`, `theory-phenomenological-research`. People: Husserl, Heidegger, Merleau-Ponty, Jaspers, Binswanger & Boss.
+- **Findings worth flagging:** (1) The self-disorder (ipseity) program is the one strand of phenomenological psychiatry with real predictive data (self-disorders cluster in the schizophrenia spectrum and predict transition to psychosis), but the key summaries come from its proponents. (2) Ellen West was probably **misdiagnosed** (anorexia nervosa, binge-purge type, not schizophrenia) and discharged despite an announced suicide plan. The school's showcase case is its sharpest ethical lesson. (3) "Phenomenological" in counseling usually means the looser describe-before-explain attitude, not Husserl's project, and the pages keep the two apart. (4) Heidegger's Nazism is treated as part of the record, not a footnote.
+- **Spine edits (links only, no claims changed):** forward links added to `unit06-psychopathology`, `concept-psychotic-disorders`, `concept-mood-disorders`, `concept-empathy`, `theory-person-centered`, `unit12-research`. The 12-unit count is untouched.
+- **Items (114):** 8 clusters, all 5 Bloom levels (R 35 / U 19 / Ap 21 / An 27 / Ev 12), 20 compares, 19 vignettes, 8 mcqs. Stance probes: describe-before-explain, risk is never bracketed, empathy vs. contagion, over-claiming evidence (Daseinsanalysis, 4E, IPA generalization).
+- **Rebuilt:** `python apps/build_items.py` and `python apps/build_web.py`.

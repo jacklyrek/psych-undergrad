@@ -63,6 +63,7 @@ experience, incongruence shrinks, and the actualizing tendency does the rest. [S
 - [[theory-psychodynamic]] — the contrast Rogers defined himself against (relationship, not
   interpretation; present, not past; client expert, not therapist).
 - [[unit02-theories]] — where this sits among the six families.
+- [[concept-phenomenological-stance]] (elective [[aux-phenomenology]]): Rogers called his theory "basically phenomenological." That page traces the shared stance (internal frame of reference, describe before explaining) across person-centered, Gestalt, existential, and psychiatric practice.
 
 ## Sources
 [S3] StatPearls, *Person-Centered Therapy (Rogerian Therapy)* (NCBI). [S5] OpenStax *Psychology 2e*,

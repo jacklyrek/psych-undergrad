@@ -57,6 +57,9 @@ Then: **Bipolar I** = at least one manic episode, ever (depression common but *n
 
 Depression's presentation *is* often the stance problem this curriculum keeps flagging: a person whose motivation, hope, and concentration are symptoms — met by a helper itching to fix. Behavioral prescriptions bounce off anhedonia; the alliance ([[concept-therapeutic-alliance]]) and accurate empathy are what make later structured work ([[concept-behavioral-activation]], Unit 9) possible. And an energized, grandiose client is not "finally doing better" — always read energy against the episode grammar above.
 
+## See also (elective depth)
+- [[concept-phenomenology-of-depression]]: what depression is like from the inside (corporealization, the closed future, the collapsed space of possibility) and why reassurance often bounces off.
+
 ## Sources
 
 [S1] OpenStax §15.2. [S2] First et al. (2022). [S5] StatPearls MDD. [S6] StatPearls Bipolar Disorder. [S22] Pies (2014). Full notes in [`../research/unit06-psychopathology-sources.md`](../research/unit06-psychopathology-sources.md).

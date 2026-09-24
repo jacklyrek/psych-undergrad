@@ -32,7 +32,7 @@ _Readings:_
 - [theory-person-centered](wiki/theory-person-centered.md) — Rogers/Maslow; actualizing tendency,
   conditions of worth, client as expert; the theory form of Unit 1's core conditions.
 - [theory-existential](wiki/theory-existential.md) — Yalom's four givens, Frankl's logotherapy,
-  May; meaning, freedom, responsibility.
+  May; meaning, freedom, responsibility. In depth: the [aux-existentialism](wiki/aux-existentialism.md) elective.
 - [theory-cbt](wiki/theory-cbt.md) — Beck & Ellis; cognitive triangle, ABC model, distortions, the
   learning tradition; Ellis-vs-Beck.
 - [theory-family-systems](wiki/theory-family-systems.md) — Bowen & Minuchin; identified patient,
@@ -523,3 +523,54 @@ _Items:_ [aux-trauma-informed-care](items/aux-trauma-informed-care.md) — 46 it
 highest evaluate proportion in the repo**, by design: the failure this material guards against is
 reciting the six principles as though they were findings. _Sources:_
 [aux trauma-informed-care sources](research/aux-trauma-informed-care-sources.md).
+
+### Existentialism, In Depth  ☑ readings + items  · borders Units 2, 8 & 10
+_Readings:_
+- [aux-existentialism](wiki/aux-existentialism.md) — hub: existentialism as a stance toward the human
+  *situation*; why go deeper than Unit 2; the "don't deliver philosophy at the client" stance; and
+  the contested list (givens as a lens, not a taxonomy; TMT non-replication; thin, uneven outcome base).
+- [concept-existential-philosophy-roots](wiki/concept-existential-philosophy-roots.md) — Kierkegaard
+  (dizziness of freedom, two despairs), Nietzsche, Heidegger in brief, Sartre (bad faith, the waiter),
+  **Beauvoir** (freedom within oppression), Camus (the absurd, three responses), Buber, Tillich (three
+  anxieties). Only Sartre and Beauvoir accepted the label.
+- [concept-death-anxiety](wiki/concept-death-anxiety.md) — Yalom's **specialness** and **ultimate
+  rescuer**, the awakening experience, death anxiety as **transdiagnostic** (promising, unsettled), and
+  **exposure-based CBT** as the best-evidenced treatment for fear of dying.
+- [concept-existential-freedom](wiki/concept-existential-freedom.md) — responsibility as authorship,
+  wish→will→decide, **bad faith** both ways, authenticity (not a "true self"), **neurotic vs.
+  existential guilt**, and the situated-freedom / multicultural critique.
+- [concept-existential-isolation](wiki/concept-existential-isolation.md) — interpersonal vs.
+  intrapersonal vs. existential; the **Existential Isolation Scale** and its link to **prolonged
+  grief**; fusion as defense; Buber's I–Thou and the 1957 Buber–Rogers dialogue.
+- [concept-meaning-in-life](wiki/concept-meaning-in-life.md) — Camus vs. Frankl; **MLQ** presence vs.
+  search; **Park's** global vs. situational meaning; meaning as byproduct; the risk-assessment rule.
+- [theory-logotherapy](wiki/theory-logotherapy.md) — will to meaning, three sources (+ MCP's historical),
+  the *unavoidable* condition, tragic triad, existential vacuum vs. noogenic neurosis, **paradoxical
+  intention** (meta-analytic support for insomnia) and dereflection; misuses.
+- [theory-existential-therapy-schools](wiki/theory-existential-therapy-schools.md) — family tree:
+  Daseinsanalysis, logotherapy, existential-humanistic (May, Bugental, Schneider), Yalom, the British
+  school (van Deurzen's four dimensions, Spinelli), meaning-centered/palliative. Structure predicts evidence.
+- [study-terror-management-theory](wiki/study-terror-management-theory.md) — TMT, the 2010 meta-analysis
+  (r = .35, 277 experiments), the **Many Labs 4 failure to replicate**, bias-adjusted meta-analysis; lessons.
+- [study-existential-therapy-outcomes](wiki/study-existential-therapy-outcomes.md) — Vos et al. (2015)
+  meta-analysis, **MCGP**, **CALM**, **dignity therapy**; what each shows and doesn't.
+- [concept-existential-practice](wiki/concept-existential-practice.md) — presence, describe-before-explain,
+  here-and-now, working each given without lecturing, "I have no choice," suicidal despair (risk first),
+  the dying and the bereaved, traps.
+
+_Items:_ [aux-existentialism](items/aux-existentialism.md) — 60 items across 5 clusters
+(`existential-thinkers`, `existential-givens`, `existential-schools`, `existential-evidence`,
+`existential-practice`), all 5 Bloom levels (R 15 / U 13 / Ap 12 / An 12 / Ev 8), 8 compare items
+(every cluster has at least one). _Sources:_ [aux existentialism sources](research/aux-existentialism-sources.md)
+(34 sources, S1–S34).
+
+### Phenomenology, from Husserl to the Clinic  ☑ readings + items  · borders Units 1, 2, 6 & 12
+_Readings:_
+- [aux-phenomenology](wiki/aux-phenomenology.md): hub. Started from the Peterson question "is your environment part of you?" (answer: Binswanger and Boss, via Heidegger). Also the four-founder table, the stance paragraph, and the contested list.
+- **Philosophical core:** [concept-husserl-phenomenology](wiki/concept-husserl-phenomenology.md) (natural attitude, **epoché**, phenomenological vs. eidetic reduction, anti-psychologism) · [concept-intentionality](wiki/concept-intentionality.md) (Brentano; noesis/noema) · [concept-lifeworld](wiki/concept-lifeworld.md) (*Crisis*, 1936; four "world" concepts kept apart) · [concept-lived-time](wiki/concept-lived-time.md) (retention/protention; Minkowski; the closed future) · [concept-being-in-the-world](wiki/concept-being-in-the-world.md) (**Dasein**; ready- vs. present-at-hand; thrownness; *das Man*; anxiety vs. fear; the Nazism record) · [concept-mood-attunement](wiki/concept-mood-attunement.md) (*Befindlichkeit*; Ratcliffe's existential feelings) · [concept-embodiment](wiki/concept-embodiment.md) (lived body; body schema vs. image; Schneider; habit).
+- **Ecological branch:** [concept-affordances](wiki/concept-affordances.md) (Gibson; direct perception; flattened affordances in depression) · [concept-4e-cognition](wiki/concept-4e-cognition.md) (embedded vs. **extended**; Otto's notebook; coupling-constitution; affective scaffolding) · [concept-lewin-field-theory](wiki/concept-lewin-field-theory.md) (B = f(P, E); life space; to Bronfenbrenner).
+- **Clinic:** [theory-daseinsanalysis](wiki/theory-daseinsanalysis.md) (**Umwelt / Mitwelt / Eigenwelt**; world-design; Boss's dreams; the split) · [study-ellen-west](wiki/study-ellen-west.md) (the case and its critiques: misdiagnosis, a foreseeable suicide, Rogers) · [theory-phenomenological-psychopathology](wiki/theory-phenomenological-psychopathology.md) (Jaspers to Fuchs; **form vs. content**; primary delusion; Blankenburg) · [concept-understanding-vs-explanation](wiki/concept-understanding-vs-explanation.md) (*Verstehen* / *Erklären*; static and genetic understanding) · [study-ipseity-disturbance](wiki/study-ipseity-disturbance.md) (Sass & Parnas; the **EASE**; prediction of psychosis) · [concept-phenomenology-of-depression](wiki/concept-phenomenology-of-depression.md) (corporealization; desynchronization; lost possibility; *typus melancholicus*).
+- **Room and research:** [concept-phenomenology-of-empathy](wiki/concept-phenomenology-of-empathy.md) (Stein and Zahavi; empathy vs. contagion, sympathy, and simulation) · [concept-phenomenological-stance](wiki/concept-phenomenological-stance.md) (**Spinelli's three rules** across schools; the limits of bracketing) · [theory-phenomenological-research](wiki/theory-phenomenological-research.md) (Giorgi / Moustakas / van Manen / **IPA**; Zahavi's critique).
+- **People:** [person-edmund-husserl](wiki/person-edmund-husserl.md) · [person-martin-heidegger](wiki/person-martin-heidegger.md) · [person-maurice-merleau-ponty](wiki/person-maurice-merleau-ponty.md) · [person-karl-jaspers](wiki/person-karl-jaspers.md) · [person-binswanger-boss](wiki/person-binswanger-boss.md).
+
+_Items:_ [aux-phenomenology](items/aux-phenomenology.md): 114 items across 8 clusters (`phen-method`, `phen-founders`, `heidegger-concepts`, `embodiment-ecology`, `daseinsanalysis`, `phen-psychopathology`, `phen-stance`, `phen-research`), all 5 Bloom levels (R 35 / U 19 / Ap 21 / An 27 / Ev 12), 20 compares (every cluster has at least one), 19 vignettes, 8 discrimination mcqs. _Sources:_ [aux phenomenology sources](research/aux-phenomenology-sources.md) (S1–S51).

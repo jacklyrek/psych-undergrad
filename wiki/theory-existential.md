@@ -59,6 +59,7 @@ and **dereflection** (redirect attention away from anxious self-monitoring). [S7
   not an experimentally validated taxonomy — use them to listen, not as proof. [S6]
 - **Directiveness debate.** Critics (including May) worried logotherapy could become **authoritarian** — the therapist prescribing meaning; Frankl countered that it teaches the client to be responsible, not what to value. [S7]
 - **Hard to manualize / measure**, which makes outcome research thinner than for CBT. [S7]
+  *Refined by the elective [[aux-existentialism]] (2026-09-23):* "thinner" is uneven, not uniform. A 2015 meta-analysis (15 RCTs) found good support for **structured meaning-centered** therapies, mostly with physically ill patients, and no significant effects for open-ended experiential-existential therapy (only 2 trials). See [[study-existential-therapy-outcomes]]. Separately, the terror-management lab effect often cited as experimental support for death anxiety **failed to replicate** (Many Labs 4, 2022). See [[study-terror-management-theory]].
 
 ## Connects to
 - [[theory-person-centered]] — the humanistic cousin; both anti-deterministic and growth-oriented, but
@@ -66,6 +67,7 @@ and **dereflection** (redirect attention away from anxious self-monitoring). [S7
 - [[theory-postmodern]] — shares the conviction that the client **constructs** meaning, but postmodern
   therapy locates meaning in *language and social story* rather than the *givens of existence*.
 - [[unit02-theories]] — where this sits among the six families.
+- **[[aux-existentialism]] (elective) — the in-depth module:** philosophical roots ([[concept-existential-philosophy-roots]]), one page per given ([[concept-death-anxiety]], [[concept-existential-freedom]], [[concept-existential-isolation]], [[concept-meaning-in-life]]), [[theory-logotherapy]], [[theory-existential-therapy-schools]], the evidence ([[study-terror-management-theory]], [[study-existential-therapy-outcomes]]), and [[concept-existential-practice]].
 
 ## Sources
 [S6] Yalom, *Existential Psychotherapy* (1980) — four ultimate concerns (via reputable secondary

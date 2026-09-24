@@ -50,6 +50,7 @@ Empathy is what a client is unconsciously scanning for in the first minutes: *do
 - [[concept-microskills-hierarchy]] — reflection of feeling is empathy made into a teachable skill; interpretation is its higher-risk neighbor.
 - [[concept-attending-and-listening]] — you can't be accurately empathic without first attending and observing.
 - [[theory-common-factors]] — empathy is one of the best-supported common relationship factors.
+- [[concept-phenomenology-of-empathy]] (elective [[aux-phenomenology]]): the philosophical account underneath the "as if" (Husserl, Stein, Zahavi). Empathy as grasping the other's experience *as theirs*, kept apart from contagion, sympathy, and simulation.
 
 ## Sources
 [S1] StatPearls, *Person-Centered Therapy*, NCBI. [S7] counseling.education, *Reflecting & Listening Skills* (interpretation as influencing skill). [S10] *A Comparison of Empathy and Sympathy…*, The Professional Counselor (NBCC) — empathy/sympathy distinction, affective+cognitive components. [S11] Carkhuff's five-level empathy scale (Carkhuff 1969; Truax & Carkhuff 1967), corroborated across counselor-training sources. Full notes in [`../research/unit01-helping-skills-sources.md`](../research/unit01-helping-skills-sources.md).

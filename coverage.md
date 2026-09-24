@@ -32,6 +32,23 @@ Built in the `aux-` namespace; not part of the 12-unit count. Same coverage rule
 | Understanding & Changing Addictive Behavior (`aux-addiction`) | Units 6, 9 | ☑ (6) | ☑ (35) | all 5 levels | 4/4 ✓ (`addiction-models`, `change-stages`, `relapse-concepts`, `addiction-treatments` each have a compare) |
 | Supporting Survivors of Sexual Abuse & Assault (`aux-sexual-abuse-support`) | Units 3, 6, 8 | ☑ (8) | ☑ (61) | all 5 levels | 7/7 ✓ (9 compares — `disclosure-response` and `reporting-pathways` have 2 each) |
 | Trauma-Informed Care (`aux-trauma-informed-care`) | Units 4, 6, 8 | ☑ (7) | ☑ (46) | all 5 levels | 6/6 ✓ (7 compares — `trauma-screening` has 2) |
+| Existentialism, In Depth (`aux-existentialism`) | Units 2, 8, 10 | ☑ (10) | ☑ (60) | all 5 levels | 5/5 ✓ (8 compares — `existential-givens` has 2, `existential-schools` has 3) |
+| Phenomenology, from Husserl to the Clinic (`aux-phenomenology`) | Units 1, 2, 6, 12 | ☑ (25) | ☑ (114) | all 5 levels | 8/8 ✓ (20 compares; `phen-psychopathology` has 4) |
+
+- **Elective `aux-existentialism` (2026-09-23) — evidence and spot-check notes.** (a) The module's
+  two evidence pages carry the load: **TMT's mortality-salience effect failed to replicate** (Many Labs
+  4, 2022) and **existential-therapy outcome support is concentrated in structured meaning-centered
+  programs for the seriously ill** (Vos et al. 2015; MCGP; CALM). Open-ended existential therapy is
+  labelled *untested*, not *disproven*. (b) **Spot-check flag:** several Yalom (1980) and May (1958)
+  details (wish→will→decide, fusion, cosmic vs. terrestrial meaning, neurotic vs. existential guilt)
+  come from general knowledge of the texts and are flagged as such in the sources file under S10 and S13;
+  verify against the books before relying on them for an exam. (c) **Shared boundary with
+  `aux-phenomenology`** (built in parallel): Heidegger, Daseinsanalysis, and the phenomenological
+  method live there. Three wikilinks point into it ([[concept-being-in-the-world]],
+  [[theory-daseinsanalysis]], [[concept-phenomenological-stance]]); at the time of writing the last
+  two were still unwritten. A later lint should confirm they resolve.
+
+- **Elective `aux-phenomenology` (2026-09-23): evidence and spot-check notes.** (a) **Two kinds of source, weighted differently:** philosophical claims rest on the SEP (Husserl, Heidegger, and Merleau-Ponty entries of 2023–25, plus *Embodied Cognition*); clinical claims rest on peer-reviewed journals (*Schizophrenia Bulletin*, *World Psychiatry*, *PPP*, *History of Psychiatry*). (b) **Most empirically developed strand:** the self-disorder / EASE program. Its 2025 summary is **authored by the model's own school**, and the page says so. (c) **Ellen West:** the misdiagnosis and "arranged discharge" findings come from Hirschmüller's German archival edition *as reported in English* (an IAEDP summary) plus Akavia (2008). **Spot-check** against the primary sources before relying on the harder claims. (d) **Primary texts via secondary sources:** Giorgi, Moustakas, van Manen, Smith/Flowers/Larkin, Spinelli, Stein, Zahavi (2014), and May/Angel/Ellenberger are cited for well-known formulations but were not read in full this pass. (e) **Interpretive bridges** from phenomenology to counseling technique (e.g., habit → why practice beats insight; affordances → means reduction) are labelled as such on every page. (f) **Boundary with `aux-existentialism` resolved:** the three wikilinks it pointed into this module (`concept-being-in-the-world`, `theory-daseinsanalysis`, `concept-phenomenological-stance`) now all resolve.
 
 ## Coverage rules the lint pass enforces
 - Every major concept has at least one **Apply** or **Analyze** item, not only "define"-level.

@@ -52,6 +52,7 @@ The Unit-wide "resist the urge to fix" caution takes a quieter but important for
 - [[unit09-modalities]] and [[theory-solution-focused]] (Unit 9) — the EBP three legs and the allegiance-bias caution, given their full account here.
 - [[theory-yalom-factors]] (Unit 10) — "group ≈ individual" and "groups can harm" as effect-size / evidence-appraisal claims.
 - [[unit03-ethics-law]], [[concept-informed-consent]], [[concept-dual-relationships]] (Unit 3) — the clinical ethics that [[concept-irb-research-ethics | research ethics]] mirrors.
+- [[theory-phenomenological-research]] (elective [[aux-phenomenology]]): the **qualitative** side this unit doesn't cover. Giorgi, Moustakas, van Manen, and IPA; what "lived experience" studies can and can't claim.
 
 ## Sources
 

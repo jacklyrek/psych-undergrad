@@ -48,6 +48,10 @@ Counselors rarely treat acute psychosis alone — this is coordinated-care terri
 
 Culture check before pathology check: hearing a deceased relative's voice during grief is normative in many cultures, and "paranoid" wariness can be a rational learning from surveillance or racism — run the [[concept-dsm-structure | cultural formulation]] before the label. [S23]
 
+## See also (elective depth)
+- [[study-ipseity-disturbance]]: the phenomenological "self-disorder" model of schizophrenia (hyperreflexivity, diminished self-affection; the EASE), and why subtle self-disturbances matter for early referral.
+- [[theory-phenomenological-psychopathology]]: Jaspers's **form vs. content** and the primary delusion; Blankenburg's loss of natural self-evidence.
+
 ## Sources
 
 [S1] OpenStax §15.2. [S10] StatPearls Schizophrenia. [S23] SAMHSA TIP 59. Full notes in [`../research/unit06-psychopathology-sources.md`](../research/unit06-psychopathology-sources.md).
